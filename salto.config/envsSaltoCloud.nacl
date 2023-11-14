@@ -1,0 +1,8 @@
+envs {
+  envsCloud = [
+    {
+      uuid = "1509c7dc-1136-4a5b-a17b-e5396f90a6da"
+      folderName = "Salto - NetSuite - Dev 3"
+    },
+  ]
+}
