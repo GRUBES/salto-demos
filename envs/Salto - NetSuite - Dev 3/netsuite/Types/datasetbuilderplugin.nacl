@@ -1,0 +1,41 @@
+type netsuite.datasetbuilderplugin {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^customscript[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  string scriptfile {
+    _required = true
+  }
+  string description {
+  }
+  boolean isinactive {
+  }
+  boolean notifyadmins {
+  }
+  string notifyemails {
+  }
+  string notifygroup {
+  }
+  boolean notifyowner {
+  }
+  boolean notifyuser {
+  }
+  netsuite.script_loglevel loglevel {
+  }
+  string runasrole {
+  }
+  netsuite.script_status status {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "Dataset Builder Plugin"
+}

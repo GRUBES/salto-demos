@@ -1,0 +1,11 @@
+type netsuite.employeeDirectDepositList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.employeeDirectDeposit>" employeeDirectDeposit {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

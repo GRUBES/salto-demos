@@ -1,0 +1,30 @@
+type netsuite.generic_portlet is string {
+  _restriction = {
+    values = [
+      "ANALYTICS",
+      "CALENDAR",
+      "DASHBOARD_APP",
+      "KPIMETER",
+      "KPIREPORT",
+      "LASTLOGIN",
+      "LIST",
+      "QUICKADD",
+      "QUICKSEARCH",
+      "RECENTRECORDS",
+      "RECENTREPORTS",
+      "REMINDERS",
+      "RSSSOURCE",
+      "SCHEDULER",
+      "SCRIPTPORTLET",
+      "SEARCHFORM",
+      "SEARCHRESULTS",
+      "SETTINGS",
+      "SHORTCUTS",
+      "SNAPSHOTS",
+      "SYSTEMSTATUS",
+      "TASKLINKS",
+      "TIMELINE",
+    ]
+    enforce_value = false
+  }
+}

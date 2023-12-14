@@ -1,0 +1,12 @@
+netsuite.emailtemplate custemailtmpl_205_t2480649_618 {
+  scriptid = "custemailtmpl_205_t2480649_618"
+  addcompanyaddress = true
+  addunsubscribelink = true
+  description = "i am diff"
+  isinactive = false
+  isprivate = false
+  name = "diffone"
+  usesmedia = false
+  content = file("netsuite/emailtemplate/custemailtmpl_205_t2480649_618.html")
+  _alias = "diffone"
+}

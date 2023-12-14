@@ -1,0 +1,10 @@
+type netsuite.paymentMethodVisuals {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string flags {
+  }
+  string location {
+  }
+}

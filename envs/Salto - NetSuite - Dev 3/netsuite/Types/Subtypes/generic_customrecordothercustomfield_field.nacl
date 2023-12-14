@@ -1,0 +1,16 @@
+type netsuite.generic_customrecordothercustomfield_field is string {
+  _restriction = {
+    values = [
+      "CREATED",
+      "CUSTOMFORM",
+      "ISINACTIVE",
+      "ISMATRIXOPTION",
+      "LASTMODIFIED",
+      "NAME",
+      "NKEY",
+      "OWNER",
+      "RECORDID",
+    ]
+    enforce_value = false
+  }
+}

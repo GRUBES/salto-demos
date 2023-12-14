@@ -1,0 +1,14 @@
+type netsuite.demandPlan {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  number calculatedQuantity {
+  }
+  netsuite.periodDemandPlanList periodDemandPlanList {
+  }
+}

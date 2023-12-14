@@ -1,0 +1,30 @@
+type netsuite.customerCreditCards {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  string ccNumber {
+  }
+  string ccExpireDate {
+  }
+  string ccName {
+  }
+  netsuite.paymentMethod paymentMethod {
+    isReference = true
+  }
+  netsuite.recordRef cardState {
+  }
+  string stateFrom {
+  }
+  string debitcardIssueNo {
+  }
+  string ccMemo {
+  }
+  string validfrom {
+  }
+  boolean ccDefault {
+  }
+}

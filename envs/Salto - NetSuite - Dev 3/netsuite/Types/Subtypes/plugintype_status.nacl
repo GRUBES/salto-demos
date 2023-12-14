@@ -1,0 +1,9 @@
+type netsuite.plugintype_status is string {
+  _restriction = {
+    values = [
+      "RELEASED",
+      "TESTING",
+    ]
+    enforce_value = false
+  }
+}

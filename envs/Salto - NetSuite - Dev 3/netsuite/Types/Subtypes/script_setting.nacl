@@ -1,0 +1,10 @@
+type netsuite.script_setting is string {
+  _restriction = {
+    values = [
+      "COMPANY",
+      "PORTLET",
+      "USER",
+    ]
+    enforce_value = false
+  }
+}

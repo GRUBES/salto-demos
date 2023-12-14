@@ -1,0 +1,11 @@
+type netsuite.itemFulfillmentPackageFedExList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.itemFulfillmentPackageFedEx>" packageFedEx {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

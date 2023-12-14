@@ -1,0 +1,285 @@
+type netsuite.customrecord_cseg2 {
+  annotations {
+    serviceid scriptid {
+    }
+    string recordname {
+    }
+    string customsegment {
+    }
+    netsuite.customrecordtype_accesstype accesstype {
+    }
+    boolean allowattachments {
+    }
+    boolean allowinlineediting {
+    }
+    boolean allowinlinedeleting {
+    }
+    boolean allowinlinedetaching {
+    }
+    boolean allowmobileaccess {
+    }
+    boolean allownumberingoverride {
+    }
+    boolean allowquickadd {
+    }
+    boolean allowquicksearch {
+    }
+    boolean allowuiaccess {
+    }
+    string description {
+    }
+    boolean enabledle {
+    }
+    boolean enablekeywords {
+    }
+    boolean enablemailmerge {
+    }
+    boolean enablenametranslation {
+    }
+    boolean enablenumbering {
+    }
+    boolean enableoptimisticlocking {
+    }
+    boolean enablesystemnotes {
+    }
+    boolean hierarchical {
+    }
+    string numberingprefix {
+    }
+    string numberingsuffix {
+    }
+    string numberingmindigits {
+    }
+    string numberinginit {
+    }
+    string icon {
+    }
+    boolean iconbuiltin {
+    }
+    netsuite.generic_custom_record_icon iconindex {
+    }
+    boolean includeinsearchmenu {
+    }
+    boolean includename {
+    }
+    boolean isinactive {
+    }
+    boolean isordered {
+    }
+    boolean showcreationdate {
+    }
+    boolean showcreationdateonlist {
+    }
+    boolean showid {
+    }
+    boolean showlastmodified {
+    }
+    boolean showlastmodifiedonlist {
+    }
+    boolean shownotes {
+    }
+    boolean showowner {
+    }
+    boolean showownerallowchange {
+    }
+    boolean showowneronlist {
+    }
+    netsuite.customrecordtype_instances instances {
+    }
+    netsuite.customrecordtype_links links {
+    }
+    netsuite.customrecordtype_permissions permissions {
+    }
+    netsuite.customrecordtype_recordsublists recordsublists {
+    }
+    netsuite.customrecordtype_subtabs subtabs {
+    }
+    string application_id {
+    }
+    hidden_string source {
+    }
+    hidden_string internalId {
+    }
+  }
+  serviceid scriptid {
+    _required = true
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.customRecordTranslationsList translationsList {
+  }
+  string custom_custrecord_newfield {
+    scriptid = "custrecord_newfield"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    description = "This is a field that is defined in a 'custom record'"
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "Field in a custom & record"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = false
+    storevalue = true
+    index = 0
+  }
+  scriptid = "customrecord_cseg2"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = false
+  allowinlineediting = false
+  allowquickadd = false
+  allowquicksearch = false
+  customsegment = netsuite.customsegment.instance.cseg2.scriptid
+  enabledle = false
+  enablekeywords = false
+  enablemailmerge = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  iconbuiltin = true
+  includeinsearchmenu = false
+  showcreationdate = false
+  showcreationdateonlist = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  instances = {
+    instance = {
+      val_5934_2239021_682 = {
+        scriptid = "val_5934_2239021_682"
+        isinactive = false
+        name = "EMEA"
+        index = 0
+      }
+      test = {
+        scriptid = "test"
+        isinactive = false
+        name = "APAC"
+        index = 1
+      }
+      val_5936_2239021_687 = {
+        scriptid = "val_5936_2239021_687"
+        isinactive = false
+        name = "ISR"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 2
+      }
+      val_5937_2239021_815 = {
+        scriptid = "val_5937_2239021_815"
+        isinactive = false
+        name = "UK"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 3
+      }
+      val_5937_2239021_8150 = {
+        scriptid = "val_5937_2239021_8150"
+        isinactive = false
+        name = "UKX"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 4
+      }
+      val_5937_2239021_8151 = {
+        scriptid = "val_5937_2239021_8151"
+        isinactive = false
+        name = "UKY"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 5
+      }
+      val_5937_2239021_8152 = {
+        scriptid = "val_5937_2239021_8152"
+        isinactive = false
+        name = "UKZ"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 6
+      }
+      val_5937_2239021_8153 = {
+        scriptid = "val_5937_2239021_8153"
+        isinactive = false
+        name = "UKA"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 7
+      }
+      val_5937_2239021_8154 = {
+        scriptid = "val_5937_2239021_8154"
+        isinactive = false
+        name = "UKB"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 8
+      }
+      val_5937_2239021_8155 = {
+        scriptid = "val_5937_2239021_8155"
+        isinactive = false
+        name = "UKC"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 9
+      }
+      val_5937_2239021_8156 = {
+        scriptid = "val_5937_2239021_8156"
+        isinactive = false
+        name = "UKD"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 10
+      }
+      val_5937_2239021_8157 = {
+        scriptid = "val_5937_2239021_8157"
+        isinactive = false
+        name = "UKE"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 11
+      }
+      val_5937_2239021_8158 = {
+        scriptid = "val_5937_2239021_8158"
+        isinactive = false
+        name = "UKF"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 12
+      }
+      val_5937_2239021_8159 = {
+        scriptid = "val_5937_2239021_8159"
+        isinactive = false
+        name = "UKG"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5937_2239021_8153.scriptid
+        index = 13
+      }
+      val_94986_t2480649_569 = {
+        scriptid = "val_94986_t2480649_569"
+        isinactive = false
+        name = "a-2"
+        index = 14
+      }
+      val_95588_t2480649_309 = {
+        scriptid = "val_95588_t2480649_309"
+        isinactive = false
+        name = "b1b1"
+        index = 15
+      }
+      val_95589_t2480649_371 = {
+        scriptid = "val_95589_t2480649_371"
+        isinactive = false
+        name = "c1c1"
+        index = 16
+      }
+    }
+  }
+  links = {
+    link = {
+      BASICSETUPCOMPANY = {
+        linkcategory = "BASICSETUPCOMPANY"
+        linktasktype = "LIST"
+      }
+    }
+  }
+  metadataType = "customrecordtype"
+  _alias = "Region"
+}

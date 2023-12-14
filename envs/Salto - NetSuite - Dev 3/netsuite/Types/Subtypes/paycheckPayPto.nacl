@@ -1,0 +1,16 @@
+type netsuite.paycheckPayPto {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number payItem {
+  }
+  string payItemName {
+  }
+  number hoursAccrued {
+  }
+  number hoursUsed {
+  }
+  number hoursBalance {
+  }
+}

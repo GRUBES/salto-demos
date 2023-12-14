@@ -1,0 +1,25 @@
+netsuite.customtransactiontype customtransaction_slt_basic_test {
+  scriptid = "customtransaction_slt_basic_test"
+  cancloseorder = false
+  iscredit = false
+  isposting = false
+  isvoidable = false
+  name = "test basic"
+  showstatus = false
+  transactionstyle = "BASIC"
+  segments = {
+    classposition = "NONE"
+    
+    locationposition = "NONE"
+    departmentposition = "NONE"
+  }
+  permissions = {
+    permission = {
+      ADMINISTRATOR = {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      }
+    }
+  }
+  _alias = "test basic"
+}

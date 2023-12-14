@@ -1,0 +1,152 @@
+type netsuite.customerPayment {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.account arAcct {
+    isReference = true
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  number balance {
+  }
+  number pending {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number payment {
+  }
+  boolean autoApply {
+  }
+  string tranDate {
+  }
+  string tranId {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  netsuite.paymentMethod paymentMethod {
+    isReference = true
+  }
+  boolean ccIsPurchaseCardBin {
+  }
+  string memo {
+  }
+  boolean ccProcessAsPurchaseCard {
+  }
+  string checkNum {
+  }
+  string currencyName {
+  }
+  number exchangeRate {
+  }
+  netsuite.recordRef creditCard {
+  }
+  boolean chargeIt {
+  }
+  string ccNumber {
+  }
+  string ccExpireDate {
+  }
+  string ccName {
+  }
+  string ccStreet {
+  }
+  string ccZipCode {
+  }
+  boolean ccApproved {
+  }
+  string authCode {
+  }
+  unknown ccAvsStreetMatch {
+  }
+  unknown ccAvsZipMatch {
+  }
+  boolean isRecurringPayment {
+  }
+  string ccSecurityCode {
+  }
+  boolean ignoreAvs {
+  }
+  unknown ccSecurityCodeMatch {
+  }
+  string threeDStatusCode {
+  }
+  string pnRefNum {
+  }
+  netsuite.recordRef creditCardProcessor {
+  }
+  string debitCardIssueNo {
+  }
+  string validFrom {
+  }
+  boolean undepFunds {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  number total {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  number applied {
+  }
+  number unapplied {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef paymentOption {
+  }
+  string inputAuthCode {
+  }
+  string inputReferenceCode {
+  }
+  string checkNumber {
+  }
+  string paymentCardCsc {
+  }
+  netsuite.recordRef paymentProcessingProfile {
+  }
+  unknown handlingMode {
+  }
+  string outputAuthCode {
+  }
+  string outputReferenceCode {
+  }
+  unknown paymentOperation {
+  }
+  string dynamicDescriptor {
+  }
+  string status {
+  }
+  netsuite.customerPaymentApplyList applyList {
+  }
+  netsuite.customerPaymentCreditList creditList {
+  }
+  netsuite.customerPaymentDepositList depositList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

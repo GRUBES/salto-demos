@@ -1,0 +1,301 @@
+type netsuite.customer {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string entityId {
+  }
+  string altName {
+  }
+  boolean isPerson {
+  }
+  string phoneticName {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string companyName {
+  }
+  netsuite.recordRef entityStatus {
+  }
+  netsuite.customer parent {
+    isReference = true
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string url {
+  }
+  string defaultAddress {
+  }
+  boolean isInactive {
+  }
+  netsuite.recordRef category {
+  }
+  string title {
+  }
+  string printOnCheckAs {
+  }
+  string altPhone {
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  string altEmail {
+  }
+  unknown language {
+  }
+  string comments {
+  }
+  unknown numberFormat {
+  }
+  unknown negativeNumberFormat {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  unknown emailPreference {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.subsidiary representingSubsidiary {
+    isReference = true
+  }
+  netsuite.recordRef salesRep {
+  }
+  netsuite.recordRef territory {
+  }
+  string contribPct {
+  }
+  netsuite.partner partner {
+    isReference = true
+  }
+  netsuite.recordRef salesGroup {
+  }
+  string vatRegNumber {
+  }
+  string accountNumber {
+  }
+  boolean taxExempt {
+  }
+  netsuite.term terms {
+    isReference = true
+  }
+  number creditLimit {
+  }
+  unknown creditHoldOverride {
+  }
+  unknown monthlyClosing {
+  }
+  boolean overrideCurrencyFormat {
+  }
+  string displaySymbol {
+  }
+  unknown symbolPlacement {
+  }
+  number balance {
+  }
+  number overdueBalance {
+  }
+  number unbilledOrders {
+  }
+  number consolUnbilledOrders {
+  }
+  number consolOverdueBalance {
+  }
+  number consolDepositBalance {
+  }
+  number consolBalance {
+  }
+  number consolAging {
+  }
+  number consolAging1 {
+  }
+  number consolAging2 {
+  }
+  number consolAging3 {
+  }
+  number consolAging4 {
+  }
+  number consolDaysOverdue {
+  }
+  netsuite.priceLevel priceLevel {
+    isReference = true
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  netsuite.recordRef prefCCProcessor {
+  }
+  number depositBalance {
+  }
+  boolean shipComplete {
+  }
+  boolean taxable {
+  }
+  netsuite.recordRef taxItem {
+  }
+  string resaleNumber {
+  }
+  number aging {
+  }
+  number aging1 {
+  }
+  number aging2 {
+  }
+  number aging3 {
+  }
+  number aging4 {
+  }
+  string startDate {
+  }
+  unknown alcoholRecipientType {
+  }
+  string endDate {
+  }
+  number reminderDays {
+  }
+  netsuite.recordRef shippingItem {
+  }
+  string thirdPartyAcct {
+  }
+  string thirdPartyZipcode {
+  }
+  unknown thirdPartyCountry {
+  }
+  boolean giveAccess {
+  }
+  number estimatedBudget {
+  }
+  netsuite.recordRef accessRole {
+  }
+  boolean sendEmail {
+  }
+  netsuite.recordRef assignedWebSite {
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean requirePwdChange {
+  }
+  netsuite.campaignCategory campaignCategory {
+    isReference = true
+  }
+  netsuite.recordRef sourceWebSite {
+  }
+  netsuite.leadSource leadSource {
+    isReference = true
+  }
+  netsuite.recordRef receivablesAccount {
+  }
+  netsuite.account drAccount {
+    isReference = true
+  }
+  netsuite.account fxAccount {
+    isReference = true
+  }
+  number defaultOrderPriority {
+  }
+  string webLead {
+  }
+  string referrer {
+  }
+  string keywords {
+  }
+  string clickStream {
+  }
+  string lastPageVisited {
+  }
+  number visits {
+  }
+  string firstVisit {
+  }
+  string lastVisit {
+  }
+  boolean billPay {
+  }
+  number openingBalance {
+  }
+  string openingBalanceDate {
+  }
+  netsuite.account openingBalanceAccount {
+    isReference = true
+  }
+  unknown stage {
+  }
+  boolean emailTransactions {
+  }
+  boolean printTransactions {
+  }
+  boolean faxTransactions {
+  }
+  netsuite.recordRef defaultTaxReg {
+  }
+  boolean syncPartnerTeams {
+  }
+  boolean isBudgetApproved {
+  }
+  unknown globalSubscriptionStatus {
+  }
+  netsuite.recordRef salesReadiness {
+  }
+  netsuite.customerSalesTeamList salesTeamList {
+  }
+  netsuite.recordRef buyingReason {
+  }
+  netsuite.customerDownloadList downloadList {
+  }
+  netsuite.recordRef buyingTimeFrame {
+  }
+  netsuite.customerAddressbookList addressbookList {
+  }
+  netsuite.subscriptionsList subscriptionsList {
+  }
+  netsuite.contactAccessRolesList contactRolesList {
+  }
+  netsuite.customerCurrencyList currencyList {
+  }
+  netsuite.customerCreditCardsList creditCardsList {
+  }
+  netsuite.customerPartnersList partnersList {
+  }
+  netsuite.customerGroupPricingList groupPricingList {
+  }
+  netsuite.customerItemPricingList itemPricingList {
+  }
+  netsuite.customerTaxRegistrationList taxRegistrationList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  string custom_custentity_123 {
+    field_instance = netsuite.entitycustomfield.instance.custentity_123.scriptid
+  }
+  string custom_custentity_stamm2 {
+    field_instance = netsuite.entitycustomfield.instance.custentity_stamm2.scriptid
+  }
+  _alias = "Customer"
+}

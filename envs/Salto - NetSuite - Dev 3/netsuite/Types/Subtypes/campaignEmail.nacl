@@ -1,0 +1,29 @@
+type netsuite.campaignEmail {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.recordRef campaignGroup {
+  }
+  netsuite.recordRef template {
+  }
+  string description {
+  }
+  netsuite.recordRef subscription {
+  }
+  netsuite.recordRef channel {
+  }
+  number cost {
+  }
+  unknown status {
+  }
+  string dateScheduled {
+  }
+  netsuite.recordRef promoCode {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

@@ -1,0 +1,348 @@
+type netsuite.salesOrder {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.recordRef entity {
+  }
+  netsuite.job job {
+    isReference = true
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  netsuite.account drAccount {
+    isReference = true
+  }
+  netsuite.account fxAccount {
+    isReference = true
+  }
+  string tranDate {
+  }
+  string tranId {
+  }
+  netsuite.recordRef entityTaxRegNum {
+  }
+  string source {
+  }
+  netsuite.recordRef createdFrom {
+  }
+  unknown orderStatus {
+  }
+  string nextBill {
+  }
+  netsuite.opportunity opportunity {
+    isReference = true
+  }
+  netsuite.recordRef salesRep {
+  }
+  string contribPct {
+  }
+  netsuite.partner partner {
+    isReference = true
+  }
+  netsuite.recordRef salesGroup {
+  }
+  boolean syncSalesTeams {
+  }
+  netsuite.leadSource leadSource {
+    isReference = true
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  string otherRefNum {
+  }
+  string memo {
+  }
+  string salesEffectiveDate {
+  }
+  boolean excludeCommission {
+  }
+  number totalCostEstimate {
+  }
+  number estGrossProfit {
+  }
+  number estGrossProfitPercent {
+  }
+  number exchangeRate {
+  }
+  netsuite.recordRef promoCode {
+  }
+  string currencyName {
+  }
+  netsuite.discountItem discountItem {
+    isReference = true
+  }
+  string discountRate {
+  }
+  boolean isTaxable {
+  }
+  netsuite.recordRef taxItem {
+  }
+  number taxRate {
+  }
+  boolean toBePrinted {
+  }
+  boolean toBeEmailed {
+  }
+  string email {
+  }
+  boolean toBeFaxed {
+  }
+  string fax {
+  }
+  netsuite.recordRef messageSel {
+  }
+  string message {
+  }
+  netsuite.recordRef paymentOption {
+  }
+  string inputAuthCode {
+  }
+  string inputReferenceCode {
+  }
+  string checkNumber {
+  }
+  string paymentCardCsc {
+  }
+  netsuite.recordRef paymentProcessingProfile {
+  }
+  unknown handlingMode {
+  }
+  string outputAuthCode {
+  }
+  string outputReferenceCode {
+  }
+  unknown paymentOperation {
+  }
+  string dynamicDescriptor {
+  }
+  netsuite.address billingAddress {
+  }
+  netsuite.recordRef billAddressList {
+  }
+  netsuite.address shippingAddress {
+  }
+  boolean shipIsResidential {
+  }
+  netsuite.recordRef shipAddressList {
+  }
+  string fob {
+  }
+  string shipDate {
+  }
+  string actualShipDate {
+  }
+  netsuite.recordRef shipMethod {
+  }
+  number shippingCost {
+  }
+  number shippingTax1Rate {
+  }
+  boolean isMultiShipTo {
+  }
+  string shippingTax2Rate {
+  }
+  netsuite.recordRef shippingTaxCode {
+  }
+  netsuite.recordRef handlingTaxCode {
+  }
+  number handlingTax1Rate {
+  }
+  string handlingTax2Rate {
+  }
+  number handlingCost {
+  }
+  string trackingNumbers {
+  }
+  string linkedTrackingNumbers {
+  }
+  boolean shipComplete {
+  }
+  netsuite.paymentMethod paymentMethod {
+    isReference = true
+  }
+  string shopperIpAddress {
+  }
+  boolean saveOnAuthDecline {
+  }
+  boolean canHaveStackable {
+  }
+  netsuite.recordRef creditCard {
+  }
+  unknown revenueStatus {
+  }
+  number recognizedRevenue {
+  }
+  number deferredRevenue {
+  }
+  boolean revRecOnRevCommitment {
+  }
+  unknown revCommitStatus {
+  }
+  string ccNumber {
+  }
+  string ccExpireDate {
+  }
+  string ccName {
+  }
+  string ccStreet {
+  }
+  string ccZipCode {
+  }
+  string payPalStatus {
+  }
+  netsuite.recordRef creditCardProcessor {
+  }
+  string payPalTranId {
+  }
+  boolean ccApproved {
+  }
+  boolean getAuth {
+  }
+  string authCode {
+  }
+  unknown ccAvsStreetMatch {
+  }
+  unknown ccAvsZipMatch {
+  }
+  boolean isRecurringPayment {
+  }
+  unknown ccSecurityCodeMatch {
+  }
+  number altSalesTotal {
+  }
+  boolean ignoreAvs {
+  }
+  unknown paymentEventResult {
+  }
+  unknown paymentEventHoldReason {
+  }
+  unknown paymentEventType {
+  }
+  string paymentEventDate {
+  }
+  string paymentEventUpdatedBy {
+  }
+  number subTotal {
+  }
+  number discountTotal {
+  }
+  number taxTotal {
+  }
+  number altShippingCost {
+  }
+  number altHandlingCost {
+  }
+  number total {
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string revRecStartDate {
+  }
+  string revRecEndDate {
+  }
+  string paypalAuthId {
+  }
+  number balance {
+  }
+  boolean paypalProcess {
+  }
+  netsuite.recordRef billingSchedule {
+  }
+  string ccSecurityCode {
+  }
+  string threeDStatusCode {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.recordRef intercoTransaction {
+  }
+  unknown intercoStatus {
+  }
+  string debitCardIssueNo {
+  }
+  netsuite.nexus nexus {
+    isReference = true
+  }
+  netsuite.recordRef subsidiaryTaxRegNum {
+  }
+  boolean taxRegOverride {
+  }
+  string taxPointDate {
+  }
+  boolean taxDetailsOverride {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string pnRefNum {
+  }
+  string status {
+  }
+  number tax2Total {
+  }
+  netsuite.term terms {
+    isReference = true
+  }
+  string validFrom {
+  }
+  string vatRegNum {
+  }
+  number giftCertApplied {
+  }
+  number oneTime {
+  }
+  number recurWeekly {
+  }
+  number recurMonthly {
+  }
+  number recurQuarterly {
+  }
+  number recurAnnually {
+  }
+  boolean tranIsVsoeBundle {
+  }
+  boolean vsoeAutoCalc {
+  }
+  boolean syncPartnerTeams {
+  }
+  netsuite.salesOrderSalesTeamList salesTeamList {
+  }
+  netsuite.salesOrderPartnersList partnersList {
+  }
+  netsuite.giftCertRedemptionList giftCertRedemptionList {
+  }
+  netsuite.promotionsList promotionsList {
+  }
+  netsuite.salesOrderItemList itemList {
+  }
+  netsuite.salesOrderShipGroupList shipGroupList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.taxDetailsList taxDetailsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

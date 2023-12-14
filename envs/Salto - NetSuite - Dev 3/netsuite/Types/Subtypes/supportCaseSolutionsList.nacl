@@ -1,0 +1,11 @@
+type netsuite.supportCaseSolutionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.supportCaseSolutions>" solutions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

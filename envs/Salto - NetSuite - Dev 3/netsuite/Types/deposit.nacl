@@ -1,0 +1,58 @@
+type netsuite.deposit {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string currencyName {
+  }
+  string tranId {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  number total {
+  }
+  number exchangeRate {
+  }
+  string tranDate {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string memo {
+  }
+  boolean toBePrinted {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.depositPaymentList paymentList {
+  }
+  netsuite.depositOtherList otherList {
+  }
+  netsuite.depositCashBackList cashBackList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

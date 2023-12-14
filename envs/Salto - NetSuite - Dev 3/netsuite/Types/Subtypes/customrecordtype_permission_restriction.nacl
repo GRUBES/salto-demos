@@ -1,0 +1,9 @@
+type netsuite.customrecordtype_permission_restriction is string {
+  _restriction = {
+    values = [
+      "1",
+      "3",
+    ]
+    enforce_value = false
+  }
+}

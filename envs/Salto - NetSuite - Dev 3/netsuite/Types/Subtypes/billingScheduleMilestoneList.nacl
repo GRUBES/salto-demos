@@ -1,0 +1,11 @@
+type netsuite.billingScheduleMilestoneList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.billingScheduleMilestone>" billingScheduleMilestone {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

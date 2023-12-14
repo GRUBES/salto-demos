@@ -1,0 +1,12 @@
+type netsuite.workflow_keephistory is string {
+  _restriction = {
+    values = [
+      "ALWAYS",
+      "F",
+      "NEVER",
+      "ONLYWHENTESTING",
+      "T",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,9 @@
+type netsuite.feature_status is string {
+  _restriction = {
+    values = [
+      "DISABLED",
+      "ENABLED",
+    ]
+    enforce_value = false
+  }
+}

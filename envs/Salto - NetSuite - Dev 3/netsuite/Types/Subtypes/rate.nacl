@@ -1,0 +1,11 @@
+type netsuite.rate {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number value {
+  }
+  netsuite.priceLevel priceLevel {
+    isReference = true
+  }
+}

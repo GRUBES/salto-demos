@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_Screen_Shot_9_png@dssv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/Screen Shot 9.png"
+  content = file("netsuite/FileCabinet/SuiteScripts/Screen Shot 9.png")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "Screen Shot 9.png"
+}

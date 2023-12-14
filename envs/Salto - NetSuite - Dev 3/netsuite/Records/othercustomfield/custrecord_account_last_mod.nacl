@@ -1,0 +1,20 @@
+netsuite.othercustomfield custrecord_account_last_mod {
+  scriptid = "custrecord_account_last_mod"
+  accesslevel = "2"
+  applyformatting = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "TEXT"
+  isformula = false
+  ismandatory = false
+  label = "Account last modified"
+  rectype = "-112"
+  searchdefault = netsuite.savedsearch.instance.customsearch_slt_account_last_mod.scriptid
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = true
+  storevalue = true
+  _alias = "Account last modified"
+}

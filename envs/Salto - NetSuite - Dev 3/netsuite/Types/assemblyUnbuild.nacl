@@ -1,0 +1,63 @@
+type netsuite.assemblyUnbuild {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string tranDate {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string tranId {
+  }
+  netsuite.recordRef item {
+  }
+  number built {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  number total {
+  }
+  netsuite.recordRef billOfMaterials {
+  }
+  netsuite.recordRef billOfMaterialsRevision {
+  }
+  string serialNumbers {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string binNumbers {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string memo {
+  }
+  netsuite.assemblyComponentList componentList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

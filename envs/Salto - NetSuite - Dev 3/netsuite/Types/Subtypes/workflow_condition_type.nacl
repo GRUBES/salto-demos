@@ -1,0 +1,9 @@
+type netsuite.workflow_condition_type is string {
+  _restriction = {
+    values = [
+      "FORMULA",
+      "VISUAL_BUILDER",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,138 @@
+type netsuite.invoiceItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.job job {
+    isReference = true
+  }
+  netsuite.recordRef item {
+  }
+  number line {
+  }
+  string description {
+  }
+  number amount {
+  }
+  boolean isTaxable {
+  }
+  netsuite.customFieldList options {
+  }
+  netsuite.recordRef subscriptionLine {
+  }
+  boolean deferRevRec {
+  }
+  number quantity {
+  }
+  number currentPercent {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string serialNumbers {
+  }
+  string binNumbers {
+  }
+  netsuite.price price {
+    isReference = true
+  }
+  string rate {
+  }
+  number percentComplete {
+  }
+  number quantityOnHand {
+  }
+  number quantityAvailable {
+  }
+  number quantityOrdered {
+  }
+  number quantityRemaining {
+  }
+  number quantityFulfilled {
+  }
+  number amountOrdered {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  number orderLine {
+  }
+  string licenseCode {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string revRecStartDate {
+  }
+  string revRecEndDate {
+  }
+  number grossAmt {
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  string taxDetailsReference {
+  }
+  boolean excludeFromRateRequest {
+  }
+  netsuite.recordRef catchUpPeriod {
+  }
+  number tax1Amt {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  string giftCertFrom {
+  }
+  string giftCertRecipientName {
+  }
+  string giftCertRecipientEmail {
+  }
+  string giftCertMessage {
+  }
+  number taxAmount {
+  }
+  string giftCertNumber {
+  }
+  number shipGroup {
+  }
+  boolean itemIsFulfilled {
+  }
+  netsuite.recordRef shipAddress {
+  }
+  netsuite.recordRef shipMethod {
+  }
+  unknown vsoeSopGroup {
+  }
+  boolean vsoeIsEstimate {
+  }
+  number vsoePrice {
+  }
+  number vsoeAmount {
+  }
+  number vsoeAllocation {
+  }
+  unknown vsoeDeferral {
+  }
+  unknown vsoePermitDiscount {
+  }
+  boolean vsoeDelivered {
+  }
+  netsuite.recordRef chargeType {
+  }
+  "List<netsuite.charge>" chargesList {
+    isReference = true
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

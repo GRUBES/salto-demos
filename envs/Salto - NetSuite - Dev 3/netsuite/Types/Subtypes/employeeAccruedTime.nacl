@@ -1,0 +1,27 @@
+type netsuite.employeeAccruedTime {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.payrollItem payrollItem {
+    isReference = true
+  }
+  number accruedHours {
+  }
+  number accrualRate {
+  }
+  number monetaryRate {
+  }
+  boolean resetAccruedHoursAtYearEnd {
+  }
+  unknown accrualMethod {
+  }
+  number maximumAccruedHours {
+  }
+  boolean inactive {
+  }
+  string effectiveDate {
+  }
+  string expirationDate {
+  }
+}

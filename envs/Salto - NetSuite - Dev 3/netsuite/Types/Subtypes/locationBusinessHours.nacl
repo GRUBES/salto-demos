@@ -1,0 +1,26 @@
+type netsuite.locationBusinessHours {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string startTime {
+  }
+  string endTime {
+  }
+  boolean isSunday {
+  }
+  boolean isMonday {
+  }
+  boolean isTuesday {
+  }
+  boolean isWednesday {
+  }
+  boolean isThursday {
+  }
+  boolean isFriday {
+  }
+  boolean isSaturday {
+  }
+  string sameDayPickupCutOffTime {
+  }
+}

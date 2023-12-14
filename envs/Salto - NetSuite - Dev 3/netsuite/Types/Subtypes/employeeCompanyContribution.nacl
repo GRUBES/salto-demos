@@ -1,0 +1,19 @@
+type netsuite.employeeCompanyContribution {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.payrollItem payrollItem {
+    isReference = true
+  }
+  string rate {
+  }
+  number limit {
+  }
+  boolean inactive {
+  }
+  string effectiveDate {
+  }
+  string expirationDate {
+  }
+}

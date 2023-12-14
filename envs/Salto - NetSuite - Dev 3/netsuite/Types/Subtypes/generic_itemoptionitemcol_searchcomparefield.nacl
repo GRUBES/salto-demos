@@ -1,0 +1,22 @@
+type netsuite.generic_itemoptionitemcol_searchcomparefield is string {
+  _restriction = {
+    values = [
+      "STDCOLACCOUNT",
+      "STDCOLCALL",
+      "STDCOLCASE",
+      "STDCOLCHARGE",
+      "STDCOLCLASS",
+      "STDCOLCUSTOMER",
+      "STDCOLDEPARTMENT",
+      "STDCOLEMPLOYEE",
+      "STDCOLENTITY",
+      "STDCOLEVENT",
+      "STDCOLITEM",
+      "STDCOLJOB",
+      "STDCOLLOCATION",
+      "STDCOLSUBSIDIARY",
+      "STDCOLTASK",
+    ]
+    enforce_value = false
+  }
+}

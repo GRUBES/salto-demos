@@ -1,0 +1,11 @@
+type netsuite.siteCategoryList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.siteCategory>" siteCategory {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

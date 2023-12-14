@@ -1,0 +1,120 @@
+type netsuite.vendorBill {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.nexus nexus {
+    isReference = true
+  }
+  netsuite.recordRef subsidiaryTaxRegNum {
+  }
+  boolean taxRegOverride {
+  }
+  boolean taxDetailsOverride {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.recordRef billAddressList {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  netsuite.recordRef entity {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.recordRef approvalStatus {
+  }
+  netsuite.recordRef nextApprover {
+  }
+  string vatRegNum {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string tranDate {
+  }
+  string currencyName {
+  }
+  netsuite.address billingAddress {
+  }
+  number exchangeRate {
+  }
+  netsuite.recordRef entityTaxRegNum {
+  }
+  string taxPointDate {
+  }
+  netsuite.term terms {
+    isReference = true
+  }
+  string dueDate {
+  }
+  string discountDate {
+  }
+  string tranId {
+  }
+  number userTotal {
+  }
+  number discountAmount {
+  }
+  number taxTotal {
+  }
+  boolean paymentHold {
+  }
+  string memo {
+  }
+  number tax2Total {
+  }
+  number creditLimit {
+  }
+  number availableVendorCredit {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string status {
+  }
+  unknown landedCostMethod {
+  }
+  boolean landedCostPerLine {
+  }
+  string transactionNumber {
+  }
+  netsuite.vendorBillExpenseList expenseList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.vendorBillItemList itemList {
+  }
+  netsuite.installmentList installmentList {
+  }
+  netsuite.purchLandedCostList landedCostsList {
+  }
+  "List<netsuite.purchaseOrder>" purchaseOrderList {
+    isReference = true
+  }
+  netsuite.taxDetailsList taxDetailsList {
+  }
+  boolean overrideInstallments {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

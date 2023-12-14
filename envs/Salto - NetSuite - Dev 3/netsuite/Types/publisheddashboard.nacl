@@ -1,0 +1,621 @@
+type netsuite.publisheddashboard {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custpubdashboard[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  string center {
+    _required = true
+  }
+  boolean lockshortcuts {
+  }
+  boolean locknewbar {
+  }
+  string notes {
+  }
+  netsuite.publisheddashboard_dashboards dashboards {
+  }
+  netsuite.publisheddashboard_roles roles {
+  }
+  string application_id {
+  }
+  _alias = "Published Dashboard"
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_analytics {
+  netsuite.portlet_analytics_portlettype portlettype {
+    _required = true
+  }
+  string visualization {
+    _required = true
+  }
+  boolean isminimized {
+  }
+  string name {
+  }
+  netsuite.portlet_analytics_height height {
+  }
+  number visiblerows {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_calendar {
+  number numberofrecordsinagenda {
+    _required = true
+  }
+  boolean isminimized {
+  }
+  boolean showevents {
+  }
+  boolean showblockingtasks {
+  }
+  boolean shownonblockingtasks {
+  }
+  boolean showblockingcalls {
+  }
+  boolean shownonblockingcalls {
+  }
+  boolean showcanceledevents {
+  }
+  boolean showweekendsinmonthlyview {
+  }
+  netsuite.portlet_calendar_agenda recordstodisplayinagenda {
+  }
+  boolean showcampaignevents {
+  }
+  boolean showresourceallocations {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet_parameters_parameter {
+  string id {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet_parameters {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet_parameters_parameter>" parameter {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet {
+  string source {
+  }
+  boolean isminimized {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet_parameters parameters {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customsearch {
+  string savedsearch {
+  }
+  number resultssize {
+    _required = true
+  }
+  boolean isminimized {
+  }
+  netsuite.portlet_customsearch_drilldown drilldown {
+  }
+  netsuite.portlet_customsearch_charttheme charttheme {
+  }
+  netsuite.portlet_customsearch_backgroundtype backgroundtype {
+  }
+  boolean allowinlineediting {
+  }
+  string title {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_enhsnapshots {
+  boolean isminimized {
+  }
+  netsuite.portlet_reportsnapshot_snapshot snapshot {
+  }
+  netsuite.portlet_reportsnapshot_charttype charttype {
+  }
+  netsuite.portlet_reportsnapshot_backgroundtype backgroundtype {
+  }
+  string hierarchylevel {
+  }
+  netsuite.portlet_reportsnapshot_charttheme charttheme {
+  }
+  netsuite.portlet_reportsnapshot_reportperiodrange periodrange {
+  }
+  netsuite.portlet_reportsnapshot_daterange daterange {
+  }
+  netsuite.portlet_reportsnapshot_topx topx {
+  }
+  string isgraph {
+  }
+  netsuite.portlet_reportsnapshot_reportperiodrange compareperiodrange {
+  }
+  netsuite.portlet_reportsnapshot_daterange comparedaterange {
+  }
+  netsuite.portlet_reportsnapshot_daterange isnewdaterange {
+  }
+  string custom {
+  }
+  netsuite.portlet_reportsnapshot_topx listtopx {
+  }
+  netsuite.portlet_reportsnapshot_graphlayout graphlayout {
+  }
+  string orderby {
+  }
+  string orderdesc {
+  }
+  string color {
+  }
+  string customsnapshot {
+  }
+  string comparedranges {
+  }
+  netsuite.portlet_reportsnapshot_daterange comparedaterange2 {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators_kpis_kpi {
+  string kpi {
+    _required = true
+  }
+  netsuite.report_date_range daterange {
+    _required = true
+  }
+  netsuite.report_date_range comparedaterange {
+  }
+  netsuite.report_period_range compareperiodrange {
+  }
+  string savedsearch {
+  }
+  netsuite.report_period_range periodrange {
+  }
+  boolean compare {
+  }
+  netsuite.portlet_kpi_employees employees {
+  }
+  boolean headline {
+  }
+  netsuite.portlet_kpi_highlightif highlightif {
+  }
+  number threshold {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators_kpis {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators_kpis_kpi>" kpi {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators {
+  boolean isminimized {
+  }
+  boolean cacheddata {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators_kpis kpis {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpimeter {
+  string kpi {
+    _required = true
+  }
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpireport {
+  boolean isminimized {
+  }
+  netsuite.portlet_kpireport_reportid reportid {
+  }
+  netsuite.portlet_kpireport_restrict restrict {
+  }
+  netsuite.portlet_kpireport_orientation orientation {
+  }
+  boolean trend {
+  }
+  boolean showdates {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_lastlogin {
+  boolean isminimized {
+  }
+  boolean showlastlogin {
+  }
+  boolean showlastotherservicelogin {
+  }
+  boolean showlastuilogin {
+  }
+  boolean showlastloginip {
+  }
+  boolean showlastuiloginip {
+  }
+  boolean showcurrentuilogin {
+  }
+  boolean showcurrentuiloginip {
+  }
+  boolean showsuccesstoday {
+  }
+  boolean showsuccessthisweek {
+  }
+  boolean showsuccessthismonth {
+  }
+  boolean showlastfailuretime {
+  }
+  boolean showlastfailureip {
+  }
+  boolean showfailurestoday {
+  }
+  boolean showfailuresthisweek {
+  }
+  boolean showfailuresthismonth {
+  }
+  boolean showpasswordchanged {
+  }
+  boolean showpasswordexpiration {
+  }
+  boolean showlastmobilelogin {
+  }
+  boolean showlastmobileloginip {
+  }
+  boolean showmobiletoday {
+  }
+  boolean showmobilethisweek {
+  }
+  boolean showmobilethismonth {
+  }
+  boolean showlastwebservicelogin {
+  }
+  boolean showlastwebserviceloginip {
+  }
+  boolean showwebservicetoday {
+  }
+  boolean showwebservicethisweek {
+  }
+  boolean showwebservicethismonth {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_list {
+  netsuite.portlet_list_type type {
+  }
+  number size {
+    _required = true
+  }
+  boolean isminimized {
+  }
+  boolean allowinlineediting {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdganttchart {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdinfo {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdpl {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdquicklinks {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_quicksearch {
+  netsuite.portlet_quicksearch_type searchtype {
+    _required = true
+  }
+  boolean isminimized {
+  }
+  string defaultgeneraltype {
+  }
+  netsuite.portlet_quicksearch_transaction defaulttransactiontype {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentrecords {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentreports {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline_reminder_highlightingrules_rule {
+  number greaterthanorequalto {
+    _required = true
+  }
+  netsuite.reminders_highlighting_rules_colors color {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline_reminder_highlightingrules {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline_reminder_highlightingrules_rule>" rule {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline_reminder {
+  string id {
+    _required = true
+  }
+  number days {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline_reminder_highlightingrules highlightingrules {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline_reminder>" reminder {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other_reminder_highlightingrules_rule {
+  number greaterthanorequalto {
+    _required = true
+  }
+  netsuite.reminders_highlighting_rules_colors color {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other_reminder_highlightingrules {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other_reminder_highlightingrules_rule>" rule {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other_reminder {
+  string id {
+    _required = true
+  }
+  number days {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other_reminder_highlightingrules highlightingrules {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other_reminder>" reminder {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders {
+  boolean isminimized {
+  }
+  boolean showzeroresults {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_headline headline {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders_other other {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_scheduler {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_searchform {
+  string savedsearch {
+    _required = true
+  }
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_settings {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_shortcuts {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_tasklinks {
+  boolean isminimized {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_trendgraph {
+  string kpi {
+    _required = true
+  }
+  netsuite.portlet_trendgraph_trendtype trendtype {
+    _required = true
+  }
+  number movingaverageperiod {
+    _required = true
+  }
+  string savedsearch {
+  }
+  string savedsearch2 {
+  }
+  string savedsearch3 {
+  }
+  boolean isminimized {
+  }
+  string kpi2 {
+  }
+  string kpi3 {
+  }
+  netsuite.portlet_trendgraph_backgroundtype backgroundtype {
+  }
+  netsuite.portlet_trendgraph_charttheme charttheme {
+  }
+  string customseriescolor {
+  }
+  string customseriescolor2 {
+  }
+  string customseriescolor3 {
+  }
+  netsuite.portlet_trendgraph_charttype defaultcharttype {
+  }
+  boolean includezeroonyaxis {
+  }
+  boolean showmovingaverage {
+  }
+  boolean showlastdatapoint {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_centercolumn {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_analytics>" analytics {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_calendar>" calendar {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet>" customportlet {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customsearch>" customsearch {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_enhsnapshots>" enhsnapshots {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators>" keyperformanceindicators {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpimeter>" kpimeter {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpireport>" kpireport {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_lastlogin>" lastlogin {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_list>" list {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdganttchart>" pdganttchart {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdinfo>" pdinfo {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdpl>" pdpl {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdquicklinks>" pdquicklinks {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_quicksearch>" quicksearch {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentrecords>" recentrecords {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentreports>" recentreports {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders>" reminders {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_scheduler>" scheduler {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_searchform>" searchform {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_settings>" settings {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_shortcuts>" shortcuts {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_tasklinks>" tasklinks {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_trendgraph>" trendgraph {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_leftcolumn {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_analytics>" analytics {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_calendar>" calendar {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet>" customportlet {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customsearch>" customsearch {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_enhsnapshots>" enhsnapshots {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators>" keyperformanceindicators {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpimeter>" kpimeter {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpireport>" kpireport {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_lastlogin>" lastlogin {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_list>" list {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdganttchart>" pdganttchart {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdinfo>" pdinfo {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdpl>" pdpl {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdquicklinks>" pdquicklinks {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_quicksearch>" quicksearch {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentrecords>" recentrecords {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentreports>" recentreports {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders>" reminders {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_scheduler>" scheduler {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_searchform>" searchform {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_settings>" settings {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_shortcuts>" shortcuts {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_tasklinks>" tasklinks {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_trendgraph>" trendgraph {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard_rightcolumn {
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_analytics>" analytics {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_calendar>" calendar {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customportlet>" customportlet {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_customsearch>" customsearch {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_enhsnapshots>" enhsnapshots {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_keyperformanceindicators>" keyperformanceindicators {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpimeter>" kpimeter {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_kpireport>" kpireport {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_lastlogin>" lastlogin {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_list>" list {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdganttchart>" pdganttchart {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdinfo>" pdinfo {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdpl>" pdpl {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_pdquicklinks>" pdquicklinks {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_quicksearch>" quicksearch {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentrecords>" recentrecords {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_recentreports>" recentreports {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_reminders>" reminders {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_scheduler>" scheduler {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_searchform>" searchform {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_settings>" settings {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_shortcuts>" shortcuts {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_tasklinks>" tasklinks {
+  }
+  "List<netsuite.publisheddashboard_dashboards_dashboard_centercolumn_trendgraph>" trendgraph {
+  }
+}
+type netsuite.publisheddashboard_dashboards_dashboard {
+  string centertab {
+    _required = true
+  }
+  netsuite.dashboard_mode mode {
+    _required = true
+  }
+  netsuite.dashboard_layout layout {
+    _required = true
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_centercolumn centercolumn {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_leftcolumn leftcolumn {
+  }
+  netsuite.publisheddashboard_dashboards_dashboard_rightcolumn rightcolumn {
+  }
+}
+type netsuite.publisheddashboard_dashboards {
+  "List<netsuite.publisheddashboard_dashboards_dashboard>" dashboard {
+  }
+}
+type netsuite.publisheddashboard_roles_role {
+  string role {
+    _required = true
+  }
+}
+type netsuite.publisheddashboard_roles {
+  "List<netsuite.publisheddashboard_roles_role>" role {
+  }
+}

@@ -1,0 +1,29 @@
+type netsuite.depositOther {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef entity {
+  }
+  number amount {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  netsuite.paymentMethod paymentMethod {
+    isReference = true
+  }
+  string refNum {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string memo {
+  }
+}

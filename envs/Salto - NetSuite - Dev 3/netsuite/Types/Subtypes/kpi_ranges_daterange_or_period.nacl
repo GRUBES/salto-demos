@@ -1,0 +1,10 @@
+type netsuite.kpi_ranges_daterange_or_period is string {
+  _restriction = {
+    values = [
+      "FISCAL_YEAR_BEFORE_LAST",
+      "LAST_FISCAL_YEAR",
+      "THIS_FISCAL_YEAR",
+    ]
+    enforce_value = false
+  }
+}

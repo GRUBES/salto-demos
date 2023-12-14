@@ -1,0 +1,23 @@
+type netsuite.reminders_highlighting_rules_colors is string {
+  _restriction = {
+    values = [
+      "BLUE",
+      "BROWN",
+      "CYAN",
+      "DARKGREEN",
+      "DARKRED",
+      "GOLDENROD",
+      "GREEN",
+      "LIGHTBLUE",
+      "LIMEGREEN",
+      "MAROON",
+      "ORANGE",
+      "PASTELGREEN",
+      "PINK",
+      "PURPLE",
+      "RED",
+      "YELLOW",
+    ]
+    enforce_value = false
+  }
+}

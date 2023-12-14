@@ -1,0 +1,16 @@
+type netsuite.customListCustomValue {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string value {
+  }
+  string abbreviation {
+  }
+  boolean isInactive {
+  }
+  number valueId {
+  }
+  netsuite.languageValueList valueLanguageValueList {
+  }
+}

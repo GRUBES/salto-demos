@@ -1,0 +1,11 @@
+type netsuite.taxTypeNexusAccountsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.taxTypeNexusAccounts>" taxTypeNexusAccounts {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

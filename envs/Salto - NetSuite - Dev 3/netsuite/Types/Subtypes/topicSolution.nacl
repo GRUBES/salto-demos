@@ -1,0 +1,11 @@
+type netsuite.topicSolution {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.solution solution {
+    isReference = true
+  }
+  string message {
+  }
+}

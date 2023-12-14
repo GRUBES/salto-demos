@@ -1,0 +1,138 @@
+type netsuite.customerDeposit {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string status {
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  netsuite.salesOrder salesOrder {
+    isReference = true
+  }
+  netsuite.recordRef customForm {
+  }
+  number payment {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  string tranDate {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  netsuite.paymentMethod paymentMethod {
+    isReference = true
+  }
+  boolean ccIsPurchaseCardBin {
+  }
+  string memo {
+  }
+  boolean ccProcessAsPurchaseCard {
+  }
+  string currencyName {
+  }
+  number exchangeRate {
+  }
+  string checkNum {
+  }
+  netsuite.recordRef creditCardProcessor {
+  }
+  netsuite.recordRef creditCard {
+  }
+  string ccSecurityCode {
+  }
+  string ccNumber {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef paymentOption {
+  }
+  string inputAuthCode {
+  }
+  string inputReferenceCode {
+  }
+  string checkNumber {
+  }
+  string paymentCardCsc {
+  }
+  netsuite.recordRef paymentProcessingProfile {
+  }
+  unknown handlingMode {
+  }
+  string outputAuthCode {
+  }
+  string outputReferenceCode {
+  }
+  unknown paymentOperation {
+  }
+  string dynamicDescriptor {
+  }
+  string ccExpireDate {
+  }
+  string debitCardIssueNo {
+  }
+  string validFrom {
+  }
+  string ccName {
+  }
+  string ccStreet {
+  }
+  string ccZipCode {
+  }
+  boolean chargeIt {
+  }
+  boolean ccApproved {
+  }
+  string pnRefNum {
+  }
+  string authCode {
+  }
+  unknown ccAvsStreetMatch {
+  }
+  string softDescriptor {
+  }
+  unknown ccAvsZipMatch {
+  }
+  boolean isRecurringPayment {
+  }
+  unknown ccSecurityCodeMatch {
+  }
+  string threeDStatusCode {
+  }
+  boolean ignoreAvs {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  boolean undepFunds {
+  }
+  string tranId {
+  }
+  netsuite.customerDepositApplyList applyList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

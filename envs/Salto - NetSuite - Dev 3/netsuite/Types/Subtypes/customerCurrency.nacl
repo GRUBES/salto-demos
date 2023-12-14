@@ -1,0 +1,31 @@
+type netsuite.customerCurrency {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number balance {
+  }
+  number consolBalance {
+  }
+  number depositBalance {
+  }
+  number consolDepositBalance {
+  }
+  number overdueBalance {
+  }
+  number consolOverdueBalance {
+  }
+  number unbilledOrders {
+  }
+  number consolUnbilledOrders {
+  }
+  boolean overrideCurrencyFormat {
+  }
+  string displaySymbol {
+  }
+  unknown symbolPlacement {
+  }
+}

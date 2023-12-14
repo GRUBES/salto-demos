@@ -1,0 +1,32 @@
+netsuite.subsidiary Parent_Company@s {
+  name = "Parent Company"
+  isInactive = false
+  showSubsidiaryName = false
+  state = "CA"
+  country = "_unitedStates"
+  mainAddress = {
+    country = "_unitedStates"
+    state = "CA"
+    override = false
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  legalName = "Demo: Blank US OneWorld Account"
+  isElimination = false
+  email = "services@salto.io"
+  currency = netsuite.currency.instance.USA
+  edition = "US"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.nexus.instance._unitedStates_California
+        country = "US"
+      },
+    ]
+  }
+  checkLayout = {
+    name = "Standard Check Layout"
+    id = "[ACCOUNT_SPECIFIC_VALUE]"
+  }
+  identifier = "Parent Company"
+  _alias = "Parent Company"
+}

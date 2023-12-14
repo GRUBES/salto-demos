@@ -1,0 +1,39 @@
+type netsuite.entryform_subtabid is string {
+  _restriction = {
+    values = [
+      "CRMCONTACTS",
+      "ENTITYCURJURISDICTIONS",
+      "ENTITYEDUCATION",
+      "ENTITYEXPREPTCURRENCIES",
+      "ENTITYHRPERSONAL",
+      "ENTITYHRWORKSTATUS",
+      "ENTITYJURISDICTIONS",
+      "ENTITYPAYFED",
+      "ENTITYPROMOCODES",
+      "ENTITYQUALIFICATION",
+      "ENTITYSUBSCRIPTIONS",
+      "ENTITYSUBTAB_BBUDGET",
+      "ENTITYSUBTAB_CBUDGET",
+      "ENTITYWORKFLOW",
+      "EVENTFILE",
+      "EVENTMEDIA",
+      "EVENTSUBTAB_BBUDGET",
+      "EVENTSUBTAB_CBUDGET",
+      "EVENTSUPPORT",
+      "EVENTWORKFLOW",
+      "ITEMINVENTORYNUMBERS",
+      "ITEMLOCATIONS",
+      "ITEMMATRIX",
+      "ITEMMEMBERS",
+      "ITEMPROJECTS",
+      "ITEMPROJECTS",
+      "ITEMRELITEMS",
+      "ITEMTRANSLATION",
+      "ITEMVENDORS",
+      "ITEMWORKFLOW",
+      "ITEMWORKFLOW",
+      "OTHERWORKFLOW",
+    ]
+    enforce_value = false
+  }
+}

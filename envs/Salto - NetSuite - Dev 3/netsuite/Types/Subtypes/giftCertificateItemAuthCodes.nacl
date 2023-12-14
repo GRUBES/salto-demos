@@ -1,0 +1,10 @@
+type netsuite.giftCertificateItemAuthCodes {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string authCode {
+  }
+  boolean used {
+  }
+}

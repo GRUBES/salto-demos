@@ -1,0 +1,11 @@
+type netsuite.status {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.statusDetail>" statusDetail {
+  }
+  boolean isSuccess {
+    isAttribute = true
+  }
+}

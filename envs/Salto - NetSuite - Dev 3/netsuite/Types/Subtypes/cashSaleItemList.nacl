@@ -1,0 +1,11 @@
+type netsuite.cashSaleItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.cashSaleItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

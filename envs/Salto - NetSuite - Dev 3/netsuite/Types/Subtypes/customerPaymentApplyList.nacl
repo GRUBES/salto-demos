@@ -1,0 +1,11 @@
+type netsuite.customerPaymentApplyList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customerPaymentApply>" apply {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

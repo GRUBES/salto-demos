@@ -1,0 +1,12 @@
+type netsuite.inventoryDetail {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.inventoryAssignmentList inventoryAssignmentList {
+  }
+  netsuite.recordRef customForm {
+  }
+}

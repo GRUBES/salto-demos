@@ -1,0 +1,9 @@
+type netsuite.customtransactiontype_subliststyle_salesandpurchase is string {
+  _restriction = {
+    values = [
+      "PURCHASE",
+      "SALES",
+    ]
+    enforce_value = false
+  }
+}

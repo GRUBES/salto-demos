@@ -1,0 +1,17 @@
+type netsuite.addressform_fieldid is string {
+  _restriction = {
+    values = [
+      "ADDR1",
+      "ADDR2",
+      "ADDR3",
+      "ADDRESSEE",
+      "ADDRPHONE",
+      "ATTENTION",
+      "CITY",
+      "COUNTRY",
+      "STATE",
+      "ZIP",
+    ]
+    enforce_value = false
+  }
+}

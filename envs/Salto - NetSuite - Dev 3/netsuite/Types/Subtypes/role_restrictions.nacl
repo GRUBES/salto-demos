@@ -1,0 +1,10 @@
+type netsuite.role_restrictions is string {
+  _restriction = {
+    values = [
+      "DEFAULTTOOWN",
+      "OWNONLY",
+      "UNASSIGNED",
+    ]
+    enforce_value = false
+  }
+}

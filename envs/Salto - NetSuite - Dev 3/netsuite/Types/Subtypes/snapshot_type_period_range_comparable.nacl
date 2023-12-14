@@ -1,0 +1,35 @@
+type netsuite.snapshot_type_period_range_comparable is string {
+  _restriction = {
+    values = [
+      "BANKBAL",
+      "COGS",
+      "CREDITCARDBAL",
+      "DEFERREDREVENUE",
+      "EQUITY",
+      "EXPENSES",
+      "FIXEDASSET",
+      "INCOME",
+      "INTTURNOVRPERPERIOD",
+      "INVENTORY",
+      "LONGTERMLIAB",
+      "NETCASHFLOW",
+      "NEWBUSINESS",
+      "NEWCUSTOMERS",
+      "ONTIMERECEIPTS",
+      "ONTIMESHIPMENTS",
+      "OPERATINGEXPENSES",
+      "OPERCASHFLOW",
+      "OTHERASSET",
+      "OTHERCURRENTASSET",
+      "OTHERCURRENTLIAB",
+      "PAYABLES",
+      "PAYROLL",
+      "PROFIT",
+      "RECEIVABLES",
+      "REVENUE",
+      "SALES",
+      "SALESCASHBASIS",
+    ]
+    enforce_value = false
+  }
+}

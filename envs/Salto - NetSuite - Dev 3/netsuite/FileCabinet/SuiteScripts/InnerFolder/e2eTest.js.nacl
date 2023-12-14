@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_InnerFolder_e2eTest_js@ddv {
+  description = "created by oss e2e - 5705596"
+  bundleable = true
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/InnerFolder/e2eTest.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/InnerFolder/e2eTest.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_InnerFolder@d,
+  ]
+  _alias = "e2eTest.js"
+}

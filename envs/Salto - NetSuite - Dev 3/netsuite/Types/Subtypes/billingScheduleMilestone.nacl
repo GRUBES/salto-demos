@@ -1,0 +1,24 @@
+type netsuite.billingScheduleMilestone {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number milestoneId {
+  }
+  number milestoneAmount {
+  }
+  netsuite.term milestoneTerms {
+    isReference = true
+  }
+  netsuite.projectTask projectTask {
+    isReference = true
+  }
+  string milestoneDate {
+  }
+  boolean milestoneCompleted {
+  }
+  string milestoneActualCompletionDate {
+  }
+  string comments {
+  }
+}

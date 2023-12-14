@@ -1,0 +1,12 @@
+type netsuite.customRecordTypeLinks {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef linkCenter {
+  }
+  netsuite.recordRef linkSection {
+  }
+  string linkLabel {
+  }
+}

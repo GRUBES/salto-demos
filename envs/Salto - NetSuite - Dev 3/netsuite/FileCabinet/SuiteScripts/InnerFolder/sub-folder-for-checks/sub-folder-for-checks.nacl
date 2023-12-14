@@ -1,0 +1,10 @@
+netsuite.folder SuiteScripts_InnerFolder_sub_folder_for_checks@ddbbb {
+  bundleable = false
+  isinactive = false
+  isprivate = false
+  path = "/SuiteScripts/InnerFolder/sub-folder-for-checks"
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_InnerFolder@d,
+  ]
+  _alias = "sub-folder-for-checks"
+}

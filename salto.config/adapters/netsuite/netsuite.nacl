@@ -1,0 +1,78 @@
+netsuite {
+  fetch = {
+    include = {
+      types = [
+        {
+          name = ".*"
+        },
+      ]
+      fileCabinet = [
+        "^/SuiteScripts.*",
+        "^/Templates.*",
+      ]
+    }
+    fieldsToOmit = [
+      {
+        type = "currency"
+        fields = [
+          "exchangeRate",
+        ]
+      },
+      {
+        type = "customrecordtype"
+        fields = [
+          "permissions",
+        ]
+      },
+    ]
+    exclude = {
+      fileCabinet = [
+        "^/Templates/Letter Templates/Mail Merge Folder.*",
+      ]
+      types = [
+        {
+          name = "workbook"
+        },
+        {
+          name = "dataset"
+        },
+        {
+          name = "customer"
+        },
+        {
+          name = "accountingPeriod"
+        },
+        {
+          name = "employee"
+        },
+        {
+          name = "job"
+        },
+        {
+          name = "manufacturingCostTemplate"
+        },
+        {
+          name = "partner"
+        },
+        {
+          name = "solution"
+        },
+        {
+          name = "giftCertificateItem"
+        },
+        {
+          name = "downloadItem"
+        },
+        {
+          name = "account"
+        },
+        {
+          name = "bin"
+        },
+        {
+          name = "assemblyItem|lotNumberedAssemblyItem|serializedAssemblyItem|descriptionItem|discountItem|kitItem|markupItem|nonInventoryPurchaseItem|nonInventorySaleItem|nonInventoryResaleItem|otherChargeSaleItem|otherChargeResaleItem|otherChargePurchaseItem|paymentItem|serviceResaleItem|servicePurchaseItem|serviceSaleItem|subtotalItem|inventoryItem|lotNumberedInventoryItem|serializedInventoryItem|itemGroup"
+        },
+      ]
+    }
+  }
+}

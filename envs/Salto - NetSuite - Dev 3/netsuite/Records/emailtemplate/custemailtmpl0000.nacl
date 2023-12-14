@@ -1,0 +1,19 @@
+netsuite.emailtemplate custemailtmpl0000 {
+  scriptid = "custemailtmpl0000"
+  addcompanyaddress = false
+  addunsubscribelink = false
+  description = "AR_CLERK|ACCOUNTANT|[scriptid=standardpaymentlinktransactionemailtemplate]"
+  isinactive = false
+  isprivate = false
+  name = "Test Email Templatee"
+  recordtype = "TRANSACTION"
+  subject = "<#if transaction.subsidiary??>\${transaction.subsidiary.legalname}<#else>\${companyinformation.legalname}</#if> \${transaction@title} #\${transaction.tranid}"
+  usesmedia = false
+  content = file("netsuite/emailtemplate/custemailtmpl0000.html")
+  _generated_dependencies = [
+    {
+      reference = netsuite.emailtemplate.instance.standardpaymentlinktransactionemailtemplate.scriptid
+    },
+  ]
+  _alias = "Test Email Templatee"
+}

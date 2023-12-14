@@ -1,0 +1,39 @@
+type netsuite.consolidatedExchangeRate {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string postingPeriod {
+  }
+  string fromSubsidiary {
+  }
+  string fromCurrency {
+  }
+  string toSubsidiary {
+  }
+  string toCurrency {
+  }
+  number averageRate {
+  }
+  number currentRate {
+  }
+  number historicalRate {
+  }
+  string accountingBook {
+  }
+  boolean isPeriodClosed {
+  }
+  boolean isDerived {
+  }
+  boolean isEliminationSubsidiary {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

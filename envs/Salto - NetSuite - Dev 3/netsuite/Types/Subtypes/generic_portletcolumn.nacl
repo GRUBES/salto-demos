@@ -1,0 +1,10 @@
+type netsuite.generic_portletcolumn is string {
+  _restriction = {
+    values = [
+      "1",
+      "2",
+      "3",
+    ]
+    enforce_value = false
+  }
+}

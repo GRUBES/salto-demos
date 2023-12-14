@@ -1,0 +1,34 @@
+type netsuite.portlet_quicksearch_generic is string {
+  _restriction = {
+    values = [
+      "ACTIVITY",
+      "CAMPAIGN",
+      "CASE_NUMBER",
+      "CONTACT",
+      "CUSTOMER",
+      "DOCUMENT",
+      "DOCUMENT_NUMBER",
+      "EMAIL",
+      "EMPLOYEE",
+      "EVENT",
+      "ISSUE_NUMBER",
+      "ITEM",
+      "JOB",
+      "NAME",
+      "NAME_ID",
+      "PARTNER",
+      "PHONE",
+      "PHONE_CALL",
+      "PO_CHECK_NUMBER",
+      "PRODUCT_PAGE",
+      "PROJECT_TASK",
+      "SOLUTION",
+      "TASK",
+      "TRACKING_NUMBER",
+      "TRANSACTION_NUMBER",
+      "VENDOR",
+      "ZIP_POSTAL_CODE",
+    ]
+    enforce_value = false
+  }
+}

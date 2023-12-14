@@ -1,0 +1,11 @@
+type netsuite.servicePurchaseItemHierarchyVersionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.servicePurchaseItemHierarchyVersions>" servicePurchaseItemHierarchyVersions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

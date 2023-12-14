@@ -1,0 +1,32 @@
+type netsuite.customRecordTypePermissions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef permittedRole {
+  }
+  unknown permittedLevel {
+  }
+  unknown restriction {
+  }
+  netsuite.recordRef defaultForm {
+  }
+  boolean restrictForm {
+  }
+  netsuite.recordRef searchForm {
+  }
+  netsuite.recordRef searchResults {
+  }
+  netsuite.recordRef listView {
+  }
+  boolean listViewRestricted {
+  }
+  netsuite.recordRef dashboardView {
+  }
+  boolean restrictDashboardView {
+  }
+  netsuite.recordRef sublistView {
+  }
+  boolean restrictSublistView {
+  }
+}

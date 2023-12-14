@@ -1,0 +1,95 @@
+type netsuite.role {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^customrole[0-9a-z_]+"
+    }
+  }
+  string centertype {
+    _required = true
+  }
+  string name {
+    _required = true
+  }
+  netsuite.tfaduration tfaduration {
+  }
+  boolean coreadminpermission {
+  }
+  netsuite.role_fullrestrictions employeerestriction {
+  }
+  boolean employeeviewingallowed {
+  }
+  boolean ispartnerrole {
+  }
+  boolean issalesrole {
+  }
+  boolean issupportrole {
+  }
+  string issuerole {
+  }
+  boolean restricttimeandexpenses {
+  }
+  boolean employeeselectionunrestricted {
+  }
+  boolean isinactive {
+  }
+  boolean subsidiaryviewingallowed {
+  }
+  netsuite.rolesubsidiaryoption subsidiaryoption {
+  }
+  netsuite.roleaccountingbooksoption accountingbooksoption {
+  }
+  boolean issinglesignononly {
+  }
+  boolean iswebserviceonlyrole {
+  }
+  boolean restrictbydevice {
+  }
+  boolean restrictip {
+  }
+  netsuite.tfarequired tfarequired {
+  }
+  netsuite.role_permissions permissions {
+  }
+  netsuite.role_recordrestrictions recordrestrictions {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "Role"
+}
+type netsuite.role_permissions_permission {
+  string permkey {
+    _required = true
+  }
+  netsuite.generic_permission_level permlevel {
+    _required = true
+  }
+  netsuite.role_restrict restriction {
+  }
+}
+type netsuite.role_permissions {
+  "Map<netsuite.role_permissions_permission>" permission {
+    map_key_field = "permkey"
+  }
+}
+type netsuite.role_recordrestrictions_recordrestriction {
+  netsuite.role_restrictionsegment segment {
+    _required = true
+  }
+  netsuite.role_restrictions restriction {
+    _required = true
+  }
+  boolean viewingallowed {
+  }
+  boolean itemsrestricted {
+  }
+}
+type netsuite.role_recordrestrictions {
+  "Map<netsuite.role_recordrestrictions_recordrestriction>" recordrestriction {
+    map_key_field = "segment"
+  }
+}

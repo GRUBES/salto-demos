@@ -1,0 +1,10 @@
+type netsuite.subscriptions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean subscribed {
+  }
+  netsuite.recordRef subscription {
+  }
+}

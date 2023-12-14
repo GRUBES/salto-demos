@@ -1,0 +1,17 @@
+netsuite.translationcollection custcollectiontranslations_workbook_1_d3f45dc6f02f40c69da98 {
+  scriptid = "custcollectiontranslations_workbook_1_d3f45dc6f02f40c69da98"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_workbook_1_d3f45dc6f02f40c69da98.strings.string.workbook_name_1_1.scriptid
+  strings = {
+    string = {
+      workbook_name_1_1 = {
+        scriptid = "workbook_name_1_1"
+        defaulttranslation = "smn test"
+        description = "Name in workbook"
+        index = 0
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "smn test"
+}

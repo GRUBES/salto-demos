@@ -1,0 +1,20 @@
+type netsuite.recordRef {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string name {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  unknown type {
+    isAttribute = true
+  }
+  string id {
+  }
+}

@@ -1,0 +1,10 @@
+type netsuite.languageValue {
+  annotations {
+    hidden_string source {
+    }
+  }
+  unknown locale {
+  }
+  string value {
+  }
+}

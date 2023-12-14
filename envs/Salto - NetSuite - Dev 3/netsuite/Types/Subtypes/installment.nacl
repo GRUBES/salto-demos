@@ -1,0 +1,16 @@
+type netsuite.installment {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number amount {
+  }
+  string dueDate {
+  }
+  number amountDue {
+  }
+  number seqNum {
+  }
+  string status {
+  }
+}

@@ -1,0 +1,81 @@
+type netsuite.location {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  netsuite.location parent {
+    isReference = true
+  }
+  boolean includeChildren {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  string tranPrefix {
+  }
+  netsuite.address mainAddress {
+  }
+  netsuite.address returnAddress {
+  }
+  unknown locationType {
+  }
+  unknown timeZone {
+  }
+  number latitude {
+  }
+  number longitude {
+  }
+  netsuite.file logo {
+    isReference = true
+  }
+  boolean useBins {
+  }
+  boolean makeInventoryAvailable {
+  }
+  boolean makeInventoryAvailableStore {
+  }
+  unknown geolocationMethod {
+  }
+  unknown autoAssignmentRegionSetting {
+  }
+  string nextPickupCutOffTime {
+  }
+  number bufferStock {
+  }
+  boolean allowStorePickup {
+  }
+  number storePickupBufferStock {
+  }
+  number dailyShippingCapacity {
+  }
+  number totalShippingCapacity {
+  }
+  netsuite.locationRegionsList includeLocationRegionsList {
+  }
+  netsuite.locationRegionsList excludeLocationRegionsList {
+  }
+  netsuite.locationBusinessHoursList businessHoursList {
+  }
+  netsuite.classTranslationList classTranslationList {
+  }
+  boolean includeInControlTower {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Location"
+}

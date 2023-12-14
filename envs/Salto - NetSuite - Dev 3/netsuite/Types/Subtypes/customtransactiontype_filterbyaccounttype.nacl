@@ -1,0 +1,25 @@
+type netsuite.customtransactiontype_filterbyaccounttype is string {
+  _restriction = {
+    values = [
+      "ACCTPAY",
+      "ACCTREC",
+      "BANK",
+      "COGS",
+      "CREDCARD",
+      "DEFEREXPENSE",
+      "DEFERREVENUE",
+      "EQUITY",
+      "EXPENSE",
+      "FIXEDASSET",
+      "INCOME",
+      "LONGTERMLIAB",
+      "OTHASSET",
+      "OTHCURRASSET",
+      "OTHCURRLIAB",
+      "OTHEXPENSE",
+      "OTHINCOME",
+      "UNBILLEDREC",
+    ]
+    enforce_value = false
+  }
+}

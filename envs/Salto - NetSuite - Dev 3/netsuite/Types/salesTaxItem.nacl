@@ -1,0 +1,83 @@
+type netsuite.salesTaxItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string itemId {
+  }
+  string displayName {
+  }
+  string description {
+  }
+  string rate {
+  }
+  netsuite.taxType taxType {
+    isReference = true
+  }
+  netsuite.recordRef taxAgency {
+  }
+  netsuite.account purchaseAccount {
+    isReference = true
+  }
+  netsuite.account saleAccount {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  string effectiveFrom {
+  }
+  string validUntil {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  boolean includeChildren {
+  }
+  boolean eccode {
+  }
+  boolean reverseCharge {
+  }
+  netsuite.salesTaxItem parent {
+    isReference = true
+  }
+  boolean service {
+  }
+  boolean exempt {
+  }
+  boolean isDefault {
+  }
+  boolean excludeFromTaxReports {
+  }
+  unknown available {
+  }
+  boolean export {
+  }
+  netsuite.account taxAccount {
+    isReference = true
+  }
+  string county {
+  }
+  string city {
+  }
+  string state {
+  }
+  string zip {
+  }
+  netsuite.recordRef nexusCountry {
+  }
+  string name {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

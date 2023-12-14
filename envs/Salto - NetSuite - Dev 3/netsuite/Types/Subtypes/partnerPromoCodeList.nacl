@@ -1,0 +1,11 @@
+type netsuite.partnerPromoCodeList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.partnerPromoCode>" promoCode {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

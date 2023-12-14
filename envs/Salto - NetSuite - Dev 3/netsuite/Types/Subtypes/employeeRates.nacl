@@ -1,0 +1,11 @@
+type netsuite.employeeRates {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.currency entityCurrency {
+    isReference = true
+  }
+  number rate {
+  }
+}

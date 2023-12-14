@@ -1,0 +1,187 @@
+type netsuite.vendor {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string entityId {
+  }
+  string altName {
+  }
+  boolean isPerson {
+  }
+  string phoneticName {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string companyName {
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string url {
+  }
+  string defaultAddress {
+  }
+  boolean isInactive {
+  }
+  netsuite.recordRef category {
+  }
+  string title {
+  }
+  string printOnCheckAs {
+  }
+  string altPhone {
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  string altEmail {
+  }
+  string comments {
+  }
+  unknown globalSubscriptionStatus {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  unknown emailPreference {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.subsidiary representingSubsidiary {
+    isReference = true
+  }
+  string accountNumber {
+  }
+  string legalName {
+  }
+  string vatRegNumber {
+  }
+  netsuite.account expenseAccount {
+    isReference = true
+  }
+  netsuite.account payablesAccount {
+    isReference = true
+  }
+  netsuite.term terms {
+    isReference = true
+  }
+  netsuite.recordRef incoterm {
+  }
+  number creditLimit {
+  }
+  number balancePrimary {
+  }
+  number openingBalance {
+  }
+  string openingBalanceDate {
+  }
+  netsuite.account openingBalanceAccount {
+    isReference = true
+  }
+  number balance {
+  }
+  number unbilledOrdersPrimary {
+  }
+  string bcn {
+  }
+  number unbilledOrders {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  boolean is1099Eligible {
+  }
+  boolean isJobResourceVend {
+  }
+  number laborCost {
+  }
+  number purchaseOrderQuantity {
+  }
+  number purchaseOrderAmount {
+  }
+  number purchaseOrderQuantityDiff {
+  }
+  number receiptQuantity {
+  }
+  number receiptAmount {
+  }
+  number receiptQuantityDiff {
+  }
+  netsuite.recordRef workCalendar {
+  }
+  string taxIdNum {
+  }
+  netsuite.recordRef taxItem {
+  }
+  boolean giveAccess {
+  }
+  boolean sendEmail {
+  }
+  boolean billPay {
+  }
+  boolean isAccountant {
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean requirePwdChange {
+  }
+  boolean eligibleForCommission {
+  }
+  boolean emailTransactions {
+  }
+  boolean printTransactions {
+  }
+  boolean faxTransactions {
+  }
+  netsuite.recordRef defaultTaxReg {
+  }
+  netsuite.vendorPricingScheduleList pricingScheduleList {
+  }
+  netsuite.subscriptionsList subscriptionsList {
+  }
+  netsuite.vendorAddressbookList addressbookList {
+  }
+  netsuite.vendorCurrencyList currencyList {
+  }
+  netsuite.vendorRolesList rolesList {
+  }
+  netsuite.vendorTaxRegistrationList taxRegistrationList {
+  }
+  number predictedDays {
+  }
+  number predConfidence {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  boolean custom_custentity_15 {
+    field_instance = netsuite.entitycustomfield.instance.custentity_15.scriptid
+  }
+  string custom_custentity_payoneer_username {
+    field_instance = netsuite.entitycustomfield.instance.custentity_payoneer_username.scriptid
+  }
+}

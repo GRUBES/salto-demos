@@ -1,0 +1,13 @@
+type netsuite.vendorCurrency {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number balance {
+  }
+  number unbilledOrders {
+  }
+}

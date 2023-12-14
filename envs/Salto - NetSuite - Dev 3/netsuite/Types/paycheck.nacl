@@ -1,0 +1,71 @@
+type netsuite.paycheck {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string batchNumber {
+  }
+  string status {
+  }
+  netsuite.recordRef entity {
+  }
+  string address {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.recordRef workplace {
+  }
+  string tranId {
+  }
+  number userAmount {
+  }
+  string memo {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  string payFrequency {
+  }
+  number balance {
+  }
+  string tranDate {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string periodEnding {
+  }
+  netsuite.paycheckPayEarnList payEarnList {
+  }
+  netsuite.paycheckPayTimeList payTimeList {
+  }
+  netsuite.paycheckPayExpList payExpList {
+  }
+  netsuite.paycheckPayPtoList payPtoList {
+  }
+  netsuite.paycheckPayDeductList payDeductList {
+  }
+  netsuite.paycheckPayContribList payContribList {
+  }
+  netsuite.paycheckPayTaxList payTaxList {
+  }
+  netsuite.paycheckPaySummaryList paySummaryList {
+  }
+  netsuite.paycheckPayDisburseList payDisburseList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

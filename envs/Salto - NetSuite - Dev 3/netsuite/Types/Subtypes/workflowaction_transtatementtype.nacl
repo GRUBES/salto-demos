@@ -1,0 +1,12 @@
+type netsuite.workflowaction_transtatementtype is string {
+  _restriction = {
+    values = [
+      "DEFAULT",
+      "HTML",
+      "INLINEABOVE",
+      "INLINEBELOW",
+      "PDF",
+    ]
+    enforce_value = false
+  }
+}

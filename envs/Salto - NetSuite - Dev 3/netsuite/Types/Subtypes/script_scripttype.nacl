@@ -1,0 +1,29 @@
+type netsuite.script_scripttype is string {
+  _restriction = {
+    values = [
+      "ACTION",
+      "APPPKGINSTALL",
+      "BUNDLEINSTALLATION",
+      "CLIENT",
+      "CONSOLRATEADJUSTOR",
+      "CUSTOMGLLINES",
+      "EMAILCAPTURE",
+      "MASSUPDATE",
+      "PAYMENTGATEWAY",
+      "PLUGINTYPE",
+      "PLUGINTYPEIMPL",
+      "PORTLET",
+      "PROMOTIONS",
+      "RESTLET",
+      "SCHEDULED",
+      "SCRIPTLET",
+      "SHIPPINGPARTNERS",
+      "SPASERVERSCRIPT",
+      "TAXCALCULATION",
+      "TESTPLUGIN",
+      "USEREVENT",
+      "WEBAPP",
+    ]
+    enforce_value = false
+  }
+}

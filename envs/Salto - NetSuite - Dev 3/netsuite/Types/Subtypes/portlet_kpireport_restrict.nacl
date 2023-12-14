@@ -1,0 +1,10 @@
+type netsuite.portlet_kpireport_restrict is string {
+  _restriction = {
+    values = [
+      "All",
+      "My",
+      "Only",
+    ]
+    enforce_value = false
+  }
+}

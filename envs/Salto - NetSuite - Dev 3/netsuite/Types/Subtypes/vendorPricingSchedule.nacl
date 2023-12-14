@@ -1,0 +1,10 @@
+type netsuite.vendorPricingSchedule {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string scheduleName {
+  }
+  number scheduleDiscount {
+  }
+}

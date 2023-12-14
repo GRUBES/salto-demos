@@ -1,0 +1,18 @@
+type netsuite.customsegment_entities_application_id is string {
+  _restriction = {
+    values = [
+      "CONTACT",
+      "CUSTOMER",
+      "EMPLOYEE",
+      "ENTITYGROUP",
+      "GENERICRESOURCE",
+      "JOB",
+      "OTHERNAME",
+      "PARTNER",
+      "PROJECTTEMPLATE",
+      "VENDOR",
+      "WEBSITE",
+    ]
+    enforce_value = false
+  }
+}

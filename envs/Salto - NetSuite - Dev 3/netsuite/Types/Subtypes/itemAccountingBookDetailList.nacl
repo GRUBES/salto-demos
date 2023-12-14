@@ -1,0 +1,11 @@
+type netsuite.itemAccountingBookDetailList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.itemAccountingBookDetail>" itemAccountingBookDetail {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

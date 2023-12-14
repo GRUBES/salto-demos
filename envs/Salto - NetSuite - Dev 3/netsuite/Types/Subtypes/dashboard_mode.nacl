@@ -1,0 +1,10 @@
+type netsuite.dashboard_mode is string {
+  _restriction = {
+    values = [
+      "ADD_MOVE",
+      "LOCKED",
+      "UNLOCKED",
+    ]
+    enforce_value = false
+  }
+}

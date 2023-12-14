@@ -1,0 +1,13 @@
+type netsuite.generic_customfield_dynamicdefault is string {
+  _restriction = {
+    values = [
+      "DEPARTMENT",
+      "LOCATION",
+      "ME",
+      "NOW",
+      "SUBSIDIARY",
+      "SUPERVISOR",
+    ]
+    enforce_value = false
+  }
+}

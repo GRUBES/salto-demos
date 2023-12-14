@@ -1,0 +1,269 @@
+netsuite.role customrole1003 {
+  scriptid = "customrole1003"
+  centertype = "BASIC"
+  coreadminpermission = false
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  isinactive = true
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Custom Developer With more certain WF permissions"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = {
+      TRAN_JOURNAL = {
+        permkey = "TRAN_JOURNAL"
+        permlevel = "FULL"
+      }
+      TRAN_SALESORD = {
+        permkey = "TRAN_SALESORD"
+        permlevel = "FULL"
+      }
+      REPO_ANALYTICS = {
+        permkey = "REPO_ANALYTICS"
+        permlevel = "EDIT"
+      }
+      LIST_OTHER_ADDRESS = {
+        permkey = "LIST_OTHER_ADDRESS"
+        permlevel = "FULL"
+      }
+      LIST_CUSTRECORDENTRY = {
+        permkey = "LIST_CUSTRECORDENTRY"
+        permlevel = "FULL"
+      }
+      LIST_FILECABINET = {
+        permkey = "LIST_FILECABINET"
+        permlevel = "FULL"
+      }
+      LIST_EMAILTEMPLATE = {
+        permkey = "LIST_EMAILTEMPLATE"
+        permlevel = "FULL"
+      }
+      LIST_GIFT_CERTIFICATE = {
+        permkey = "LIST_GIFT_CERTIFICATE"
+        permlevel = "FULL"
+      }
+      LIST_PDFTEMPLATE = {
+        permkey = "LIST_PDFTEMPLATE"
+        permlevel = "FULL"
+      }
+      LIST_FIND = {
+        permkey = "LIST_FIND"
+        permlevel = "FULL"
+      }
+      LIST_PUBLISHSEARCH = {
+        permkey = "LIST_PUBLISHSEARCH"
+        permlevel = "FULL"
+      }
+      LIST_WEBSITE = {
+        permkey = "LIST_WEBSITE"
+        permlevel = "FULL"
+      }
+      ADMI_ADVANCED_TEMPLATES = {
+        permkey = "ADMI_ADVANCED_TEMPLATES"
+        permlevel = "FULL"
+      }
+      ADMI_ALLOW_JS_HTML_UPLOAD = {
+        permkey = "ADMI_ALLOW_JS_HTML_UPLOAD"
+        permlevel = "FULL"
+      }
+      ADMI_MANAGEROLES = {
+        permkey = "ADMI_MANAGEROLES"
+        permlevel = "FULL"
+      }
+      ADMI_CRMLIST = {
+        permkey = "ADMI_CRMLIST"
+        permlevel = "FULL"
+      }
+      ADMI_HTMLFORMULA = {
+        permkey = "ADMI_HTMLFORMULA"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTADDRESSFORM = {
+        permkey = "ADMI_CUSTADDRESSFORM"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTBODYFIELD = {
+        permkey = "ADMI_CUSTBODYFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTCATEGORY = {
+        permkey = "ADMI_CUSTCATEGORY"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTTASKS = {
+        permkey = "ADMI_CUSTTASKS"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTSECTION = {
+        permkey = "ADMI_CUSTSECTION"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTCENTER = {
+        permkey = "ADMI_CUSTCENTER"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTCOLUMNFIELD = {
+        permkey = "ADMI_CUSTCOLUMNFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTENTITYFIELD = {
+        permkey = "ADMI_CUSTENTITYFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTENTRYFORM = {
+        permkey = "ADMI_CUSTENTRYFORM"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTEVENTFIELD = {
+        permkey = "ADMI_CUSTEVENTFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTFIELD = {
+        permkey = "ADMI_CUSTFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTITEMFIELD = {
+        permkey = "ADMI_CUSTITEMFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTITEMNUMBERFIELD = {
+        permkey = "ADMI_CUSTITEMNUMBERFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTLIST = {
+        permkey = "ADMI_CUSTLIST"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTLAYOUT = {
+        permkey = "ADMI_CUSTLAYOUT"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTRECORD = {
+        permkey = "ADMI_CUSTRECORD"
+        permlevel = "FULL"
+      }
+      ADMI_MANAGECUSTOMSEGMENTS = {
+        permkey = "ADMI_MANAGECUSTOMSEGMENTS"
+        permlevel = "FULL"
+      }
+      ADMI_SUBLIST = {
+        permkey = "ADMI_SUBLIST"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTOMSUBLIST = {
+        permkey = "ADMI_CUSTOMSUBLIST"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTFIELDTAB = {
+        permkey = "ADMI_CUSTFIELDTAB"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTTRANFIELD = {
+        permkey = "ADMI_CUSTTRANFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTFORM = {
+        permkey = "ADMI_CUSTFORM"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTTRANSACTION = {
+        permkey = "ADMI_CUSTTRANSACTION"
+        permlevel = "FULL"
+      }
+      ADMI_ENABLEFEATURES = {
+        permkey = "ADMI_ENABLEFEATURES"
+        permlevel = "FULL"
+      }
+      ADMI_IMPORTCSVFILE = {
+        permkey = "ADMI_IMPORTCSVFILE"
+        permlevel = "FULL"
+      }
+      ADMI_KPIREPORT = {
+        permkey = "ADMI_KPIREPORT"
+        permlevel = "FULL"
+      }
+      ADMI_LOGIN_OAUTH = {
+        permkey = "ADMI_LOGIN_OAUTH"
+        permlevel = "FULL"
+      }
+      ADMI_MANAGEPERMISSIONS = {
+        permkey = "ADMI_MANAGEPERMISSIONS"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTOTHERFIELD = {
+        permkey = "ADMI_CUSTOTHERFIELD"
+        permlevel = "FULL"
+      }
+      ADMI_SAVEDASHBOARD = {
+        permkey = "ADMI_SAVEDASHBOARD"
+        permlevel = "FULL"
+      }
+      ADMI_RESTWEBSERVICES = {
+        permkey = "ADMI_RESTWEBSERVICES"
+        permlevel = "FULL"
+      }
+      ADMI_WEBSERVICES = {
+        permkey = "ADMI_WEBSERVICES"
+        permlevel = "FULL"
+      }
+      ADMI_CSVIMPORTPREF = {
+        permkey = "ADMI_CSVIMPORTPREF"
+        permlevel = "FULL"
+      }
+      ADMI_STORESETUP = {
+        permkey = "ADMI_STORESETUP"
+        permlevel = "FULL"
+      }
+      ADMI_APP_DEPLOYMENT = {
+        permkey = "ADMI_APP_DEPLOYMENT"
+        permlevel = "FULL"
+      }
+      ADMI_BUNDLER = {
+        permkey = "ADMI_BUNDLER"
+        permlevel = "FULL"
+      }
+      ADMI_CUSTOMSCRIPT = {
+        permkey = "ADMI_CUSTOMSCRIPT"
+        permlevel = "FULL"
+      }
+      ADMI_SS_SCHEDULING = {
+        permkey = "ADMI_SS_SCHEDULING"
+        permlevel = "FULL"
+      }
+      ADMI_MANAGE_OWN_OAUTH_TOKENS = {
+        permkey = "ADMI_MANAGE_OWN_OAUTH_TOKENS"
+        permlevel = "FULL"
+      }
+      ADMI_VICARIOUS_EMAILS = {
+        permkey = "ADMI_VICARIOUS_EMAILS"
+        permlevel = "FULL"
+      }
+      ADMI_WORKFLOW = {
+        permkey = "ADMI_WORKFLOW"
+        permlevel = "FULL"
+      }
+      cseg2 = {
+        permkey = netsuite.customsegment.instance.cseg2.scriptid
+        permlevel = "FULL"
+      }
+      cseg1 = {
+        permkey = netsuite.customsegment.instance.cseg1.scriptid
+        permlevel = "FULL"
+      }
+      customrecord_slt_testforrest = {
+        permkey = netsuite.customrecord_slt_testforrest.attr.scriptid
+        permlevel = "EDIT"
+      }
+    }
+  }
+  _alias = "Custom Developer With more certain WF permissions"
+}

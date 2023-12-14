@@ -1,0 +1,96 @@
+type netsuite.contact {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string entityId {
+  }
+  netsuite.recordRef contactSource {
+  }
+  netsuite.recordRef company {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string title {
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string defaultAddress {
+  }
+  boolean isPrivate {
+  }
+  boolean isInactive {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  string phoneticName {
+  }
+  netsuite.categoryList categoryList {
+  }
+  string altEmail {
+  }
+  string officePhone {
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  netsuite.employee supervisor {
+    isReference = true
+  }
+  string supervisorPhone {
+  }
+  netsuite.recordRef assistant {
+  }
+  string assistantPhone {
+  }
+  string comments {
+  }
+  unknown globalSubscriptionStatus {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  boolean billPay {
+  }
+  netsuite.contactAddressbookList addressbookList {
+  }
+  netsuite.subscriptionsList subscriptionsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  string custom_custentity1 {
+    field_instance = netsuite.entitycustomfield.instance.custentity1.scriptid
+  }
+  boolean custom_custentity10 {
+    field_instance = netsuite.entitycustomfield.instance.custentity10.scriptid
+  }
+  boolean custom_custentity_15 {
+    field_instance = netsuite.entitycustomfield.instance.custentity_15.scriptid
+  }
+  boolean custom_custentity_slt_e2e_test {
+    field_instance = netsuite.entitycustomfield.instance.custentity_slt_e2e_test.scriptid
+  }
+}

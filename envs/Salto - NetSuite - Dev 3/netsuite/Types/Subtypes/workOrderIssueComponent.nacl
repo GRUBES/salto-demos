@@ -1,0 +1,16 @@
+type netsuite.workOrderIssueComponent {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  number operationSequenceNumber {
+  }
+  number quantity {
+  }
+  netsuite.inventoryDetail componentInventoryDetail {
+  }
+  number lineNumber {
+  }
+}

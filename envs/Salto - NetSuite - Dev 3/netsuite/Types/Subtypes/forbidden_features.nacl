@@ -1,0 +1,9 @@
+type netsuite.forbidden_features is string {
+  _restriction = {
+    values = [
+      "DOCUMENTS",
+      "SUITEAPPDEVELOPMENTFRAMEWORK",
+    ]
+    enforce_value = false
+  }
+}

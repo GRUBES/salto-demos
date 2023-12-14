@@ -1,0 +1,11 @@
+type netsuite.serializedInventoryItemNumbersList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.serializedInventoryItemNumbers>" numbers {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

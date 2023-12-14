@@ -1,4 +1,10 @@
 envs {
   envs = [
+    {
+      name = "Salto - NetSuite - Dev 3"
+      accountToServiceName = {
+        netsuite = "netsuite"
+      }
+    },
   ]
 }

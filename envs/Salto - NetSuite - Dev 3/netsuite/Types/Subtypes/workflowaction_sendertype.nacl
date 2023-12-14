@@ -1,0 +1,9 @@
+type netsuite.workflowaction_sendertype is string {
+  _restriction = {
+    values = [
+      "FIELD",
+      "SPECIFIC",
+    ]
+    enforce_value = false
+  }
+}
