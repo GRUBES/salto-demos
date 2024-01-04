@@ -1,0 +1,14 @@
+type netsuite.calendarEventAttendee {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean sendEmail {
+  }
+  netsuite.recordRef attendee {
+  }
+  unknown response {
+  }
+  unknown attendance {
+  }
+}

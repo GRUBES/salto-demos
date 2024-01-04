@@ -1,0 +1,31 @@
+type netsuite.inventoryNumber {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string inventoryNumber {
+  }
+  netsuite.recordRef item {
+  }
+  string status {
+  }
+  string units {
+  }
+  string expirationDate {
+  }
+  string memo {
+  }
+  netsuite.inventoryNumberLocationsList locationsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

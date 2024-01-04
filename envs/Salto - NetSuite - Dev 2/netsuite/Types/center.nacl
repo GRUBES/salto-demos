@@ -1,0 +1,15 @@
+type netsuite.center {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custcenter[0-9a-z_]+"
+    }
+  }
+  string label {
+    _required = true
+  }
+  string application_id {
+  }
+  _alias = "Center"
+}

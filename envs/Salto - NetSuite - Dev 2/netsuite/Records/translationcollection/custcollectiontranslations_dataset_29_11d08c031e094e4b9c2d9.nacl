@@ -1,0 +1,23 @@
+netsuite.translationcollection custcollectiontranslations_dataset_29_11d08c031e094e4b9c2d9 {
+  scriptid = "custcollectiontranslations_dataset_29_11d08c031e094e4b9c2d9"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_dataset_29_11d08c031e094e4b9c2d9.strings.string.dataset_name_1240_1.scriptid
+  strings = {
+    string = {
+      dataset_name_1240_1 = {
+        scriptid = "dataset_name_1240_1"
+        defaulttranslation = "seggev formula and criteria"
+        description = "Name in dataset"
+        index = 0
+      }
+      dataset_formula_1242_2 = {
+        scriptid = "dataset_formula_1242_2"
+        defaulttranslation = "form1"
+        description = "Formula field in dataset"
+        index = 1
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "seggev formula and criteria"
+}

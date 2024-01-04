@@ -1,0 +1,22 @@
+netsuite.role customrolecustomroleshalom_role {
+  scriptid = "customrolecustomroleshalom_role"
+  accountingbooksoption = "PRIMARY"
+  centertype = "ACCOUNTCENTER"
+  coreadminpermission = false
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = true
+  isinactive = false
+  ispartnerrole = true
+  issalesrole = true
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "ShalomTestRole"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  _alias = "ShalomTestRole"
+}

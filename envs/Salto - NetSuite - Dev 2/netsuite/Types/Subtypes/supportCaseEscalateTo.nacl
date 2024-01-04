@@ -1,0 +1,12 @@
+type netsuite.supportCaseEscalateTo {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef escalatee {
+  }
+  string email {
+  }
+  string phone {
+  }
+}

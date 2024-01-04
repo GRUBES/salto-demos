@@ -1,0 +1,1034 @@
+settings netsuite.accountingPreferences {
+  netsuite.selectOption DEFAULTTRANSFERORDERCOMMITOPTION {
+    label = "Default commit option on transfer order"
+    type = "select"
+  }
+  boolean NOMAPORREDUCEFUNCINDBQUIESCEGP {
+    label = "Don't execute map or reduce function when db is in quiesce grace period."
+    type = "checkbox"
+  }
+  number MAXLOCATIONS {
+    label = "Maximum number of MLI locations"
+    type = "integer"
+  }
+  boolean ENABLEINVENTORYDEMANDTRACKING {
+    label = "SCM: Inventory: Commitment: Enable Inventory Demand Table Tracking"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFAULT_TRNFRORD_INCOTERM {
+    label = "Default Transfer Order Incoterms"
+    type = "select"
+  }
+  boolean TERMDISCOUNTSINCLUDETAX {
+    label = "Include Tax for Term Discounts"
+    type = "checkbox"
+  }
+  boolean OVERRIDE_SUITETAX_REQUIREMENT {
+    label = "Override SuiteTax requirement to enable Multi Subsidiary Customer with Billing Accounts"
+    type = "checkbox"
+  }
+  boolean VALIDATE_SAME_PO_CURRENCY_IN_BILL {
+    label = "Validate Linked PO currency is same as in Vendor Bill"
+    type = "checkbox"
+  }
+  boolean DEFAULTEXPENSESBILLABLE {
+    label = "Expenses Billable by Default"
+    type = "checkbox"
+  }
+  boolean NONBALANCINGCDLONJE {
+    label = "Allow Non-balancing Classifications on Journals"
+    type = "checkbox"
+  }
+  boolean ACCOUNTINGPERIODS {
+    label = "SCM: Inventory: Ignore Closing Period When Updating G/L Accounts"
+    type = "checkbox"
+  }
+  boolean ADVANCEDTIMEAPPROVALS {
+    label = "Advanced Approvals on Time Records"
+    type = "checkbox"
+  }
+  number INITIALCOSTINGQUEUEMAXSIZE {
+    label = "SCM: Inventory: Costing: Maximum number of lines to load into initial costing queue"
+    type = "integer"
+  }
+  boolean ALLOCATION_AUTO_FIX_DATA {
+    label = "Enable auto data fix up for Supply Allocation Migration"
+    type = "checkbox"
+  }
+  boolean INVT_TRANS_CLOSED_PERIODS {
+    label = "Create and edit inventory transactions dated in closed periods"
+    type = "checkbox"
+  }
+  boolean COPYEXPENSEMEMOS {
+    label = "Copy Expense Memos to Invoices"
+    type = "checkbox"
+  }
+  boolean USE_DELAYED_TRIGGER_INVENTORY {
+    label = "Use delayed trigger inventory management"
+    type = "checkbox"
+  }
+  boolean VALIDATE_TRANLINE_LOCATION_CHANGE {
+    label = "Validate location change of transaction line"
+    type = "checkbox"
+  }
+  boolean BUDGETINCLUDEELIMSUB {
+    label = "Enable budget with elimination subsidiaries"
+    type = "checkbox"
+  }
+  boolean DECOMMIT_PENDING_APPROVAL_ZERO_QTY {
+    label = "SCM: Inventory: Commitment: Decommit When Quantity Is 0 In Pending Approval Status"
+    type = "checkbox"
+  }
+  number PAYBILLSSEGMENTSIZE {
+    label = "Number of bills on each segment of the pay bills screen."
+    type = "integer"
+  }
+  netsuite.selectOption PAYMENTACCOUNT {
+    label = "Default Payment Account"
+    type = "select"
+  }
+  boolean USEINVENTORYCOSTINGSTRICTVALIDATION {
+    label = "Perform strict validation in inventory costing 2.0"
+    type = "checkbox"
+  }
+  boolean CCSECURITYCODE {
+    label = "Use Card Security Code for Credit Card Transactions"
+    type = "checkbox"
+  }
+  number MAXSUBSIDIARIES {
+    label = "Maximum number of Subsidiaries"
+    type = "integer"
+  }
+  netsuite.selectOption TIMELIMITENTRYMINACTION {
+    label = "Action"
+    type = "select"
+  }
+  boolean APPLYTIMETHRESHOLDTOVENDORTIME {
+    label = "Apply Time Threshold to Vendor Time"
+    type = "checkbox"
+  }
+  boolean PICKINGTICKETNONINVT {
+    label = "Show Non-Inventory Items on Printed Forms"
+    type = "checkbox"
+  }
+  boolean CONSOLPAYMENTS {
+    label = "Accept Payments through Top-level Customer"
+    type = "checkbox"
+  }
+  boolean SEND_GIFT_CERTIFICATE_EMAILS {
+    label = "Send gift certificate email"
+    type = "checkbox"
+  }
+  boolean OVERFULFILLMENTS {
+    label = "Allow Overage on Item Fulfillments"
+    type = "checkbox"
+  }
+  boolean REMOVECLIENTGOVERNANCELIMIT {
+    label = "Remove client script governance limit"
+    type = "checkbox"
+  }
+  string TIMELIMITDAYMINVALUE {
+    label = "Value"
+    type = "timetrack"
+  }
+  boolean UNRECEIVEDRTNAUTHS {
+    label = "Refund in Advance of Return"
+    type = "checkbox"
+  }
+  netsuite.selectOption ASSETACCOUNT {
+    label = "Default Asset Account"
+    type = "select"
+  }
+  boolean PERFORMLIMITCHECKONAPPROVALACTION {
+    label = "Perform limit check on approval action"
+    type = "checkbox"
+  }
+  boolean DONTTRACKITEMCOUNT {
+    label = "Do not track item on hand counts in parallel"
+    type = "checkbox"
+  }
+  netsuite.selectOption COPYTIMESHEETOPTIONS {
+    label = "Copy from Week Options"
+    type = "select"
+  }
+  boolean VENDPYMTTOPRINT {
+    label = "Default Vendor Payments To Be Printed"
+    type = "checkbox"
+  }
+  boolean DELAYEDTRIGGERCOMMITMENT {
+    label = "Use Delayed Triggers for Inventory Commitment"
+    type = "checkbox"
+  }
+  number UNIFIEDGOVERNANCELIMIT {
+    label = "Unified governance account limit used for accounts with disabled UG (controlled by appswitch 97)"
+    type = "integer"
+  }
+  boolean RECREATEREVRECSCHEDULES {
+    label = "Recreate Rev Rec Schedules"
+    type = "checkbox"
+  }
+  boolean CUSTOMAPPROVALJOURNAL {
+    label = "Journal Entries"
+    type = "checkbox"
+  }
+  boolean FORECASTINCLUDES_REIMB_EXP {
+    label = "Include Reimbursements in Sales and Forecast Reports"
+    type = "checkbox"
+  }
+  netsuite.selectOption SHOWADDLITEMSPACKSLIP {
+    label = "Show Additional Items on Packing Slips"
+    type = "select"
+  }
+  boolean COPYSERVITEMDESCTOMEMO {
+    label = "Copy Service Item Description to Time memo"
+    type = "checkbox"
+  }
+  boolean ENABLEVIRTUALCARDOPTIMIZATION {
+    label = "Enable Virtual Card Optimization In Payment Automation SuiteApp"
+    type = "checkbox"
+  }
+  boolean CUSTOMAPPROVALVENDORBILL {
+    label = "Vendor Bills"
+    type = "checkbox"
+  }
+  boolean CUSTOMCOSTING {
+    label = "Custom Costing"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFVENDBILLSTATUS {
+    label = "Default Vendor Bill Status"
+    type = "select"
+  }
+  boolean ALLOW_CLOSED_PERIOD_COSTING_CHANGES {
+    label = "SCM: Inventory: Costing: Allow the costing engine to make changes in closed periods and generate reversing journal entries"
+    type = "checkbox"
+  }
+  boolean KEEP_LEGACY_DISCOUNT_APPLICATION {
+    label = "Keep legacy discount application behavior when applying payments"
+    type = "checkbox"
+  }
+  boolean OVERRIDETIMERATES {
+    label = "Override Rates on Time Records"
+    type = "checkbox"
+  }
+  netsuite.selectOption DATEPERIODMISMATCH {
+    label = "Allow Transaction Date Outside of Posting Period"
+    type = "select"
+  }
+  boolean FORECASTINCLUDES_SHIPPING {
+    label = "Include Shipping in Sales and Forecast Reports"
+    type = "checkbox"
+  }
+  boolean BULK_JOURNAL_APPROVAL_EVENTS {
+    label = "Allow User Events on Bulk Journal Approval"
+    type = "checkbox"
+  }
+  boolean CURCOUNTONTRANSFERS {
+    label = "SCM: Inventory: Display Current Count on Transfers"
+    type = "checkbox"
+  }
+  netsuite.selectOption BILLEXCHRATEVARIANCEACCT {
+    label = "Default Bill Exchange Rate Variance Account"
+    type = "select"
+  }
+  netsuite.selectOption RETURNCOSTDEFAULT {
+    label = "Default cost for inventory items on unlinked returns"
+    type = "select"
+  }
+  boolean DEFAULTUNFULFILLED {
+    label = "Default Items to Zero Received/Fulfilled"
+    type = "checkbox"
+  }
+  boolean INVOICEUSESCHEDULEDATE {
+    label = "Base Invoice Date on Billing Schedule Date"
+    type = "checkbox"
+  }
+  boolean INV_COSTING_DELAYED_START {
+    label = "SCM: Inventory: Costing: Whether or not to delay the start of inventory costing to allow for afterSubmit events to process."
+    type = "checkbox"
+  }
+  boolean ITEMVERSION {
+    label = "Enable item version"
+    type = "checkbox"
+  }
+  boolean ASSETCOGSITEMACCTS {
+    label = "Expand Account Lists"
+    type = "checkbox"
+  }
+  number MAX_BUCKETS_PER_PROCESSOR {
+    label = "Maximum number of buckets supported in One processor of ME Revaluation"
+    type = "integer"
+  }
+  boolean UNRETURNEDVENDAUTHS {
+    label = "Credit in Advance of Vendor Return"
+    type = "checkbox"
+  }
+  netsuite.selectOption DUPLICATEWARNINGS {
+    label = "Duplicate Number Warnings"
+    type = "select"
+  }
+  boolean SFTP_USE_LIST_TO_TEST_FILE_EXISTS {
+    label = "SFTP: Use LIST to test that a file exists"
+    type = "checkbox"
+  }
+  boolean DEFAULTITEMSBILLABLE {
+    label = "Items Billable by Default"
+    type = "checkbox"
+  }
+  boolean BYPASS_ALLOCATION_DATA_FIX {
+    label = "Bypass Allocation Data Migration Verification"
+    type = "checkbox"
+  }
+  boolean CURRENCY_RATE_ACCESS {
+    label = "Grant access to historical currency rates data"
+    type = "checkbox"
+  }
+  boolean REALTIMECOGSORDERING {
+    label = "SCM: Inventory: Costing: Real-time COGS Ordering"
+    type = "checkbox"
+  }
+  netsuite.selectOption TIMELIMITWEEKMAXACTION {
+    label = "Action"
+    type = "select"
+  }
+  netsuite.selectOption DEFAULTAPACCOUNTFOREXPREPT {
+    label = "Default Payable Account for Expense Reports"
+    type = "select"
+  }
+  netsuite.selectOption COGSACCOUNT {
+    label = "Default COGS Account"
+    type = "select"
+  }
+  
+  boolean AUTONOTIFYSUPV {
+    label = "Automatically Notify Supervisor"
+    type = "checkbox"
+  }
+  boolean CUSTOMAPPROVALTIMEBILL {
+    label = "Time Bills"
+    type = "checkbox"
+  }
+  boolean SINGLEITEMBARCODING {
+    label = "Scan Individual Items"
+    type = "checkbox"
+  }
+  boolean RESTRICTBALANCEVIEWING {
+    label = "Restrict Account Balance Viewing for Employees with Classification Restrictions"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFAULTSALESORDERCOMMITOPTION {
+    label = "Default commit option on sales order"
+    type = "select"
+  }
+  netsuite.selectOption INCOMEACCOUNT {
+    label = "Default Income Account"
+    type = "select"
+  }
+  boolean JOURNALAPPROVALS {
+    label = "Require Approvals on Journal Entries"
+    type = "checkbox"
+  }
+  netsuite.selectOption ARACCOUNT {
+    label = "Default Receivables Account"
+    type = "select"
+  }
+  boolean NO_UPDATE_TRANSACTION_COGSASSETACCT {
+    label = "Do Not Update COGS and Asset Accounts on Existing Transactions When Accounts Are Changed"
+    type = "checkbox"
+  }
+  netsuite.selectOption GAINLOSSACCOUNT {
+    label = "Default Gain/Loss Account"
+    type = "select"
+  }
+  boolean INVT_TRANS_DATE_PERIOD_MISMATCH {
+    label = "Allow Inventory Transactions Dated Outside the Posting Period"
+    type = "checkbox"
+  }
+  boolean USE_UPDATED_CALCULATION_OBV {
+    label = "Use updated calculation for open_balance_variance procedure, for deleting discount lines and 0 amount for A/R scenarios"
+    type = "checkbox"
+  }
+  netsuite.selectOption VENDRETURNVARIANCEACCOUNT {
+    label = "Default Vendor Return Variance Account"
+    type = "select"
+  }
+  boolean USESERIALNUMBERSELECT {
+    label = "Use Popup to Select Serial/Lot Numbers on Sales"
+    type = "checkbox"
+  }
+  netsuite.selectOption PURCHDISCACCT {
+    label = "Purchase Discount Account"
+    type = "select"
+  }
+  boolean SHOWUNSHIPPEDITEMS {
+    label = "Show Unfulfilled Items on Invoices"
+    type = "checkbox"
+  }
+  boolean ENABLEINVFUTURESUPPLYTRACKING {
+    label = "SCM: Inventory: Commitment: Enable Inventory Future Supply Table Tracking"
+    type = "checkbox"
+  }
+  boolean LOGEACHSSSCRIPTSTART {
+    label = "Log each server-side SuiteScript start"
+    type = "checkbox"
+  }
+  boolean DELETE_ALL_MONTH_END_REVALS {
+    label = "Delete previous revaluations transaction before running month end currency revaluation process"
+    type = "checkbox"
+  }
+  boolean OVERRECEIPTS {
+    label = "Allow Overage on Item Receipts"
+    type = "checkbox"
+  }
+  netsuite.selectOption TIMELIMITWEEKMIN {
+    label = "Minimum number of hours per week"
+    type = "select"
+  }
+  netsuite.selectOption DEFAULTRECEIVINGEXCHANGERATE {
+    label = "Default Receiving Exchange Rate"
+    type = "select"
+  }
+  boolean CACHE_ITEM_LOCATION_MAP {
+    label = "Whether or not to cache ItemLocationMap and check if there are changing before updating."
+    type = "checkbox"
+  }
+  boolean FORBID_SUITELET_EXEC_BY_SHOPPER {
+    label = "Forbid execution of non-external suitelets by the shopper role"
+    type = "checkbox"
+  }
+  netsuite.selectOption TIMELIMITDAYMAX {
+    label = "Maximum number of hours per working day"
+    type = "select"
+  }
+  boolean USE_ROLE_RESTRICTIONS_ON_APPLY {
+    label = "Apply role restrictions to the apply machines when creating a new transaction"
+    type = "checkbox"
+  }
+  string ALLOWCURRENCYPRECISIONCHANGE {
+    label = "Allow currency precision to be modified [Default: 10 Days]"
+    type = "date"
+  }
+  boolean USEPORECEIPTCOST {
+    label = "Use Purchase Order Item Receipt Cost"
+    type = "checkbox"
+  }
+  boolean COMBINEEXPENSEITEMS {
+    label = "Combine Detail Items on Expense Reports"
+    type = "checkbox"
+  }
+  netsuite.selectOption CREATE_DEPOSIT_ON_SO_SALE_ROLE {
+    label = "Run Customer Deposit Operation as Role"
+    type = "select"
+  }
+  boolean SETREVERSINGVARIANCEDATETOREVJES {
+    label = "Set Reversal Variance Date Equal To The Reversing Journal Date When Voided Transaction Is In A Closed Period"
+    type = "checkbox"
+  }
+  boolean ALLOWNONREIMBURSABLEEXPENSES {
+    label = "Allow Non-Reimbursable Expenses"
+    type = "checkbox"
+  }
+  netsuite.selectOption PACKINGSLIPSTATUS {
+    label = "Limit Status on Packing Slip Queue"
+    type = "select"
+  }
+  netsuite.selectOption ROUNDTIME {
+    label = "Round Time Entry Duration"
+    type = "select"
+  }
+  boolean ALLOW_COSTING_ENGINE_TO_RUN {
+    label = "SCM: Inventory: Costing: Allow the costing engine to run"
+    type = "checkbox"
+  }
+  boolean NOMAPORREDUCEFUNCINTERMINALSTATE {
+    label = "Don't execute map or reduce function when app-server stop is signaled"
+    type = "checkbox"
+  }
+  boolean RESTOCKRETURNS {
+    label = "Restock Returned Items"
+    type = "checkbox"
+  }
+  boolean PICKINGTICKETKITITEMS {
+    label = "Always Print Kit Items on Picking Tickets"
+    type = "checkbox"
+  }
+  boolean ALLOW_NON_GL_CHANGES_BY_DEFAULT {
+    label = "Allow Non-GL Changes Is Set by Default"
+    type = "checkbox"
+  }
+  number MAXITEMSONQUICKDISTRIBUTION {
+    label = "SCM: Inventory: Costing: Maximum number of items on a quick distribution"
+    type = "integer"
+  }
+  boolean VENDCREDLIMORDERS {
+    label = "Vendor Credit Limit Includes Orders"
+    type = "checkbox"
+  }
+  boolean CUSTOM_SEGMENT_DELETION {
+    label = "Allow GL Custom Segment Deletion"
+    type = "checkbox"
+  }
+  boolean OPENONLYSTMTS {
+    label = "Show Only Open Transactions on Statements"
+    type = "checkbox"
+  }
+  boolean LOGUERECORDSYNCH {
+    label = "Log each user event record synchronization"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFAULT_ADVANCE_ACCT_FOR_EXPREPT {
+    label = "Default Advance to Apply Account for Expense Reports"
+    type = "select"
+  }
+  
+  boolean BULKFULFILLLOCFILTERING {
+    label = "Filter Bulk Fulfillment Page by Location"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFRTNAUTHSTATUS {
+    label = "Default Return Auth. Status"
+    type = "select"
+  }
+  boolean ZEROCOSTUNDERWATER {
+    label = "Use Zero Cost for Linked Underwater Sales"
+    type = "checkbox"
+  }
+  boolean VALIDATE_SAME_PO_VENDOR_IN_BILL {
+    label = "Validate Linked PO Vendor is same as in Vendor Bill"
+    type = "checkbox"
+  }
+  boolean UNRECEIVEDBILLS {
+    label = "Bill in Advance of Receipt"
+    type = "checkbox"
+  }
+  boolean INCLUDEINTRANSITACCOUNT {
+    label = "Include In-Transit Account"
+    type = "checkbox"
+  }
+  boolean NO_PRE_DISTRIB_LOCATIONS {
+    label = "SCM: Inventory: Costing: No Pre-Distribution Locations"
+    type = "checkbox"
+  }
+  netsuite.selectOption FULFILLCOMMITTED {
+    label = "Fulfill Based on Commitment"
+    type = "select"
+  }
+  number LOTEXPIRATIONWARNING {
+    label = "Days Before Lot Expiration Warning"
+    type = "integer"
+  }
+  boolean CUSTCREDLIMORDERS {
+    label = "Customer Credit Limit Includes Orders"
+    type = "checkbox"
+  }
+  boolean RECONCILIATIONALLTRANTYPES {
+    label = "Show All Transaction Types In Reconciliation"
+    type = "checkbox"
+  }
+  boolean REQUIRETIMEFORWORKINGDAYS {
+    label = "Require time for working days"
+    type = "checkbox"
+  }
+  boolean ENABLEINVINSTOCKSUPPLYTRACKING {
+    label = "SCM: Inventory: Commitment: Enable Inventory In Stock Supply Table Tracking"
+    type = "checkbox"
+  }
+  netsuite.selectOption EXPENSEACCOUNT {
+    label = "Default Expense Account"
+    type = "select"
+  }
+  netsuite.selectOption TIMELIMITWEEKMINACTION {
+    label = "Action"
+    type = "select"
+  }
+  netsuite.selectOption BILLPRICEVARIANCEACCT {
+    label = "Default Bill Price Variance Account"
+    type = "select"
+  }
+  netsuite.selectOption DEFAULTPERIODIFCLOSED {
+    label = "Default Posting Period When Transaction Date in Closed Period"
+    type = "select"
+  }
+  boolean ORDFULFILLCONFEMAIL {
+    label = "Send Order Fulfilled Confirmation Emails"
+    type = "checkbox"
+  }
+  boolean TIMEAPPROVALS {
+    label = "Require Approvals on Time Records"
+    type = "checkbox"
+  }
+  string TIMELIMITWEEKMINVALUE {
+    label = "Value"
+    type = "timetrack"
+  }
+  netsuite.selectOption ALLOW_DEFAULT_EMAIL_ON_PO {
+    label = "Allow Default Email on Purchase Orders using Suiteflow Approval Routing"
+    type = "select"
+  }
+  boolean EMAIL_EMPLOYEE_ON_REJECTION {
+    label = "Email employee on rejection"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFTRNFRORDSTATUS {
+    label = "Default Transfer Order Status"
+    type = "select"
+  }
+  boolean ACCOUNTNUMBERS {
+    label = "Use Account Numbers"
+    type = "checkbox"
+  }
+  boolean LIMITITEMVENDORS {
+    label = "Limit Vendor List on Items"
+    type = "checkbox"
+  }
+  boolean UNSHIPPEDINVOICES {
+    label = "Invoice in Advance of Fulfillment"
+    type = "checkbox"
+  }
+  boolean REVERSALVOIDING {
+    label = "Void Transactions Using Reversing Journals"
+    type = "checkbox"
+  }
+  boolean ALLOW_PERIODS_QUICK_CLOSE {
+    label = "Allow Quick Close of Accounting Periods"
+    type = "checkbox"
+  }
+  boolean ENFORCE_MIN_QUANTITY_RET_AUTH {
+    label = "Enforce Minimum Quantity on Return Authorizations"
+    type = "checkbox"
+  }
+  boolean EDITITEMACCOUNTS {
+    label = "Anyone Can Set Item Accounts"
+    type = "checkbox"
+  }
+  boolean CDLPERLINEONJE {
+    label = "Always Allow Per-line Classifications on Journals"
+    type = "checkbox"
+  }
+  boolean DEFAULTTIMEBILLABLE {
+    label = "Time Billable by Default"
+    type = "checkbox"
+  }
+  string RESTLET_NLAUTH_DEPRECATION_START {
+    label = "Postpone the date for forbidding plaintext credentials authentication for newly created restlets to"
+    type = "date"
+  }
+  netsuite.selectOption DEFAULTPURCHORDERLOCATION {
+    label = "Default Location for Purchase Orders"
+    type = "select"
+  }
+  boolean EXTENDEDLEVEL3DATA {
+    label = "Extend Level 3 Data"
+    type = "checkbox"
+  }
+  boolean NEWCOSTINGFLAGGING {
+    label = "Non-trigger based flagging for costing."
+    type = "checkbox"
+  }
+  boolean CENTRALIZEDPURCHASING {
+    label = "Centralize Purchasing in a Single Location"
+    type = "checkbox"
+  }
+  netsuite.selectOption TIMELIMITENTRYMIN {
+    label = "Minimum number of hours per time entry"
+    type = "select"
+  }
+  boolean ALLOWFUTUREPERIODLOCK {
+    label = "Enable Accounting Period Window"
+    type = "checkbox"
+  }
+  boolean CUSTOMAPPROVALVENDPYMT {
+    label = "Vendor Payments"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFAULTACCTCORPCARDEXP {
+    label = "Default Account for Corporate Card Expenses"
+    type = "select"
+  }
+  netsuite.selectOption DEFSALESORDSTATUS {
+    label = "Default Sales Order Status"
+    type = "select"
+  }
+  boolean POEXPENSES {
+    label = "Allow Expenses on Purchases"
+    type = "checkbox"
+  }
+  boolean TERMDISCOUNTSINCLUDESHIPPING {
+    label = "Include Shipping for Term Discounts"
+    type = "checkbox"
+  }
+  boolean ALLOWNONREIMBURSABLEEXPENSESVISIBLE {
+    label = "Allow Non-Reimbursable Expenses is Visible"
+    type = "checkbox"
+  }
+  boolean CUSTOMAPPROVALEXPENSE {
+    label = "Expense Reports"
+    type = "checkbox"
+  }
+  number ALLOCATION_WORK_QUEUE_THREAD_LIMIT {
+    label = "Maximum number of threads to be used for Legacy Supply Allocation Work Queue Item"
+    type = "integer"
+  }
+  netsuite.selectOption SALESDISCACCT {
+    label = "Sales Discount Account"
+    type = "select"
+  }
+  boolean MATCH_SOURCE_CLASSIFICATION {
+    label = "Remember whether source C/D/L should be propagated to Cur.Reval. transactions"
+    type = "checkbox"
+  }
+  boolean UPDATEITEMSHIPDATEONSTATUSCHANGE {
+    label = "Update Transaction Date Upon Fulfillment Status Change"
+    type = "checkbox"
+  }
+  number CREDLIMDAYS {
+    label = "Days Overdue for Warning/Hold"
+    type = "integer"
+  }
+  netsuite.selectOption DEFAULTSALESORDERLOCATION {
+    label = "Default Location for Sales Orders"
+    type = "select"
+  }
+  netsuite.selectOption CUSTOMERPAYMENTSAPPLYLOGIC {
+    label = "Apply Payments Without Invoice Numbers"
+    type = "select"
+  }
+  netsuite.selectOption OPENONLYTRANSACTIONS {
+    label = "Open Transactions on Statements"
+    type = "select"
+  }
+  boolean GIFT_CERTIFICATE_FIELDS_MANDATORY {
+    label = "Make gift certificate fields required on transaction lines"
+    type = "checkbox"
+  }
+  string TIMELIMITWEEKMAXVALUE {
+    label = "Value"
+    type = "timetrack"
+  }
+  number QTYPRICECOUNT {
+    label = "Maximum # of Quantity-based Price Levels"
+    type = "integer"
+  }
+  number INVENTORYCOSTINGMAXLINESTOLOAD {
+    label = "SCM: Inventory: Costing: Maximum number of lines to load in inventory costing 2.0"
+    type = "integer"
+  }
+  number INVENTORY_COSTING_LOG_LEVEL {
+    label = "SCM: Inventory: Costing: Default Log Level (0=Error, 1=Information, 2=Debug)"
+    type = "integer"
+  }
+  boolean AUTHORIZECUSTOMERCENTERORDERS {
+    label = "Process an online payment with Sales Order creation at Customer Center"
+    type = "checkbox"
+  }
+  "List<netsuite.selectOption>" FORECASTTRANTYPES {
+    label = "Transaction Types to Exclude from Forecast Reports"
+    type = "multiselect"
+  }
+  number LEGACY_TAX_HIGH_PRECISION_US_LOOKUP {
+    label = "High Precision Legacy Tax US Lookup (0 - OLD, 1 - REGEX, 2 - TABLE)"
+    type = "integer"
+  }
+  boolean CLASSESPERLINE {
+    label = "Allow Per-Line Classes"
+    type = "checkbox"
+  }
+  boolean OVERTRANSFERS {
+    label = "SCM: Inventory: Allow Overage on Transfer Order Fulfillments"
+    type = "checkbox"
+  }
+  boolean ALLOWPAYFLOWADDITIONS {
+    label = "Allow PayFlowPro Additions"
+    type = "checkbox"
+  }
+  number MAX_LINES_PER_REVAL_BATCH {
+    label = "Maximum number of lines per month end currency revaluation process"
+    type = "integer"
+  }
+  boolean ONLY_COSTING_ENGINE_UPDATES_AVGCOST {
+    label = "SCM: Inventory: Costing: Do not allow transactions to update the item average cost on submission"
+    type = "checkbox"
+  }
+  boolean ALLOWCROSSSUBBILLABLES {
+    label = "Allow cross-subsidiary billable time and expenses"
+    type = "checkbox"
+  }
+  
+  boolean PRESERVE_TRAN_ON_HOLD_PAYMENT {
+    label = "Preserve Transactions when Payment is on Hold"
+    type = "checkbox"
+  }
+  boolean USEPORATEONBILLS {
+    label = "Use Purchase Order Rate on Bills"
+    type = "checkbox"
+  }
+  boolean CUSTOMAPPROVALPURCHORD {
+    label = "Purchase Orders"
+    type = "checkbox"
+  }
+  boolean STRICT_SELECTION_OF_PPP {
+    label = "Use strict rules for the selection of Payment Processing Profiles"
+    type = "checkbox"
+  }
+  number BFO_VERSION {
+    label = "BFO version (0 - Actual, 1 - Previous)"
+    type = "integer"
+  }
+  netsuite.selectOption TIMELIMITDAYMINACTION {
+    label = "Action"
+    type = "select"
+  }
+  netsuite.selectOption NEWITEMCOMMITMENTLOGLEVEL {
+    label = "New Item Commitment Engine Log Level"
+    type = "select"
+  }
+  boolean SENDLEVEL3DATAWITHCYBSAUTH {
+    label = "Send level 3 data with authorisation request to Cybersource when decision manager enabled"
+    type = "checkbox"
+  }
+  boolean ENABLEINVENTORYALLOCATIONTRACKING {
+    label = "SCM: Inventory: Commitment: Enable Inventory Allocation Table Tracking"
+    type = "checkbox"
+  }
+  boolean USETXMGMTFORREVALUESTDCOSTINV {
+    label = "Use Transaction Management for Revalue Standard Cost Inventory"
+    type = "checkbox"
+  }
+  boolean AUTOMATICITEMCOMMITMENT {
+    label = "Perform Item Commitment After Transaction Entry"
+    type = "checkbox"
+  }
+  boolean EXTERNALPAYMENTS {
+    label = "Customers Can Pay Online"
+    type = "checkbox"
+  }
+  boolean QTYPRICESCHEDULEMULTDISCOUNTS {
+    label = "Allow Quantity Discounts per Price Level on Schedules"
+    type = "checkbox"
+  }
+  boolean CSV_SEND_UNKNOWN_EMAIL {
+    label = "CSV import: Flag that allows to send summary reports to unknown emails for account"
+    type = "checkbox"
+  }
+  boolean CUSTOMAPPROVALCUSTINVC {
+    label = "Invoices"
+    type = "checkbox"
+  }
+  netsuite.selectOption ITEMCOMMITMENTTRANSACTIONORDER {
+    label = "Item Commitment Transaction Ordering"
+    type = "select"
+  }
+  boolean USE_UNIT_CONVERSION_RATE {
+    label = "Use unit conversion rate for price range calculation (Issue 401421 and 726108)"
+    type = "checkbox"
+  }
+  boolean CASHBASIS {
+    label = "Cash Basis Reporting"
+    type = "checkbox"
+  }
+  netsuite.selectOption UOMMISMATCHCHECKLEVEL {
+    label = "Do not perform unit of measure validation on transaction save."
+    type = "select"
+  }
+  boolean ENABLEITEMAVAILABILITYTRACKING {
+    label = "SCM: Inventory: Commitment: Item Availability Tracking"
+    type = "checkbox"
+  }
+  number MAXPURCHASES {
+    label = "Maximum Purchase Lines to Consolidate"
+    type = "integer"
+  }
+  boolean VALIDATE_LOT_AVAIL_QTY_AT_COMMIT {
+    label = "SCM: Inventory: Commitment: Validate Lot Number Available Quantity at Item Commitment"
+    type = "checkbox"
+  }
+  boolean SHOW_WARN_TAX_RECEIPT {
+    label = "Show Warning Message for Taxable Expense Lines without Receipt"
+    type = "checkbox"
+  }
+  string TIMELIMITDAYMAXVALUE {
+    label = "Value"
+    type = "timetrack"
+  }
+  boolean PICKINGTICKETUNCOMMITTED {
+    label = "Show Uncommitted Items on Picking Tickets"
+    type = "checkbox"
+  }
+  boolean NULLCDLONJE {
+    label = "Allow Empty Classifications on Journals"
+    type = "checkbox"
+  }
+  netsuite.selectOption WRITEOFFACCOUNT {
+    label = "Write-Off Account for Returns"
+    type = "select"
+  }
+  boolean CREATE_DEPOSIT_ON_SALES_ORDER_SALE {
+    label = "Enable the Sale payment operation on a Sales Order by automatically creating a Customer Deposit."
+    type = "checkbox"
+  }
+  boolean CONVERTABSOLUTEDISCOUNTS {
+    label = "Convert Absolute Discounts to Percentage"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFVENDAUTHSTATUS {
+    label = "Default Vendor Return Auth. Status"
+    type = "select"
+  }
+  number MAX_ITEM_COMMITMENT_CONTEXT_LINES {
+    label = "SCM: Inventory: Commitment: Maximum number of lines to load into item commitment context"
+    type = "integer"
+  }
+  boolean LOCMANDATORY {
+    label = "Make Locations Mandatory"
+    type = "checkbox"
+  }
+  number MAX_LINES_IN_REVAL_BUCKET {
+    label = "Maximum number of transaction lines to process in one bucket in ME Revaluation"
+    type = "integer"
+  }
+  boolean COMMITORDERSAFTERDECOMMITTING {
+    label = "SCM: Inventory: Commitment: Commit Orders After Decommitting Order Quantity"
+    type = "checkbox"
+  }
+  string TIMELIMITENTRYMINVALUE {
+    label = "Value"
+    type = "timetrack"
+  }
+  netsuite.selectOption CUSTOMERRETURNVARIANCEACCOUNT {
+    label = "Default Customer Return Variance Account"
+    type = "select"
+  }
+  netsuite.selectOption CUSTCREDLIMHANDLING {
+    label = "Customer Credit Limit Handling"
+    type = "select"
+  }
+  boolean EMAILCANCELORDER {
+    label = "Send Email Confirmation when Sales Order Canceled"
+    type = "checkbox"
+  }
+  boolean ALLOWADJUSTEDEXPIRATIONDATE {
+    label = "Allow Adjusted Expiration Date to improve recurring payments"
+    type = "checkbox"
+  }
+  boolean VENDCREDLIMWARNINGS {
+    label = "Vendor Credit Limit Warnings"
+    type = "checkbox"
+  }
+  boolean ITEMCOSTASTRNFRORDCOST {
+    label = "Use Item Cost as Transfer Cost"
+    type = "checkbox"
+  }
+  boolean PRINT_PICK_TICKET_PER_QUANTITY {
+    label = "Print Lot Item Labels From Transactions By Quantity"
+    type = "checkbox"
+  }
+  boolean ASYNCFIXREVRECTRANSACTIONS {
+    label = "Async Fix Rev Rec Transactions"
+    type = "checkbox"
+  }
+  boolean PACKINGSLIPDROPSHIP {
+    label = "Show Drop Ship Items on Packing Slips"
+    type = "checkbox"
+  }
+  boolean ALLOWZEROQUANTITYINVADJST {
+    label = "SCM: Inventory: Costing: Allow Zero Quantity Inventory Adjustments"
+    type = "checkbox"
+  }
+  boolean USEHEADERCLASSFORLINE {
+    label = "Use Header Class as Default Line Item Value"
+    type = "checkbox"
+  }
+  boolean CLASSMANDATORY {
+    label = "Make Classes Mandatory"
+    type = "checkbox"
+  }
+  netsuite.selectOption INVTCOSTMETHOD {
+    label = "Inventory Costing Method"
+    type = "select"
+  }
+  boolean REAPPROVESOONEDIT {
+    label = "Require Re-approval on Edit of Sales Order"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFAULTVENDORPAYMENTACCOUNT {
+    label = "Default Vendor Payment Account"
+    type = "select"
+  }
+  boolean CURCOUNTONADJUSTMENTS {
+    label = "SCM: Inventory: Display Current Count on Adjustments"
+    type = "checkbox"
+  }
+  boolean NEWITEMCOMMITMENT {
+    label = "SCM: Inventory: Commitment: Use New Item Commitment Engine"
+    type = "checkbox"
+  }
+  boolean CURCOUNTONWORKSHEETS {
+    label = "SCM: Inventory: Display Current Count on Worksheets"
+    type = "checkbox"
+  }
+  netsuite.selectOption TIMELIMITDAYMIN {
+    label = "Minimum number of hours per working day"
+    type = "select"
+  }
+  number OPENCURFUTUREPERIODWINDOW {
+    label = "Minimum Period Window Size"
+    type = "integer"
+  }
+  "List<netsuite.selectOption>" SALESTRANTYPES {
+    label = "Transaction Types to Exclude from Sales Reports"
+    type = "multiselect"
+  }
+  netsuite.selectOption BILLQTYVARIANCEACCT {
+    label = "Default Bill Quantity Variance Account"
+    type = "select"
+  }
+  netsuite.selectOption TIMELIMITDAYMAXACTION {
+    label = "Action"
+    type = "select"
+  }
+  netsuite.selectOption TIMELIMITWEEKMAX {
+    label = "Maximum number of hours per week"
+    type = "select"
+  }
+  boolean COPYTIMEMEMOS {
+    label = "Copy Time Memos to Invoices"
+    type = "checkbox"
+  }
+  boolean SHOWOPENPACKSLIP {
+    label = "Show All Ordered Items on Packing Slips"
+    type = "checkbox"
+  }
+  boolean ACCOUNTLEGALNAME {
+    label = "Use Legal Name in Account"
+    type = "checkbox"
+  }
+  boolean STATEMENTJOURNALMEMOS {
+    label = "Show Journal Memos on Statements"
+    type = "checkbox"
+  }
+  netsuite.selectOption EXP_REPORT_FOREIGN_AMOUNT_CHANGE {
+    label = "Foreign Amount Change"
+    type = "select"
+  }
+  boolean ENABLEINVDEMANDSUPPLYTRACKING {
+    label = "SCM: Inventory: Commitment: Enable Inventory Demand and Inventory Supply Table Tracking"
+    type = "checkbox"
+  }
+  string configType {
+    _required = true
+    _hidden_value = true
+  }
+  _alias = "Accounting Preferences"
+  boolean DEPTSPERLINE {
+    label = "Allow Per-Line Departments"
+    type = "checkbox"
+  }
+  boolean DEPTMANDATORY {
+    label = "Make Departments Mandatory"
+    type = "checkbox"
+  }
+  boolean USEHEADERDEPTFORLINE {
+    label = "Use Header Department as Default Line Item Value"
+    type = "checkbox"
+  }
+}

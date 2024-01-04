@@ -1,0 +1,99 @@
+netsuite.workflow customworkflow9 {
+  scriptid = "customworkflow9"
+  initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+  initoncreate = false
+  initonvieworupdate = false
+  isinactive = false
+  islogenabled = false
+  keephistory = "ONLYWHENTESTING"
+  name = "seggev2"
+  recordtypes = "ACCOUNT"
+  releasestatus = "TESTING"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = {
+      custworkflow17 = {
+        scriptid = "custworkflow17"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "field3"
+        storevalue = true
+        index = 0
+      }
+    }
+  }
+  workflowstates = {
+    workflowstate = {
+      workflowstate74 = {
+        scriptid = "workflowstate74"
+        donotexitworkflow = false
+        name = "sgv2state1"
+        positionx = 243
+        positiony = 133
+        workflowstatecustomfields = {
+          workflowstatecustomfield = {
+            custwfstate3 = {
+              scriptid = "custwfstate3"
+              applyformatting = false
+              defaultchecked = false
+              displaytype = "NORMAL"
+              fieldtype = "TEXT"
+              label = "sgv2st1f1"
+              storevalue = true
+              index = 0
+            }
+            custwfstate4 = {
+              scriptid = "custwfstate4"
+              applyformatting = false
+              defaultchecked = false
+              displaytype = "NORMAL"
+              fieldtype = "TEXT"
+              label = "sgv2st1f2"
+              storevalue = true
+              index = 1
+            }
+          }
+        }
+        index = 0
+      }
+      workflowstate75 = {
+        scriptid = "workflowstate75"
+        donotexitworkflow = false
+        name = "sgv2state2"
+        positionx = 543
+        positiony = 123
+        workflowstatecustomfields = {
+          workflowstatecustomfield = {
+            custwfstate5 = {
+              scriptid = "custwfstate5"
+              applyformatting = false
+              defaultchecked = false
+              displaytype = "NORMAL"
+              fieldtype = "TEXT"
+              label = "sgv2st2f1"
+              storevalue = true
+              index = 0
+            }
+            custwfstate6 = {
+              scriptid = "custwfstate6"
+              applyformatting = false
+              defaultchecked = false
+              displaytype = "NORMAL"
+              fieldtype = "TEXT"
+              label = "sgv2st2f2"
+              storevalue = true
+              index = 1
+            }
+          }
+        }
+        index = 1
+      }
+    }
+  }
+  _alias = "seggev2"
+}

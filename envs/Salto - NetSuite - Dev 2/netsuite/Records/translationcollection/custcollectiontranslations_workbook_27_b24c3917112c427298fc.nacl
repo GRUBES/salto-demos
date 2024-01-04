@@ -1,0 +1,17 @@
+netsuite.translationcollection custcollectiontranslations_workbook_27_b24c3917112c427298fc {
+  scriptid = "custcollectiontranslations_workbook_27_b24c3917112c427298fc"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_workbook_27_b24c3917112c427298fc.strings.string.workbook_name_1433_1.scriptid
+  strings = {
+    string = {
+      workbook_name_1433_1 = {
+        scriptid = "workbook_name_1433_1"
+        defaulttranslation = "seggev workbook basic and research 1"
+        description = "Name in workbook"
+        index = 0
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "seggev workbook basic and research 1"
+}

@@ -1,0 +1,25 @@
+type netsuite.cmscontenttype {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custcontenttype[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  string customrecordid {
+    _required = true
+  }
+  string description {
+  }
+  string iconimagepath {
+  }
+  string application_id {
+  }
+  _alias = "CMS Content Type"
+}

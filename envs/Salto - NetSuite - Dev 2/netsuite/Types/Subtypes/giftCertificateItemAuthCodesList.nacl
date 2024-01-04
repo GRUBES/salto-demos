@@ -1,0 +1,11 @@
+type netsuite.giftCertificateItemAuthCodesList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.giftCertificateItemAuthCodes>" authCodes {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

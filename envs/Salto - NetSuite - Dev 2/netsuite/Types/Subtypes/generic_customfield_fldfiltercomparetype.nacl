@@ -1,0 +1,15 @@
+type netsuite.generic_customfield_fldfiltercomparetype is string {
+  _restriction = {
+    values = [
+      "EQ",
+      "GT",
+      "GTE",
+      "LIKE",
+      "LT",
+      "LTE",
+      "NE",
+      "NOTLIKE",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,14 @@
+type netsuite.giftCertRedemption {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef authCode {
+  }
+  number authCodeApplied {
+  }
+  number authCodeAmtRemaining {
+  }
+  number giftCertAvailable {
+  }
+}

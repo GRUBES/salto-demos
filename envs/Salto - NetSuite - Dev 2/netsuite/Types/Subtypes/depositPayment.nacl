@@ -1,0 +1,34 @@
+type netsuite.depositPayment {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean deposit {
+  }
+  number id {
+  }
+  string docDate {
+  }
+  string type {
+  }
+  string docNumber {
+  }
+  string memo {
+  }
+  netsuite.paymentMethod paymentMethod {
+    isReference = true
+  }
+  string refNum {
+  }
+  netsuite.recordRef entity {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number transactionAmount {
+  }
+  number paymentAmount {
+  }
+  number lineId {
+  }
+}

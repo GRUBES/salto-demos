@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_seggev_workbook_table_dslink_pivot_chart {
+  scriptid = "custcollection_seggev_workbook_table_dslink_pivot_chart"
+  defaultlanguage = "en-US"
+  name = "seggev table dslink pivot and chart"
+  strings = {
+    string = {
+      workbook_name_1511_1 = {
+        scriptid = "workbook_name_1511_1"
+        defaulttranslation = "seggev table dslink pivot and chart"
+        description = "Name in workbook"
+        index = 0
+      }
+    }
+  }
+  _alias = "seggev table dslink pivot and chart"
+}

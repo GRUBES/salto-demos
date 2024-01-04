@@ -1,0 +1,13 @@
+netsuite.file Templates_Sales_Templates_Excel_quotation_xls@dsduv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/Templates/Sales Templates/Excel_quotation.xls"
+  content = file("netsuite/FileCabinet/Templates/Sales Templates/Excel_quotation.xls")
+  _parent = [
+    netsuite.folder.instance.Templates_Sales_Templates@ds,
+  ]
+  _alias = "Excel_quotation.xls"
+}

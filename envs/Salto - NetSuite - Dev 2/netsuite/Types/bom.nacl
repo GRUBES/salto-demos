@@ -1,0 +1,44 @@
+type netsuite.bom {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string name {
+  }
+  boolean usedOnAssembly {
+  }
+  boolean isInactive {
+  }
+  boolean useComponentYield {
+  }
+  string memo {
+  }
+  netsuite.recordRef legacyBomForAssembly {
+  }
+  boolean availableForAllAssemblies {
+  }
+  netsuite.recordRefList restrictToAssembliesList {
+  }
+  boolean availableForAllLocations {
+  }
+  netsuite.recordRefList restrictToLocationsList {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  boolean includeChildren {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

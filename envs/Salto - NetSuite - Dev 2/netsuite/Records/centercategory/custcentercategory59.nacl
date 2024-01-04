@@ -1,0 +1,59 @@
+netsuite.centercategory custcentercategory59 {
+  scriptid = "custcentercategory59"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab19.scriptid
+  label = "Reports"
+  links = {
+    link = {
+      REPO_38 = {
+        linkid = "REPO_38"
+        shortlist = false
+        index = 0
+      }
+      REPO_32 = {
+        linkid = "REPO_32"
+        shortlist = false
+        index = 1
+      }
+      REPO_34 = {
+        linkid = "REPO_34"
+        shortlist = false
+        index = 2
+      }
+      REPO_30 = {
+        linkid = "REPO_30"
+        shortlist = false
+        index = 3
+      }
+      REPO_28 = {
+        linkid = "REPO_28"
+        shortlist = false
+        index = 4
+      }
+      REPO_36 = {
+        linkid = "REPO_36"
+        shortlist = false
+        index = 5
+      }
+      REPO_179 = {
+        linkid = "REPO_179"
+        shortlist = false
+        index = 6
+      }
+      custlink_10_t2480368_451 = {
+        linkobject = netsuite.centerlink.instance.custlink_10_t2480368_451.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+        index = 7
+      }
+      custcentertab8 = {
+        linklabel = "View All Reports"
+        linkobject = netsuite.centertab.instance.custcentertab8.scriptid
+        linktasktype = "CARD"
+        shortlist = false
+        index = 8
+      }
+    }
+  }
+  _alias = "Reports"
+}

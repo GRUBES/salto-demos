@@ -1,0 +1,293 @@
+type netsuite.nonInventorySaleItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string salesDescription {
+  }
+  boolean includeChildren {
+  }
+  netsuite.account incomeAccount {
+    isReference = true
+  }
+  boolean isTaxable {
+  }
+  unknown matrixType {
+  }
+  netsuite.recordRef taxSchedule {
+  }
+  number shippingCost {
+  }
+  string shippingCostUnits {
+  }
+  number handlingCost {
+  }
+  string handlingCostUnits {
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  number weight {
+  }
+  unknown weightUnit {
+  }
+  string weightUnits {
+  }
+  string costEstimateUnits {
+  }
+  netsuite.unitsType unitsType {
+    isReference = true
+  }
+  netsuite.recordRef saleUnit {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  netsuite.recordRef billingSchedule {
+  }
+  netsuite.account deferredRevenueAccount {
+    isReference = true
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string stockDescription {
+  }
+  boolean isHazmatItem {
+  }
+  string hazmatId {
+  }
+  string hazmatShippingName {
+  }
+  string hazmatHazardClass {
+  }
+  unknown hazmatPackingGroup {
+  }
+  string hazmatItemUnits {
+  }
+  number hazmatItemUnitsQty {
+  }
+  boolean producer {
+  }
+  string manufacturer {
+  }
+  string mpn {
+  }
+  boolean multManufactureAddr {
+  }
+  string manufacturerAddr1 {
+  }
+  string manufacturerCity {
+  }
+  string manufacturerState {
+  }
+  string manufacturerZip {
+  }
+  unknown countryOfManufacture {
+  }
+  string manufacturerTaxId {
+  }
+  string scheduleBNumber {
+  }
+  number scheduleBQuantity {
+  }
+  unknown scheduleBCode {
+  }
+  string manufacturerTariff {
+  }
+  unknown preferenceCriterion {
+  }
+  number minimumQuantity {
+  }
+  boolean enforceMinQtyInternally {
+  }
+  number maximumQuantity {
+  }
+  string softDescriptor {
+  }
+  netsuite.recordRef shipPackage {
+  }
+  boolean shipIndividually {
+  }
+  boolean isFulfillable {
+  }
+  netsuite.costCategory costCategory {
+    isReference = true
+  }
+  boolean pricesIncludeTax {
+  }
+  netsuite.recordRef quantityPricingSchedule {
+  }
+  boolean useMarginalRates {
+  }
+  unknown overallQuantityPricingType {
+  }
+  netsuite.pricingGroup pricingGroup {
+    isReference = true
+  }
+  string minimumQuantityUnits {
+  }
+  number vsoePrice {
+  }
+  unknown vsoeSopGroup {
+  }
+  unknown vsoeDeferral {
+  }
+  unknown vsoePermitDiscount {
+  }
+  boolean vsoeDelivered {
+  }
+  netsuite.recordRef itemRevenueCategory {
+  }
+  boolean deferRevRec {
+  }
+  netsuite.recordRef revenueRecognitionRule {
+  }
+  netsuite.recordRef revRecForecastRule {
+  }
+  netsuite.recordRef revenueAllocationGroup {
+  }
+  netsuite.recordRef createRevenuePlansOn {
+  }
+  boolean directRevenuePosting {
+  }
+  boolean contingentRevenueHandling {
+  }
+  netsuite.account revReclassFXAccount {
+    isReference = true
+  }
+  string storeDisplayName {
+  }
+  netsuite.file storeDisplayThumbnail {
+    isReference = true
+  }
+  netsuite.file storeDisplayImage {
+    isReference = true
+  }
+  string storeDescription {
+  }
+  string storeDetailedDescription {
+  }
+  netsuite.recordRef storeItemTemplate {
+  }
+  string pageTitle {
+  }
+  string metaTagHtml {
+  }
+  boolean excludeFromSitemap {
+  }
+  unknown sitemapPriority {
+  }
+  string searchKeywords {
+  }
+  boolean isDonationItem {
+  }
+  boolean showDefaultDonationAmount {
+  }
+  number maxDonationAmount {
+  }
+  boolean dontShowPrice {
+  }
+  string noPriceMessage {
+  }
+  string outOfStockMessage {
+  }
+  boolean onSpecial {
+  }
+  unknown outOfStockBehavior {
+  }
+  string relatedItemsDescription {
+  }
+  string specialsDescription {
+  }
+  string featuredDescription {
+  }
+  string shoppingDotComCategory {
+  }
+  number shopzillaCategoryId {
+  }
+  string nexTagCategory {
+  }
+  netsuite.productFeedList productFeedList {
+  }
+  string urlComponent {
+  }
+  netsuite.recordRef customForm {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  netsuite.nonInventorySaleItem parent {
+    isReference = true
+  }
+  boolean isOnline {
+  }
+  boolean isGcoCompliant {
+  }
+  boolean offerSupport {
+  }
+  boolean isInactive {
+  }
+  string matrixItemNameTemplate {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef defaultItemShipMethod {
+  }
+  unknown itemCarrier {
+  }
+  netsuite.recordRefList itemShipMethodList {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.itemOptionsList itemOptionsList {
+  }
+  netsuite.matrixOptionList matrixOptionList {
+  }
+  netsuite.pricingMatrix pricingMatrix {
+  }
+  netsuite.itemAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.recordRef purchaseTaxCode {
+  }
+  number rate {
+  }
+  netsuite.recordRef salesTaxCode {
+  }
+  netsuite.siteCategoryList siteCategoryList {
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.presentationItemList presentationItemList {
+  }
+  netsuite.nonInventorySaleItemHierarchyVersionsList hierarchyVersionsList {
+  }
+  netsuite.recordRef consumptionUnit {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Non-inventory Sale Item"
+}

@@ -1,0 +1,19 @@
+type netsuite.generic_month is string {
+  _restriction = {
+    values = [
+      "APRIL",
+      "AUGUST",
+      "DECEMBER",
+      "FEBRUARY",
+      "JANUARY",
+      "JULY",
+      "JUNE",
+      "MARCH",
+      "MAY",
+      "NOVEMBER",
+      "OCTOBER",
+      "SEPTEMBER",
+    ]
+    enforce_value = false
+  }
+}

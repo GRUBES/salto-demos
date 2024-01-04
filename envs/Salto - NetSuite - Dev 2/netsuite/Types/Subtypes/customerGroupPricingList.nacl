@@ -1,0 +1,11 @@
+type netsuite.customerGroupPricingList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customerGroupPricing>" groupPricing {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

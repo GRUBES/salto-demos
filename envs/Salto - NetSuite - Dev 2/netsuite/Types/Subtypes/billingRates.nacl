@@ -1,0 +1,13 @@
+type netsuite.billingRates {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  netsuite.recordRef billingClass {
+  }
+  netsuite.rateList rateList {
+  }
+}

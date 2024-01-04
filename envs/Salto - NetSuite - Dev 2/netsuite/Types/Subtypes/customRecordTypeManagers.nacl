@@ -1,0 +1,8 @@
+type netsuite.customRecordTypeManagers {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef managerEmp {
+  }
+}

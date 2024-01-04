@@ -1,0 +1,547 @@
+type netsuite.entryForm {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custform[0-9a-z_]+"
+    }
+  }
+  netsuite.entryform_standard standard {
+    isAttribute = true
+  }
+  string name {
+    _required = true
+  }
+  string recordType {
+  }
+  boolean inactive {
+  }
+  boolean preferred {
+  }
+  boolean storedWithRecord {
+  }
+  netsuite.entryForm_mainFields mainFields {
+  }
+  netsuite.entryForm_tabs tabs {
+  }
+  netsuite.entryForm_customCode customCode {
+  }
+  netsuite.entryForm_quickViewFields quickViewFields {
+  }
+  netsuite.entryForm_actionbar actionbar {
+  }
+  boolean useForPopup {
+  }
+  boolean editingInList {
+  }
+  netsuite.entryForm_buttons buttons {
+  }
+  string application_id {
+  }
+  _alias = "Entry Form"
+}
+type netsuite.entryForm_actionbar_buttons_button {
+  netsuite.entryform_buttonid id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+}
+type netsuite.entryForm_actionbar_buttons {
+  "Map<netsuite.entryForm_actionbar_buttons_button>" button {
+    map_key_field = "id"
+  }
+}
+type netsuite.entryForm_actionbar_customButtons_customButton {
+  string label {
+    _required = true
+  }
+  string function {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_actionbar_customButtons {
+  "Map<netsuite.entryForm_actionbar_customButtons_customButton>" customButton {
+    map_key_field = "label"
+  }
+}
+type netsuite.entryForm_actionbar_customMenu_customMenuItem {
+  string label {
+    _required = true
+  }
+  string function {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_actionbar_customMenu {
+  "Map<netsuite.entryForm_actionbar_customMenu_customMenuItem>" customMenuItem {
+    map_key_field = "label"
+  }
+}
+type netsuite.entryForm_actionbar_menu_menuitem {
+  netsuite.entryform_buttonid id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+}
+type netsuite.entryForm_actionbar_menu {
+  "Map<netsuite.entryForm_actionbar_menu_menuitem>" menuitem {
+    map_key_field = "id"
+  }
+}
+type netsuite.entryForm_actionbar {
+  netsuite.entryForm_actionbar_buttons buttons {
+  }
+  netsuite.entryForm_actionbar_customButtons customButtons {
+  }
+  netsuite.entryForm_actionbar_customMenu customMenu {
+  }
+  netsuite.entryForm_actionbar_menu menu {
+  }
+}
+type netsuite.entryForm_buttons_standardButtons_button {
+  netsuite.entryform_buttonid id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  netsuite.form_buttonstyle style {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_buttons_standardButtons {
+  "Map<netsuite.entryForm_buttons_standardButtons_button>" button {
+    map_key_field = "id"
+  }
+}
+type netsuite.entryForm_buttons {
+  netsuite.entryForm_buttons_standardButtons standardButtons {
+  }
+}
+type netsuite.entryForm_customCode {
+  string scriptFile {
+  }
+}
+type netsuite.entryForm_mainFields_defaultFieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_mainFields_defaultFieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.entryForm_mainFields_defaultFieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_mainFields_defaultFieldGroup {
+  "Map<netsuite.entryForm_mainFields_defaultFieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+}
+type netsuite.entryForm_mainFields_fieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_mainFields_fieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.entryForm_mainFields_fieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_mainFields_fieldGroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean showTitle {
+  }
+  boolean singleColumn {
+  }
+  "Map<netsuite.entryForm_mainFields_fieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_mainFields {
+  "Map<netsuite.entryForm_mainFields_fieldGroup>" fieldGroup {
+    map_key_field = "scriptid"
+  }
+  netsuite.entryForm_mainFields_defaultFieldGroup defaultFieldGroup {
+  }
+}
+type netsuite.entryForm_quickViewFields_field {
+  string id {
+    _required = true
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_quickViewFields {
+  "Map<netsuite.entryForm_quickViewFields_field>" field {
+    map_key_field = "id"
+  }
+}
+type netsuite.entryForm_tabs_tab_fieldGroups_defaultFieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_fieldGroups_defaultFieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.entryForm_tabs_tab_fieldGroups_defaultFieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_fieldGroups_defaultFieldGroup {
+  "Map<netsuite.entryForm_tabs_tab_fieldGroups_defaultFieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+}
+type netsuite.entryForm_tabs_tab_fieldGroups_fieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_fieldGroups_fieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.entryForm_tabs_tab_fieldGroups_fieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_fieldGroups_fieldGroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean showTitle {
+  }
+  boolean singleColumn {
+  }
+  "Map<netsuite.entryForm_tabs_tab_fieldGroups_fieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_fieldGroups {
+  "Map<netsuite.entryForm_tabs_tab_fieldGroups_fieldGroup>" fieldGroup {
+    map_key_field = "scriptid"
+  }
+  netsuite.entryForm_tabs_tab_fieldGroups_defaultFieldGroup defaultFieldGroup {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subList {
+  string id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subLists_subList {
+  string id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subLists {
+  "Map<netsuite.entryForm_tabs_tab_subItems_subLists_subList>" subList {
+    map_key_field = "id"
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup {
+  "Map<netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean showTitle {
+  }
+  boolean singleColumn {
+  }
+  "Map<netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups {
+  "Map<netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup>" fieldGroup {
+    map_key_field = "scriptid"
+  }
+  netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup defaultFieldGroup {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_subLists_subList {
+  string id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab_subLists {
+  "Map<netsuite.entryForm_tabs_tab_subItems_subTab_subLists_subList>" subList {
+    map_key_field = "id"
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems_subTab {
+  string id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  netsuite.entryForm_tabs_tab_subItems_subTab_fieldGroups fieldGroups {
+  }
+  netsuite.entryForm_tabs_tab_subItems_subTab_subLists subLists {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs_tab_subItems {
+  "Map<netsuite.entryForm_tabs_tab_subItems_subList>" subList {
+    map_key_field = "id"
+  }
+  netsuite.entryForm_tabs_tab_subItems_subLists subLists {
+  }
+  "Map<netsuite.entryForm_tabs_tab_subItems_subTab>" subTab {
+    map_key_field = "id"
+  }
+}
+type netsuite.entryForm_tabs_tab {
+  string id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  netsuite.entryForm_tabs_tab_fieldGroups fieldGroups {
+  }
+  netsuite.entryForm_tabs_tab_subItems subItems {
+  }
+  number index {
+  }
+}
+type netsuite.entryForm_tabs {
+  "Map<netsuite.entryForm_tabs_tab>" tab {
+    map_key_field = "id"
+  }
+}

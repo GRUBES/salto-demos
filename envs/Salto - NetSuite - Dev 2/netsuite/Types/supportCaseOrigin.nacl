@@ -1,0 +1,23 @@
+type netsuite.supportCaseOrigin {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  netsuite.recordRef insertBefore {
+  }
+  string description {
+  }
+  boolean isInactive {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

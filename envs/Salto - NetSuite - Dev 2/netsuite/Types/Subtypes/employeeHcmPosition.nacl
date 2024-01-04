@@ -1,0 +1,26 @@
+type netsuite.employeeHcmPosition {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef position {
+  }
+  boolean primaryPosition {
+  }
+  string positionId {
+  }
+  number positionAllocation {
+  }
+  number fullTimeEquivalent {
+  }
+  netsuite.recordRef employmentCategory {
+  }
+  netsuite.recordRef reportsTo {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+}

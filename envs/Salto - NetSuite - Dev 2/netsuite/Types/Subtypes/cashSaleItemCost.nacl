@@ -1,0 +1,60 @@
+type netsuite.cashSaleItemCost {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string taxDetailsReference {
+  }
+  string billedDate {
+  }
+  string itemDisp {
+  }
+  string memo {
+  }
+  string jobDisp {
+  }
+  string department {
+  }
+  string class {
+  }
+  string location {
+  }
+  string unitDisp {
+  }
+  netsuite.customFieldList options {
+  }
+  string itemCostCount {
+  }
+  string quantity {
+  }
+  string serialNumbers {
+  }
+  number cost {
+  }
+  number amount {
+  }
+  number taxAmount {
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string revRecStartDate {
+  }
+  string revRecEndDate {
+  }
+  number grossAmt {
+  }
+  number tax1Amt {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+}

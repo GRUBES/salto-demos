@@ -1,0 +1,9 @@
+type netsuite.snapshot_type_date_range_not_comparable is string {
+  _restriction = {
+    values = [
+      "COMMISSIONS",
+      "COMMISSIONSPARTNER",
+    ]
+    enforce_value = false
+  }
+}

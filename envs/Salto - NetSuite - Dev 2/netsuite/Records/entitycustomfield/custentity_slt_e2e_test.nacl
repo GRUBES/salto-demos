@@ -1,0 +1,33 @@
+netsuite.entitycustomfield custentity_slt_e2e_test {
+  scriptid = "custentity_slt_e2e_test"
+  accesslevel = "2"
+  appliestocontact = true
+  appliestocustomer = false
+  appliestoemployee = true
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = true
+  defaultchecked = false
+  description = "Some string with special chars !\"&​’"
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "CHECKBOX"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "created by oss e2e - 5135712"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "created by oss e2e - 5135712"
+}

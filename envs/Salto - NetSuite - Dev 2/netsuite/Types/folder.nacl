@@ -1,0 +1,22 @@
+type netsuite.folder {
+  serviceid path {
+    _required = true
+    _restriction = {
+      regex = "^/.+"
+    }
+  }
+  boolean bundleable {
+  }
+  string description {
+  }
+  boolean isinactive {
+  }
+  boolean isprivate {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  string application_id {
+  }
+  _alias = "Folder"
+}

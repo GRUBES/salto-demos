@@ -1,0 +1,71 @@
+netsuite.centertab custcentertab23 {
+  scriptid = "custcentertab23"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Opportunities"
+  portlets = {
+    portlet = {
+      portlet_342_3368792_785 = {
+        scriptid = "portlet_342_3368792_785"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+        index = 0
+      }
+      portlet_338_3368792_785 = {
+        scriptid = "portlet_338_3368792_785"
+        isportletshown = false
+        portlet = "QUICKADD"
+        portletcolumn = "1"
+        index = 1
+      }
+      portlet_344_3368792_785 = {
+        scriptid = "portlet_344_3368792_785"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+        index = 2
+      }
+      portlet_351_3368792_785 = {
+        scriptid = "portlet_351_3368792_785"
+        isportletshown = false
+        portlet = "SHORTCUTS"
+        portletcolumn = "1"
+        index = 3
+      }
+      portlet_354_3368792_785 = {
+        scriptid = "portlet_354_3368792_785"
+        isportletshown = false
+        portlet = "REMINDERS"
+        portletcolumn = "1"
+        index = 4
+      }
+      portlet_352_3368792_785 = {
+        scriptid = "portlet_352_3368792_785"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+        index = 5
+      }
+      portlet_340_3368792_785 = {
+        scriptid = "portlet_340_3368792_785"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+        index = 6
+      }
+      portlet_358_3368792_785 = {
+        scriptid = "portlet_358_3368792_785"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+        index = 7
+      }
+    }
+  }
+  _alias = "Opportunities"
+}

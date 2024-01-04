@@ -1,0 +1,78 @@
+netsuite.centertab custcentertab22 {
+  scriptid = "custcentertab22"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Support"
+  portlets = {
+    portlet = {
+      portlet_331_3368792_785 = {
+        scriptid = "portlet_331_3368792_785"
+        isportletshown = true
+        portlet = "ACCOUNTCENTER"
+        portletcolumn = "1"
+        index = 0
+      }
+      portlet_314_3368792_785 = {
+        scriptid = "portlet_314_3368792_785"
+        isportletshown = true
+        portlet = "USERGROUP"
+        portletcolumn = "1"
+        index = 1
+      }
+      portlet_317_3368792_785 = {
+        scriptid = "portlet_317_3368792_785"
+        isportletshown = true
+        portlet = "FOLLOWNETSUITE"
+        portletcolumn = "1"
+        index = 2
+      }
+      portlet_328_3368792_785 = {
+        scriptid = "portlet_328_3368792_785"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+        index = 3
+      }
+      portlet_334_3368792_785 = {
+        scriptid = "portlet_334_3368792_785"
+        isportletshown = true
+        portlet = "SETTINGS"
+        portletcolumn = "1"
+        index = 4
+      }
+      portlet_323_3368792_785 = {
+        scriptid = "portlet_323_3368792_785"
+        isportletshown = true
+        portlet = "NEWFEATURES"
+        portletcolumn = "2"
+        index = 5
+      }
+      portlet_322_3368792_785 = {
+        scriptid = "portlet_322_3368792_785"
+        isportletshown = true
+        portlet = "SUITEANSWERS"
+        portletcolumn = "2"
+        index = 6
+      }
+      portlet_336_3368792_785 = {
+        scriptid = "portlet_336_3368792_785"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+        index = 7
+      }
+      portlet_320_3368792_785 = {
+        scriptid = "portlet_320_3368792_785"
+        isportletshown = false
+        portlet = "SHORTCUTS"
+        portletcolumn = "2"
+        index = 8
+      }
+    }
+  }
+  _alias = "Support"
+}

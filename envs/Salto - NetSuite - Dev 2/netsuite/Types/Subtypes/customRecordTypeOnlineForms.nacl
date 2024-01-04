@@ -1,0 +1,12 @@
+type netsuite.customRecordTypeOnlineForms {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string onlineFormName {
+  }
+  string isOnline {
+  }
+  string templateName {
+  }
+}

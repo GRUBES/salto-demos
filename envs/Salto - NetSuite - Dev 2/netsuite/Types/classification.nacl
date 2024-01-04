@@ -1,0 +1,34 @@
+type netsuite.classification {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  boolean includeChildren {
+  }
+  netsuite.classification parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  netsuite.classTranslationList classTranslationList {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Classification"
+}

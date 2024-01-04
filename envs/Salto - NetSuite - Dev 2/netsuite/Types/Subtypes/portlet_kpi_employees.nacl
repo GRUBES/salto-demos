@@ -1,0 +1,10 @@
+type netsuite.portlet_kpi_employees is string {
+  _restriction = {
+    values = [
+      "ALL",
+      "ME_ONLY",
+      "MY_TEAM",
+    ]
+    enforce_value = false
+  }
+}

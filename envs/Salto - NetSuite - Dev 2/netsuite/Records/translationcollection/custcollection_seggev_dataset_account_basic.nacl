@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_seggev_dataset_account_basic {
+  scriptid = "custcollection_seggev_dataset_account_basic"
+  defaultlanguage = "en-US"
+  name = "Seggev Account Basic"
+  strings = {
+    string = {
+      dataset_name_1141_1 = {
+        scriptid = "dataset_name_1141_1"
+        defaulttranslation = "Seggev Account Basic"
+        description = "Name in dataset"
+        index = 0
+      }
+    }
+  }
+  _alias = "Seggev Account Basic"
+}

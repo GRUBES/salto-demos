@@ -1,0 +1,111 @@
+netsuite.centercategory custcentercategory32 {
+  scriptid = "custcentercategory32"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Pipeline Analysis"
+  links = {
+    link = {
+      REPO_131 = {
+        linkid = "REPO_131"
+        shortlist = false
+        index = 0
+      }
+      REPO_51 = {
+        linkid = "REPO_51"
+        shortlist = false
+        index = 1
+      }
+      REPO_128 = {
+        linkid = "REPO_128"
+        shortlist = false
+        index = 2
+      }
+      REPO_11 = {
+        linkid = "REPO_11"
+        shortlist = false
+        index = 3
+      }
+      REPO_10 = {
+        linkid = "REPO_10"
+        shortlist = false
+        index = 4
+      }
+      REPO_100 = {
+        linkid = "REPO_100"
+        shortlist = false
+        index = 5
+      }
+      REPO_9 = {
+        linkid = "REPO_9"
+        shortlist = false
+        index = 6
+      }
+      REPO_8 = {
+        linkid = "REPO_8"
+        shortlist = false
+        index = 7
+      }
+      REPO_126 = {
+        linkid = "REPO_126"
+        shortlist = false
+        index = 8
+      }
+      REPO_94 = {
+        linkid = "REPO_94"
+        shortlist = false
+        index = 9
+      }
+      REPO_68 = {
+        linkid = "REPO_68"
+        shortlist = false
+        index = 10
+      }
+      REPO_69 = {
+        linkid = "REPO_69"
+        shortlist = false
+        index = 11
+      }
+      REPO_105 = {
+        linkid = "REPO_105"
+        shortlist = false
+        index = 12
+      }
+      REPO_104 = {
+        linkid = "REPO_104"
+        shortlist = false
+        index = 13
+      }
+      REPO_96 = {
+        linkid = "REPO_96"
+        shortlist = false
+        index = 14
+      }
+      REPO_256 = {
+        linkid = "REPO_256"
+        shortlist = false
+        index = 15
+      }
+      REPO_257 = {
+        linkid = "REPO_257"
+        shortlist = false
+        index = 16
+      }
+      REPO_134 = {
+        linkid = "REPO_134"
+        shortlist = false
+        index = 17
+      }
+      REPO_106 = {
+        linkid = "REPO_106"
+        shortlist = false
+        index = 18
+      }
+      REPO_NEG116 = {
+        linkid = "REPO_NEG116"
+        shortlist = false
+        index = 19
+      }
+    }
+  }
+  _alias = "Pipeline Analysis"
+}

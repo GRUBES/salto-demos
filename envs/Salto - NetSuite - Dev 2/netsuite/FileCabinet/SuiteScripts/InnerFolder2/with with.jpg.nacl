@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_InnerFolder2_with_with_jpg@ddsv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/InnerFolder2/with with.jpg"
+  content = file("netsuite/FileCabinet/SuiteScripts/InnerFolder2/with with.jpg")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_InnerFolder2@d,
+  ]
+  _alias = "with with.jpg"
+}

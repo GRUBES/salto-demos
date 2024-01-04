@@ -1,0 +1,68 @@
+type netsuite.transferOrderItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  number line {
+  }
+  number quantityAvailable {
+  }
+  number quantityOnHand {
+  }
+  number quantityBackOrdered {
+  }
+  number quantityCommitted {
+  }
+  number quantityFulfilled {
+  }
+  number quantityPacked {
+  }
+  number quantityPicked {
+  }
+  number quantityReceived {
+  }
+  number quantity {
+  }
+  number rate {
+  }
+  netsuite.recordRef units {
+  }
+  number amount {
+  }
+  string description {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string serialNumbers {
+  }
+  unknown commitInventory {
+  }
+  number orderPriority {
+  }
+  netsuite.customFieldList options {
+  }
+  boolean isClosed {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  number lastPurchasePrice {
+  }
+  number averageCost {
+  }
+  string expectedShipDate {
+  }
+  string expectedReceiptDate {
+  }
+  string requestedDate {
+  }
+  netsuite.recordRef orderAllocationStrategy {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

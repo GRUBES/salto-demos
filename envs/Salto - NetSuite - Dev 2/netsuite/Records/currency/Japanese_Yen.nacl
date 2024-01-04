@@ -1,0 +1,13 @@
+netsuite.currency Japanese_Yen@s {
+  name = "Japanese Yen"
+  symbol = "JPY"
+  isBaseCurrency = false
+  isInactive = false
+  overrideCurrencyFormat = true
+  displaySymbol = "￥"
+  symbolPlacement = "_beforeNumber"
+  locale = "_japanJapanese"
+  formatSample = "￥‎1,234.56"
+  currencyPrecision = "_two"
+  _alias = "Japanese Yen"
+}

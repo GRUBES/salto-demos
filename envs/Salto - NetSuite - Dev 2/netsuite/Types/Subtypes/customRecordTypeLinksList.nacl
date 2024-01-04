@@ -1,0 +1,11 @@
+type netsuite.customRecordTypeLinksList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordTypeLinks>" links {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

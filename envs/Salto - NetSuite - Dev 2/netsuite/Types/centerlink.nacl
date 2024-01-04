@@ -1,0 +1,18 @@
+type netsuite.centerlink {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custlink[0-9a-z_]+"
+    }
+  }
+  string label {
+    _required = true
+  }
+  string url {
+    _required = true
+  }
+  string application_id {
+  }
+  _alias = "Center Link"
+}

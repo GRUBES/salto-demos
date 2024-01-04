@@ -1,0 +1,10 @@
+type netsuite.portlet_analytics_portlettype is string {
+  _restriction = {
+    values = [
+      "CHART",
+      "PIVOT",
+      "TABLE",
+    ]
+    enforce_value = false
+  }
+}

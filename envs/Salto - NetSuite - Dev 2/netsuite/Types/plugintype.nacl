@@ -1,0 +1,71 @@
+type netsuite.plugintype {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^customscript[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  string scriptfile {
+    _required = true
+  }
+  netsuite.plugintype_deployment_model deploymentmodel {
+    _required = true
+  }
+  netsuite.plugintype_status status {
+    _required = true
+  }
+  string description {
+  }
+  boolean isinactive {
+  }
+  boolean notifyadmins {
+  }
+  string notifyemails {
+  }
+  string notifygroup {
+  }
+  boolean notifyowner {
+  }
+  boolean notifyuser {
+  }
+  string class {
+  }
+  string documentationfile {
+  }
+  netsuite.plugintype_loglevel loglevel {
+  }
+  netsuite.plugintype_libraries libraries {
+  }
+  netsuite.plugintype_methods methods {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "Plugin Type"
+}
+type netsuite.plugintype_libraries_library {
+  string scriptfile {
+    _required = true
+  }
+}
+type netsuite.plugintype_libraries {
+  "List<netsuite.plugintype_libraries_library>" library {
+  }
+}
+type netsuite.plugintype_methods_method {
+  string method {
+    _required = true
+  }
+  string description {
+  }
+}
+type netsuite.plugintype_methods {
+  "List<netsuite.plugintype_methods_method>" method {
+  }
+}

@@ -1,0 +1,415 @@
+netsuite.accountingPreferences {
+  NOMAPORREDUCEFUNCINDBQUIESCEGP = false
+  DEFAULTTRANSFERORDERCOMMITOPTION = {
+    value = "1"
+    text = "Available Qty"
+  }
+  MAXLOCATIONS = 100
+  ENABLEINVENTORYDEMANDTRACKING = true
+  TERMDISCOUNTSINCLUDETAX = false
+  DEFAULT_TRNFRORD_INCOTERM = {
+    value = "1"
+    text = "DAP"
+  }
+  OVERRIDE_SUITETAX_REQUIREMENT = false
+  VALIDATE_SAME_PO_CURRENCY_IN_BILL = true
+  NONBALANCINGCDLONJE = false
+  DEFAULTEXPENSESBILLABLE = true
+  ACCOUNTINGPERIODS = false
+  ADVANCEDTIMEAPPROVALS = false
+  INITIALCOSTINGQUEUEMAXSIZE = 500000
+  ALLOCATION_AUTO_FIX_DATA = true
+  INVT_TRANS_CLOSED_PERIODS = false
+  COPYEXPENSEMEMOS = true
+  USE_DELAYED_TRIGGER_INVENTORY = true
+  VALIDATE_TRANLINE_LOCATION_CHANGE = true
+  BUDGETINCLUDEELIMSUB = false
+  PAYBILLSSEGMENTSIZE = 500
+  DECOMMIT_PENDING_APPROVAL_ZERO_QTY = false
+  USEINVENTORYCOSTINGSTRICTVALIDATION = false
+  MAXSUBSIDIARIES = 250
+  CCSECURITYCODE = false
+  TIMELIMITENTRYMINACTION = {
+    value = "ERROR"
+    text = "Do not allow time outside limit"
+  }
+  APPLYTIMETHRESHOLDTOVENDORTIME = true
+  PICKINGTICKETNONINVT = false
+  CONSOLPAYMENTS = false
+  SEND_GIFT_CERTIFICATE_EMAILS = true
+  OVERFULFILLMENTS = false
+  REMOVECLIENTGOVERNANCELIMIT = false
+  UNRECEIVEDRTNAUTHS = false
+  ASSETACCOUNT = {
+    value = "10"
+    text = "Inventory"
+  }
+  PERFORMLIMITCHECKONAPPROVALACTION = false
+  DONTTRACKITEMCOUNT = false
+  VENDPYMTTOPRINT = false
+  COPYTIMESHEETOPTIONS = {
+    value = "ALWAYSCOPYHOURSANDMEMOS"
+    text = "Always copy hours and memos"
+  }
+  UNIFIEDGOVERNANCELIMIT = 1000
+  DELAYEDTRIGGERCOMMITMENT = false
+  RECREATEREVRECSCHEDULES = false
+  CUSTOMAPPROVALJOURNAL = false
+  FORECASTINCLUDES_REIMB_EXP = true
+  SHOWADDLITEMSPACKSLIP = {
+    value = "NONE"
+    text = "None"
+  }
+  COPYSERVITEMDESCTOMEMO = true
+  ENABLEVIRTUALCARDOPTIMIZATION = false
+  CUSTOMAPPROVALVENDORBILL = false
+  CUSTOMCOSTING = false
+  DEFVENDBILLSTATUS = {
+    value = "2"
+    text = "Approved"
+  }
+  ALLOW_CLOSED_PERIOD_COSTING_CHANGES = false
+  KEEP_LEGACY_DISCOUNT_APPLICATION = false
+  OVERRIDETIMERATES = false
+  DATEPERIODMISMATCH = {
+    value = "WARN"
+    text = "Warn"
+  }
+  FORECASTINCLUDES_SHIPPING = false
+  BULK_JOURNAL_APPROVAL_EVENTS = false
+  CURCOUNTONTRANSFERS = false
+  RETURNCOSTDEFAULT = {
+    value = "LOCALAVG"
+    text = "Local Average"
+  }
+  DEFAULTUNFULFILLED = false
+  INVOICEUSESCHEDULEDATE = true
+  INV_COSTING_DELAYED_START = true
+  ITEMVERSION = true
+  ASSETCOGSITEMACCTS = false
+  MAX_BUCKETS_PER_PROCESSOR = 1
+  UNRETURNEDVENDAUTHS = false
+  DUPLICATEWARNINGS = {
+    value = "WARN_ONLY"
+    text = "Warn (UI only)"
+  }
+  SFTP_USE_LIST_TO_TEST_FILE_EXISTS = false
+  DEFAULTITEMSBILLABLE = true
+  BYPASS_ALLOCATION_DATA_FIX = false
+  CURRENCY_RATE_ACCESS = false
+  REALTIMECOGSORDERING = false
+  TIMELIMITWEEKMAXACTION = {
+    value = "ERROR"
+    text = "Do not allow time outside limit"
+  }
+  COGSACCOUNT = {
+    value = "55"
+    text = "Purchases"
+  }
+  
+  AUTONOTIFYSUPV = true
+  CUSTOMAPPROVALTIMEBILL = false
+  SINGLEITEMBARCODING = true
+  RESTRICTBALANCEVIEWING = false
+  DEFAULTSALESORDERCOMMITOPTION = {
+    value = "1"
+    text = "Available Qty"
+  }
+  JOURNALAPPROVALS = false
+  INCOMEACCOUNT = {
+    value = "54"
+    text = "Sales"
+  }
+  NO_UPDATE_TRANSACTION_COGSASSETACCT = false
+  INVT_TRANS_DATE_PERIOD_MISMATCH = false
+  USE_UPDATED_CALCULATION_OBV = false
+  USESERIALNUMBERSELECT = false
+  PURCHDISCACCT = {
+    value = "102"
+    text = "Purchase Discounts"
+  }
+  SHOWUNSHIPPEDITEMS = true
+  ENABLEINVFUTURESUPPLYTRACKING = true
+  LOGEACHSSSCRIPTSTART = false
+  DELETE_ALL_MONTH_END_REVALS = false
+  OVERRECEIPTS = false
+  TIMELIMITWEEKMIN = {
+    value = "DISABLED"
+    text = "Disabled"
+  }
+  DEFAULTRECEIVINGEXCHANGERATE = {
+    value = "ORDERRATE"
+    text = "Use Order Exchange Rate"
+  }
+  FORBID_SUITELET_EXEC_BY_SHOPPER = false
+  CACHE_ITEM_LOCATION_MAP = false
+  TIMELIMITDAYMAX = {
+    value = "DISABLED"
+    text = "Disabled"
+  }
+  USE_ROLE_RESTRICTIONS_ON_APPLY = false
+  USEPORECEIPTCOST = false
+  COMBINEEXPENSEITEMS = true
+  CREATE_DEPOSIT_ON_SO_SALE_ROLE = {
+    value = "3"
+    text = "Administrator"
+  }
+  SETREVERSINGVARIANCEDATETOREVJES = false
+  ALLOWNONREIMBURSABLEEXPENSES = false
+  PACKINGSLIPSTATUS = {
+    value = "A"
+    text = "Picked"
+  }
+  ALLOW_COSTING_ENGINE_TO_RUN = true
+  NOMAPORREDUCEFUNCINTERMINALSTATE = false
+  RESTOCKRETURNS = true
+  PICKINGTICKETKITITEMS = true
+  ALLOW_NON_GL_CHANGES_BY_DEFAULT = false
+  MAXITEMSONQUICKDISTRIBUTION = 0
+  VENDCREDLIMORDERS = false
+  CUSTOM_SEGMENT_DELETION = false
+  OPENONLYSTMTS = false
+  LOGUERECORDSYNCH = false
+  
+  BULKFULFILLLOCFILTERING = true
+  DEFRTNAUTHSTATUS = {
+    value = "A"
+    text = "Pending Approval"
+  }
+  ZEROCOSTUNDERWATER = false
+  VALIDATE_SAME_PO_VENDOR_IN_BILL = true
+  UNRECEIVEDBILLS = false
+  NO_PRE_DISTRIB_LOCATIONS = false
+  INCLUDEINTRANSITACCOUNT = false
+  FULFILLCOMMITTED = {
+    value = "ALLOWUNCOMMITTED"
+    text = "Allow Uncommitted"
+  }
+  CUSTCREDLIMORDERS = false
+  RECONCILIATIONALLTRANTYPES = false
+  REQUIRETIMEFORWORKINGDAYS = false
+  EXPENSEACCOUNT = {
+    value = "76"
+    text = "Miscellaneous Expense"
+  }
+  ENABLEINVINSTOCKSUPPLYTRACKING = true
+  TIMELIMITWEEKMINACTION = {
+    value = "ERROR"
+    text = "Do not allow time outside limit"
+  }
+  DEFAULTPERIODIFCLOSED = {
+    value = "CURRENT"
+    text = "Current Period"
+  }
+  ORDFULFILLCONFEMAIL = false
+  TIMEAPPROVALS = false
+  ALLOW_DEFAULT_EMAIL_ON_PO = {
+    value = "DO_NOT_ALLOW"
+    text = "Do Not Allow"
+  }
+  EMAIL_EMPLOYEE_ON_REJECTION = false
+  DEFTRNFRORDSTATUS = {
+    value = "FIRMPENDINGAPPROVAL"
+    text = "Pending Approval Firm"
+  }
+  ACCOUNTNUMBERS = false
+  LIMITITEMVENDORS = true
+  UNSHIPPEDINVOICES = false
+  REVERSALVOIDING = true
+  ALLOW_PERIODS_QUICK_CLOSE = false
+  ENFORCE_MIN_QUANTITY_RET_AUTH = true
+  EDITITEMACCOUNTS = true
+  CDLPERLINEONJE = false
+  DEFAULTTIMEBILLABLE = true
+  EXTENDEDLEVEL3DATA = true
+  NEWCOSTINGFLAGGING = false
+  CENTRALIZEDPURCHASING = false
+  TIMELIMITENTRYMIN = {
+    value = "DISABLED"
+    text = "Disabled"
+  }
+  ALLOWFUTUREPERIODLOCK = false
+  CUSTOMAPPROVALVENDPYMT = false
+  DEFSALESORDSTATUS = {
+    value = "A"
+    text = "Pending Approval"
+  }
+  POEXPENSES = false
+  TERMDISCOUNTSINCLUDESHIPPING = false
+  ALLOWNONREIMBURSABLEEXPENSESVISIBLE = true
+  CUSTOMAPPROVALEXPENSE = false
+  SALESDISCACCT = {
+    value = "101"
+    text = "Sales Discounts"
+  }
+  ALLOCATION_WORK_QUEUE_THREAD_LIMIT = 25
+  MATCH_SOURCE_CLASSIFICATION = false
+  UPDATEITEMSHIPDATEONSTATUSCHANGE = false
+  OPENONLYTRANSACTIONS = {
+    value = "OPENONLYBYTODAY"
+    text = "Open Transactions By Today"
+  }
+  CUSTOMERPAYMENTSAPPLYLOGIC = {
+    value = "AMOUNT_THEN_FIFO"
+    text = "Apply by payment amount first, then to oldest invoice"
+  }
+  GIFT_CERTIFICATE_FIELDS_MANDATORY = true
+  QTYPRICECOUNT = 5
+  INVENTORYCOSTINGMAXLINESTOLOAD = 25000
+  INVENTORY_COSTING_LOG_LEVEL = 1
+  LEGACY_TAX_HIGH_PRECISION_US_LOOKUP = 2
+  FORECASTTRANTYPES = [
+    {
+      value = "Check"
+      text = "Check"
+    },
+    {
+      value = "Deposit"
+      text = "Deposit"
+    },
+    {
+      value = "InvAdjst"
+      text = "Inventory Adjustment"
+    },
+    {
+      value = "InvReval"
+      text = "Inventory Cost Revaluation"
+    },
+    {
+      value = "InvDistr"
+      text = "Inventory Distribution"
+    },
+    {
+      value = "InvWksht"
+      text = "Inventory Worksheet"
+    },
+  ]
+  AUTHORIZECUSTOMERCENTERORDERS = false
+  CLASSESPERLINE = true
+  OVERTRANSFERS = false
+  ALLOWPAYFLOWADDITIONS = false
+  MAX_LINES_PER_REVAL_BATCH = 2000
+  ONLY_COSTING_ENGINE_UPDATES_AVGCOST = false
+  ALLOWCROSSSUBBILLABLES = false
+  
+  PRESERVE_TRAN_ON_HOLD_PAYMENT = false
+  USEPORATEONBILLS = false
+  CUSTOMAPPROVALPURCHORD = false
+  STRICT_SELECTION_OF_PPP = true
+  BFO_VERSION = 1
+  TIMELIMITDAYMINACTION = {
+    value = "ERROR"
+    text = "Do not allow time outside limit"
+  }
+  SENDLEVEL3DATAWITHCYBSAUTH = true
+  NEWITEMCOMMITMENTLOGLEVEL = {
+    value = "DONOTLOG"
+    text = ""
+  }
+  ENABLEINVENTORYALLOCATIONTRACKING = true
+  USETXMGMTFORREVALUESTDCOSTINV = false
+  EXTERNALPAYMENTS = true
+  AUTOMATICITEMCOMMITMENT = true
+  QTYPRICESCHEDULEMULTDISCOUNTS = false
+  CSV_SEND_UNKNOWN_EMAIL = false
+  ITEMCOMMITMENTTRANSACTIONORDER = {
+    value = "TRANSACTIONDATE"
+    text = "Order by Transaction Date"
+  }
+  CUSTOMAPPROVALCUSTINVC = false
+  USE_UNIT_CONVERSION_RATE = false
+  CASHBASIS = false
+  UOMMISMATCHCHECKLEVEL = {
+    value = "REGULAR"
+    text = "Basic UOM Mismatch Checks"
+  }
+  ENABLEITEMAVAILABILITYTRACKING = true
+  MAXPURCHASES = 0
+  VALIDATE_LOT_AVAIL_QTY_AT_COMMIT = false
+  SHOW_WARN_TAX_RECEIPT = true
+  PICKINGTICKETUNCOMMITTED = false
+  NULLCDLONJE = false
+  CREATE_DEPOSIT_ON_SALES_ORDER_SALE = true
+  CONVERTABSOLUTEDISCOUNTS = true
+  DEFVENDAUTHSTATUS = {
+    value = "A"
+    text = "Pending Approval"
+  }
+  MAX_ITEM_COMMITMENT_CONTEXT_LINES = 100000
+  LOCMANDATORY = false
+  MAX_LINES_IN_REVAL_BUCKET = 4000000
+  COMMITORDERSAFTERDECOMMITTING = true
+  CUSTCREDLIMHANDLING = {
+    value = "WARNING"
+    text = "Warn Only"
+  }
+  EMAILCANCELORDER = false
+  ALLOWADJUSTEDEXPIRATIONDATE = true
+  VENDCREDLIMWARNINGS = true
+  ITEMCOSTASTRNFRORDCOST = true
+  PRINT_PICK_TICKET_PER_QUANTITY = false
+  ASYNCFIXREVRECTRANSACTIONS = false
+  PACKINGSLIPDROPSHIP = false
+  ALLOWZEROQUANTITYINVADJST = false
+  USEHEADERCLASSFORLINE = true
+  CLASSMANDATORY = false
+  INVTCOSTMETHOD = {
+    value = "AVG"
+    text = "Average"
+  }
+  REAPPROVESOONEDIT = false
+  CURCOUNTONADJUSTMENTS = false
+  NEWITEMCOMMITMENT = true
+  CURCOUNTONWORKSHEETS = false
+  TIMELIMITDAYMIN = {
+    value = "DISABLED"
+    text = "Disabled"
+  }
+  SALESTRANTYPES = [
+    {
+      value = "Check"
+      text = "Check"
+    },
+    {
+      value = "Deposit"
+      text = "Deposit"
+    },
+    {
+      value = "InvAdjst"
+      text = "Inventory Adjustment"
+    },
+    {
+      value = "InvReval"
+      text = "Inventory Cost Revaluation"
+    },
+    {
+      value = "InvDistr"
+      text = "Inventory Distribution"
+    },
+    {
+      value = "InvWksht"
+      text = "Inventory Worksheet"
+    },
+  ]
+  TIMELIMITWEEKMAX = {
+    value = "DISABLED"
+    text = "Disabled"
+  }
+  TIMELIMITDAYMAXACTION = {
+    value = "ERROR"
+    text = "Do not allow time outside limit"
+  }
+  COPYTIMEMEMOS = true
+  SHOWOPENPACKSLIP = false
+  ACCOUNTLEGALNAME = false
+  STATEMENTJOURNALMEMOS = false
+  EXP_REPORT_FOREIGN_AMOUNT_CHANGE = {
+    value = "FXRATE"
+    text = "Recalculate Exchange Rate"
+  }
+  ENABLEINVDEMANDSUPPLYTRACKING = true
+  _alias = "Accounting Preferences"
+  DEPTSPERLINE = true
+  DEPTMANDATORY = false
+  USEHEADERDEPTFORLINE = true
+}

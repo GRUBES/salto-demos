@@ -1,0 +1,33 @@
+netsuite.entitycustomfield custentitymynewcustomgfield2 {
+  scriptid = "custentitymynewcustomgfield2"
+  accesslevel = "2"
+  appliestocontact = true
+  appliestocustomer = true
+  appliestoemployee = false
+  appliestogroup = true
+  appliestoothername = false
+  appliestopartner = true
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = false
+  defaultchecked = false
+  description = "Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description Very Long Description"
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "TEXT"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Very Long Description"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "Very Long Description"
+}

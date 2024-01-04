@@ -1,0 +1,11 @@
+type netsuite.paycheckPayEarnList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.paycheckPayEarn>" paycheckPayEarn {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

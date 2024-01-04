@@ -1,0 +1,11 @@
+type netsuite.invoiceShipGroupList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.transactionShipGroup>" shipGroup {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

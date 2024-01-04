@@ -1,0 +1,11 @@
+type netsuite.creditMemoSalesTeamList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.creditMemoSalesTeam>" salesTeam {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

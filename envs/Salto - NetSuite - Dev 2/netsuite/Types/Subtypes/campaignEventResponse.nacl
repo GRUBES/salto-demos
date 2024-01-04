@@ -1,0 +1,34 @@
+type netsuite.campaignEventResponse {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string name {
+  }
+  string type {
+  }
+  string dateSent {
+  }
+  number sent {
+  }
+  number opened {
+  }
+  number openedRatio {
+  }
+  number clickedThru {
+  }
+  number clickedThruRatio {
+  }
+  number responded {
+  }
+  number respondedRatio {
+  }
+  number unsubscribed {
+  }
+  number unsubscribedRatio {
+  }
+  number bounced {
+  }
+  number bouncedRatio {
+  }
+}

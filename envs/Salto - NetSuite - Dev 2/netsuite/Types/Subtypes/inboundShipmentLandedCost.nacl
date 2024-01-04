@@ -1,0 +1,20 @@
+type netsuite.inboundShipmentLandedCost {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef landedCostCostCategory {
+  }
+  number landedCostAmount {
+  }
+  netsuite.recordRef landedCostCurrency {
+  }
+  number landedCostExchangeRate {
+  }
+  string landedCostEffectiveDate {
+  }
+  unknown landedCostAllocationMethod {
+  }
+  netsuite.recordRefList landedCostShipmentItemsList {
+  }
+}

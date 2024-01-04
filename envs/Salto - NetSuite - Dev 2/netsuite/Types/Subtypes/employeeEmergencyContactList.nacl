@@ -1,0 +1,11 @@
+type netsuite.employeeEmergencyContactList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.employeeEmergencyContact>" employeeEmergencyContact {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

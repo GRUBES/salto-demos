@@ -1,0 +1,16 @@
+type netsuite.customRecordTypeSublists {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef recordSearch {
+  }
+  string recordDescr {
+  }
+  netsuite.languageValueList recordDescrLanguageValueList {
+  }
+  netsuite.recordRef recordTab {
+  }
+  string recordId {
+  }
+}

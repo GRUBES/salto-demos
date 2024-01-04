@@ -1,0 +1,53 @@
+type netsuite.note {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string title {
+  }
+  netsuite.noteType noteType {
+    isReference = true
+  }
+  unknown direction {
+  }
+  string noteDate {
+  }
+  string note {
+  }
+  netsuite.recordRef activity {
+  }
+  netsuite.recordRef author {
+  }
+  netsuite.recordRef entity {
+  }
+  netsuite.folder folder {
+    isReference = true
+  }
+  netsuite.recordRef item {
+  }
+  netsuite.recordRef media {
+  }
+  netsuite.record record {
+    isReference = true
+  }
+  netsuite.recordRef recordType {
+  }
+  netsuite.topic topic {
+    isReference = true
+  }
+  netsuite.recordRef transaction {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

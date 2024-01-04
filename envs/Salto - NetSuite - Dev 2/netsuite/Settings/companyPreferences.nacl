@@ -1,0 +1,142 @@
+netsuite.companyPreferences {
+  BYPASS_BANKFEEDS_INSTALLED_CHECK = false
+  PERFORMANCELOGGING = false
+  EMAILMAINTENANCECOMPLETE = false
+  ALLOWLANGUAGE_XX_US_WTHID = false
+  SHOWINDIVIDUALSASCONTACTS = false
+  FICONNECTIVITYACCTSTARTBUFFERDAYS = 7
+  COLLAPSEVSOEFIELDSET = true
+  FREEFORMSTATES = false
+  FLP_CHECKS_LEGACY_SEARCH = 0
+  MINPASSWORDLENGTH = 10
+  ASSIGNTASKSTOPARTNERS = false
+  ACCOUNT_LEVEL_SWITCH = {
+    value = "0"
+    text = "2.0"
+  }
+  custscript_lsa_primary_sales_rep = false
+  HORIZONTALLABEL = false
+  CALENDARSYSTEM = {
+    value = "Gregorian"
+    text = "Gregorian Calendar"
+  }
+  LONGDATEFORMAT = {
+    value = "Month D, YYYY"
+    text = "Month D, YYYY"
+  }
+  DISABLE_CUSTOMER_SATISFACTION = false
+  BANK_IMPORT_SCHEDULE_MIN_TIME = 400
+  custscript_lsa_message = true
+  custscript_lsa_marketingcampaign = true
+  MAXDROPDOWNSIZE = 200
+  MAXREPORTROWS_BACKEND = 1000000
+  LASTNAMEFIRST = false
+  EMAILEMPLOYEEONAPPROVAL = false
+  NEGATIVE_NUMBER_FORMAT = {
+    value = "0"
+    text = "-100"
+  }
+  FC_UI_HIDE_HIERARCHY_FOLDER_INFO = false
+  LASTNAMEFIRSTENTITIES = false
+  INACTIVATE_CONTACTS = false
+  TIMEFORMAT = {
+    value = "H:mm"
+    text = "hh:mm (24 hours)"
+  }
+  CONTACTONBILLTO = true
+  ALLOWLANGUAGE_XX_US = false
+  custscript_lsa_enable_manual_update = true
+  custscript_lsa_activity_days_filter = 100
+  MAXREPORTROWS = 100000
+  IDLE_SESSION_TIMEOUT = 180
+  FIRSTDAYOFWEEK = {
+    value = "1"
+    text = "Sunday"
+  }
+  SHOWEMPLOYEESASCONTACTS = false
+  REPORTGRID = false
+  FONT = {
+    value = "Open Sans"
+    text = "Open Sans"
+  }
+  AUTONOMOUS_ENTITY_NUMBERING = false
+  INCR_NUM_OF_BULK_PROCESSING_THREADS = false
+  AUTONAMECUSTOMERS = true
+  FLP_CHECKS_RECORD_SERVICE_INTERNAL = 0
+  SHOWQUICKADD = true
+  USEOLDNUMBERFORMATTING = false
+  CUSTOMERROLE = {
+    value = "14"
+    text = "Customer Center"
+  }
+  FLIPSIGNFOREXPENSEACCOUNTSINSEARCH = false
+  ALLOC_SCHEDULE_ALLOW_JE_USER_EVENTS = false
+  PREPOPULATECONTACTADDRESS = true
+  LOGSYSTEMNOTESONUPDATEONLY = false
+  UNRESTRICTED_SEARCH_FORMULA_FIELDS = true
+  RATING_ENGINE_YEAR_LIMIT = 50
+  custscript_lsa_task_completed = false
+  LISTSEGMENTSIZE = 50
+  custscript_lsa_task = true
+  SHOWLISTONERESULT = false
+  HIDEATTACHMENTFOLDERS = false
+  MAXREPORTDIMENSIONS = 200
+  BANK_IMPORT_SCHEDULE_MAX_TIME = 700
+  LEGACY_SUBSID_RESTRICTIONS = false
+  ALLOWLANGUAGE_ES_AR_ONLQA = false
+  ALLOWCREATINGPOLYMORPHICEMPLOYEES = false
+  custscript_lsa_event_completed = false
+  DELAYLOADINGSUBLISTS = true
+  custscript_lsa_phonecall_completed = false
+  NEWUSERLINKEXPIRATION = 24
+  custscript_lsa_task_note = true
+  NUMBERFORMAT = {
+    value = "0"
+    text = "1,000,000.00"
+  }
+  custscript_lsa_task_event = true
+  CUSTOMERSHOWHELPLINK = true
+  INTERNALWEBSITE = {
+    value = "1"
+    text = "Demo: Blank US OneWorld Account"
+  }
+  SHOW_TRAN_NUMBERING_SETUP = true
+  ALLOWLANGUAGE_DE_DE_ONLQA = false
+  FLP_CHECKS_RECORD_SERVICE_EXTERNAL = 0
+  MAXSEARCHROWS_BACKEND = 15000000
+  GLIMPACTINGENTITY = true
+  FC_LEGACY_FOLDER_ACCESS = false
+  ALLOWLANGUAGE_HE_IL = false
+  CREATE_AUTOMATED_MEMDOC_AS_SYSTEM = false
+  HOSTING_FILES_PUBLIC = true
+  PASSWORD_POLICY = {
+    value = "STRONG"
+    text = "Strong"
+  }
+  DATEFORMAT = {
+    value = "M/D/YYYY"
+    text = "M/D/YYYY"
+  }
+  ENABLE_FLP_CLIENT_CHANGE_CHECK = true
+  FLP_CHECKS_SS_WF = 1
+  CHECK_LINE_ITME_AMOUNT_ON_CC_SO = false
+  FC_SUBFOLDER_CONNECT_BY_APPROACH = false
+  ORACLE_GUIDED_LEARNING = true
+  MAX_CUSTOMER_HIERARCHY_SIZE = 10000
+  ALLOWLANGUAGE_FR_FR_ONLQA = false
+  FICONNECTIVITYIMPORTTOLERANCEMINS = 60
+  SEARCHSORTING = {
+    value = "LANGUAGE_SPECIFIC"
+    text = "Language Specific"
+  }
+  INTERCO_ORDER_GENERATION_BULK = true
+  ITEMNUMBERING = false
+  ABBREVIATESTATES = true
+  custscript_lsa_phonecall = true
+  TIMESELECTORSUSEFIRSTFISCALMONTH = true
+  COMPANYLOGOFOLDER = {
+    value = "-4"
+    text = "Images"
+  }
+  _alias = "Company Preferences"
+}

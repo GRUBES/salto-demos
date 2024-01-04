@@ -1,0 +1,147 @@
+type netsuite.partner {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string entityId {
+  }
+  string altName {
+  }
+  string partnerCode {
+  }
+  boolean isPerson {
+  }
+  string phoneticName {
+  }
+  string salutation {
+  }
+  string firstName {
+  }
+  string middleName {
+  }
+  string lastName {
+  }
+  string companyName {
+  }
+  netsuite.partner parent {
+    isReference = true
+  }
+  string phone {
+  }
+  string fax {
+  }
+  string email {
+  }
+  string url {
+  }
+  string defaultAddress {
+  }
+  boolean isInactive {
+  }
+  netsuite.partnerTaxRegistrationList taxRegistrationList {
+  }
+  unknown globalSubscriptionStatus {
+  }
+  string referringUrl {
+  }
+  "List<netsuite.role>" roleList {
+    isReference = true
+  }
+  netsuite.categoryList categoryList {
+  }
+  string title {
+  }
+  string printOnCheckAs {
+  }
+  string taxIdNum {
+  }
+  string vatRegNumber {
+  }
+  string comments {
+  }
+  string bcn {
+  }
+  netsuite.file image {
+    isReference = true
+  }
+  unknown taxFractionUnit {
+  }
+  unknown emailPreference {
+  }
+  netsuite.recordRef defaultTaxReg {
+  }
+  unknown taxRounding {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  string homePhone {
+  }
+  string mobilePhone {
+  }
+  string altEmail {
+  }
+  boolean giveAccess {
+  }
+  netsuite.recordRef accessRole {
+  }
+  boolean sendEmail {
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean requirePwdChange {
+  }
+  boolean subPartnerLogin {
+  }
+  string loginAs {
+  }
+  boolean eligibleForCommission {
+  }
+  netsuite.contactAccessRolesList contactRolesList {
+  }
+  netsuite.partnerPromoCodeList promoCodeList {
+  }
+  netsuite.partnerAddressbookList addressbookList {
+  }
+  netsuite.subscriptionsList subscriptionsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  boolean custom_custentity10 {
+    field_instance = netsuite.entitycustomfield.instance.custentity10.scriptid
+  }
+  number custom_custentity_cust_priority {
+    field_instance = netsuite.entitycustomfield.instance.custentity_cust_priority.scriptid
+  }
+  boolean custom_custentitycust_active_edited {
+    field_instance = netsuite.entitycustomfield.instance.custentitycust_active_edited.scriptid
+  }
+  string custom_custentitymynewcustomgfield2 {
+    field_instance = netsuite.entitycustomfield.instance.custentitymynewcustomgfield2.scriptid
+  }
+  _alias = "Partner"
+}

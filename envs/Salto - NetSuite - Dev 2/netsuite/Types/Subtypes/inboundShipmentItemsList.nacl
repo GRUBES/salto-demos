@@ -1,0 +1,11 @@
+type netsuite.inboundShipmentItemsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.inboundShipmentItems>" inboundShipmentItems {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

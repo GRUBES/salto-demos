@@ -1,0 +1,12 @@
+type netsuite.customFieldSubAccess {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef sub {
+  }
+  unknown accessLevel {
+  }
+  unknown searchLevel {
+  }
+}

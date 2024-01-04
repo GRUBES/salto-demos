@@ -1,0 +1,33 @@
+netsuite.entitycustomfield custentity10 {
+  scriptid = "custentity10"
+  accesslevel = "1"
+  appliestocontact = true
+  appliestocustomer = true
+  appliestoemployee = true
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = true
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = true
+  defaultchecked = false
+  description = "some meaningful description"
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "CHECKBOX"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "createdByTestWithOwner"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "createdByTestWithOwner"
+}

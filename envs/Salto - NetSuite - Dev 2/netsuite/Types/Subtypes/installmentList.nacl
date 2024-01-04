@@ -1,0 +1,11 @@
+type netsuite.installmentList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.installment>" installment {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

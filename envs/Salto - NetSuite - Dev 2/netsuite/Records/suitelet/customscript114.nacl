@@ -1,0 +1,11 @@
+netsuite.suitelet customscript114 {
+  scriptid = "customscript114"
+  defaultfunction = "sdva"
+  isinactive = false
+  name = "seggev1"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_Seggev_tests_stam_js@dudv.path
+  _alias = "seggev1"
+}

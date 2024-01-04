@@ -1,0 +1,27 @@
+type netsuite.inventoryAssignment {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.recordRef issueInventoryNumber {
+  }
+  string receiptInventoryNumber {
+  }
+  netsuite.recordRef binNumber {
+  }
+  netsuite.recordRef toBinNumber {
+  }
+  number quantity {
+  }
+  string expirationDate {
+  }
+  number quantityAvailable {
+  }
+  netsuite.recordRef inventoryStatus {
+  }
+  netsuite.recordRef toInventoryStatus {
+  }
+}

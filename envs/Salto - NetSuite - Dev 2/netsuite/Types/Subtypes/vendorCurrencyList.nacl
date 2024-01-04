@@ -1,0 +1,11 @@
+type netsuite.vendorCurrencyList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.vendorCurrency>" vendorCurrency {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,6 @@
+netsuite.centerlink custlink_1_t2480368_521 {
+  scriptid = "custlink_1_t2480368_521"
+  label = "View Customer Saved Searches"
+  url = "https://system.netsuite.com/app/common/search/savedsearches.nl?sortcol=title&sortdir=ASC&csv=HTML&OfficeXML=F&pdf=&showall=F&use=GENERAL&type=Customer&accesslevel=ALL&scheduled=ALL"
+  _alias = "View Customer Saved Searches"
+}

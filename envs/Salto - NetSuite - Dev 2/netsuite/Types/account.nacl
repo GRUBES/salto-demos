@@ -1,0 +1,91 @@
+type netsuite.account {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  unknown acctType {
+  }
+  netsuite.unitsType unitsType {
+    isReference = true
+  }
+  netsuite.recordRef unit {
+  }
+  string acctNumber {
+  }
+  string acctName {
+  }
+  string legalName {
+  }
+  boolean includeChildren {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  string exchangeRate {
+  }
+  unknown generalRate {
+  }
+  netsuite.account parent {
+    isReference = true
+  }
+  unknown cashFlowRate {
+  }
+  netsuite.recordRef billableExpensesAcct {
+  }
+  netsuite.recordRef deferralAcct {
+  }
+  string description {
+  }
+  number curDocNum {
+  }
+  boolean isInactive {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRefList restrictToAccountingBookList {
+  }
+  boolean inventory {
+  }
+  boolean eliminate {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.recordRef category1099misc {
+  }
+  netsuite.accountLocalizationsList localizationsList {
+  }
+  number openingBalance {
+  }
+  string tranDate {
+  }
+  boolean revalue {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  boolean custom_custrecord4 {
+    field_instance = netsuite.othercustomfield.instance.custrecord4.scriptid
+  }
+  number custom_custrecord_api_parent {
+    field_instance = netsuite.othercustomfield.instance.custrecord_api_parent.scriptid
+  }
+  _alias = "Account"
+}

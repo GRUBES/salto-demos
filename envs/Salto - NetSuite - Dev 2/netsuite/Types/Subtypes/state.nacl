@@ -1,0 +1,18 @@
+type netsuite.state {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  unknown country {
+  }
+  string fullName {
+  }
+  string shortname {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+}

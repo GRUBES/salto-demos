@@ -1,0 +1,11 @@
+type netsuite.supportCaseEscalateToList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.supportCaseEscalateTo>" escalateTo {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

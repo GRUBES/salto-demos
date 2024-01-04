@@ -1,0 +1,13 @@
+netsuite.file Templates_Contract_Templates_License_Agreement_doc@dsduv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/Templates/Contract Templates/License_Agreement.doc"
+  content = file("netsuite/FileCabinet/Templates/Contract Templates/License_Agreement.doc")
+  _parent = [
+    netsuite.folder.instance.Templates_Contract_Templates@ds,
+  ]
+  _alias = "License_Agreement.doc"
+}

@@ -1,0 +1,11 @@
+type netsuite.rolesubsidiaryoption is string {
+  _restriction = {
+    values = [
+      "ALL",
+      "ALLACTIVE",
+      "OWN",
+      "SELECTED",
+    ]
+    enforce_value = false
+  }
+}

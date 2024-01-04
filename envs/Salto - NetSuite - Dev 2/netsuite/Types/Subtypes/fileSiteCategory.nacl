@@ -1,0 +1,14 @@
+type netsuite.fileSiteCategory {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean isDefault {
+  }
+  netsuite.recordRef category {
+  }
+  string categoryDescription {
+  }
+  netsuite.recordRef website {
+  }
+}

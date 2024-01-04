@@ -1,0 +1,11 @@
+type netsuite.itemReceiptItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.itemReceiptItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

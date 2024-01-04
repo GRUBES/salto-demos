@@ -1,0 +1,72 @@
+type netsuite.workbook {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custworkbook[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  netsuite.cdata definition {
+    _required = true
+  }
+  netsuite.workbook_charts charts {
+  }
+  netsuite.workbook_dependencies dependencies {
+  }
+  netsuite.workbook_pivots pivots {
+  }
+  netsuite.workbook_tables tables {
+  }
+  string application_id {
+  }
+  boolean nameTranslate {
+  }
+  _alias = "Workbook"
+}
+type netsuite.workbook_charts_chart {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  number index {
+  }
+}
+type netsuite.workbook_charts {
+  "Map<netsuite.workbook_charts_chart>" chart {
+    map_key_field = "scriptid"
+  }
+}
+type netsuite.workbook_dependencies {
+  string dependency {
+    _required = true
+  }
+}
+type netsuite.workbook_pivots_pivot {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  number index {
+  }
+}
+type netsuite.workbook_pivots {
+  "Map<netsuite.workbook_pivots_pivot>" pivot {
+    map_key_field = "scriptid"
+  }
+}
+type netsuite.workbook_tables_table {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  number index {
+  }
+}
+type netsuite.workbook_tables {
+  "Map<netsuite.workbook_tables_table>" table {
+    map_key_field = "scriptid"
+  }
+}

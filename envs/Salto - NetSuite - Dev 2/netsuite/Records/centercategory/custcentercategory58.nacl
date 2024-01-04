@@ -1,0 +1,51 @@
+netsuite.centercategory custcentercategory58 {
+  scriptid = "custcentercategory58"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab18.scriptid
+  label = "Tools"
+  links = {
+    link = {
+      TRAN_FORECAST = {
+        linkid = "TRAN_FORECAST"
+        shortlist = false
+        index = 0
+      }
+      TRAN_MGRFORECAST = {
+        linkid = "TRAN_MGRFORECAST"
+        shortlist = false
+        index = 1
+      }
+      TRAN_QUOTA = {
+        linkid = "TRAN_QUOTA"
+        shortlist = false
+        index = 2
+      }
+      LIST_COMMISSIONSCHEDULE = {
+        linkid = "LIST_COMMISSIONSCHEDULE"
+        shortlist = false
+        index = 3
+      }
+      LIST_PLANASSIGN = {
+        linkid = "LIST_PLANASSIGN"
+        shortlist = false
+        index = 4
+      }
+      LIST_PLANASSIGNS = {
+        linkid = "LIST_PLANASSIGNS"
+        shortlist = false
+        index = 5
+      }
+      TRAN_PROCESSCOMMISSN = {
+        linkid = "TRAN_PROCESSCOMMISSN"
+        shortlist = false
+        index = 6
+      }
+      EDIT_TRAN_COMMISSN = {
+        linkid = "EDIT_TRAN_COMMISSN"
+        shortlist = false
+        index = 7
+      }
+    }
+  }
+  _alias = "Tools"
+}

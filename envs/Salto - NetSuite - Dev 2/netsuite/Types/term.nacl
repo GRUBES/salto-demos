@@ -1,0 +1,49 @@
+type netsuite.term {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  boolean dateDriven {
+  }
+  number daysUntilNetDue {
+  }
+  number discountPercent {
+  }
+  number daysUntilExpiry {
+  }
+  number dayOfMonthNetDue {
+  }
+  number dueNextMonthIfWithinDays {
+  }
+  number discountPercentDateDriven {
+  }
+  number dayDiscountExpires {
+  }
+  boolean preferred {
+  }
+  boolean isInactive {
+  }
+  boolean installment {
+  }
+  unknown recurrenceFrequency {
+  }
+  number recurrenceCount {
+  }
+  number repeatEvery {
+  }
+  boolean splitEvenly {
+  }
+  netsuite.termPercentagesList percentagesList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

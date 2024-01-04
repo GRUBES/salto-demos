@@ -1,0 +1,45 @@
+type netsuite.resourceAllocation {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef requestedby {
+  }
+  unknown approvalStatus {
+  }
+  netsuite.recordRef nextApprover {
+  }
+  netsuite.recordRef allocationResource {
+  }
+  netsuite.recordRef project {
+  }
+  string notes {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  number allocationAmount {
+  }
+  unknown allocationUnit {
+  }
+  number numberHours {
+  }
+  number percentOfTime {
+  }
+  netsuite.recordRef allocationType {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

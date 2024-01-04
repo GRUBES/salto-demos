@@ -1,0 +1,53 @@
+type netsuite.fairValuePrice {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.recordRef item {
+  }
+  netsuite.recordRef itemRevenueCategory {
+  }
+  number fairValue {
+  }
+  netsuite.recordRef fairValueFormula {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  netsuite.unitsType unitsType {
+    isReference = true
+  }
+  netsuite.recordRef units {
+  }
+  unknown fairValueRangePolicy {
+  }
+  number lowValue {
+  }
+  number lowValuePercent {
+  }
+  number highValue {
+  }
+  number highValuePercent {
+  }
+  boolean isVsoePrice {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  netsuite.dimensionList dimensionList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

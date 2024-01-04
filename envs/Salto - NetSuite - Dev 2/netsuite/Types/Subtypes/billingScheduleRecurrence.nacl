@@ -1,0 +1,21 @@
+type netsuite.billingScheduleRecurrence {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number recurrenceId {
+  }
+  number count {
+  }
+  unknown units {
+  }
+  boolean relativeToPrevious {
+  }
+  string recurrenceDate {
+  }
+  number amount {
+  }
+  netsuite.term paymentTerms {
+    isReference = true
+  }
+}

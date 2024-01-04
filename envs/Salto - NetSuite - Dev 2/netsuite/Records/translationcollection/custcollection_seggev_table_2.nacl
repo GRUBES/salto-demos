@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_seggev_table_2 {
+  scriptid = "custcollection_seggev_table_2"
+  defaultlanguage = "en-US"
+  name = "Table 2"
+  strings = {
+    string = {
+      tableview_name_1521_5 = {
+        scriptid = "tableview_name_1521_5"
+        defaulttranslation = "Table 2"
+        description = "Name in tableView"
+        index = 0
+      }
+    }
+  }
+  _alias = "Table 2"
+}

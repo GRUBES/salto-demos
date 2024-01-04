@@ -1,0 +1,96 @@
+netsuite.workflow customworkflow1_2 {
+  scriptid = "customworkflow1_2"
+  initcontexts = "BANKCONNECTIVITY"
+  initoncreate = true
+  initonvieworupdate = false
+  isinactive = false
+  islogenabled = false
+  keephistory = "ONLYWHENTESTING"
+  name = "Lior's New WORKFLOW omg one more KSHHT"
+  recordtypes = "BILLINGSCHEDULE"
+  releasestatus = "NOTINITIATING"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = {
+      workflowstate1 = {
+        scriptid = "workflowstate1"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 243
+        positiony = 133
+        workflowtransitions = {
+          workflowtransition = {
+            workflowtransition1 = {
+              scriptid = "workflowtransition1"
+              contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+              tostate = netsuite.workflow.instance.customworkflow1_2.workflowstates.workflowstate.workflowstate2.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+              index = 0
+            }
+            workflowtransition2 = {
+              scriptid = "workflowtransition2"
+              contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+              tostate = netsuite.workflow.instance.customworkflow1_2.workflowstates.workflowstate.workflowstate5.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+              index = 1
+            }
+          }
+        }
+        index = 0
+      }
+      workflowstate2 = {
+        scriptid = "workflowstate2"
+        donotexitworkflow = false
+        name = "State 2"
+        positionx = 303
+        positiony = 293
+        index = 1
+      }
+      workflowstate3 = {
+        scriptid = "workflowstate3"
+        donotexitworkflow = false
+        name = "State 3"
+        positionx = 50
+        positiony = 110
+        index = 2
+      }
+      workflowstate4 = {
+        scriptid = "workflowstate4"
+        donotexitworkflow = false
+        name = "State 4"
+        positionx = 513
+        positiony = 193
+        index = 3
+      }
+      workflowstate5 = {
+        scriptid = "workflowstate5"
+        donotexitworkflow = false
+        name = "State 5"
+        positionx = 213
+        positiony = 413
+        workflowtransitions = {
+          workflowtransition = {
+            workflowtransition3 = {
+              scriptid = "workflowtransition3"
+              contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+              tostate = netsuite.workflow.instance.customworkflow1_2.workflowstates.workflowstate.workflowstate4.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+              index = 0
+            }
+          }
+        }
+        index = 4
+      }
+    }
+  }
+  _alias = "Lior's New WORKFLOW omg one more KSHHT"
+}

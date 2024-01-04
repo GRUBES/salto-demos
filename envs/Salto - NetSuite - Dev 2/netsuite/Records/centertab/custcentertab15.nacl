@@ -1,0 +1,57 @@
+netsuite.centertab custcentertab15 {
+  scriptid = "custcentertab15"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = false
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Campaigns"
+  portlets = {
+    portlet = {
+      portlet_174_3368792_785 = {
+        scriptid = "portlet_174_3368792_785"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+        index = 0
+      }
+      portlet_165_3368792_785 = {
+        scriptid = "portlet_165_3368792_785"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+        index = 1
+      }
+      portlet_182_3368792_785 = {
+        scriptid = "portlet_182_3368792_785"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+        index = 2
+      }
+      portlet_177_3368792_785 = {
+        scriptid = "portlet_177_3368792_785"
+        isportletshown = false
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+        index = 3
+      }
+      portlet_170_3368792_785 = {
+        scriptid = "portlet_170_3368792_785"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+        index = 4
+      }
+      portlet_176_3368792_785 = {
+        scriptid = "portlet_176_3368792_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+        index = 5
+      }
+    }
+  }
+  _alias = "Campaigns"
+}

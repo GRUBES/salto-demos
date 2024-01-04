@@ -1,0 +1,11 @@
+type netsuite.presentationItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.presentationItem>" presentationItem {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

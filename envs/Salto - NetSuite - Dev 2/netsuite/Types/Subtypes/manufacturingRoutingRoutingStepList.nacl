@@ -1,0 +1,11 @@
+type netsuite.manufacturingRoutingRoutingStepList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.manufacturingRoutingRoutingStep>" manufacturingRoutingRoutingStep {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

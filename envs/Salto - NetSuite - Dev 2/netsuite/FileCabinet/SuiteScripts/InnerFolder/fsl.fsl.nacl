@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_InnerFolder_fsl_fsl@ddv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/InnerFolder/fsl.fsl"
+  content = file("netsuite/FileCabinet/SuiteScripts/InnerFolder/fsl.fsl")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_InnerFolder@d,
+  ]
+  _alias = "fsl.fsl"
+}

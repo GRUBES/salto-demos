@@ -1,0 +1,44 @@
+netsuite.workflow customworkflow7 {
+  scriptid = "customworkflow7"
+  initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+  initoncreate = false
+  initonvieworupdate = false
+  isinactive = false
+  islogenabled = false
+  keephistory = "ONLYWHENTESTING"
+  name = "daniel4"
+  recordtypes = "BUDGETEXCHANGERATE"
+  releasestatus = "TESTING"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = {
+      custworkflowshalomlabel = {
+        scriptid = "custworkflowshalomlabel"
+        applyformatting = false
+        defaultchecked = false
+        description = "test field"
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "TempLabel"
+        storevalue = true
+        index = 0
+      }
+    }
+  }
+  workflowstates = {
+    workflowstate = {
+      workflowstate70 = {
+        scriptid = "workflowstate70"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 243
+        positiony = 133
+        index = 0
+      }
+    }
+  }
+  _alias = "daniel4"
+}

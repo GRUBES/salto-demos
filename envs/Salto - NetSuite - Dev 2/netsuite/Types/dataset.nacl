@@ -1,0 +1,27 @@
+type netsuite.dataset {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custdataset[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  netsuite.cdata definition {
+    _required = true
+  }
+  netsuite.dataset_dependencies dependencies {
+  }
+  string application_id {
+  }
+  boolean nameTranslate {
+  }
+  _alias = "Dataset"
+}
+type netsuite.dataset_dependencies {
+  "List<string>" dependency {
+    _required = true
+  }
+}

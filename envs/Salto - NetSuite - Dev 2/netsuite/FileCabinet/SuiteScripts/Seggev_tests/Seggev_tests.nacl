@@ -1,0 +1,10 @@
+netsuite.folder SuiteScripts_Seggev_tests@du {
+  bundleable = false
+  isinactive = false
+  isprivate = false
+  path = "/SuiteScripts/Seggev_tests"
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "Seggev_tests"
+}

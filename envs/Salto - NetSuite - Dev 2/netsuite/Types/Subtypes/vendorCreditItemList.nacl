@@ -1,0 +1,11 @@
+type netsuite.vendorCreditItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.vendorCreditItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

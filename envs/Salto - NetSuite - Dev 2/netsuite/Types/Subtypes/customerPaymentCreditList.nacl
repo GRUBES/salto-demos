@@ -1,0 +1,11 @@
+type netsuite.customerPaymentCreditList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customerPaymentCredit>" credit {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

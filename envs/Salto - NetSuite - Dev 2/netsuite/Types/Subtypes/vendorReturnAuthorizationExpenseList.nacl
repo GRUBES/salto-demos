@@ -1,0 +1,11 @@
+type netsuite.vendorReturnAuthorizationExpenseList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.vendorReturnAuthorizationExpense>" expense {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

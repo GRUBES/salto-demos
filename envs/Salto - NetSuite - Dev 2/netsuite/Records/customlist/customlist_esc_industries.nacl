@@ -1,0 +1,236 @@
+netsuite.customlist customlist_esc_industries {
+  scriptid = "customlist_esc_industries"
+  isinactive = false
+  ismatrixoption = false
+  isordered = false
+  name = "Industry"
+  customvalues = {
+    customvalue = {
+      value_1_3368792_349 = {
+        scriptid = "value_1_3368792_349"
+        abbreviation = "A"
+        isinactive = false
+        value = "Agriculture"
+        index = 0
+      }
+      value_2_3368792_349 = {
+        scriptid = "value_2_3368792_349"
+        abbreviation = "A"
+        isinactive = false
+        value = "Apparel"
+        index = 1
+      }
+      value_3_3368792_349 = {
+        scriptid = "value_3_3368792_349"
+        abbreviation = "B"
+        isinactive = false
+        value = "Banking"
+        index = 2
+      }
+      value_4_3368792_349 = {
+        scriptid = "value_4_3368792_349"
+        abbreviation = "B"
+        isinactive = false
+        value = "Biotechnology"
+        index = 3
+      }
+      value_5_3368792_349 = {
+        scriptid = "value_5_3368792_349"
+        abbreviation = "C"
+        isinactive = false
+        value = "Chemicals"
+        index = 4
+      }
+      value_6_3368792_349 = {
+        scriptid = "value_6_3368792_349"
+        abbreviation = "C"
+        isinactive = false
+        value = "Communications"
+        index = 5
+      }
+      value_7_3368792_349 = {
+        scriptid = "value_7_3368792_349"
+        abbreviation = "C"
+        isinactive = false
+        value = "Construction"
+        index = 6
+      }
+      value_8_3368792_349 = {
+        scriptid = "value_8_3368792_349"
+        abbreviation = "C"
+        isinactive = false
+        value = "Consulting"
+        index = 7
+      }
+      value_9_3368792_349 = {
+        scriptid = "value_9_3368792_349"
+        abbreviation = "E"
+        isinactive = false
+        value = "Education"
+        index = 8
+      }
+      value_10_3368792_349 = {
+        scriptid = "value_10_3368792_349"
+        abbreviation = "E"
+        isinactive = false
+        value = "Electronics"
+        index = 9
+      }
+      value_11_3368792_349 = {
+        scriptid = "value_11_3368792_349"
+        abbreviation = "E"
+        isinactive = false
+        value = "Energy"
+        index = 10
+      }
+      value_12_3368792_349 = {
+        scriptid = "value_12_3368792_349"
+        abbreviation = "E"
+        isinactive = false
+        value = "Engineering"
+        index = 11
+      }
+      value_13_3368792_349 = {
+        scriptid = "value_13_3368792_349"
+        abbreviation = "E"
+        isinactive = false
+        value = "Entertainment"
+        index = 12
+      }
+      value_14_3368792_349 = {
+        scriptid = "value_14_3368792_349"
+        abbreviation = "E"
+        isinactive = false
+        value = "Environmental"
+        index = 13
+      }
+      value_15_3368792_349 = {
+        scriptid = "value_15_3368792_349"
+        abbreviation = "F"
+        isinactive = false
+        value = "Finance"
+        index = 14
+      }
+      value_16_3368792_349 = {
+        scriptid = "value_16_3368792_349"
+        abbreviation = "F"
+        isinactive = false
+        value = "Food & Beverage"
+        index = 15
+      }
+      value_17_3368792_349 = {
+        scriptid = "value_17_3368792_349"
+        abbreviation = "G"
+        isinactive = false
+        value = "Government"
+        index = 16
+      }
+      value_18_3368792_349 = {
+        scriptid = "value_18_3368792_349"
+        abbreviation = "H"
+        isinactive = false
+        value = "Healthcare"
+        index = 17
+      }
+      value_19_3368792_349 = {
+        scriptid = "value_19_3368792_349"
+        abbreviation = "H"
+        isinactive = false
+        value = "Hospitality"
+        index = 18
+      }
+      value_20_3368792_349 = {
+        scriptid = "value_20_3368792_349"
+        abbreviation = "I"
+        isinactive = false
+        value = "Insurance"
+        index = 19
+      }
+      value_21_3368792_349 = {
+        scriptid = "value_21_3368792_349"
+        abbreviation = "M"
+        isinactive = false
+        value = "Machinery"
+        index = 20
+      }
+      value_22_3368792_349 = {
+        scriptid = "value_22_3368792_349"
+        abbreviation = "M"
+        isinactive = false
+        value = "Manufacturing"
+        index = 21
+      }
+      value_23_3368792_349 = {
+        scriptid = "value_23_3368792_349"
+        abbreviation = "M"
+        isinactive = false
+        value = "Media"
+        index = 22
+      }
+      value_24_3368792_349 = {
+        scriptid = "value_24_3368792_349"
+        abbreviation = "N"
+        isinactive = false
+        value = "Not for Profit"
+        index = 23
+      }
+      value_25_3368792_349 = {
+        scriptid = "value_25_3368792_349"
+        abbreviation = "O"
+        isinactive = false
+        value = "Other"
+        index = 24
+      }
+      value_26_3368792_349 = {
+        scriptid = "value_26_3368792_349"
+        abbreviation = "R"
+        isinactive = false
+        value = "Recreation"
+        index = 25
+      }
+      value_27_3368792_349 = {
+        scriptid = "value_27_3368792_349"
+        abbreviation = "R"
+        isinactive = false
+        value = "Retail"
+        index = 26
+      }
+      value_28_3368792_349 = {
+        scriptid = "value_28_3368792_349"
+        abbreviation = "S"
+        isinactive = false
+        value = "Shipping"
+        index = 27
+      }
+      value_29_3368792_349 = {
+        scriptid = "value_29_3368792_349"
+        abbreviation = "T"
+        isinactive = false
+        value = "Technology"
+        index = 28
+      }
+      value_30_3368792_349 = {
+        scriptid = "value_30_3368792_349"
+        abbreviation = "T"
+        isinactive = false
+        value = "Telecomminications"
+        index = 29
+      }
+      value_31_3368792_349 = {
+        scriptid = "value_31_3368792_349"
+        abbreviation = "T"
+        isinactive = false
+        value = "Transportation"
+        index = 30
+      }
+      value_32_3368792_349 = {
+        scriptid = "value_32_3368792_349"
+        abbreviation = "U"
+        isinactive = false
+        value = "Utilities"
+        index = 31
+      }
+    }
+  }
+  _alias = "Industry"
+}

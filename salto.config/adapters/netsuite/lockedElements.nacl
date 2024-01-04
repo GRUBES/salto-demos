@@ -1,0 +1,149 @@
+netsuite {
+  fetch = {
+    lockedElementsToExclude = {
+      fileCabinet = [
+      ]
+      types = [
+        {
+          name = "clientscript"
+          ids = [
+            "customscript_lsa_cs_custom_button",
+          ]
+        },
+        {
+          name = "customrecordtype"
+          ids = [
+            "customrecord_lsa",
+          ]
+        },
+        {
+          name = "entitycustomfield"
+          ids = [
+            "custentity_esc_industry",
+            "custentity_esc_last_modified_date",
+            "custentity_esc_annual_revenue",
+            "custentity_link_name_lsa",
+            "custentity_esc_no_of_employees",
+            "custentity_date_lsa",
+            "custentity_link_lsa",
+          ]
+        },
+        {
+          name = "entryForm"
+          ids = [
+            "custform_13_3368792_586",
+            "custform_7_3368792_586",
+            "custform_9_3368792_586",
+            "custform_11_3368792_586",
+            "custform_2_3368792_586",
+            "custform_6_3368792_586",
+            "custform_10_3368792_586",
+            "custform_3_3368792_586",
+            "custform_5_3368792_586",
+            "custform_12_3368792_586",
+            "custform_4_3368792_586",
+            "custform_8_3368792_586",
+          ]
+        },
+        {
+          name = "massupdatescript"
+          ids = [
+            "customscript_lsa_massupdate",
+          ]
+        },
+        {
+          name = "role"
+          ids = [
+            "customrole_esc_sales_manager",
+            "customrole_esc_sales_publisher",
+            "customrole_esc_sales_admin",
+            "customrole_esc_sales_rep",
+          ]
+        },
+        {
+          name = "savedsearch"
+          ids = [
+            "customsearch_lsa_contact_event_max_date",
+            "customsearch_esc_my_contacts",
+            "customsearch_esc_sales_campaign_search",
+            "customsearch_esc_my_activities",
+            "customsearch_esc_my_groups",
+            "customsearch_esc_my_cash_sales",
+            "customsearch_esc_my_sales_campaign",
+            "customsearch_esc_transaction_search",
+            "customsearch_esc_scheduled_meetings",
+            "customsearch_esc_activity_search",
+            "customsearch_esc_my_transactions",
+            "customsearch_lsa_contact_note_max_date",
+            "customsearch_esc_event_search",
+            "customsearch_esc_my_sales_orders",
+            "customsearch_esc_my_customers",
+            "customsearch_esc_my_phone_calls",
+            "customsearch_esc_group_search",
+            "customsearch_esc_document_search",
+            "customsearch_lsa_contact_call_max_date",
+            "customsearch_esc_my_quotes",
+            "customsearch_esc_my_documents",
+            "customsearch_lsa_contact_msgfr_max_date",
+            "customsearch_esc_my_prospects",
+            "customsearch_lsa_contact_msgto_max_date",
+            "customsearch_esc_contact_search",
+            "customsearch_esc_customer_group_search",
+            "customsearch_esc_my_tasks",
+            "customsearch_lsa_activity_max_date",
+            "customsearch_esc_my_opportunities",
+            "customsearch_esc_my_relationships",
+            "customsearch_esc_cust_lead_search",
+            "customsearch_esc_item_search",
+            "customsearch_esc_my_leads",
+            "customsearch_esc_opportunity_search",
+            "customsearch_esc_contact_grp_search",
+            "customsearch_lsa_cust_activity_max_date",
+            "customsearch_lsa_opp_note_max_date",
+            "customsearch_lsa_opp_message_max_date",
+            "customsearch_lsa_opp_task_max_date",
+            "customsearch_lsa_customer",
+            "customsearch_lsa_sales_user_search",
+            "customsearch_lsa_opp_activity_max_date",
+            "customsearch_lsa_contacts",
+            "customsearch_lsa_contact_task_max_date",
+            "customsearch_lsa_opportunities",
+          ]
+        },
+        {
+          name = "suitelet"
+          ids = [
+            "customscript_lsa_sl_update_lsa",
+          ]
+        },
+        {
+          name = "transactionForm"
+          ids = [
+            "custform_19_3368792_586",
+            "custform_18_3368792_586",
+            "custform_20_3368792_586",
+            "custform_21_3368792_586",
+          ]
+        },
+        {
+          name = "transactionbodycustomfield"
+          ids = [
+            "custbody_esc_created_date",
+            "custbody_link_lsa",
+            "custbody_esc_campaign_category",
+            "custbody_esc_last_modified_date",
+            "custbody_date_lsa",
+            "custbody_link_name_lsa",
+          ]
+        },
+        {
+          name = "usereventscript"
+          ids = [
+            "customscript_lsa_ue_lead",
+            "customscript_lsa_ue_communication",
+          ]
+        },
+      ]
+    }
+  }
+}

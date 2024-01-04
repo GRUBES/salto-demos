@@ -1,0 +1,35 @@
+type netsuite.timeSheet {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.employee employee {
+    isReference = true
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  netsuite.duration totalHours {
+  }
+  netsuite.recordRef approvalStatus {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.timeSheetTimeGridList timeGridList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

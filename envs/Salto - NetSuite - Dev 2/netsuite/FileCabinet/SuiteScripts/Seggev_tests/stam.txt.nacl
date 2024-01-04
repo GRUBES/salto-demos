@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_Seggev_tests_stam_txt@dudv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/Seggev_tests/stam.txt"
+  content = file("netsuite/FileCabinet/SuiteScripts/Seggev_tests/stam.txt")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_Seggev_tests@du,
+  ]
+  _alias = "stam.txt"
+}

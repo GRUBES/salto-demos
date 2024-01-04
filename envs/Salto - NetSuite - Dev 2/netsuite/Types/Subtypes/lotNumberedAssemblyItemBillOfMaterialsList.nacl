@@ -1,0 +1,11 @@
+type netsuite.lotNumberedAssemblyItemBillOfMaterialsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.lotNumberedAssemblyItemBillOfMaterials>" lotNumberedAssemblyItemBillOfMaterials {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,187 @@
+type netsuite.customrecord_cseg1 {
+  annotations {
+    serviceid scriptid {
+    }
+    string recordname {
+    }
+    string customsegment {
+    }
+    netsuite.customrecordtype_accesstype accesstype {
+    }
+    boolean allowattachments {
+    }
+    boolean allowinlineediting {
+    }
+    boolean allowinlinedeleting {
+    }
+    boolean allowinlinedetaching {
+    }
+    boolean allowmobileaccess {
+    }
+    boolean allownumberingoverride {
+    }
+    boolean allowquickadd {
+    }
+    boolean allowquicksearch {
+    }
+    boolean allowuiaccess {
+    }
+    string description {
+    }
+    boolean enabledle {
+    }
+    boolean enablekeywords {
+    }
+    boolean enablemailmerge {
+    }
+    boolean enablenametranslation {
+    }
+    boolean enablenumbering {
+    }
+    boolean enableoptimisticlocking {
+    }
+    boolean enablesystemnotes {
+    }
+    boolean hierarchical {
+    }
+    string numberingprefix {
+    }
+    string numberingsuffix {
+    }
+    string numberingmindigits {
+    }
+    string numberinginit {
+    }
+    string icon {
+    }
+    boolean iconbuiltin {
+    }
+    netsuite.generic_custom_record_icon iconindex {
+    }
+    boolean includeinsearchmenu {
+    }
+    boolean includename {
+    }
+    boolean isinactive {
+    }
+    boolean isordered {
+    }
+    boolean showcreationdate {
+    }
+    boolean showcreationdateonlist {
+    }
+    boolean showid {
+    }
+    boolean showlastmodified {
+    }
+    boolean showlastmodifiedonlist {
+    }
+    boolean shownotes {
+    }
+    boolean showowner {
+    }
+    boolean showownerallowchange {
+    }
+    boolean showowneronlist {
+    }
+    netsuite.customrecordtype_instances instances {
+    }
+    netsuite.customrecordtype_links links {
+    }
+    netsuite.customrecordtype_permissions permissions {
+    }
+    netsuite.customrecordtype_recordsublists recordsublists {
+    }
+    netsuite.customrecordtype_subtabs subtabs {
+    }
+    string application_id {
+    }
+    hidden_string source {
+    }
+    hidden_string internalId {
+    }
+  }
+  serviceid scriptid {
+    _required = true
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.customRecordTranslationsList translationsList {
+  }
+  scriptid = "customrecord_cseg1"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = false
+  allowinlineediting = false
+  allowquickadd = false
+  allowquicksearch = false
+  customsegment = netsuite.customsegment.instance.cseg1.scriptid
+  enabledle = false
+  enablekeywords = false
+  enablemailmerge = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  iconbuiltin = true
+  includeinsearchmenu = false
+  showcreationdate = false
+  showcreationdateonlist = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  instances = {
+    instance = {
+      val_5912_2239021_113 = {
+        scriptid = "val_5912_2239021_113"
+        isinactive = true
+        name = "a"
+        index = 0
+      }
+      val_5913_2239021_335 = {
+        scriptid = "val_5913_2239021_335"
+        isinactive = false
+        name = "b"
+        parent = netsuite.customrecord_cseg1.attr.instances.instance.val_5912_2239021_113.scriptid
+        index = 1
+      }
+      val_121639_t2257860_428 = {
+        scriptid = "val_121639_t2257860_428"
+        isinactive = false
+        name = "c"
+        index = 2
+      }
+      val_5915_2239021_234 = {
+        scriptid = "val_5915_2239021_234"
+        isinactive = false
+        name = "aSon"
+        parent = netsuite.customrecord_cseg1.attr.instances.instance.val_5912_2239021_113.scriptid
+        index = 3
+      }
+      val_53459_t2480368_634 = {
+        scriptid = "val_53459_t2480368_634"
+        isinactive = false
+        name = "d"
+        index = 4
+      }
+      val_88151_t2480368_621 = {
+        scriptid = "val_88151_t2480368_621"
+        isinactive = false
+        name = "test"
+        index = 5
+      }
+    }
+  }
+  links = {
+    link = {
+      BASICSETUPCOMPANY = {
+        linkcategory = "BASICSETUPCOMPANY"
+        linktasktype = "LIST"
+      }
+    }
+  }
+  metadataType = "customrecordtype"
+  _alias = "Stam"
+}

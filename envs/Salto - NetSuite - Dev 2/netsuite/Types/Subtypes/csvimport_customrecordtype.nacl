@@ -1,0 +1,8 @@
+type netsuite.csvimport_customrecordtype is string {
+  _restriction = {
+    values = [
+      "CUSTOMRECORD",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,70 @@
+netsuite.role customrole1036 {
+  scriptid = "customrole1036"
+  accountingbooksoption = "PRIMARY"
+  centertype = "ACCOUNTCENTER"
+  coreadminpermission = false
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  isinactive = true
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "With employeeviewingallowed field"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = {
+      TRAN_PAYMENTAUDIT = {
+        permkey = "TRAN_PAYMENTAUDIT"
+        permlevel = "VIEW"
+      }
+      TRAN_PURCHORDBILL = {
+        permkey = "TRAN_PURCHORDBILL"
+        permlevel = "EDIT"
+      }
+      TRAN_VENDBILL = {
+        permkey = "TRAN_VENDBILL"
+        permlevel = "VIEW"
+      }
+      TRAN_VENDCRED = {
+        permkey = "TRAN_VENDCRED"
+        permlevel = "VIEW"
+      }
+      TRAN_FIND = {
+        permkey = "TRAN_FIND"
+        permlevel = "VIEW"
+      }
+      TRAN_CUSTINVC = {
+        permkey = "TRAN_CUSTINVC"
+        permlevel = "VIEW"
+      }
+      TRAN_PURCHORD = {
+        permkey = "TRAN_PURCHORD"
+        permlevel = "EDIT"
+      }
+      TRAN_VENDBILLAPPRV = {
+        permkey = "TRAN_VENDBILLAPPRV"
+        permlevel = "EDIT"
+      }
+      TRAN_VENDAUTHAPPRV = {
+        permkey = "TRAN_VENDAUTHAPPRV"
+        permlevel = "EDIT"
+      }
+      LIST_OTHER_ADDRESS = {
+        permkey = "LIST_OTHER_ADDRESS"
+        permlevel = "FULL"
+      }
+      LIST_BULK_PROCESSING = {
+        permkey = "LIST_BULK_PROCESSING"
+        permlevel = "VIEW"
+      }
+    }
+  }
+  _alias = "With employeeviewingallowed field"
+}

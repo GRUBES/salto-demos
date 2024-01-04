@@ -1,0 +1,12 @@
+type netsuite.customRecordTypeTabs {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string tabTitle {
+  }
+  netsuite.recordRef tabParent {
+  }
+  netsuite.languageValueList tabTitleLanguageValueList {
+  }
+}

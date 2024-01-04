@@ -1,0 +1,19 @@
+netsuite.othercustomfield custrecord_api_parent {
+  scriptid = "custrecord_api_parent"
+  accesslevel = "2"
+  applyformatting = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "LOCKED"
+  encryptatrest = false
+  fieldtype = "INTEGER"
+  isformula = false
+  ismandatory = false
+  label = "API Parent Account"
+  rectype = "-112"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "API Parent Account"
+}

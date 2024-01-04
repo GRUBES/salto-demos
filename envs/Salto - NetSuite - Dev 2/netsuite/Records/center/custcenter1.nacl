@@ -1,0 +1,5 @@
+netsuite.center custcenter1 {
+  scriptid = "custcenter1"
+  label = "Enhanced Sales Center"
+  _alias = "Enhanced Sales Center"
+}

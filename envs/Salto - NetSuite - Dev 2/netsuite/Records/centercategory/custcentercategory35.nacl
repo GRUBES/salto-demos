@@ -1,0 +1,101 @@
+netsuite.centercategory custcentercategory35 {
+  scriptid = "custcentercategory35"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab9.scriptid
+  label = "Customization"
+  links = {
+    link = {
+      LIST_CUSTLIST = {
+        linkid = "LIST_CUSTLIST"
+        shortlist = false
+        index = 0
+      }
+      LIST_CUSTENTITYFIELD = {
+        linkid = "LIST_CUSTENTITYFIELD"
+        shortlist = false
+        index = 1
+      }
+      LIST_CUSTCOLUMNFIELD = {
+        linkid = "LIST_CUSTCOLUMNFIELD"
+        shortlist = false
+        index = 2
+      }
+      LIST_CUSTEVENTFIELD = {
+        linkid = "LIST_CUSTEVENTFIELD"
+        shortlist = false
+        index = 3
+      }
+      LIST_CUSTENTRYFORM = {
+        linkid = "LIST_CUSTENTRYFORM"
+        shortlist = false
+        index = 4
+      }
+      EDIT_CUSTADDRESSFORM = {
+        linkid = "EDIT_CUSTADDRESSFORM"
+        shortlist = false
+        index = 5
+      }
+      LIST_CUSTOMSUBLIST = {
+        linkid = "LIST_CUSTOMSUBLIST"
+        shortlist = false
+        index = 6
+      }
+      LIST_CUSTFIELDTAB = {
+        linkid = "LIST_CUSTFIELDTAB"
+        shortlist = false
+        index = 7
+      }
+      LIST_CUSTBODYFIELD = {
+        linkid = "LIST_CUSTBODYFIELD"
+        shortlist = false
+        index = 8
+      }
+      LIST_CUSTFORM = {
+        linkid = "LIST_CUSTFORM"
+        shortlist = false
+        index = 9
+      }
+      LIST_ITEMOPTION = {
+        linkid = "LIST_ITEMOPTION"
+        shortlist = false
+        index = 10
+      }
+      LIST_CUSTOTHERFIELD = {
+        linkid = "LIST_CUSTOTHERFIELD"
+        shortlist = false
+        index = 11
+      }
+      LIST_CUSTLAYOUT = {
+        linkid = "LIST_CUSTLAYOUT"
+        shortlist = false
+        index = 12
+      }
+      LIST_CUSTEMAILLAYOUT = {
+        linkid = "LIST_CUSTEMAILLAYOUT"
+        shortlist = false
+        index = 13
+      }
+      LIST_CUSTCENTER = {
+        linkid = "LIST_CUSTCENTER"
+        shortlist = false
+        index = 14
+      }
+      LIST_CUSTSECTION = {
+        linkid = "LIST_CUSTSECTION"
+        shortlist = false
+        index = 15
+      }
+      LIST_CUSTCATEGORY = {
+        linkid = "LIST_CUSTCATEGORY"
+        shortlist = false
+        index = 16
+      }
+      EDIT_CUSTTASKS = {
+        linkid = "EDIT_CUSTTASKS"
+        shortlist = false
+        index = 17
+      }
+    }
+  }
+  _alias = "Customization"
+}

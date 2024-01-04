@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_sha_script_js@duv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/sha_script.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/sha_script.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "sha_script.js"
+}

@@ -1,0 +1,12 @@
+type netsuite.csvimport_columndelimiter is string {
+  _restriction = {
+    values = [
+      "COMMA",
+      "PIPE",
+      "SEMICOLON",
+      "SPACE",
+      "TAB",
+    ]
+    enforce_value = false
+  }
+}

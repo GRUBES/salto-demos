@@ -1,0 +1,8 @@
+type netsuite.exclusionDateList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<string>" exclusionDate {
+  }
+}

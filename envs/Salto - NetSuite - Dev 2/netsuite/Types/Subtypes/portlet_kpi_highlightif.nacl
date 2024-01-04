@@ -1,0 +1,12 @@
+type netsuite.portlet_kpi_highlightif is string {
+  _restriction = {
+    values = [
+      "ALWAYS",
+      "GREATER_THAN",
+      "LESS_THAN",
+      "VARIANCE_GREATER_THAN",
+      "VARIANCE_LESS_THAN",
+    ]
+    enforce_value = false
+  }
+}

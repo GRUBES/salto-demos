@@ -1,0 +1,10 @@
+type netsuite.roleaccountingbooksoption is string {
+  _restriction = {
+    values = [
+      "ALL",
+      "PRIMARY",
+      "SELECTED",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,11 @@
+type netsuite.advInterCompanyJournalEntryLineList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.advInterCompanyJournalEntryLine>" line {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

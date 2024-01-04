@@ -1,0 +1,77 @@
+netsuite.workflow customworkflow8 {
+  scriptid = "customworkflow8"
+  initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+  initoncreate = false
+  initonvieworupdate = false
+  isinactive = false
+  islogenabled = false
+  keephistory = "ONLYWHENTESTING"
+  name = "seggev1"
+  recordtypes = "ACCOUNT"
+  releasestatus = "TESTING"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = {
+      custworkflow16 = {
+        scriptid = "custworkflow16"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "field1"
+        storevalue = true
+        index = 0
+      }
+      custworkflow18 = {
+        scriptid = "custworkflow18"
+        applyformatting = false
+        defaultchecked = false
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "field2"
+        storevalue = true
+        index = 1
+      }
+    }
+  }
+  workflowstates = {
+    workflowstate = {
+      workflowstate73 = {
+        scriptid = "workflowstate73"
+        donotexitworkflow = false
+        name = "sgv1state1"
+        positionx = 243
+        positiony = 133
+        workflowstatecustomfields = {
+          workflowstatecustomfield = {
+            custwfstate1 = {
+              scriptid = "custwfstate1"
+              applyformatting = false
+              defaultchecked = false
+              displaytype = "NORMAL"
+              fieldtype = "TEXT"
+              label = "sgv1st1f1"
+              storevalue = true
+              index = 0
+            }
+            custwfstate2 = {
+              scriptid = "custwfstate2"
+              applyformatting = false
+              defaultchecked = false
+              displaytype = "NORMAL"
+              fieldtype = "TEXT"
+              label = "sgv1st1f2"
+              storevalue = true
+              index = 1
+            }
+          }
+        }
+        index = 0
+      }
+    }
+  }
+  _alias = "seggev1"
+}

@@ -1,0 +1,13 @@
+netsuite.file Templates_Sales_Templates_New_Release_Features_pdf@dsduuv {
+  bundleable = false
+  isinactive = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/Templates/Sales Templates/New_Release_Features.pdf"
+  content = file("netsuite/FileCabinet/Templates/Sales Templates/New_Release_Features.pdf")
+  _parent = [
+    netsuite.folder.instance.Templates_Sales_Templates@ds,
+  ]
+  _alias = "New_Release_Features.pdf"
+}

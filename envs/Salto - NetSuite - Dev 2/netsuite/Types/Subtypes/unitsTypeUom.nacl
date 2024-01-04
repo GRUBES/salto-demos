@@ -1,0 +1,21 @@
+type netsuite.unitsTypeUom {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  string unitName {
+  }
+  string pluralName {
+  }
+  string abbreviation {
+  }
+  string pluralAbbreviation {
+  }
+  number conversionRate {
+  }
+  boolean baseUnit {
+  }
+}

@@ -1,0 +1,77 @@
+type netsuite.charge {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.salesOrder salesOrder {
+    isReference = true
+  }
+  netsuite.recordRef billTo {
+  }
+  netsuite.billingAccount billingAccount {
+    isReference = true
+  }
+  unknown stage {
+  }
+  string chargeDate {
+  }
+  unknown use {
+  }
+  netsuite.recordRef chargeType {
+  }
+  netsuite.projectTask projectTask {
+    isReference = true
+  }
+  string description {
+  }
+  netsuite.recordRef timeRecord {
+  }
+  string rate {
+  }
+  number quantity {
+  }
+  number amount {
+  }
+  netsuite.recordRef billingItem {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  netsuite.recordRef transaction {
+  }
+  netsuite.recordRef transactionLine {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef salesOrderLine {
+  }
+  netsuite.recordRef subscriptionLine {
+  }
+  netsuite.invoice invoice {
+    isReference = true
+  }
+  netsuite.recordRef invoiceLine {
+  }
+  netsuite.recordRef rule {
+  }
+  string runId {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

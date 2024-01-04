@@ -1,0 +1,215 @@
+type netsuite.otherChargeResaleItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string purchaseDescription {
+  }
+  boolean manufacturingChargeItem {
+  }
+  number cost {
+  }
+  string costUnits {
+  }
+  netsuite.account expenseAccount {
+    isReference = true
+  }
+  netsuite.recordRef intercoExpenseAccount {
+  }
+  string salesDescription {
+  }
+  boolean includeChildren {
+  }
+  netsuite.account incomeAccount {
+    isReference = true
+  }
+  netsuite.account intercoIncomeAccount {
+    isReference = true
+  }
+  boolean isTaxable {
+  }
+  unknown matrixType {
+  }
+  netsuite.recordRef taxSchedule {
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  netsuite.unitsType unitsType {
+    isReference = true
+  }
+  netsuite.recordRef purchaseUnit {
+  }
+  netsuite.recordRef saleUnit {
+  }
+  string costEstimateUnits {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  netsuite.recordRef billingSchedule {
+  }
+  netsuite.account deferredRevenueAccount {
+    isReference = true
+  }
+  netsuite.account intercoDefRevAccount {
+    isReference = true
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  netsuite.recordRef deferralAccount {
+  }
+  netsuite.recordRef amortizationTemplate {
+  }
+  string residual {
+  }
+  boolean deferRevRec {
+  }
+  netsuite.recordRef revenueRecognitionRule {
+  }
+  netsuite.recordRef revRecForecastRule {
+  }
+  netsuite.recordRef revenueAllocationGroup {
+  }
+  netsuite.recordRef createRevenuePlansOn {
+  }
+  boolean directRevenuePosting {
+  }
+  boolean contingentRevenueHandling {
+  }
+  netsuite.account revReclassFXAccount {
+    isReference = true
+  }
+  number amortizationPeriod {
+  }
+  number minimumQuantity {
+  }
+  string minimumQuantityUnits {
+  }
+  boolean enforceMinQtyInternally {
+  }
+  number maximumQuantity {
+  }
+  string softDescriptor {
+  }
+  boolean isFulfillable {
+  }
+  boolean generateAccruals {
+  }
+  netsuite.costCategory costCategory {
+    isReference = true
+  }
+  number purchaseOrderQuantity {
+  }
+  number purchaseOrderAmount {
+  }
+  number purchaseOrderQuantityDiff {
+  }
+  number receiptQuantity {
+  }
+  number receiptAmount {
+  }
+  number receiptQuantityDiff {
+  }
+  boolean pricesIncludeTax {
+  }
+  netsuite.recordRef quantityPricingSchedule {
+  }
+  boolean useMarginalRates {
+  }
+  unknown overallQuantityPricingType {
+  }
+  netsuite.pricingGroup pricingGroup {
+    isReference = true
+  }
+  netsuite.recordRef customForm {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  string vendorName {
+  }
+  netsuite.otherChargeResaleItem parent {
+    isReference = true
+  }
+  boolean isOnline {
+  }
+  boolean isGcoCompliant {
+  }
+  boolean offerSupport {
+  }
+  boolean isInactive {
+  }
+  string matrixItemNameTemplate {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  number vsoePrice {
+  }
+  unknown vsoeSopGroup {
+  }
+  unknown vsoeDeferral {
+  }
+  unknown vsoePermitDiscount {
+  }
+  boolean vsoeDelivered {
+  }
+  netsuite.recordRef itemRevenueCategory {
+  }
+  string currency {
+  }
+  netsuite.itemOptionsList itemOptionsList {
+  }
+  netsuite.matrixOptionList matrixOptionList {
+  }
+  netsuite.itemVendorList itemVendorList {
+  }
+  netsuite.pricingMatrix pricingMatrix {
+  }
+  netsuite.itemAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.recordRef purchaseTaxCode {
+  }
+  number rate {
+  }
+  netsuite.recordRef salesTaxCode {
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.vendor vendor {
+    isReference = true
+  }
+  netsuite.otherChargeResaleItemHierarchyVersionsList hierarchyVersionsList {
+  }
+  netsuite.recordRef consumptionUnit {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Other Charge Resale Item"
+}

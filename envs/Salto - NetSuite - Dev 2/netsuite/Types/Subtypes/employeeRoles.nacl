@@ -1,0 +1,9 @@
+type netsuite.employeeRoles {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.role selectedRole {
+    isReference = true
+  }
+}

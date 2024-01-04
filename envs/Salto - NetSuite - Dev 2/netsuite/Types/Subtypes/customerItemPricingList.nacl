@@ -1,0 +1,11 @@
+type netsuite.customerItemPricingList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customerItemPricing>" itemPricing {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

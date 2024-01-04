@@ -1,0 +1,15 @@
+type netsuite.generic_repeat_time is string {
+  _restriction = {
+    values = [
+      "PT12H",
+      "PT15M",
+      "PT1H",
+      "PT2H",
+      "PT30M",
+      "PT4H",
+      "PT6H",
+      "PT8H",
+    ]
+    enforce_value = false
+  }
+}

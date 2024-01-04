@@ -1,0 +1,23 @@
+netsuite.bundleinstallationscript customscript_esc_bundle_script {
+  scriptid = "customscript_esc_bundle_script"
+  beforeinstallfunction = "beforeInstallUpdate"
+  beforeupdatefunction = "beforeInstallUpdate"
+  isinactive = true
+  name = "Enhanced Sales Center Bundle Script"
+  notifyadmins = false
+  notifyowner = true
+  scriptfile = "[/SuiteBundles/Bundle 58416/src/bundle_script.js]"
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploy_esc_bundle_script = {
+        scriptid = "customdeploy_esc_bundle_script"
+        isdeployed = true
+        loglevel = "DEBUG"
+        runasrole = "ADMINISTRATOR"
+        status = "RELEASED"
+        title = "Enhanced Sales Center Bundle Script"
+      }
+    }
+  }
+  _alias = "Enhanced Sales Center Bundle Script"
+}

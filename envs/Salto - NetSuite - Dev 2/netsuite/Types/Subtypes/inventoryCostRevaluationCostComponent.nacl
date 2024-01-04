@@ -1,0 +1,17 @@
+type netsuite.inventoryCostRevaluationCostComponent {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number cost {
+  }
+  netsuite.recordRef componentItem {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.costCategory costCategory {
+    isReference = true
+  }
+}

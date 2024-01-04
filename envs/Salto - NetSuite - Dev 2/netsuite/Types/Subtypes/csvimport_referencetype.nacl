@@ -1,0 +1,11 @@
+type netsuite.csvimport_referencetype is string {
+  _restriction = {
+    values = [
+      "EXTERNAL_ID",
+      "INTERNAL_ID",
+      "NAME",
+      "SCRIPT_ID",
+    ]
+    enforce_value = false
+  }
+}

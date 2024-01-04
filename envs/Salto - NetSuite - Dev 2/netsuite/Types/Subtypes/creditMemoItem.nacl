@@ -1,0 +1,118 @@
+type netsuite.creditMemoItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.job job {
+    isReference = true
+  }
+  netsuite.recordRef item {
+  }
+  number orderLine {
+  }
+  number line {
+  }
+  number quantity {
+  }
+  string description {
+  }
+  string binNumbers {
+  }
+  netsuite.price price {
+    isReference = true
+  }
+  string rate {
+  }
+  number amount {
+  }
+  boolean isTaxable {
+  }
+  netsuite.customFieldList options {
+  }
+  netsuite.recordRef shipAddress {
+  }
+  unknown shipCarrier {
+  }
+  netsuite.recordRef shipMethod {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  number tax1Amt {
+  }
+  number grossAmt {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  string taxDetailsReference {
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string revRecStartDate {
+  }
+  number revRecTermInMonths {
+  }
+  string revRecEndDate {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string serialNumbers {
+  }
+  boolean deferRevRec {
+  }
+  string giftCertFrom {
+  }
+  string giftCertRecipientName {
+  }
+  string giftCertRecipientEmail {
+  }
+  string giftCertMessage {
+  }
+  number taxAmount {
+  }
+  string giftCertNumber {
+  }
+  unknown vsoeSopGroup {
+  }
+  boolean vsoeIsEstimate {
+  }
+  number vsoePrice {
+  }
+  number vsoeAmount {
+  }
+  number vsoeAllocation {
+  }
+  unknown vsoeDeferral {
+  }
+  unknown vsoePermitDiscount {
+  }
+  boolean vsoeDelivered {
+  }
+  netsuite.recordRef catchUpPeriod {
+  }
+  netsuite.recordRef chargeType {
+  }
+  netsuite.recordRef subscriptionLine {
+  }
+  "List<netsuite.charge>" chargesList {
+    isReference = true
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}
