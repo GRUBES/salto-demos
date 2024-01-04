@@ -6,7 +6,7 @@ netsuite.workflow customworkflow_emp_mgr_review {
   isinactive = false
   islogenabled = true
   keephistory = "ONLYWHENTESTING"
-  name = "Employee Manager Review"
+  name = "Employee Manager Review - Scheduled"
   recordtypes = "EMPLOYEE"
   releasestatus = "TESTING"
   runasadmin = false
@@ -58,5 +58,5 @@ netsuite.workflow customworkflow_emp_mgr_review {
       }
     }
   }
-  _alias = "Employee Manager Review"
+  _alias = "Employee Manager Review - Scheduled"
 }

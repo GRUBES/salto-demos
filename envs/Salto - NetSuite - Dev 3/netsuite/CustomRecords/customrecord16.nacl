@@ -138,7 +138,7 @@ type netsuite.customrecord16 {
     applyformatting = false
     checkspelling = false
     defaultchecked = false
-    description = "e2e-branch-2"
+    description = "e2e-branch-1"
     displaytype = "NORMAL"
     encryptatrest = false
     fieldtype = "TEXT"
@@ -164,7 +164,7 @@ type netsuite.customrecord16 {
   allowquickadd = true
   allowquicksearch = false
   allowuiaccess = true
-  description = "e2e-branch-2"
+  description = "e2e-branch-1"
   enabledle = true
   enablekeywords = true
   enablemailmerge = false

@@ -1,55 +1,55 @@
 netsuite.customlist customlist_sh_sdf_lessons {
-  scriptid = "customlist_sh_sdf_lessons"
-  description = "A list of Lessons in the Intro to SDF Course on SuiteHub"
-  isinactive = false
-  ismatrixoption = false
-  isordered = true
-  name = "SDF Course Lessons"
   customvalues = {
     customvalue = {
       val_100816_t2480649_149 = {
         scriptid = "val_100816_t2480649_149"
         abbreviation = "L"
         isinactive = false
-        value = "Lesson 1 - What is SDF and why use it?"
+        value = "Chapter 1 - What is SDF and why use it?"
         index = 0
       }
       val_100817_t2480649_671 = {
         scriptid = "val_100817_t2480649_671"
         abbreviation = "L"
         isinactive = false
-        value = "Lesson 2 - SDF Core Concepts"
+        value = "Chapter 2 - SDF Core Concepts"
         index = 1
       }
       val_100818_t2480649_137 = {
         scriptid = "val_100818_t2480649_137"
         abbreviation = "L"
         isinactive = false
-        value = "Lesson 3 - SDF Project Lifecycle"
+        value = "Chapter 3 - SDF Project Lifecycle"
         index = 2
       }
       val_100819_t2480649_703 = {
         scriptid = "val_100819_t2480649_703"
         abbreviation = "L"
         isinactive = false
-        value = "Lesson 4 - Practical SDF Processes"
+        value = "Chapter 4 - Practical SDF Processes"
         index = 3
       }
       val_100820_t2480649_934 = {
         scriptid = "val_100820_t2480649_934"
         abbreviation = "L"
         isinactive = false
-        value = "Lesson 5 - Shortcomings of SDF"
+        value = "Chapter 5 - Shortcomings of SDF"
         index = 4
       }
       val_100821_t2480649_287 = {
         scriptid = "val_100821_t2480649_287"
         abbreviation = "L"
         isinactive = false
-        value = "Lesson 6 - SDF Next Steps"
+        value = "Chapter 6 - SDF Next Steps"
         index = 5
       }
     }
   }
-  _alias = "SDF Course Lessons"
+  scriptid = "customlist_sh_sdf_lessons"
+  description = "A list of Chapters in the Intro to SDF Course on SuiteHub"
+  isinactive = false
+  ismatrixoption = false
+  isordered = true
+  name = "SDF Course Chapters"
+  _alias = "SDF Course Chapters"
 }

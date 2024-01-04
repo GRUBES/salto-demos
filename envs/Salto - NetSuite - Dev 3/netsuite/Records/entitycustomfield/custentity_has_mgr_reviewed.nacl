@@ -16,12 +16,12 @@ netsuite.entitycustomfield custentity_has_mgr_reviewed {
   availableexternally = false
   checkspelling = false
   defaultchecked = false
-  description = "Has the manager reviewed this Employee record?"
+  description = "Has the manager reviewed this Employee record? The Employee's supervisor must review and approve the Employee's information before the record can be submitted."
   displaytype = "NORMAL"
   encryptatrest = false
   fieldtype = "CHECKBOX"
   globalsearch = false
-  help = "Has the manager reviewed this Employee record?"
+  help = "Has the manager reviewed this Employee record? The Employee's supervisor must review and approve the Employee's information before the record can be submitted."
   isformula = false
   ismandatory = false
   isparent = false

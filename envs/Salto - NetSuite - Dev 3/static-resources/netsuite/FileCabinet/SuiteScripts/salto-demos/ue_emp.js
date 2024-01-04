@@ -19,9 +19,11 @@ define(['N/error', 'N/search'], (error, search) => {
   }
 
   const beforeSubmit = context => {
+
     if (!hasManagerReviewed(context)) {
       throw error.create(errors.NO_MGR_REVIEW)
     }
+    
     search.load({id: 'customsearchx_customers_in_ca'})
   }
 

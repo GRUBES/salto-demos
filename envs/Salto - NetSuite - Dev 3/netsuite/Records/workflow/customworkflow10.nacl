@@ -17,7 +17,7 @@ netsuite.workflow customworkflow10 {
     workflowstate = {
       workflowstate77 = {
         scriptid = "workflowstate77"
-        description = "e2e-branch-2"
+        description = "e2e-branch-1"
         donotexitworkflow = false
         name = "State 1"
         positionx = 243

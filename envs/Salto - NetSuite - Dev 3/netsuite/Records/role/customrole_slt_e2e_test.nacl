@@ -10,7 +10,7 @@ netsuite.role customrole_slt_e2e_test {
   issinglesignononly = false
   issupportrole = false
   iswebserviceonlyrole = false
-  name = "created by oss e2e - 5706023"
+  name = "created by oss e2e - 7061930"
   restrictbydevice = false
   restricttimeandexpenses = false
   subsidiaryoption = "OWN"
@@ -30,5 +30,5 @@ netsuite.role customrole_slt_e2e_test {
       
     }
   }
-  _alias = "created by oss e2e - 5706023"
+  _alias = "created by oss e2e - 7061930"
 }
