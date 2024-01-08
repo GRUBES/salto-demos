@@ -46,10 +46,11 @@ netsuite.customlist customlist_sh_sdf_lessons {
     }
   }
   scriptid = "customlist_sh_sdf_lessons"
-  description = "A list of Chapters in the Intro to SDF Course on SuiteHub"
+  description = "A list of Chapters in the Intro to SDF Course on Salto Leap"
   isinactive = false
   ismatrixoption = false
   isordered = true
   name = "SDF Course Chapters"
   _alias = "SDF Course Chapters"
+  help = "A list of Chapters in the Intro to SDF Course on Salto Leap"
 }
