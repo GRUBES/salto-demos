@@ -3,7 +3,7 @@ netsuite.transactionForm custform_slt_so_sdf {
   standard = "STANDARDSALESORDER"
   name = "Salto Sales Order - SDF Deployment"
   recordType = "SALESORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -2191,4 +2191,5 @@ netsuite.transactionForm custform_slt_so_sdf {
     },
   ]
   _alias = "Salto Sales Order - SDF Deployment"
+  isInactive = false
 }

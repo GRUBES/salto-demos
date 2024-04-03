@@ -3,7 +3,7 @@ type netsuite.employeeRoles {
     hidden_string source {
     }
   }
-  netsuite.role selectedRole {
+  netsuite.roleReference selectedRole {
     isReference = true
   }
 }

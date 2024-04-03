@@ -5,7 +5,7 @@ netsuite.centertab custcentertab250 {
   allpartners = false
   allroles = false
   allvendors = false
-  center = netsuite.center.instance.custcenterz200.scriptid
+  center = netsuite.center.instance.custcenter201.scriptid
   label = "Groups"
   portlets = {
     portlet = {

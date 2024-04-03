@@ -9,8 +9,7 @@ type netsuite.folder {
   }
   string description {
   }
-  boolean isinactive {
-  }
+  
   boolean isprivate {
   }
   string internalId {
@@ -19,4 +18,9 @@ type netsuite.folder {
   string application_id {
   }
   _alias = "Folder"
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }

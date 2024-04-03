@@ -1,4 +1,4 @@
-type netsuite.customrecord_seggev_5 {
+type netsuite.customrecord_shalom_5 {
   annotations {
     serviceid scriptid {
     }
@@ -62,8 +62,6 @@ type netsuite.customrecord_seggev_5 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
     boolean isordered {
     }
     boolean showcreationdate {
@@ -96,7 +94,11 @@ type netsuite.customrecord_seggev_5 {
     }
     string application_id {
     }
+    netsuite.bundle bundle {
+    }
     hidden_string source {
+    }
+    boolean isInactive {
     }
     hidden_string internalId {
     }
@@ -109,7 +111,7 @@ type netsuite.customrecord_seggev_5 {
   }
   netsuite.customRecordTranslationsList translationsList {
   }
-  scriptid = "customrecord_seggev_5"
+  scriptid = "customrecord_shalom_5"
   accesstype = "USEPERMISSIONLIST"
   allowattachments = true
   allowinlinedeleting = false
@@ -131,7 +133,6 @@ type netsuite.customrecord_seggev_5 {
   iconbuiltin = true
   includeinsearchmenu = true
   includename = true
-  isinactive = false
   isordered = false
   recordname = "Seggev 5"
   showcreationdate = false
@@ -144,5 +145,50 @@ type netsuite.customrecord_seggev_5 {
   showownerallowchange = false
   showowneronlist = false
   metadataType = "customrecordtype"
+  isInactive = false
   _alias = "Seggev 5"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

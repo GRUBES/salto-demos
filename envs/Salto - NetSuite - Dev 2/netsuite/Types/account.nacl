@@ -88,4 +88,16 @@ type netsuite.account {
     field_instance = netsuite.othercustomfield.instance.custrecord_api_parent.scriptid
   }
   _alias = "Account"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

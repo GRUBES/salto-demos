@@ -1,0 +1,17 @@
+netsuite.translationcollection custcollectiontranslations_workbook_37_62f327405b8a4982a764 {
+  scriptid = "custcollectiontranslations_workbook_37_62f327405b8a4982a764"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_workbook_37_62f327405b8a4982a764.strings.string.workbook_name_1748_1.scriptid
+  strings = {
+    string = {
+      workbook_name_1748_1 = {
+        scriptid = "workbook_name_1748_1"
+        defaulttranslation = "order checks"
+        description = "Name in workbook"
+        index = 0
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "order checks"
+}

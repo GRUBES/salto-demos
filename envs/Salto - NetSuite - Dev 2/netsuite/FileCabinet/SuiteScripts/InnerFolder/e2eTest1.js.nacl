@@ -1,7 +1,7 @@
 netsuite.file SuiteScripts_InnerFolder_e2eTest1_js@ddv {
   description = "created by oss e2e - 8522851"
   bundleable = true
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file SuiteScripts_InnerFolder_e2eTest1_js@ddv {
     netsuite.folder.instance.SuiteScripts_InnerFolder@d,
   ]
   _alias = "e2eTest1.js"
+  isInactive = false
 }

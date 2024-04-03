@@ -1,0 +1,22 @@
+netsuite.translationcollection custcollectiontranslations_dataset_dilly_1 {
+  scriptid = "custcollectiontranslations_dataset_dilly_1"
+  defaultlanguage = "en-US"
+  name = "dilly dataset 1"
+  strings = {
+    string = {
+      dataset_name_1705_2 = {
+        scriptid = "dataset_name_1705_2"
+        defaulttranslation = "dilly dataset 1"
+        description = "Name in dataset"
+        index = 0
+      }
+      dataset_formula_1705_3 = {
+        scriptid = "dataset_formula_1705_3"
+        defaulttranslation = "id_plus_5"
+        description = "Formula field in dataset"
+        index = 1
+      }
+    }
+  }
+  _alias = "dilly dataset 1"
+}

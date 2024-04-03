@@ -190,4 +190,11 @@ type netsuite.job {
   serviceid identifier {
   }
   _alias = "Job"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

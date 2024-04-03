@@ -9,4 +9,18 @@ type netsuite.integration {
   string application_id {
   }
   _alias = "Integration"
+  _important_values = [
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }

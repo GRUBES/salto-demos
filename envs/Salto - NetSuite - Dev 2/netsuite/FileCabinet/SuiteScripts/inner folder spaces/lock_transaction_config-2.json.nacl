@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_inner_folder_spaces_lock_transaction_config_2_json@dssduubv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_inner_folder_spaces_lock_transaction_config_2_json@ds
     netsuite.folder.instance.SuiteScripts_inner_folder_spaces@dss,
   ]
   _alias = "lock_transaction_config-2.json"
+  isInactive = false
 }

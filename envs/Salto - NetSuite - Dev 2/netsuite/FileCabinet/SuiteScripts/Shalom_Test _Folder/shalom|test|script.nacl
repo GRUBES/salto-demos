@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_Shalom_Test__Folder_shalom_test_script@dusudgg {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_Shalom_Test__Folder_shalom_test_script@dusudgg {
     netsuite.folder.instance.SuiteScripts_Shalom_Test__Folder@dusu,
   ]
   _alias = "shalom|test|script"
+  isInactive = false
 }

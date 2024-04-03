@@ -1,0 +1,17 @@
+netsuite.location Israel {
+  name = "Israel"
+  subsidiaryList = [
+    netsuite.subsidiary.instance.Parent_Company@s,
+  ]
+  isInactive = false
+  makeInventoryAvailable = false
+  classTranslationList = {
+    classTranslation = {
+      French__France_@sjk = {
+        language = "French (France)"
+      }
+    }
+  }
+  identifier = "Israel"
+  _alias = "Israel"
+}

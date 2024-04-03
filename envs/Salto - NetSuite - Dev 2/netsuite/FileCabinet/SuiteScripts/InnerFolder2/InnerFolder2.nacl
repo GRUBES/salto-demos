@@ -1,11 +1,12 @@
 netsuite.folder SuiteScripts_InnerFolder2@d {
   description = "Shalom Test folder"
   bundleable = false
-  isinactive = false
+  
   isprivate = false
   path = "/SuiteScripts/InnerFolder2"
   _parent = [
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "InnerFolder2"
+  isInactive = false
 }

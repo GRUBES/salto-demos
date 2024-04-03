@@ -1,6 +1,6 @@
 netsuite.file Templates_Sales_Templates_Excel_quotation_xls@dsduv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_Sales_Templates_Excel_quotation_xls@dsduv {
     netsuite.folder.instance.Templates_Sales_Templates@ds,
   ]
   _alias = "Excel_quotation.xls"
+  isInactive = false
 }

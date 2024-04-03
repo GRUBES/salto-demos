@@ -120,6 +120,30 @@ type netsuite.itemcustomfield {
     _hidden_value = true
   }
   _alias = "Item Custom Field"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.itemcustomfield_customfieldfilters_customfieldfilter {
   string fldfilter {

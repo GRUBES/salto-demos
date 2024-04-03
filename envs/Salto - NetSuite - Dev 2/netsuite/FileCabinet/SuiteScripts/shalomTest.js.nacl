@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_shalomTest_js@dv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ netsuite.file SuiteScripts_shalomTest_js@dv {
     },
   ]
   _alias = "shalomTest.js"
+  isInactive = false
 }

@@ -24,10 +24,10 @@ netsuite.entitycustomfield custentity_slt_e2e_test {
   isformula = false
   ismandatory = false
   isparent = false
-  label = "created by oss e2e - 5135712"
+  label = "created by oss e2e - 8116639"
   searchlevel = "2"
   showhierarchy = false
   showinlist = false
   storevalue = true
-  _alias = "created by oss e2e - 5135712"
+  _alias = "created by oss e2e - 8116639"
 }

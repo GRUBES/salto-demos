@@ -160,4 +160,11 @@ type netsuite.otherChargeSaleItem {
   serviceid identifier {
   }
   _alias = "Other Charge Sale Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

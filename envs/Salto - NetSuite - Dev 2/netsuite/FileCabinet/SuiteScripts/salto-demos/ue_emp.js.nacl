@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_salto_demos_ue_emp_js@dbduv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ netsuite.file SuiteScripts_salto_demos_ue_emp_js@dbduv {
     },
   ]
   _alias = "ue_emp.js"
+  isInactive = false
 }

@@ -1,7 +1,7 @@
 netsuite.usereventscript customscript_ue_emp {
   scriptid = "customscript_ue_emp"
   description = "User Event entry point for the Employee record"
-  isinactive = false
+  
   name = "UE Employee"
   notifyadmins = false
   notifyowner = true
@@ -24,4 +24,5 @@ netsuite.usereventscript customscript_ue_emp {
     }
   }
   _alias = "UE Employee"
+  isInactive = false
 }

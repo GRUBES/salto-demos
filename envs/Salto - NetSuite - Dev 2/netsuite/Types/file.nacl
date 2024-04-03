@@ -19,12 +19,16 @@ type netsuite.file {
   }
   boolean hideinbundle {
   }
-  boolean isinactive {
-  }
+  
   string internalId {
     _hidden_value = true
   }
   string application_id {
   }
   _alias = "File"
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }

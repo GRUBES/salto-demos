@@ -1,0 +1,15 @@
+netsuite.translationcollection custcollection_table_slt_e2e_test {
+  scriptid = "custcollection_table_slt_e2e_test"
+  defaultlanguage = "en-US"
+  name = "created by oss e2e - 3015291"
+  strings = {
+    string = {
+      scriptid3 = {
+        scriptid = "scriptid3"
+        defaulttranslation = "name"
+        index = 0
+      }
+    }
+  }
+  _alias = "created by oss e2e - 3015291"
+}

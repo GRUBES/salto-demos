@@ -159,10 +159,10 @@ type netsuite.nonInventorySaleItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -290,4 +290,11 @@ type netsuite.nonInventorySaleItem {
   serviceid identifier {
   }
   _alias = "Non-inventory Sale Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

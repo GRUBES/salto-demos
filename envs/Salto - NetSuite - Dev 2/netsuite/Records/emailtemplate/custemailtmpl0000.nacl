@@ -3,7 +3,7 @@ netsuite.emailtemplate custemailtmpl0000 {
   addcompanyaddress = false
   addunsubscribelink = false
   description = "AR_CLERK|ACCOUNTANT|[scriptid=standardpaymentlinktransactionemailtemplate]"
-  isinactive = false
+  
   isprivate = false
   name = "Test Email Templatee"
   recordtype = "TRANSACTION"
@@ -16,4 +16,5 @@ netsuite.emailtemplate custemailtmpl0000 {
     },
   ]
   _alias = "Test Email Templatee"
+  isInactive = false
 }

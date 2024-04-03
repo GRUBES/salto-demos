@@ -5,7 +5,7 @@ netsuite.role customrole152 {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = true
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = true
@@ -56,11 +56,13 @@ netsuite.role customrole152 {
         permkey = netsuite.customrecord_seggev_4.attr.scriptid
         permlevel = "VIEW"
       }
-      customrecord_seggev_5 = {
-        permkey = netsuite.customrecord_seggev_5.attr.scriptid
+      
+      customrecord_shalom_5 = {
+        permkey = netsuite.customrecord_shalom_5.attr.scriptid
         permlevel = "EDIT"
       }
     }
   }
   _alias = "Seggev Role Test"
+  isInactive = false
 }

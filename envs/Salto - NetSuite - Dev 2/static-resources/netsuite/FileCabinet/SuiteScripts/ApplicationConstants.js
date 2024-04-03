@@ -1,9 +1,9 @@
 /*
- ** Copyright (c) 2019 Oracle and/or its affiliates.  All rights reserved.EDITED_USING SALTO
+ ** Copyright (c) 2019 Oracle and/or its affiliates.  All rights reserved.EDITED_USING SALTO2
  ** Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
  */
 'use strict';
-// EDITED AGAIN!
+// EDITED 
 module.exports = {
 	SDK_COMMANDS_METADATA_FILE: 'metadata/SDKCommandsMetadata.json',
 	NODE_COMMANDS_METADATA_FILE: 'metadata/NodeCommandsMetadata.json',

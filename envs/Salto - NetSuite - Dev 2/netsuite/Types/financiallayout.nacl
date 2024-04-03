@@ -19,6 +19,18 @@ type netsuite.financiallayout {
   netsuite.financiallayout_fields flags {
   }
   _alias = "Financial Layout"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }
 type netsuite.financiallayout_rows {
   number FIELD_KEY {

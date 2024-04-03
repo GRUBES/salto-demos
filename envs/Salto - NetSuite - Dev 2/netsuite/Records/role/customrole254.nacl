@@ -1,11 +1,10 @@
-netsuite.role customrole154 {
-  scriptid = "customrole154"
+netsuite.role customrole254 {
+  scriptid = "customrole254"
   accountingbooksoption = "PRIMARY"
   centertype = "SALESCENTER"
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = true
-  isinactive = false
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = true
@@ -30,5 +29,6 @@ netsuite.role customrole154 {
       }
     }
   }
+  isInactive = false
   _alias = "Seggev Role Test 3"
 }

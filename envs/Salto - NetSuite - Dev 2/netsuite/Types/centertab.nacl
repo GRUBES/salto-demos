@@ -31,6 +31,25 @@ type netsuite.centertab {
   boolean labelTranslate {
   }
   _alias = "Center Tab"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.centertab_portlets_portlet {
   serviceid scriptid {

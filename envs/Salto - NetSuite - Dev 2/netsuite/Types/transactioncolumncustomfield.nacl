@@ -142,6 +142,30 @@ type netsuite.transactioncolumncustomfield {
     _hidden_value = true
   }
   _alias = "Transaction Column Custom Field"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.transactioncolumncustomfield_customfieldfilters_customfieldfilter {
   string fldfilter {

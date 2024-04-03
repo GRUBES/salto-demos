@@ -3,7 +3,7 @@ netsuite.transactionForm custform_46_t2480368_356 {
   standard = "STANDARDJOURNALENTRY"
   name = "Custom_Journal_Entry"
   recordType = "JOURNALENTRY"
-  inactive = false
+  
   preferred = true
   storedWithRecord = true
   mainFields = {
@@ -881,4 +881,5 @@ netsuite.transactionForm custform_46_t2480368_356 {
     },
   ]
   _alias = "Custom_Journal_Entry"
+  isInactive = false
 }

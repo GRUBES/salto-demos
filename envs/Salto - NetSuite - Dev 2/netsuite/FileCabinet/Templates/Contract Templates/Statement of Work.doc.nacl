@@ -1,6 +1,6 @@
 netsuite.file Templates_Contract_Templates_Statement_of_Work_doc@dsdssv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_Contract_Templates_Statement_of_Work_doc@dsdssv {
     netsuite.folder.instance.Templates_Contract_Templates@ds,
   ]
   _alias = "Statement of Work.doc"
+  isInactive = false
 }

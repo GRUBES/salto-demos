@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_giphy_gif@dv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_giphy_gif@dv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "giphy.gif"
+  isInactive = false
 }

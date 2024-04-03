@@ -1,11 +1,12 @@
 netsuite.folder SuiteScripts_Shalom_Test__Folder@dusu {
   description = "testing if \"|\" causes deployment to fail"
   bundleable = false
-  isinactive = false
+  
   isprivate = false
   path = "/SuiteScripts/Shalom_Test _Folder"
   _parent = [
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "Shalom_Test _Folder"
+  isInactive = false
 }

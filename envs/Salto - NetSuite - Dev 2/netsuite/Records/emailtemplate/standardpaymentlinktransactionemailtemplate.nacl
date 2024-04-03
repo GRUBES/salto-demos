@@ -2,7 +2,7 @@ netsuite.emailtemplate standardpaymentlinktransactionemailtemplate {
   scriptid = "standardpaymentlinktransactionemailtemplate"
   addcompanyaddress = false
   addunsubscribelink = false
-  isinactive = false
+  
   isprivate = false
   name = "Custom Payment Link Transaction Email Template"
   recordtype = "TRANSACTION"
@@ -10,4 +10,5 @@ netsuite.emailtemplate standardpaymentlinktransactionemailtemplate {
   usesmedia = false
   content = file("netsuite/emailtemplate/standardpaymentlinktransactionemailtemplate.html")
   _alias = "Custom Payment Link Transaction Email Template"
+  isInactive = false
 }

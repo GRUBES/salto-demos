@@ -35,6 +35,18 @@ type netsuite.reportdefinition {
   netsuite.reportdefinition_flags flags {
   }
   _alias = "Report Definition"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }
 type netsuite.reportdefinition_components {
   number KEY_COMPONENT {

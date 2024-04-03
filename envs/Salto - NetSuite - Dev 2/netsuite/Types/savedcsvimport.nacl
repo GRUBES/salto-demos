@@ -60,6 +60,25 @@ type netsuite.savedcsvimport {
   string application_id {
   }
   _alias = "Saved CSV Import"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.savedcsvimport_audience {
   boolean ispublic {

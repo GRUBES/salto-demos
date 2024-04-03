@@ -24,6 +24,25 @@ type netsuite.addressForm {
   string application_id {
   }
   _alias = "Address Form"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.addressForm_customCode {
   string scriptFile {

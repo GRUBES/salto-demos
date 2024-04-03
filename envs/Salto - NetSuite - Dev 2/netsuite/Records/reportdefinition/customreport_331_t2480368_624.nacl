@@ -1,0 +1,334 @@
+netsuite.reportdefinition customreport_331_t2480368_624 {
+  scriptid = "customreport_331_t2480368_624"
+  definition = "66145580a2189f0ca0f71266035441807650b96b79f0d0d9bd8f2bcd5f8f414e@GZC@2023.2.17@H4sIAAAAAAAA/+1da3ObuBr+vjP7Hzz0zPnU9SXddDs5jndkkB223BZB2uwXhtp0yxaDF/C26Znz388rLraxcRIL3PSiTiZ1AL16Jb2X5xGyNPz14yLo/OPFiR+Fl8Kg2xc6XjiL5n7456VgW5OfXgi/jn78YRgmSTS7IF7su4H/yZvrb/7yZqkYhanrh17cATFhcpE9dSm8S9PlRa/34cOHbuilycpPve4sWvSS2Ttv4Sa97DGhs/Lnl4JFLMm8Pvv5Rf/Z8xcXpreM4lTy3vqhn4JKF6JNLF01saGblvPs2cCxiked52c/Xwx+GZwNzl+cw+9fngubdvS7A6GT+gsvSd3FEtpVeW5UtGbhLpegeqXUCPSkSgfe/E8v7sIT3TjTCTqkO1/r1U3Knoi7uZjurupqdnnY266rrHkjaDTcLTcazr1kFvvLNILnY28WxXPrdul1ZoGbJJdC/ry5vi6Mit6R8ETWZEvWNQdrlnkz7G0Kj4b/uMHKS0bDa/p/563vBdmNUt6kvCDk9y6Fl/jGKSTLkkBr//TpUvDDVBjBOAx7maAj5RHRlI2KvCSNoWeF0Z3jzFaZgcSXaIqFTu+IghMZK5IDxVtocS5L1CW811zdwJpDkIKJo5sSNgmrdAnnfQqjvl/JktpTcvHvJx+l//z4Q4e8iz50/vDiKCmusFaqIXW/SeIqSaNFR196YYe4gZd09HgOrsVaiW7KU1lDimPJlnL66gxsqo51Y+zXRI0yH6tsqNiMcYKRZZv7wsc2kTVMWMZfQVOqtaxLxEGKor/CG7d6E0WB54bC6K0bJB6jcEkmhoJu6nuF2KqKaJBhEq1r2JGQhfcVTuMVq76GKVOVHN22sOn8pstaq+LzEOWo2/7cilxErpwxIjJpd/jIlf7K+QObeo3cBuqCT4qWfF3TB6zKZv53DUFwO4jNo9WbAJLbi26/oW/oNWbQpF9tgp2JTEQITTcYmY6JtGmLvVFWYaHXZRNaE04jEWAD2YL0NvcgdM4B7N2+9G5pEYoV4KO0Rh8X53tef97EFhVZe9mqKRLboHiBQI7ViK7A32MiSzLEgLaqoR0GuMqx9OlUYYISecn6GKrp1pWsTVldphBtm8qRitG+Q5MJFi0sOeMb6L5pi7GnwCWGiUWUoVETI0Kd8HgdaaABYwUXVmqGtIETIFuSsSbiPTdAq7kPf3hbXjA4TvNMvChCTj+qlrOsll4J03vbJAA4yTIKvTCFG+keFcCBt4B7FS4g6qoBOVazHBUZw15aoQC5q4+GSzeGcqUwMQoCoHSAGIVO7L31YqrgpdDt9rKfTL0j2EhFg9YIyVpqFZ4/f8YaQTCEDomCBklWW3YBUUGE7Pn8Xfxy4bnJKva6mkJhbYZqM1Cr5tfXimyspBzKzZVtW8nUebDNZFqTRzGWkikptqo5E91UkfWFGUsecNG4homoiEIiUbc1i1UwUmS0byqkkGwVQJzSLnbVzSm2yhYcn8ZgULA81XJmfHQgB+fCWgXeteNitiZb1dSajfBPLGSd6mnqimIbrWGUPBMCzQEDVygnkTUJv67qyoJuC29RDWTKkFmLHjg+vRqGckNH9hUyJcAh7bYbKVbedoKnauaERyuoAnDYJs1NjYbg3x3NVsfYrI4B89yOgsZY2fNbNJtFqzBlnl3B01Lw8X56PBgsi9VDVNapAxvYUR7P22VGwIhECios3ULKaUTLGrhWy4SulI1fGxAIWxZu2poG7uuM2+6RjLXRqcrTSUdjAtlhMjmBaEO0TiHaHp/C+IoU324ILuboWBK2qRvA4URZbb+h15RyWle6TZDW8owlDZ0yJZwtyl3H5GsIaTk23YuSYRQvWEVPTZ1CjuNjNmR/GlKYy5dwO4cmzGIOdEnqfWTOgFSkrSCh8/cqSr3xreYuQKYYhf8ABcle1VGvEDpAkd2lR7IaE/nt7/B09t4yG2rWtkDF1EABK3zW+qn5ZnFl0/o7Q8E+B+RM7T6mZpkQcXSxXZYmUZDLadlj0LJmM5Scl33pvOysXV4muWkjANCMlO0o898ogZj5NI3dcB7Nnib0A515e/rx6cf/dcPgV39+ufNM+N67zW4z++UhlkcDI6Gz7brGCR8nfJzwccLHCR8nfEcRvnmD7MoJHyd8Xw3hIyAR0CqnfJzyccrXNuVjDgAHKF80W9GFDh1ttXhDV+Nz9sfZH2d/nP1x9sfZH2d//HUfZ3/fEPs73gLqGR71MzKxFaW9FZftEtMKB6wXnX/Ng64gZY7cnClypvjlMkWGbwXfxRTz75N+uRTxPc1F6e3C9cPTsED69cbf9DFngJwBcgbIGSBngJwBcgbIGeD3yQAJ+L4sEQtZNvPWLPxFH6dvnL4dom8sO0ncQd9I6qYr5s1/+Ps9zu44u+PsjrM7zu44u+PsjrO7b5rdqWg6RSrzbi2c2HFi9w0ROza9DvG65+3yumx/V7R43P1UOLnj5I6Tu2+K3DXYdZRzu6+Z22VwmpO7Sp/MVjHlEbec4H1Ogre5ksmED7PYT+m5Eg/e5dWUwRxktL9nJy0h5tLoiRLHc8jt7WerpXeE74vIymdNuqfoZvfbA0KO2W427wrA7+WJCLrZkMmecNMXRuL4eMQzKw55pn5PWwUTcD+AkSw9omCpHtmydfEhXsJMDdvmxTKdaNGtLf1aPJzgkOQmmfpaNi1KEbLuaEvp/DSYKyzZbKbcUkLcBIs986sSuDn9ejtlcKyjTpwrWZLwvRRrJytsb/5dBsHEA/sb5npmdlh8rG7+XNlBPBdaCgj8hEooExFTmAWIZeNWImz7czqtx4CssXu7uE/8ABJZJmprI/c9i3mS+2btgltdvQMgfHfjw7wPb7PxCVdBsLP7/nc7BMxbbjUbgv6gBz9n/bPBWp3qRvnw1yIKu6vUD7qaQnfyAl3h8Z/69KfTf3HR78NPt9+xLfFBoHsPJHPUfGrU/HJzQAvHzutztGiXiFeyIplY0yetQugm/d16kOZA+nsH0oEfek/fJ6s3iT/33fiW4+mvGyx8NjxdZzhPssNqC3XK0+IGW6fF8eT/RSX/7Gr2hqrpsvpvDAEwfUP7cM638GuGlS2t84HPmO2b5OR70n0DIHFPtm9weN3XkO4/PnUD302cCCJ8kq3N58meJ/t7k3292Tyhq4BqlwaxJfut0/LWb9zAah9+vCKhvxSZWI9yWh5Zr9w8yVrNsn/Zl2vWA4B5kx1i67dRKSaSvrqFnG36WLZSA8Ix1uqXHTZcQPOgxVt3eV/hWCvfWJt+cpS527JjmHiCTXqUKmlo8gYykYpptDzBsdsb4RZ6XSO/NFuGSZ6N6PaP9d6RTcCMFJD/SqEn07dfyZ3HykOMcJsIlzXRuSZ07d4JRnVqIuPKsXSj6rWDPvxjwLUbwa/w2AEc2uLXLjeyT3OI8pZ8RQGjgRb8buO6g7db6vVn7WHoHXsXbZOGFsDVN+pYb22t4KYWMEakSY6Cr7cWOJeWUxNDd0Jl4N5Gq4djk4msIU2UgXmAk+m2tT7Rt7cWlMzeefNV4D0c7xSMYyNrSwRgHXfhAYx6sLh11+ydNqy6Sxbw9N67LR/PelPYHqDqi6SEwr3A/+RSid1FNPeCbr4iDOpeevG/stSex6YyW1smXVRb4FjGNWb53Z1o5+YnhcJnB6ztvZMvxEsdfz7sQZuKfvkqmzYoDBpsJRvU73xkv8ER3QSs7QhQsC3Je+uHfprTrTBJotnFfOtSeaWghD4Vs3PttpMW8ZXCPeCM23OfK39ee+fiXOjQW/01Q6/czgPUKN8bsYw9dFjOi9Hp1Rbq7ap2UFm0mvvUivd03b9xMchVHYCq+3dztQaFWpmiyJZkCoFLvd0gMCMagYs0uP6b3sGLZRDdepW7m2v0iXLDu+0nNtfoE9fQtqhyv7xC7xpunIbV4utLw15di07TjWd5N57d0Y1nlW4UgUUQ5zvqzdqplqJDj13DRMs8g66uLVe+w6hZNFfMx+UBpFz5VIaTA8I+bwvzVUC0xM9N20dFfWGt215gQ8udN23jRuCjt/Tw20Fa7vlDWlr/ZrrS4OzV4iO29M6pUVrsl/saemhOvtLMfFb1+HbuXspSenGRFDDGm+tv/gLEB0AkdaHH49GPP/wfu5vYYIKUAAA="
+  name = "Custom Open Sales Orders"
+  components = [
+    {
+      KEY_COMPONENT = 63
+      FLAG_SECONDARY_DIM = false
+      FIELD_CLASS = "com.netledger.app.reporting.measure.NLOpenSalesOrderMeasure"
+    },
+  ]
+  parameters = {
+    accounting_book_current_id = "1"
+    accounting_book_id = "1"
+  }
+  sorts = [
+    {
+      KEY_COMPONENT = "63"
+      FIELD_ALIAS = "ddate"
+      FIELD_TABLE = "trandoc"
+      SEQ_NUMBER = 0
+      FLAG_DESCENDING = false
+      FLAG_SUBTOTAL = false
+    },
+  ]
+  fields = [
+    {
+      KEY_COMPONENT = 63
+      FIELD_TABLE = "MAINACCOUNT"
+      FIELD_ALIAS = "SMAINACCTDISPLAYNAME"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = true
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 1
+      FIELD_LABEL = "Account"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 63
+      FIELD_TABLE = "TRANDOC"
+      FIELD_ALIAS = "DDATE"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 2
+      FIELD_LABEL = "Date"
+      FIELD_URL = "{osord,trandoc,strantype,x,x}.nl?id={osord,trandoc,nkey,x,x}"
+      FIELD_URL_TYPE = "TRANSACTION"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "date"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 63
+      FIELD_TABLE = "TRANDOC"
+      FIELD_ALIAS = "SDOCNUM"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 3
+      FIELD_LABEL = "Document Number"
+      FIELD_URL = "{osord,trandoc,strantype,x,x}.nl?id={osord,trandoc,nkey,x,x}"
+      FIELD_URL_TYPE = "TRANSACTION"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 63
+      FIELD_ALIAS = "ENT_SFULLNAME"
+      FIELD_TARGET_TABLE = "TRANDOC"
+      FIELD_FOREIGN_KEY = "TRANDOCENTITYMAIN"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 4
+      FIELD_LABEL = "Customer"
+      FIELD_URL = "{osord,trandoc,kentitymain,x,x}"
+      FIELD_URL_TYPE = "CUSTJOB"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 63
+      FIELD_ALIAS = "SVALIDSTATUS"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 5
+      FIELD_LABEL = "Status"
+      FIELD_URL = "{osord,trandoc,strantype,x,x}.nl?id={osord,trandoc,nkey,x,x}"
+      FIELD_URL_TYPE = "TRANSACTION"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 63
+      FIELD_ALIAS = "MAGGAMT"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = true
+      SEQ_NUMBER = 6
+      FIELD_LABEL = "Open Amount"
+      FIELD_URL = "{osord,trandoc,strantype,x,x}.nl?id={osord,trandoc,nkey,x,x}"
+      FIELD_URL_TYPE = "TRANSACTION"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = true
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "paren"
+      FIELD_FORMAT = "currency"
+      FLAG_TOTAL_FORMULA = true
+    },
+  ]
+  uiPreferences = {
+    PARAMETER_CASH_BASIS = false
+    PARAMETER_TAXCASH_BASIS = "F"
+    PARAMETER_SHOW_ZEROS = true
+    PARAMETER_SHOW_SINGLEROWLINES = true
+    PARAMETER_DISPLAY_TYPE = "data"
+    PARAMETER_INC_VS_EXP = false
+    PARAMETER_GRAPH_TOP = 100001
+    PARAMETER_WEB_STORE = false
+    PARAMETER_ACTIVITY_ONLY = false
+    PARAMETER_ALLOW_WEBQUERY = false
+    PARAMETER_GRAPH_3D = false
+    PARAMETER_SHOW_CURRENCY_SYMBOL = true
+    PARAMETER_EXPAND_LEVEL = 100
+  }
+  criteria = [
+    {
+      descriptor = {
+        FIELD_ALIAS = "DDATE"
+        FIELD_OP_CLASS = "LESSEQUAL"
+        FILED_TYPE = "DATE"
+        SEQ_NUMBER = 0
+        FIELD_UNIT_TYPE = -1
+        FLAG_IN_FOOTER = true
+        FLAG_CUSTOM_FOOTER = false
+        FLAG_VIRTUAL_FIELD = true
+        FIELD_DESCRIPTOR = "osord,trandoc,ddate,x,x"
+        FLAG_IS_HIDDEN = false
+      }
+      values = [
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 0
+          FIELD_VALUE = "CUSTOM"
+        },
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 1
+        },
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 2
+          FIELD_VALUE = "2021-01-01 08:00:00.0 UTC"
+        },
+      ]
+    },
+    {
+      descriptor = {
+        FIELD_ALIAS = "KSUBSIDIARY"
+        FIELD_OP_CLASS = "SUBSIDCHILDRENOF"
+        FILED_TYPE = "SUBSIDIARY"
+        SEQ_NUMBER = 1
+        FIELD_UNIT_TYPE = -1
+        FLAG_IN_FOOTER = true
+        FLAG_CUSTOM_FOOTER = false
+        FLAG_VIRTUAL_FIELD = true
+        FIELD_DESCRIPTOR = "osord,tranline,ksubsidiary,x,x"
+        FLAG_IS_HIDDEN = false
+      }
+      values = [
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 0
+          FIELD_VALUE = 1
+        },
+      ]
+    },
+    {
+      descriptor = {
+        FIELD_ALIAS = "ALIAS_OPENSTATUS"
+        FIELD_OP_CLASS = "IN"
+        FILED_TYPE = "TEXT"
+        SEQ_NUMBER = 2
+        FIELD_UNIT_TYPE = -1
+        FLAG_IN_FOOTER = false
+        FLAG_CUSTOM_FOOTER = true
+        FLAG_VIRTUAL_FIELD = false
+        FIELD_DESCRIPTOR = "osord,x,alias_openstatus,x,x"
+        FLAG_IS_HIDDEN = false
+      }
+      values = [
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 0
+          FIELD_VALUE = "Open"
+        },
+      ]
+    },
+  ]
+  flags = {
+    KEY_REPORT_ID = 331
+    KEY_SCRIPT_ID = "CUSTOMREPORT_331_T2480368_624"
+    FIELD_KEY = 331
+    FIELD_CODE = "OPEN_SALES_ORDERS"
+    FIELD_DESCRIPTION = '''
+Options:
+ Show Zeros
+
+'''
+    FIELD_NAME = "Custom Open Sales Orders"
+    FIELD_ORIGINAL_TITLE = "Custom Open Sales Orders"
+    FIELD_PERM_TYPE = "REPO_SALESORDER"
+    KEY_FEATURE = "BUSINESS"
+    FLAG_PERIODS_ALLOWED = false
+    FLAG_DISPLAY_TYPE = "SUMMARY"
+    FLAG_ONE_DATE = true
+    FLAG_PRIMARY_OUTER_JOIN = true
+    FLAG_CUSTOM_MODE = true
+    FLAG_CASH_BASIS = false
+    FLAG_SHOW_ZEROS = true
+    FLAG_INACTIVE = false
+    FIELD_VERSION = 8
+    FLAG_PERIODS_ON = false
+    FLAG_USE_FISCAL_YEAR_RANGE = false
+    FLAG_USE_TAX_PERIODS = false
+    KEY_ENTITY = "5"
+    FLAG_SHOW_LINK = true
+    FLAG_SUPPORTS_CONSOL_SUBSIDIARY = true
+    FIELD_TOGGLE_TYPE = "NOTHING"
+    FLAG_AFFECTED_BY_COGS = false
+    FLAG_ACTIVITY_ONLY = false
+  }
+  _alias = "Custom Open Sales Orders"
+}

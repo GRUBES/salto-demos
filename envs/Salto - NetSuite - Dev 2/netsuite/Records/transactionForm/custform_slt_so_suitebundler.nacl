@@ -3,7 +3,7 @@ netsuite.transactionForm custform_slt_so_suitebundler {
   standard = "STANDARDSALESORDER"
   name = "Salto Sales Order - SuiteBundler Deployment"
   recordType = "SALESORDER"
-  inactive = false
+  
   preferred = false
   mainFields = {
     fieldGroup = {
@@ -2191,4 +2191,5 @@ netsuite.transactionForm custform_slt_so_suitebundler {
     },
   ]
   _alias = "Salto Sales Order - SuiteBundler Deployment"
+  isInactive = false
 }

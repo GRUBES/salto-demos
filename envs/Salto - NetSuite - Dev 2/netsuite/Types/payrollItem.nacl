@@ -25,8 +25,7 @@ type netsuite.payrollItem {
   }
   unknown accountCategory {
   }
-  boolean inactive {
-  }
+  
   netsuite.customFieldList customFieldList {
   }
   string internalId {
@@ -35,5 +34,8 @@ type netsuite.payrollItem {
   }
   string externalId {
     isAttribute = true
+  }
+  boolean isInactive {
+    originalName = "inactive"
   }
 }

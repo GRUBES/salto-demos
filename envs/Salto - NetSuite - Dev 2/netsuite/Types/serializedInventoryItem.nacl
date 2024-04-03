@@ -306,14 +306,14 @@ type netsuite.serializedInventoryItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
   unknown weightUnit {
   }
   string weightUnits {
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -488,4 +488,11 @@ type netsuite.serializedInventoryItem {
   serviceid identifier {
   }
   _alias = "Serialized Inventory Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

@@ -1,7 +1,7 @@
 netsuite.workflowactionscript customscript_shalom_test {
   scriptid = "customscript_shalom_test"
   defaultfunction = "a"
-  isinactive = false
+  
   name = "shalomTest"
   notifyadmins = false
   notifyowner = true
@@ -24,4 +24,5 @@ netsuite.workflowactionscript customscript_shalom_test {
     }
   }
   _alias = "shalomTest"
+  isInactive = false
 }

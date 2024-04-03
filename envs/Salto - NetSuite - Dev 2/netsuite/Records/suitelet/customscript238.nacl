@@ -2,7 +2,7 @@ netsuite.suitelet customscript238 {
   scriptid = "customscript238"
   defaultfunction = "main"
   description = "baseline script for customer example 001"
-  isinactive = false
+  
   name = "sjp-script-001.js"
   notifyadmins = false
   notifyowner = true
@@ -31,4 +31,5 @@ netsuite.suitelet customscript238 {
     ]
   }
   _alias = "sjp-script-001.js"
+  isInactive = false
 }

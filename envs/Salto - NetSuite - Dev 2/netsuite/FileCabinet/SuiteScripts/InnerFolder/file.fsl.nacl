@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_InnerFolder_file_fsl@ddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_InnerFolder_file_fsl@ddv {
     netsuite.folder.instance.SuiteScripts_InnerFolder@d,
   ]
   _alias = "file.fsl"
+  isInactive = false
 }

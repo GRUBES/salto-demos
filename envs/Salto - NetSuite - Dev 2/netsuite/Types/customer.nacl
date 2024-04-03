@@ -64,7 +64,7 @@ type netsuite.customer {
   }
   unknown negativeNumberFormat {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown emailPreference {
@@ -316,4 +316,14 @@ type netsuite.customer {
     field_instance = netsuite.entitycustomfield.instance.custentitymynewcustomgfield2.scriptid
   }
   _alias = "Customer"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  string custom_custentity_seggev {
+    field_instance = netsuite.entitycustomfield.instance.custentity_seggev.scriptid
+  }
 }

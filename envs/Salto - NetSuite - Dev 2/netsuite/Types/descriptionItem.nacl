@@ -43,4 +43,16 @@ type netsuite.descriptionItem {
     isAttribute = true
   }
   _alias = "Description Item"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

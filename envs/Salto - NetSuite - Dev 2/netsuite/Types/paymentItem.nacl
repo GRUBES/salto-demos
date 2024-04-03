@@ -53,4 +53,16 @@ type netsuite.paymentItem {
     isAttribute = true
   }
   _alias = "Payment Item"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

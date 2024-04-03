@@ -1,6 +1,6 @@
-netsuite.entitycustomfield custentityscript_id_2 {
-  scriptid = "custentityscript_id_2"
-  accesslevel = "2"
+netsuite.entitycustomfield custentity_14 {
+  scriptid = "custentity_14"
+  accesslevel = "1"
   appliestocontact = true
   appliestocustomer = false
   appliestoemployee = false
@@ -16,17 +16,18 @@ netsuite.entitycustomfield custentityscript_id_2 {
   availableexternally = false
   checkspelling = false
   defaultchecked = false
+  description = "descriptio12345"
   displaytype = "NORMAL"
   encryptatrest = false
-  fieldtype = "TEXT"
+  fieldtype = "CHECKBOX"
   globalsearch = false
   isformula = false
   ismandatory = false
   isparent = false
-  label = "EDITTED2"
+  label = "Checkbox Field 14"
   searchlevel = "2"
   showhierarchy = false
   showinlist = false
   storevalue = true
-  _alias = "EDITTED2"
+  _alias = "Checkbox Field 14"
 }

@@ -212,4 +212,11 @@ type netsuite.otherChargeResaleItem {
   serviceid identifier {
   }
   _alias = "Other Charge Resale Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

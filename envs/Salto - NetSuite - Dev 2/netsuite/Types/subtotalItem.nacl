@@ -45,4 +45,16 @@ type netsuite.subtotalItem {
     isAttribute = true
   }
   _alias = "Subtotal Item"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

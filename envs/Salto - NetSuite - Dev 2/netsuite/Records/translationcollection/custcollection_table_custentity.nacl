@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_table_custentity {
+  scriptid = "custcollection_table_custentity"
+  defaultlanguage = "en-US"
+  name = "Table 1"
+  strings = {
+    string = {
+      tableview_name_1761_3 = {
+        scriptid = "tableview_name_1761_3"
+        defaulttranslation = "Table 1"
+        description = "Name in tableView"
+        index = 0
+      }
+    }
+  }
+  _alias = "Table 1"
+}

@@ -55,7 +55,7 @@ type netsuite.vendor {
   }
   unknown globalSubscriptionStatus {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown emailPreference {
@@ -201,5 +201,8 @@ type netsuite.vendor {
   }
   boolean custom_custentitycust_active_edited {
     field_instance = netsuite.entitycustomfield.instance.custentitycust_active_edited.scriptid
+  }
+  string custom_custentity_seggev {
+    field_instance = netsuite.entitycustomfield.instance.custentity_seggev.scriptid
   }
 }

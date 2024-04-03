@@ -1,6 +1,6 @@
 netsuite.file Templates_Contract_Templates_Service_Level_Agreement_doc@dsduuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file Templates_Contract_Templates_Service_Level_Agreement_doc@dsduuv {
     netsuite.folder.instance.Templates_Contract_Templates@ds,
   ]
   _alias = "Service_Level_Agreement.doc"
+  isInactive = false
 }

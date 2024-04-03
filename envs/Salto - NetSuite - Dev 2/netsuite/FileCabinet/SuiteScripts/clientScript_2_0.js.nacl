@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_clientScript_2_0_js@duuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_clientScript_2_0_js@duuv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "clientScript_2_0.js"
+  isInactive = false
 }

@@ -5,7 +5,7 @@ netsuite.role customrole153 {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = true
-  isinactive = false
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = true
@@ -31,4 +31,5 @@ netsuite.role customrole153 {
     }
   }
   _alias = "Seggev Role Test 2"
+  isInactive = false
 }

@@ -78,4 +78,16 @@ type netsuite.discountItem {
   serviceid identifier {
   }
   _alias = "Discount Item"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

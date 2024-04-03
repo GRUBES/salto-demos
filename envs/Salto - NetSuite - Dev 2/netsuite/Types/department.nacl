@@ -31,4 +31,16 @@ type netsuite.department {
   serviceid identifier {
   }
   _alias = "Department"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

@@ -1,7 +1,7 @@
 netsuite.file SuiteScripts_ApplicationConstants_js@dv {
-  description = "some updated description updated from nacl and updated again2"
-  bundleable = false
-  isinactive = false
+  description = "updated description"
+  bundleable = true
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file SuiteScripts_ApplicationConstants_js@dv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "ApplicationConstants.js"
+  isInactive = false
 }

@@ -3,7 +3,7 @@ netsuite.transactionForm custform_45_t2480368_912 {
   standard = "STANDARDTRANSFERORDER"
   name = "Custom_Transfer_Order"
   recordType = "TRANSFERORDER"
-  inactive = false
+  
   preferred = true
   storedWithRecord = true
   mainFields = {
@@ -1061,4 +1061,5 @@ netsuite.transactionForm custform_45_t2480368_912 {
     },
   ]
   _alias = "Custom_Transfer_Order"
+  isInactive = false
 }
