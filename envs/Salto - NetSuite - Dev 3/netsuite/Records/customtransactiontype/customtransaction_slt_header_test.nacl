@@ -1,0 +1,24 @@
+netsuite.customtransactiontype customtransaction_slt_header_test {
+  scriptid = "customtransaction_slt_header_test"
+  cancloseorder = false
+  isposting = false
+  isvoidable = false
+  name = "Test Header"
+  showstatus = false
+  transactionstyle = "HEADER_ONLY"
+  segments = {
+    classposition = "NONE"
+    
+    locationposition = "NONE"
+    departmentposition = "NONE"
+  }
+  permissions = {
+    permission = {
+      ADMINISTRATOR = {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      }
+    }
+  }
+  _alias = "Test Header"
+}

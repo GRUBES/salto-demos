@@ -1,0 +1,8 @@
+type netsuite.snapshot_type_period_range_not_comparable is string {
+  _restriction = {
+    values = [
+      "UTILIZATION",
+    ]
+    enforce_value = false
+  }
+}

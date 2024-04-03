@@ -1,0 +1,11 @@
+type netsuite.purchaseOrderExpenseList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.purchaseOrderExpense>" expense {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

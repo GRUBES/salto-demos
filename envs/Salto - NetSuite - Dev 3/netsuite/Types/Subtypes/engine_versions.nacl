@@ -1,0 +1,9 @@
+type netsuite.engine_versions is string {
+  _restriction = {
+    values = [
+      "0.1",
+      "1.0",
+    ]
+    enforce_value = false
+  }
+}

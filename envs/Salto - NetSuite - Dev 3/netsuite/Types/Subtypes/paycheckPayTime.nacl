@@ -1,0 +1,26 @@
+type netsuite.paycheckPayTime {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number line {
+  }
+  number payItem {
+  }
+  string payItemName {
+  }
+  string ddate {
+  }
+  string custJob {
+  }
+  string serviceItem {
+  }
+  number count {
+  }
+  number rate {
+  }
+  number amount {
+  }
+}

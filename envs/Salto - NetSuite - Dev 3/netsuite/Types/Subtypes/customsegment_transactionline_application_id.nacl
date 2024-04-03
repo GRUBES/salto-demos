@@ -1,0 +1,30 @@
+type netsuite.customsegment_transactionline_application_id is string {
+  _restriction = {
+    values = [
+      "EXPENSE",
+      "EXPENSEREPORT",
+      "INVENTORYADJUSTMENT",
+      "ITEMFULFILLMENT",
+      "ITEMRECEIPT",
+      "JOURNALENTRY",
+      "KITITEM",
+      "OPPORTUNITY",
+      "OWNERSHIPTRANSFER",
+      "PAYCHECKCOMPANYCONTRIBUTION",
+      "PAYCHECKCOMPANYTAX",
+      "PAYCHECKDEDUCTION",
+      "PAYCHECKEARNING",
+      "PAYCHECKEMPLOYEETAX",
+      "PERIODENDJOURNAL",
+      "PURCHASE",
+      "REVENUEARRANGEMENT",
+      "SALE",
+      "STORE",
+      "STOREWITHGROUPS",
+      "TIME",
+      "TRANSFERORDER",
+      "WORKORDER",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,10 @@
+type netsuite.role_restrictionsegment is string {
+  _restriction = {
+    values = [
+      "CLASS",
+      "DEPARTMENT",
+      "LOCATION",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,9 @@
+type netsuite.dimensionRef {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string scriptId {
+    isAttribute = true
+  }
+}

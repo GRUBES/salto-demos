@@ -1,0 +1,222 @@
+type netsuite.dataset {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custdataset[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  netsuite.cdata definition {
+    
+    do_not_add = true
+  }
+  netsuite.dataset_dependencies dependencies {
+    do_not_add = true
+  }
+  string application_id {
+    do_not_add = true
+  }
+  boolean nameTranslate {
+  }
+  _alias = "Dataset"
+  xml_type = true
+  default_xml_type = "dataSet"
+  ignore_t_value = true
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
+  unknown applicationId {
+  }
+  netsuite.dataset_audience audience {
+  }
+  netsuite.dataset_base_record baseRecord {
+  }
+  "List<netsuite.dataset_column>" columns {
+  }
+  netsuite.dataset_criteria criteria {
+  }
+  netsuite.dataset_translation description {
+  }
+  "List<netsuite.dataset_field_or_formula>" formulas {
+  }
+  unknown id {
+  }
+  number ownerId {
+  }
+  string version {
+  }
+}
+type netsuite.dataset_dependencies {
+  "List<string>" dependency {
+    _required = true
+  }
+}
+type netsuite.dataset_audience {
+  "List<unknown>" AudienceItems {
+  }
+  boolean isPublic {
+  }
+}
+type netsuite.dataset_base_record {
+  string id {
+  }
+  string label {
+  }
+}
+type netsuite.dataset_column {
+  string alias {
+  }
+  number columnId {
+  }
+  netsuite.dataset_field_or_formula field {
+  }
+  netsuite.dataset_translation label {
+  }
+}
+type netsuite.dataset_condition {
+  "List<netsuite.dataset_criteria>" children {
+  }
+  netsuite.dataset_operator operator {
+  }
+  netsuite.dataset_criteria_target_field_context targetFieldContext {
+  }
+  netsuite.dataset_meta meta {
+  }
+  netsuite.dataset_field_or_formula field {
+  }
+  string fieldStateName {
+  }
+}
+type netsuite.dataset_criteria {
+  netsuite.dataset_condition condition {
+    do_not_add = true
+  }
+  netsuite.dataset_filter filter {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.dataset_criteria_expression {
+  string label {
+  }
+  unknown subType {
+  }
+  "List<string>" uiData {
+  }
+  netsuite.dataset_criteria_expression_value value {
+  }
+}
+type netsuite.dataset_criteria_expression_value {
+  string type {
+  }
+  unknown value {
+  }
+}
+type netsuite.dataset_criteria_target_field_context {
+  string name {
+    default_value = "DEFAULT"
+  }
+}
+type netsuite.dataset_field_or_formula {
+  netsuite.dataset_field_reference fieldReference {
+    do_not_add = true
+  }
+  netsuite.dataset_formula dataSetFormula {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.dataset_field_reference {
+  string id {
+  }
+  netsuite.dataset_join_trail joinTrail {
+  }
+  string label {
+  }
+  string uniqueId {
+  }
+  string fieldValidityState {
+    do_not_add = true
+  }
+}
+type netsuite.dataset_filter {
+  boolean caseSensitive {
+  }
+  "List<netsuite.dataset_criteria_expression>" expressions {
+  }
+  netsuite.dataset_operator operator {
+  }
+  netsuite.dataset_criteria_target_field_context targetFieldContext {
+  }
+  netsuite.dataset_field_or_formula field {
+  }
+  string fieldStateName {
+  }
+  netsuite.dataset_meta meta {
+  }
+}
+type netsuite.dataset_formula {
+  "List<netsuite.dataset_field_or_formula>" fields {
+  }
+  netsuite.dataset_formula_formula formula {
+  }
+}
+type netsuite.dataset_formula_formula {
+  string dataType {
+  }
+  string formulaSQL {
+  }
+  string id {
+  }
+  netsuite.dataset_translation label {
+  }
+  string uniqueId {
+  }
+  xml_type = true
+  default_xml_type = "formula"
+  ignore_t_value = true
+}
+type netsuite.dataset_join {
+  string id {
+  }
+  string targetRecordType {
+  }
+}
+type netsuite.dataset_join_trail {
+  netsuite.dataset_base_record baseRecord {
+  }
+  "List<netsuite.dataset_join>" joins {
+  }
+}
+type netsuite.dataset_meta {
+  string selectorType {
+  }
+  string subType {
+  }
+}
+type netsuite.dataset_operator {
+  string code {
+    default_value = "AND"
+  }
+}
+type netsuite.dataset_translation {
+  string translationScriptId {
+  }
+}

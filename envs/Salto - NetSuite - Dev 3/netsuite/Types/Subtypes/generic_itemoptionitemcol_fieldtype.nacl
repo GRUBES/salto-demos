@@ -1,0 +1,24 @@
+type netsuite.generic_itemoptionitemcol_fieldtype is string {
+  _restriction = {
+    values = [
+      "CHECKBOX",
+      "CURRENCY",
+      "DATE",
+      "DATETIMETZ",
+      "DOCUMENT",
+      "EMAIL",
+      "FLOAT",
+      "INLINEHTML",
+      "INTEGER",
+      "PASSWORD",
+      "PERCENT",
+      "PHONE",
+      "SELECT",
+      "TEXT",
+      "TEXTAREA",
+      "TIMEOFDAY",
+      "URL",
+    ]
+    enforce_value = false
+  }
+}

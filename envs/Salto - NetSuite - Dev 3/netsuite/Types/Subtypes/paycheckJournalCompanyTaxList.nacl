@@ -1,0 +1,11 @@
+type netsuite.paycheckJournalCompanyTaxList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.paycheckJournalCompanyTax>" paycheckJournalCompanyTax {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

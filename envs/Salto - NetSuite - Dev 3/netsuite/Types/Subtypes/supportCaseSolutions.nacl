@@ -1,0 +1,13 @@
+type netsuite.supportCaseSolutions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.solution solution {
+    isReference = true
+  }
+  string message {
+  }
+  string dateApplied {
+  }
+}

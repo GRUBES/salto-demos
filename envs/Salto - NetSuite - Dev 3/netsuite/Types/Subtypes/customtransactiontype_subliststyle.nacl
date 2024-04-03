@@ -1,0 +1,12 @@
+type netsuite.customtransactiontype_subliststyle is string {
+  _restriction = {
+    values = [
+      "BASIC",
+      "HEADER_ONLY",
+      "JOURNAL",
+      "PURCHASE",
+      "SALES",
+    ]
+    enforce_value = false
+  }
+}

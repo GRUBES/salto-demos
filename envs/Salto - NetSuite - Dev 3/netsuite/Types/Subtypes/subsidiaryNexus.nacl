@@ -1,0 +1,11 @@
+type netsuite.subsidiaryNexus {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nexus nexusId {
+    isReference = true
+  }
+  string country {
+  }
+}

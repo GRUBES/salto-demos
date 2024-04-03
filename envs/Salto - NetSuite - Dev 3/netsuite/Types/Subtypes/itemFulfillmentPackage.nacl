@@ -1,0 +1,12 @@
+type netsuite.itemFulfillmentPackage {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number packageWeight {
+  }
+  string packageDescr {
+  }
+  string packageTrackingNumber {
+  }
+}

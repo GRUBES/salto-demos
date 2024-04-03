@@ -1,0 +1,34 @@
+type netsuite.center {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custcenter[0-9a-z_]+"
+    }
+  }
+  string label {
+    _required = true
+  }
+  string application_id {
+  }
+  _alias = "Center"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}

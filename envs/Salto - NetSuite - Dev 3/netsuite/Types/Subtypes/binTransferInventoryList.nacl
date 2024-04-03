@@ -1,0 +1,11 @@
+type netsuite.binTransferInventoryList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.binTransferInventory>" inventory {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

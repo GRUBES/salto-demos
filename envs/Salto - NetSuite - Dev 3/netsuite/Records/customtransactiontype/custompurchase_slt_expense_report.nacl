@@ -1,0 +1,22 @@
+netsuite.customtransactiontype custompurchase_slt_expense_report {
+  scriptid = "custompurchase_slt_expense_report"
+  cancloseorder = false
+  iscredit = true
+  isposting = false
+  isvoidable = false
+  name = "Expense Report"
+  showstatus = false
+  transactionstyle = "PURCHASE"
+  accounting = {
+    specifyaccountontransaction = false
+  }
+  permissions = {
+    permission = {
+      ADMINISTRATOR = {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      }
+    }
+  }
+  _alias = "Expense Report"
+}

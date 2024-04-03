@@ -1,0 +1,11 @@
+type netsuite.vendorTaxRegistrationList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.vendorTaxRegistration>" vendorTaxRegistration {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

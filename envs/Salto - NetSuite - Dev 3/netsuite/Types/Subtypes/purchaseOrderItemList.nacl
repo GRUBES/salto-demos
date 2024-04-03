@@ -1,0 +1,11 @@
+type netsuite.purchaseOrderItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.purchaseOrderItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

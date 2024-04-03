@@ -1,0 +1,11 @@
+type netsuite.bomRevisionComponentList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.bomRevisionComponent>" bomRevisionComponent {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

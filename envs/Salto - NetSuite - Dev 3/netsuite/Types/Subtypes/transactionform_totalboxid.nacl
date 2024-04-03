@@ -1,0 +1,10 @@
+type netsuite.transactionform_totalboxid is string {
+  _restriction = {
+    values = [
+      "AMOUNTREMAINING",
+      "SUBTOTAL",
+      "TOTAL",
+    ]
+    enforce_value = false
+  }
+}

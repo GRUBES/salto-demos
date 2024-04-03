@@ -1,0 +1,19 @@
+type netsuite.portlet_reportsnapshot_topx is string {
+  _restriction = {
+    values = [
+      "BOTTOM_10",
+      "BOTTOM_15",
+      "BOTTOM_25",
+      "BOTTOM_5",
+      "BOTTOM_50",
+      "TOP_0",
+      "TOP_10",
+      "TOP_15",
+      "TOP_20",
+      "TOP_25",
+      "TOP_5",
+      "TOP_50",
+    ]
+    enforce_value = false
+  }
+}

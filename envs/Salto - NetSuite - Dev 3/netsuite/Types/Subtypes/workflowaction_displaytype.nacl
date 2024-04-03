@@ -1,0 +1,11 @@
+type netsuite.workflowaction_displaytype is string {
+  _restriction = {
+    values = [
+      "DISABLED",
+      "HIDDEN",
+      "INLINE",
+      "NORMAL",
+    ]
+    enforce_value = false
+  }
+}

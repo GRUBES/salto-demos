@@ -1,0 +1,47 @@
+type netsuite.solution {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  serviceid solutionCode {
+  }
+  string title {
+  }
+  string message {
+  }
+  unknown status {
+  }
+  boolean displayOnline {
+  }
+  netsuite.recordRef assigned {
+  }
+  boolean isInactive {
+  }
+  string longDescription {
+  }
+  netsuite.solutionTopicsList topicsList {
+  }
+  netsuite.solutionsList solutionsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  _alias = "Solution"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

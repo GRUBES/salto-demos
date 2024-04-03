@@ -1,0 +1,9 @@
+type netsuite.script_deploymentmodel is string {
+  _restriction = {
+    values = [
+      "PLUGIN_TYPE_DEPLOYMENT_ALLOW_MULTIPLE",
+      "PLUGIN_TYPE_DEPLOYMENT_ALLOW_ONLY_ONE",
+    ]
+    enforce_value = false
+  }
+}

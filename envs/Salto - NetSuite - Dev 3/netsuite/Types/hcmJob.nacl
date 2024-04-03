@@ -1,0 +1,27 @@
+type netsuite.hcmJob {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string title {
+  }
+  boolean isInactive {
+  }
+  netsuite.recordRef employmentCategory {
+  }
+  string jobId {
+  }
+  string description {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

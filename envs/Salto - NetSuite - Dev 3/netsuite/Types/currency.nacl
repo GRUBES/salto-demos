@@ -1,0 +1,54 @@
+type netsuite.currency {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  serviceid name {
+  }
+  string symbol {
+  }
+  boolean isBaseCurrency {
+  }
+  boolean isInactive {
+  }
+  boolean overrideCurrencyFormat {
+  }
+  string displaySymbol {
+  }
+  unknown symbolPlacement {
+  }
+  unknown locale {
+  }
+  string formatSample {
+  }
+  number exchangeRate {
+  }
+  unknown fxRateUpdateTimezone {
+  }
+  boolean inclInFxRateUpdates {
+  }
+  unknown currencyPrecision {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  _alias = "Currency"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

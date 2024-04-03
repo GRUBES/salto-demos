@@ -1,0 +1,8 @@
+type netsuite.suiteletdeployment_tasktype is string {
+  _restriction = {
+    values = [
+      "SCRIPT",
+    ]
+    enforce_value = false
+  }
+}

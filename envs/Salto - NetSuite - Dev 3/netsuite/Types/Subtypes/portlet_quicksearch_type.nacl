@@ -1,0 +1,9 @@
+type netsuite.portlet_quicksearch_type is string {
+  _restriction = {
+    values = [
+      "GENERIC",
+      "TRANSACTION",
+    ]
+    enforce_value = false
+  }
+}

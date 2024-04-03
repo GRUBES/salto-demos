@@ -1,0 +1,10 @@
+type netsuite.customrecordtype_accesstype is string {
+  _restriction = {
+    values = [
+      "CUSTRECORDENTRYPERM",
+      "NONENEEDED",
+      "USEPERMISSIONLIST",
+    ]
+    enforce_value = false
+  }
+}

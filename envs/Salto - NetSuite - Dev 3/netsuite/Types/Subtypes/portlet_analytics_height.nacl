@@ -1,0 +1,10 @@
+type netsuite.portlet_analytics_height is string {
+  _restriction = {
+    values = [
+      "MEDIUM",
+      "SHORT",
+      "TALL",
+    ]
+    enforce_value = false
+  }
+}

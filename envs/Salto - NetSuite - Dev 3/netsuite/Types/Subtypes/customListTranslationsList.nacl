@@ -1,0 +1,11 @@
+type netsuite.customListTranslationsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customListTranslations>" translations {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

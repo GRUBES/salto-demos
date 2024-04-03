@@ -1,0 +1,13 @@
+netsuite.currency British_pound@s {
+  name = "British pound"
+  symbol = "GBP"
+  isBaseCurrency = false
+  isInactive = false
+  overrideCurrencyFormat = false
+  displaySymbol = "£"
+  symbolPlacement = "_beforeNumber"
+  locale = "_unitedKingdomEnglish"
+  formatSample = "£1,234.56"
+  currencyPrecision = "_two"
+  _alias = "British pound"
+}

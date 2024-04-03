@@ -1,0 +1,10 @@
+type netsuite.customrecordtype_tasktype is string {
+  _restriction = {
+    values = [
+      "EDIT",
+      "LIST",
+      "SRCH",
+    ]
+    enforce_value = false
+  }
+}

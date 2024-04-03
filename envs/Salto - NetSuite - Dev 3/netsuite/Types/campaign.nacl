@@ -1,0 +1,86 @@
+type netsuite.campaign {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string campaignId {
+  }
+  string title {
+  }
+  netsuite.recordRef category {
+  }
+  netsuite.recordRef owner {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  string url {
+  }
+  number baseCost {
+  }
+  number cost {
+  }
+  number expectedRevenue {
+  }
+  string message {
+  }
+  boolean isInactive {
+  }
+  boolean local {
+  }
+  number totalRevenue {
+  }
+  number roi {
+  }
+  number profit {
+  }
+  number costPerCustomer {
+  }
+  number convCostPerCustomer {
+  }
+  number conversions {
+  }
+  number leadsGenerated {
+  }
+  number uniqueVisitors {
+  }
+  netsuite.recordRef vertical {
+  }
+  netsuite.recordRef audience {
+  }
+  netsuite.recordRef offer {
+  }
+  netsuite.promotionCode promotionCode {
+    isReference = true
+  }
+  netsuite.recordRefList itemList {
+  }
+  netsuite.recordRef family {
+  }
+  netsuite.recordRef searchEngine {
+  }
+  string keyword {
+  }
+  netsuite.campaignEmailList campaignEmailList {
+  }
+  netsuite.campaignDirectMailList campaignDirectMailList {
+  }
+  netsuite.campaignEventList campaignEventList {
+  }
+  netsuite.campaignEventResponseList eventResponseList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,30 @@
+type netsuite.itemFulfillmentPackageUsps {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number packageWeightUsps {
+  }
+  string packageDescrUsps {
+  }
+  string packageTrackingNumberUsps {
+  }
+  unknown packagingUsps {
+  }
+  boolean useInsuredValueUsps {
+  }
+  number insuredValueUsps {
+  }
+  string reference1Usps {
+  }
+  string reference2Usps {
+  }
+  number packageLengthUsps {
+  }
+  number packageWidthUsps {
+  }
+  number packageHeightUsps {
+  }
+  unknown deliveryConfUsps {
+  }
+}

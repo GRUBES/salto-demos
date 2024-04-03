@@ -1,0 +1,654 @@
+settings netsuite.companyFeatures {
+  boolean DEPARTMENTS {
+    label = "Departments"
+  }
+  boolean LOCATIONS {
+    label = "Locations"
+  }
+  boolean CLASSES {
+    label = "Classes"
+  }
+  boolean JOBS {
+    label = "Projects"
+  }
+  boolean ADVANCEDJOBS {
+    label = "Project Management"
+  }
+  boolean PLANNEDWORK {
+    label = "Planned Work"
+  }
+  boolean JOBCOSTING {
+    label = "Job Costing and Project Budgeting"
+  }
+  boolean ADVANCEDPROJECTACCOUNTING {
+    label = "Advanced Project Profitability"
+  }
+  boolean ACTIVITYCODES {
+    label = "Activity Codes"
+  }
+  boolean WBS {
+    label = "Advanced Project Budgets"
+  }
+  boolean UNITSOFMEASURE {
+    label = "Multiple Units of Measure"
+  }
+  boolean TRANDELETIONREASONCODE {
+    label = "Use Deletion Reason"
+  }
+  boolean MULTISUBSIDIARYCUSTOMER {
+    label = "Multi Subsidiary Customer"
+  }
+  boolean ADVANCEDNUMBERINGSEQUENCES {
+    label = "Advanced Numbering"
+  }
+  boolean MULTILANGUAGE {
+    label = "Multi-Language"
+  }
+  boolean MULTICURRENCY {
+    label = "Multiple Currencies"
+  }
+  boolean MULTICURRENCYCUSTOMER {
+    label = "Multi-Currency Customers"
+  }
+  boolean MULTICURRENCYVENDOR {
+    label = "Multi-Currency Vendors"
+  }
+  boolean FXRATEUPDATES {
+    label = "Currency Exchange Rate Integration"
+  }
+  boolean FXRATETYPE {
+    label = "Currency Exchange Rate Types"
+  }
+  boolean INTERNATIONALPHONENUMBERS {
+    label = "Worldwide Support for Phone Number Formatting"
+  }
+  boolean EXTREMELIST {
+    label = "Inline Editing"
+  }
+  boolean FCEXPENSE {
+    label = "Enhanced File Security"
+  }
+  boolean FCEXPENSEMIGRATECONTROLLER {
+    label = "Expense migration scheduled from start"
+  }
+  boolean DUPLICATES {
+    label = "Duplicate Detection &amp; Merge"
+  }
+  boolean FCADVANCEDSECURITY {
+    label = "File Cabinet Advanced Security"
+  }
+  boolean IPADDRESSRULES {
+    label = "IP Address Rules"
+  }
+  boolean MOBILEPUSHNTF {
+    label = "Mobile Push Notification"
+  }
+  boolean ACCOUNTING {
+    label = "Accounting"
+  }
+  boolean RECEIVABLES {
+    label = "A/R"
+  }
+  boolean PAYABLES {
+    label = "A/P"
+  }
+  boolean ACCOUNTINGPERIODS {
+    label = "Accounting Periods"
+  }
+  boolean GLAUDITNUMBERING {
+    label = "GL Audit Numbering"
+  }
+  boolean EXPENSEALLOCATION {
+    label = "Expense Allocation"
+  }
+  boolean DYNALLOCATION {
+    label = "Dynamic Allocation"
+  }
+  boolean MULTIPLEBUDGETS {
+    label = "Multiple Budgets"
+  }
+  boolean INTERCOMPANYTIMEEXPENSE {
+    label = "Intercompany Time and Expense"
+  }
+  boolean INTERCOMPANYAUTOELIMINATION {
+    label = "Automated Intercompany Management"
+  }
+  boolean INTERCOMPANYAUTODROPSHIP {
+    label = "Automated Intercompany Drop Ship"
+  }
+  boolean INTERCOMPANYFRAMEWORK {
+    label = "Intercompany Framework"
+  }
+  boolean CONSOLPAYMENTS {
+    label = "Consolidated Payments"
+  }
+  boolean INTRANSITPAYMENTS {
+    label = "In-Transit Payments"
+  }
+  boolean VENDORPREPAYMENTS {
+    label = "Vendor Prepayments"
+  }
+  boolean MULTIPLECALENDARS {
+    label = "Multiple Calendars"
+  }
+  boolean STATACCOUNTING {
+    label = "Statistical Accounts"
+  }
+  boolean GAINLOSSACCTMAPPING {
+    label = "Foreign currency variance mapping"
+  }
+  boolean PERIODENDJOURNALENTRIES {
+    label = "Period End Journal Entries"
+  }
+  boolean BALANCING_SEGMENTS {
+    label = "Balancing Segments"
+  }
+  boolean INSTALLMENTS {
+    label = "Installments"
+  }
+  boolean AMORTIZATION {
+    label = "Amortization"
+  }
+  boolean ADVANCEDREVENUERECOGNITION {
+    label = "Advanced Revenue Management (Essentials)"
+  }
+  boolean RULEBASEDRECOGNITIONTREATMENT {
+    label = "Rule-Based Recognition Treatment"
+  }
+  boolean ADVTAXENGINE {
+    label = "Advanced Taxes"
+  }
+  boolean MOSS {
+    label = "EU One Stop Shop"
+  }
+  boolean ESTIMATES {
+    label = "Estimates"
+  }
+  boolean SALESORDERS {
+    label = "Sales Orders"
+  }
+  boolean RETURNAUTHS {
+    label = "Return Authorizations"
+  }
+  boolean PURCHASEORDERS {
+    label = "Purchase Orders"
+  }
+  boolean VENDORRETURNAUTHS {
+    label = "{#Vendor Return Authorizations#}"
+  }
+  boolean RFQ {
+    label = "Request For Quote"
+  }
+  boolean REQUISITIONS {
+    label = "Requisitions"
+  }
+  boolean PURCHASECONTRACTS {
+    label = "Purchase Contracts"
+  }
+  boolean BLANKETPURCHASEORDERS {
+    label = "Blanket Purchase Orders"
+  }
+  boolean MULTPRICE {
+    label = "Multiple Prices"
+  }
+  boolean QUANTITYPRICING {
+    label = "Quantity Pricing"
+  }
+  boolean GROSSPROFIT {
+    label = "Gross Profit"
+  }
+  boolean ALTSALESAMOUNT {
+    label = "Alternate Sales Amount"
+  }
+  boolean PROMOCODES {
+    label = "Promotion Codes"
+  }
+  boolean STACKABLEPROMOTIONS {
+    label = "SuitePromotions"
+  }
+  boolean AUTOAPPLYPROMOTIONS {
+    label = "Auto-Apply Promotions"
+  }
+  boolean REQUIREDDEPOSITWORKFLOW {
+    label = "Required Deposit Workflow"
+  }
+  boolean AUTOLOCATIONASSIGNMENT {
+    label = "Automatic Location Assignment"
+  }
+  boolean ADVSHIPPING {
+    label = "Advanced Shipping"
+  }
+  boolean PICKPACKSHIP {
+    label = "Pick, Pack and Ship"
+  }
+  boolean FULFILLMENTREQUEST {
+    label = "Fulfillment Request"
+  }
+  boolean STOREPICKUP {
+    label = "Store Pickup"
+  }
+  boolean SHIPPINGLABELS {
+    label = "Shipping Label Integration"
+  }
+  boolean ADVRECEIVING {
+    label = "Advanced Receiving"
+  }
+  boolean MULTISHIPTO {
+    label = "Multiple Shipping Routes"
+  }
+  boolean SHIPPINGPARTNERS {
+    label = "Shipping Partners"
+  }
+  boolean INBOUNDSHIPMENT {
+    label = "Inbound Shipment Management"
+  }
+  boolean BILLSCOSTS {
+    label = "Bill Costs To Customers"
+  }
+  boolean ADVBILLING {
+    label = "Advanced Billing"
+  }
+  boolean CHARGEBASEDBILLING {
+    label = "Charge-Based Billing"
+  }
+  boolean BILLINGACCOUNTS {
+    label = "Billing Accounts"
+  }
+  boolean BILLINGWORKCENTER {
+    label = "Billing Operations"
+  }
+  boolean ADVSUBSCRIPTIONBILLING {
+    label = "Advanced Subscription Billing"
+  }
+  boolean COMMITPLUSOVERAGE {
+    label = "Commit Plus Overage"
+  }
+  boolean INVOICEGROUP {
+    label = "Invoice Groups"
+  }
+  boolean CCTRACKING {
+    label = "Credit Card Payments"
+  }
+  boolean SOFTDESCRIPTORS {
+    label = "Credit Card Soft Descriptors"
+  }
+  boolean PAYPALINTEGRATION {
+    label = "PayPal Integration"
+  }
+  boolean EFT {
+    label = "Electronic Funds Transfer"
+  }
+  boolean ACHVEND {
+    label = "ACH Vendor Payments"
+  }
+  boolean PAYMENTINSTRUMENTS {
+    label = "Payment Instruments"
+  }
+  boolean PAYMENTLINK {
+    label = "Payment Link"
+  }
+  boolean DROPSHIPMENTS {
+    label = "Drop Shipments &amp; Special Orders"
+  }
+  boolean MATRIXITEMS {
+    label = "Matrix Items"
+  }
+  boolean MULTIVENDOR {
+    label = "Multiple Vendors"
+  }
+  boolean GIFTCERTIFICATES {
+    label = "Gift Certificates"
+  }
+  boolean DOWNLOADITEMS {
+    label = "Sell Downloadable Files"
+  }
+  boolean BARCODES {
+    label = "Bar Coding and Item Labels"
+  }
+  boolean MERCHANDISEHIERARCHY {
+    label = "Merchandise Hierarchy"
+  }
+  boolean ENHANCEDINVENTORYLOCATION {
+    label = "Advanced Item Location Configuration"
+  }
+  boolean PERSONALIZED_CATALOG_VIEWS {
+    label = "Personalized Catalog Views"
+  }
+  boolean INVENTORY {
+    label = "Inventory"
+  }
+  boolean MULTILOCINVT {
+    label = "Multi-Location Inventory"
+  }
+  boolean ASSEMBLIES {
+    label = "Assembly Items"
+  }
+  boolean ADVANCEDBILLOFMATERIALS {
+    label = "Advanced Bill of Materials"
+  }
+  boolean WORKORDERS {
+    label = "Work Orders"
+  }
+  boolean SERIALIZEDINVENTORY {
+    label = "Serialized Inventory"
+  }
+  boolean LOTNUMBEREDINVENTORY {
+    label = "Lot Tracking"
+  }
+  boolean BINMANAGEMENT {
+    label = "Bin Management"
+  }
+  boolean ADVBINSERIALLOTMGMT {
+    label = "Advanced Bin/Numbered Inventory Management"
+  }
+  boolean INVENTORYSTATUS {
+    label = "Inventory Status"
+  }
+  boolean ADVINVENTORYMGMT {
+    label = "Advanced Inventory Management"
+  }
+  boolean LANDEDCOST {
+    label = "Landed Cost"
+  }
+  boolean SUPPLYALLOCATION {
+    label = "Supply Allocation"
+  }
+  boolean SALESCHANNELALLOCATION {
+    label = "Sales Channel Allocation"
+  }
+  boolean ITEMDEMANDPLANNING {
+    label = "Demand Planning"
+  }
+  boolean DISTRIBUTIONRESOURCEPLANNING {
+    label = "Distribution Resource Planning"
+  }
+  boolean MATERIALREQUIREMENTSPLANNING {
+    label = "Material Requirements Planning"
+  }
+  boolean AVAILABLETOPROMISE {
+    label = "Available To Promise"
+  }
+  boolean STANDARDCOSTING {
+    label = "Standard Costing"
+  }
+  boolean GROUPAVERAGECOSTING {
+    label = "Group Average Costing"
+  }
+  boolean MFGWORKINPROCESS {
+    label = "Manufacturing Work In Process"
+  }
+  boolean OUTSOURCEDMFG {
+    label = "Outsourced Manufacturing"
+  }
+  boolean CROSSSUBSIDIARYFULFILLMENT {
+    label = "Intercompany Cross-Subsidiary Fulfillment"
+  }
+  boolean CENTRALIZEDPURCHASINGBILLING {
+    label = "Centralized Purchasing and Billing"
+  }
+  boolean INVENTORYCOUNT {
+    label = "Inventory Count"
+  }
+  boolean MFGROUTING {
+    label = "Manufacturing Routing and Work Center"
+  }
+  boolean SUPPLYCHAINCONTROLTOWER {
+    label = "Supply Chain Control Tower"
+  }
+  boolean PAYCHECKJOURNAL {
+    label = "Paycheck Journal"
+  }
+  boolean EXPREPORTS {
+    label = "Expense Reports"
+  }
+  boolean APPROVALROUTING {
+    label = "Approval Routing"
+  }
+  boolean BILLINGCLASSES {
+    label = "Per-Employee Billing Rates"
+  }
+  boolean BILLINGRATECARDS {
+    label = "Billing Rate Cards"
+  }
+  boolean PURCHASEREQS {
+    label = "Purchase Requests"
+  }
+  boolean TIMETRACKING {
+    label = "Time Tracking"
+  }
+  boolean WEEKLYTIMESHEETS {
+    label = "Weekly Timesheets"
+  }
+  boolean WEEKLYTIMESHEETSNEWUI {
+    label = "New Weekly Timesheets Interface"
+  }
+  boolean CRMTIME {
+    label = "Time Tracking for CRM"
+  }
+  boolean COMMISSIONS {
+    label = "Employee Commissions"
+  }
+  boolean COMMISSIONONCUSTOMFIELDS {
+    label = "Commission on Custom Fields"
+  }
+  boolean EMPPERMS {
+    label = "Global Permissions"
+  }
+  boolean CRM {
+    label = "Customer Relationship Management"
+  }
+  boolean SFA {
+    label = "Sales Force Automation"
+  }
+  boolean SUPPORT {
+    label = "Customer Support and Service"
+  }
+  boolean MARKETING {
+    label = "Marketing Automation"
+  }
+  boolean OPPORTUNITIES {
+    label = "Opportunities"
+  }
+  boolean LEADMANAGEMENT {
+    label = "Lead Conversion"
+  }
+  boolean ADVFORECASTING {
+    label = "Advanced Forecasting"
+  }
+  boolean TEAMSELLING {
+    label = "Team Selling"
+  }
+  boolean HISTORICALMETRICS {
+    label = "Historical Metrics"
+  }
+  boolean INBOUNDCASEEMAIL {
+    label = "Email Case Capture"
+  }
+  boolean ESCALATIONRULES {
+    label = "Automated Case Escalation"
+  }
+  boolean KNOWLEDGEBASE {
+    label = "Knowledge Base"
+  }
+  boolean HELPDESK {
+    label = "Help Desk"
+  }
+  boolean EXTCRM {
+    label = "Online Forms"
+  }
+  boolean MAILMERGE {
+    label = "Mail Merge"
+  }
+  boolean CRM_TEMPLATE_CATEGORIES {
+    label = "CRM Template Categories"
+  }
+  boolean EMAILINTEGRATION {
+    label = "Capture Email Replies"
+  }
+  boolean CAMPAIGNSUBSCRIPTIONS {
+    label = "Subscription Categories"
+  }
+  boolean UPSELL {
+    label = "Upsell Manager"
+  }
+  boolean SALESCAMPAIGNS {
+    label = "Sales Campaigns"
+  }
+  boolean PRM {
+    label = "Partner Relationship Management"
+  }
+  boolean PARTNERCOMMISSIONS {
+    label = "Partner Commissions/Royalties"
+  }
+  boolean MULTIPARTNER {
+    label = "Multi-Partner Management"
+  }
+  boolean KPIREPORTS {
+    label = "KPI Scorecards"
+  }
+  boolean TABLEAU {
+    label = "Tableau® Workbook Export"
+  }
+  boolean USR {
+    label = "SuiteAnalytics Workbook"
+  }
+  boolean SUITECUBE_ENTERPRISE {
+    label = "Cached Data in Datasets"
+  }
+  boolean SUPPLYCHAINPREDICTEDRISKS {
+    label = "Supply Chain Predicted Risks"
+  }
+  boolean WEBSITE {
+    label = "Website"
+  }
+  boolean ADVANCEDSITECUST {
+    label = "Advanced Site Customization"
+  }
+  boolean ADVWEBREPORTS {
+    label = "Advanced Web Reports"
+  }
+  boolean ADVWEBSEARCH {
+    label = "Advanced Web Search"
+  }
+  boolean SITELOCATIONALIASES {
+    label = "Descriptive URLs"
+  }
+  boolean URLCOMPONENTALIASES {
+    label = "URL Component Aliases"
+  }
+  boolean CHECKOUTSUBDOMAIN {
+    label = "Customizable Checkout Subdomains"
+  }
+  boolean ASYNCSALESORDER {
+    label = "Asynchronous AfterSubmit Sales Order Processing"
+  }
+  boolean ASYNCCUSTOMER {
+    label = "Asynchronous AfterSubmit Customer Processing"
+  }
+  boolean WEBDUPLICATEEMAILMANAGEMENT {
+    label = "Web Site Duplicate Email Management"
+  }
+  boolean WEBHOSTING {
+    label = "Host HTML Files"
+  }
+  boolean EXTSTORE {
+    label = "External Catalog Site (WSDK)"
+  }
+  boolean DOCUMENTPUBLISHING {
+    label = "Document Publishing"
+  }
+  boolean INTRANET {
+    label = "Intranet"
+  }
+  boolean CUSTOMERACCESS {
+    label = "Customer Access"
+  }
+  boolean ONLINEORDERING {
+    label = "Online Ordering"
+  }
+  boolean VENDORACCESS {
+    label = "Vendor Access"
+  }
+  boolean PARTNERACCESS {
+    label = "Partner Access"
+  }
+  boolean ADVPARTNERACCESS {
+    label = "Advanced Partner Access"
+  }
+  boolean ITEMOPTIONS {
+    label = "Item Options"
+  }
+  boolean CUSTOMRECORDS {
+    label = "Custom Records"
+  }
+  boolean ADVANCEDPRINTING {
+    label = "Advanced PDF/HTML Templates"
+  }
+  boolean PI_REMOVAL {
+    label = "Remove Personal Information"
+  }
+  boolean CUSTOMCODE {
+    label = "Client SuiteScript"
+  }
+  boolean SERVERSIDESCRIPTING {
+    label = "Server SuiteScript"
+  }
+  boolean WEBAPPLICATIONS {
+    label = "SuiteScript Server Pages"
+  }
+  boolean WORKFLOW {
+    label = "SuiteFlow"
+  }
+  boolean CUSTOMGLLINES {
+    label = "Custom GL Lines"
+  }
+  boolean CUSTOMTRANSACTIONS {
+    label = "Custom Transactions"
+  }
+  boolean CUSTOMSEGMENTS {
+    label = "Custom Segments"
+  }
+  boolean CREATESUITEBUNDLES {
+    label = "Create bundles with SuiteBundler"
+  }
+  boolean WEBSERVICESEXTERNAL {
+    label = "SOAP Web Services"
+  }
+  boolean RESTWEBSERVICES {
+    label = "REST Web Services"
+  }
+  boolean SUITESIGNON {
+    label = "SuiteSignOn"
+  }
+  boolean OPENIDSSO {
+    label = "OpenID Single Sign-on"
+  }
+  boolean OIDC {
+    label = "OpenID Connect (OIDC) Single Sign-on"
+  }
+  boolean SAMLSSO {
+    label = "SAML Single Sign-on"
+  }
+  boolean TBA {
+    label = "Token-based Authentication"
+  }
+  boolean KILLSHA1FORTBA {
+    label = "Disable HMAC-SHA1 for Token-based Authentication"
+  }
+  boolean OAUTH2 {
+    label = "OAuth 2.0"
+  }
+  boolean NSASOIDCPROVIDER {
+    label = "NetSuite as OIDC Provider"
+  }
+  boolean KILLINBOUNDSSO {
+    label = "Disable Inbound Single Sign-on"
+  }
+  boolean TELEPHONY {
+    label = "Telephony Integration"
+  }
+  boolean SUITEAPPCONTROLCENTER {
+    label = "SuiteApp Control Center"
+  }
+  _alias = "Company Features"
+}

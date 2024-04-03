@@ -1,0 +1,10 @@
+type netsuite.csvimport_datahandling is string {
+  _restriction = {
+    values = [
+      "ADD",
+      "ADDUPDATE",
+      "UPDATE",
+    ]
+    enforce_value = false
+  }
+}

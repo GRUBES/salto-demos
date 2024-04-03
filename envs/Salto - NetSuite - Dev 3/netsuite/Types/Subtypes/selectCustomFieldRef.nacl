@@ -1,0 +1,15 @@
+type netsuite.selectCustomFieldRef {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string scriptId {
+    isAttribute = true
+  }
+  netsuite.listOrRecordRef value {
+  }
+}

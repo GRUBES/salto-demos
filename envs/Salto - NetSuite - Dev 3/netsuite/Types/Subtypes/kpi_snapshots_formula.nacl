@@ -1,0 +1,10 @@
+type netsuite.kpi_snapshots_formula is string {
+  _restriction = {
+    values = [
+      "FORMULACURRENCY",
+      "FORMULANUMERIC",
+      "FORMULAPERCENT",
+    ]
+    enforce_value = false
+  }
+}

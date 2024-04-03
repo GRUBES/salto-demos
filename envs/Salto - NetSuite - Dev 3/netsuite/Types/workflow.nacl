@@ -1,0 +1,2924 @@
+type netsuite.workflow {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^customworkflow[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  string recordtypes {
+    _required = true
+  }
+  string description {
+  }
+  string initcontexts {
+  }
+  string initeventtypes {
+  }
+  string initsavedsearchcondition {
+  }
+  string initsavedsearchfilter {
+  }
+  netsuite.workflow_triggertype inittriggertype {
+  }
+  boolean initoncreate {
+  }
+  boolean initonvieworupdate {
+  }
+  string initlocalizationcontext {
+  }
+  
+  boolean islogenabled {
+  }
+  netsuite.workflow_releasestatus releasestatus {
+  }
+  boolean runasadmin {
+  }
+  netsuite.workflow_keephistory keephistory {
+  }
+  netsuite.workflow_initcondition initcondition {
+  }
+  netsuite.workflow_recurrence recurrence {
+  }
+  netsuite.workflow_workflowcustomfields workflowcustomfields {
+  }
+  netsuite.workflow_workflowstates workflowstates {
+  }
+  string application_id {
+  }
+  _alias = "Workflow"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_initcondition_parameters {
+  "Map<netsuite.workflow_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_recurrence_daily {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+  number everyxdays {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence_every30minutes {
+  string startdate {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence_everyweekday {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence_monthly {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+  netsuite.generic_day_of_month dayofmonth {
+    _required = true
+  }
+  number everyxmonths {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence_monthlydayofweek {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+  netsuite.workflow_order_of_week orderofweek {
+    _required = true
+  }
+  netsuite.generic_day_of_week dayofweek {
+    _required = true
+  }
+  number everyxmonths {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence_single {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+}
+type netsuite.workflow_recurrence_weekly {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+  number everyxweeks {
+    _required = true
+  }
+  boolean sunday {
+    _required = true
+  }
+  boolean monday {
+    _required = true
+  }
+  boolean tuesday {
+    _required = true
+  }
+  boolean wednesday {
+    _required = true
+  }
+  boolean thursday {
+    _required = true
+  }
+  boolean friday {
+    _required = true
+  }
+  boolean saturday {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence_yearly {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+  netsuite.generic_month month {
+    _required = true
+  }
+  netsuite.generic_day_of_month dayofmonth {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence_yearlydayofweek {
+  string startdate {
+    _required = true
+  }
+  string starttime {
+    _required = true
+  }
+  netsuite.generic_order_of_week orderofweek {
+    _required = true
+  }
+  netsuite.generic_day_of_week dayofweek {
+    _required = true
+  }
+  netsuite.generic_month month {
+    _required = true
+  }
+  string enddate {
+  }
+}
+type netsuite.workflow_recurrence {
+  netsuite.workflow_recurrence_daily daily {
+  }
+  netsuite.workflow_recurrence_every30minutes every30minutes {
+  }
+  netsuite.workflow_recurrence_everyweekday everyweekday {
+  }
+  netsuite.workflow_recurrence_monthly monthly {
+  }
+  netsuite.workflow_recurrence_monthlydayofweek monthlydayofweek {
+  }
+  netsuite.workflow_recurrence_single single {
+  }
+  netsuite.workflow_recurrence_weekly weekly {
+  }
+  netsuite.workflow_recurrence_yearly yearly {
+  }
+  netsuite.workflow_recurrence_yearlydayofweek yearlydayofweek {
+  }
+}
+type netsuite.workflow_workflowcustomfields_workflowcustomfield_customfieldfilters_customfieldfilter {
+  string fldfilter {
+    _required = true
+  }
+  boolean fldfilterchecked {
+  }
+  netsuite.generic_customfield_fldfiltercomparetype fldfiltercomparetype {
+  }
+  string fldfiltersel {
+  }
+  string fldfilterval {
+  }
+  boolean fldfilternotnull {
+  }
+  boolean fldfilternull {
+  }
+  string fldcomparefield {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowcustomfields_workflowcustomfield_customfieldfilters {
+  "Map<netsuite.workflow_workflowcustomfields_workflowcustomfield_customfieldfilters_customfieldfilter>" customfieldfilter {
+    map_key_field = "fldfilter"
+  }
+}
+type netsuite.workflow_workflowcustomfields_workflowcustomfield_roleaccesses_roleaccess {
+  string role {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel accesslevel {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel searchlevel {
+    _required = true
+  }
+}
+type netsuite.workflow_workflowcustomfields_workflowcustomfield_roleaccesses {
+  "Map<netsuite.workflow_workflowcustomfields_workflowcustomfield_roleaccesses_roleaccess>" roleaccess {
+    map_key_field = "role"
+  }
+}
+type netsuite.workflow_workflowcustomfields_workflowcustomfield {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.generic_customfield_fieldtype fieldtype {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+  boolean applyformatting {
+  }
+  boolean defaultchecked {
+  }
+  string defaultselection {
+  }
+  string defaultvalue {
+  }
+  string description {
+  }
+  netsuite.generic_customfield_displaytype displaytype {
+  }
+  netsuite.generic_customfield_dynamicdefault dynamicdefault {
+  }
+  string help {
+  }
+  string linktext {
+  }
+  string minvalue {
+  }
+  string maxvalue {
+  }
+  boolean storevalue {
+  }
+  netsuite.workflow_workflowcustomfields_workflowcustomfield_customfieldfilters customfieldfilters {
+  }
+  netsuite.workflow_workflowcustomfields_workflowcustomfield_roleaccesses roleaccesses {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowcustomfields {
+  "Map<netsuite.workflow_workflowcustomfields_workflowcustomfield>" workflowcustomfield {
+    map_key_field = "scriptid"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  boolean saverecordfirst {
+  }
+  boolean checkconditionbeforeexecution {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string messagetext {
+    _required = true
+  }
+  netsuite.workflow_sublists clienttriggerfieldssublist {
+  }
+  boolean clienttriggerfieldsissublistfield {
+  }
+  string clienttriggerfields {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflow_sublists sublist {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflowaction_createline_position position {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_fieldsettings fieldsettings {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recordtype {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  string resultfield {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_fieldsettings fieldsettings {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_parametersettings_parametersetting {
+  string targetparameter {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_parametersettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_parametersettings_parametersetting>" parametersetting {
+    map_key_field = "targetparameter"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string scripttype {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  string resultfield {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_initcondition initcondition {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction_parametersettings parametersettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.generic_standard_task targetpage {
+  }
+  string targetpageobject {
+  }
+  netsuite.centercategory_tasktype targetpagetasktype {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recordtype {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  string recordidfield {
+  }
+  string recordidjoinfield {
+  }
+  boolean ineditmode {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_fieldsettings fieldsettings {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_workflowfieldsettings_workflowfieldsetting {
+  string targetworkflowfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_workflowfieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_workflowfieldsettings_workflowfieldsetting>" workflowfieldsetting {
+    map_key_field = "targetworkflowfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string initiatedworkflow {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_initcondition initcondition {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction_workflowfieldsettings workflowfieldsettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflowaction_buttonid buttonid {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string errortext {
+    _required = true
+  }
+  netsuite.workflow_sublists clienttriggerfieldssublist {
+  }
+  boolean clienttriggerfieldsissublistfield {
+  }
+  string clienttriggerfields {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recipientfield {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  string resultfield {
+  }
+  boolean recipientiscurrentrecord {
+  }
+  string recipientjoinfield {
+  }
+  string campaignevent {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflowaction_sendertype sendertype {
+    _required = true
+  }
+  netsuite.workflowaction_recipienttype recipienttype {
+    _required = true
+  }
+  string sender {
+  }
+  string senderfield {
+  }
+  string recipient {
+  }
+  string recipientemail {
+  }
+  string recipientfield {
+  }
+  netsuite.generic_standard_template template {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  string senderjoinfield {
+  }
+  string recipientjoinfield {
+  }
+  string recipientccemail {
+  }
+  string recipientbccemail {
+  }
+  boolean usetemplate {
+  }
+  string subject {
+  }
+  string body {
+  }
+  boolean includerecordlink {
+  }
+  netsuite.workflowaction_attachmenttype attachmenttype {
+  }
+  string attachmentfile {
+  }
+  string attachmentjoinfield {
+  }
+  netsuite.generic_standard_field attachmentfield {
+  }
+  boolean includetransaction {
+  }
+  netsuite.workflowaction_transtatementtype includeformat {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  netsuite.workflow_sublists clienttriggerfieldssublist {
+  }
+  netsuite.workflow_sublists sublist {
+  }
+  boolean clienttriggerfieldsissublistfield {
+  }
+  string clienttriggerfields {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  boolean issublistfield {
+  }
+  string displaylabel {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  netsuite.workflowaction_displaytype displaytype {
+    _required = true
+  }
+  netsuite.workflow_sublists clienttriggerfieldssublist {
+  }
+  netsuite.workflow_sublists sublist {
+  }
+  boolean clienttriggerfieldsissublistfield {
+  }
+  string clienttriggerfields {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  boolean issublistfield {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  netsuite.workflow_sublists clienttriggerfieldssublist {
+  }
+  netsuite.workflow_sublists sublist {
+  }
+  boolean clienttriggerfieldsissublistfield {
+  }
+  string clienttriggerfields {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  boolean issublistfield {
+  }
+  boolean ismandatory {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  netsuite.workflow_sublists clienttriggerfieldssublist {
+  }
+  boolean clienttriggerfieldsissublistfield {
+  }
+  string clienttriggerfields {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  netsuite.workflowaction_valuetype valuetype {
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  string valueselect {
+  }
+  string valuemultiselect {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string messagetext {
+    _required = true
+  }
+  netsuite.workflow_sublists clienttriggerfieldssublist {
+  }
+  boolean clienttriggerfieldsissublistfield {
+  }
+  string clienttriggerfields {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  string recordfield {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recordtype {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  string scheduletimeofday {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  string resultfield {
+  }
+  boolean isredirectwithoutsaving {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_fieldsettings fieldsettings {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_addbuttonaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  
+  boolean saverecordfirst {
+  }
+  boolean checkconditionbeforeexecution {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createlineaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createlineaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createlineaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createlineaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflow_sublists sublist {
+    _required = true
+  }
+  
+  netsuite.workflowaction_createline_position position {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createlineaction_fieldsettings fieldsettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createrecordaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createrecordaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createrecordaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createrecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recordtype {
+    _required = true
+  }
+  
+  string resultfield {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createrecordaction_fieldsettings fieldsettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_customaction_parametersettings_parametersetting {
+  string targetparameter {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_customaction_parametersettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_customaction_parametersettings_parametersetting>" parametersetting {
+    map_key_field = "targetparameter"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_customaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string scripttype {
+    _required = true
+  }
+  
+  string resultfield {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_customaction_parametersettings parametersettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotopageaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.generic_standard_task targetpage {
+  }
+  string targetpageobject {
+  }
+  netsuite.centercategory_tasktype targetpagetasktype {
+  }
+  
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotorecordaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotorecordaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotorecordaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotorecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recordtype {
+    _required = true
+  }
+  
+  string recordidfield {
+  }
+  string recordidjoinfield {
+  }
+  boolean ineditmode {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotorecordaction_fieldsettings fieldsettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initiateworkflowaction_workflowfieldsettings_workflowfieldsetting {
+  string targetworkflowfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initiateworkflowaction_workflowfieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initiateworkflowaction_workflowfieldsettings_workflowfieldsetting>" workflowfieldsetting {
+    map_key_field = "targetworkflowfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initiateworkflowaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string initiatedworkflow {
+    _required = true
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initiateworkflowaction_workflowfieldsettings workflowfieldsettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_lockrecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_removebuttonaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflowaction_buttonid buttonid {
+    _required = true
+  }
+  
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_returnusererroraction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string errortext {
+    _required = true
+  }
+  
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_sendcampaignemailaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recipientfield {
+  }
+  
+  string resultfield {
+  }
+  boolean recipientiscurrentrecord {
+  }
+  string recipientjoinfield {
+  }
+  string campaignevent {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_sendemailaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflowaction_sendertype sendertype {
+    _required = true
+  }
+  netsuite.workflowaction_recipienttype recipienttype {
+    _required = true
+  }
+  string sender {
+  }
+  string senderfield {
+  }
+  string recipient {
+  }
+  string recipientemail {
+  }
+  string recipientfield {
+  }
+  netsuite.generic_standard_template template {
+  }
+  
+  string senderjoinfield {
+  }
+  string recipientjoinfield {
+  }
+  string recipientccemail {
+  }
+  string recipientbccemail {
+  }
+  boolean usetemplate {
+  }
+  string subject {
+  }
+  string body {
+  }
+  boolean includerecordlink {
+  }
+  netsuite.workflowaction_attachmenttype attachmenttype {
+  }
+  string attachmentfile {
+  }
+  string attachmentjoinfield {
+  }
+  netsuite.generic_standard_field attachmentfield {
+  }
+  boolean includetransaction {
+  }
+  netsuite.workflowaction_transtatementtype includeformat {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setdisplaylabelaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  netsuite.workflow_sublists sublist {
+  }
+  
+  boolean issublistfield {
+  }
+  string displaylabel {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setdisplaytypeaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  netsuite.workflowaction_displaytype displaytype {
+    _required = true
+  }
+  netsuite.workflow_sublists sublist {
+  }
+  
+  boolean issublistfield {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setfieldmandatoryaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  netsuite.workflow_sublists sublist {
+  }
+  
+  boolean issublistfield {
+  }
+  boolean ismandatory {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setfieldvalueaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  
+  netsuite.workflowaction_valuetype valuetype {
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  string valueselect {
+  }
+  string valuemultiselect {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_subscribetorecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  
+  string recordfield {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_transformrecordaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_transformrecordaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_transformrecordaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_transformrecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recordtype {
+    _required = true
+  }
+  
+  string resultfield {
+  }
+  boolean isredirectwithoutsaving {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_transformrecordaction_fieldsettings fieldsettings {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string scheduletimeofday {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_addbuttonaction>" addbuttonaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createlineaction>" createlineaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_createrecordaction>" createrecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_customaction>" customaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotopageaction>" gotopageaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_gotorecordaction>" gotorecordaction {
+    map_key_field = "scriptid"
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initcondition initcondition {
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_initiateworkflowaction>" initiateworkflowaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_lockrecordaction>" lockrecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_removebuttonaction>" removebuttonaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_returnusererroraction>" returnusererroraction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_sendcampaignemailaction>" sendcampaignemailaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_sendemailaction>" sendemailaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setdisplaylabelaction>" setdisplaylabelaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setdisplaytypeaction>" setdisplaytypeaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setfieldmandatoryaction>" setfieldmandatoryaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_setfieldvalueaction>" setfieldvalueaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_subscribetorecordaction>" subscribetorecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup_transformrecordaction>" transformrecordaction {
+    map_key_field = "scriptid"
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_fieldsettings_fieldsetting {
+  string targetfield {
+    _required = true
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valueselect {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_fieldsettings {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_fieldsettings_fieldsetting>" fieldsetting {
+    map_key_field = "targetfield"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string recordtype {
+    _required = true
+  }
+  string conditionsavedsearch {
+  }
+  
+  string resultfield {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_fieldsettings fieldsettings {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string errortext {
+    _required = true
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflowaction_sendertype sendertype {
+    _required = true
+  }
+  netsuite.workflowaction_recipienttype recipienttype {
+    _required = true
+  }
+  string sender {
+  }
+  string senderfield {
+  }
+  string recipient {
+  }
+  string recipientemail {
+  }
+  string recipientfield {
+  }
+  netsuite.generic_standard_template template {
+  }
+  string conditionsavedsearch {
+  }
+  
+  string senderjoinfield {
+  }
+  string recipientjoinfield {
+  }
+  string recipientccemail {
+  }
+  string recipientbccemail {
+  }
+  boolean usetemplate {
+  }
+  string subject {
+  }
+  string body {
+  }
+  boolean includerecordlink {
+  }
+  netsuite.workflowaction_attachmenttype attachmenttype {
+  }
+  string attachmentfile {
+  }
+  string attachmentjoinfield {
+  }
+  netsuite.generic_standard_field attachmentfield {
+  }
+  boolean includetransaction {
+  }
+  netsuite.workflowaction_transtatementtype includeformat {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string field {
+    _required = true
+  }
+  string conditionsavedsearch {
+  }
+  
+  netsuite.workflowaction_valuetype valuetype {
+  }
+  string valuetext {
+  }
+  boolean valuechecked {
+  }
+  string valueselect {
+  }
+  string valuemultiselect {
+  }
+  netsuite.workflowaction_valuedate valuedate {
+  }
+  string valuejoinfield {
+  }
+  string valuefield {
+  }
+  string valueformula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction_initcondition initcondition {
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.workflow_sublists sublist {
+    _required = true
+  }
+  string scheduletimeofday {
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  number scheduledelay {
+  }
+  number schedulerecurrence {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflowaction_radioschedulemode schedulemode {
+  }
+  
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_createrecordaction>" createrecordaction {
+    map_key_field = "scriptid"
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_initcondition initcondition {
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_returnusererroraction>" returnusererroraction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_sendemailaction>" sendemailaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup_setfieldvalueaction>" setfieldvalueaction {
+    map_key_field = "scriptid"
+  }
+  number index {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowactions {
+  netsuite.workflowaction_triggertype triggertype {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_addbuttonaction>" addbuttonaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_confirmaction>" confirmaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_createlineaction>" createlineaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_createrecordaction>" createrecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_customaction>" customaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_gotopageaction>" gotopageaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_gotorecordaction>" gotorecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_initiateworkflowaction>" initiateworkflowaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_lockrecordaction>" lockrecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_removebuttonaction>" removebuttonaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_returnusererroraction>" returnusererroraction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_sendcampaignemailaction>" sendcampaignemailaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_sendemailaction>" sendemailaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaylabelaction>" setdisplaylabelaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setdisplaytypeaction>" setdisplaytypeaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldmandatoryaction>" setfieldmandatoryaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_setfieldvalueaction>" setfieldvalueaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_showmessageaction>" showmessageaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_subscribetorecordaction>" subscribetorecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_transformrecordaction>" transformrecordaction {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowactiongroup>" workflowactiongroup {
+    map_key_field = "scriptid"
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions_workflowsublistactiongroup>" workflowsublistactiongroup {
+    map_key_field = "scriptid"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_customfieldfilters_customfieldfilter {
+  string fldfilter {
+    _required = true
+  }
+  boolean fldfilterchecked {
+  }
+  netsuite.generic_customfield_fldfiltercomparetype fldfiltercomparetype {
+  }
+  string fldfiltersel {
+  }
+  string fldfilterval {
+  }
+  boolean fldfilternotnull {
+  }
+  boolean fldfilternull {
+  }
+  string fldcomparefield {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_customfieldfilters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_customfieldfilters_customfieldfilter>" customfieldfilter {
+    map_key_field = "fldfilter"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_roleaccesses_roleaccess {
+  string role {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel accesslevel {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel searchlevel {
+    _required = true
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_roleaccesses {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_roleaccesses_roleaccess>" roleaccess {
+    map_key_field = "role"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.generic_customfield_fieldtype fieldtype {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+  boolean applyformatting {
+  }
+  boolean defaultchecked {
+  }
+  string defaultselection {
+  }
+  string defaultvalue {
+  }
+  string description {
+  }
+  netsuite.generic_customfield_displaytype displaytype {
+  }
+  netsuite.generic_customfield_dynamicdefault dynamicdefault {
+  }
+  string help {
+  }
+  string linktext {
+  }
+  string minvalue {
+  }
+  string maxvalue {
+  }
+  boolean storevalue {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_customfieldfilters customfieldfilters {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield_roleaccesses roleaccesses {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields_workflowstatecustomfield>" workflowstatecustomfield {
+    map_key_field = "scriptid"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition_initcondition_parameters_parameter {
+  string name {
+    _required = true
+  }
+  string value {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition_initcondition_parameters {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition_initcondition_parameters_parameter>" parameter {
+    map_key_field = "name"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition_initcondition {
+  netsuite.workflow_condition_type type {
+    _required = true
+  }
+  netsuite.cdata formula {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition_initcondition_parameters parameters {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string tostate {
+    _required = true
+  }
+  string eventtypes {
+  }
+  string contexttypes {
+  }
+  string conditionsavedsearch {
+  }
+  netsuite.workflowtransition_triggertype triggertype {
+  }
+  string waitforworkflow {
+  }
+  string waitforworkflowstate {
+  }
+  string buttonaction {
+  }
+  string scheduledelay {
+  }
+  netsuite.workflow_timeunit scheduletimeunit {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition_initcondition initcondition {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate_workflowtransitions {
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowtransitions_workflowtransition>" workflowtransition {
+    map_key_field = "scriptid"
+  }
+}
+type netsuite.workflow_workflowstates_workflowstate {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string name {
+    _required = true
+  }
+  string description {
+  }
+  boolean donotexitworkflow {
+  }
+  number positionx {
+  }
+  number positiony {
+  }
+  "Map<netsuite.workflow_workflowstates_workflowstate_workflowactions>" workflowactions {
+    map_key_field = "triggertype"
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowstatecustomfields workflowstatecustomfields {
+  }
+  netsuite.workflow_workflowstates_workflowstate_workflowtransitions workflowtransitions {
+  }
+  number index {
+  }
+}
+type netsuite.workflow_workflowstates {
+  "Map<netsuite.workflow_workflowstates_workflowstate>" workflowstate {
+    map_key_field = "scriptid"
+  }
+}

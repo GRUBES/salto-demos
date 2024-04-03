@@ -1,0 +1,22 @@
+type netsuite.contactAccessRoles {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean giveAccess {
+  }
+  netsuite.contact contact {
+    isReference = true
+  }
+  string email {
+  }
+  netsuite.roleReference role {
+    isReference = true
+  }
+  string password {
+  }
+  string password2 {
+  }
+  boolean sendEmail {
+  }
+}

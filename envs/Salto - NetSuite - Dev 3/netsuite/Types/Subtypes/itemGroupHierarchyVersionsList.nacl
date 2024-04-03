@@ -1,0 +1,11 @@
+type netsuite.itemGroupHierarchyVersionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.itemGroupHierarchyVersions>" itemGroupHierarchyVersions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

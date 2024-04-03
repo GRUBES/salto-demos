@@ -1,0 +1,47 @@
+netsuite.workflow customworkflow10 {
+  scriptid = "customworkflow10"
+  initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+  initoncreate = false
+  initonvieworupdate = true
+  
+  islogenabled = false
+  keephistory = "ONLYWHENTESTING"
+  name = "daniel7"
+  recordtypes = "ACCOUNT"
+  releasestatus = "TESTING"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = {
+      workflowstate77 = {
+        scriptid = "workflowstate77"
+        description = "e2e-branch-2"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 243
+        positiony = 133
+        index = 0
+      }
+      workflowstate78 = {
+        scriptid = "workflowstate78"
+        donotexitworkflow = false
+        name = "State 2"
+        positionx = 443
+        positiony = 133
+        index = 1
+      }
+      workflowstate79 = {
+        scriptid = "workflowstate79"
+        donotexitworkflow = false
+        name = "State 3"
+        positionx = 633
+        positiony = 133
+        index = 2
+      }
+    }
+  }
+  _alias = "daniel7"
+  isInactive = false
+}

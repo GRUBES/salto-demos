@@ -1,0 +1,184 @@
+type netsuite.salesOrderItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.job job {
+    isReference = true
+  }
+  netsuite.recordRef subscription {
+  }
+  netsuite.recordRef item {
+  }
+  number quantityAvailable {
+  }
+  boolean expandItemGroup {
+  }
+  number lineUniqueKey {
+  }
+  number quantityOnHand {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string description {
+  }
+  netsuite.price price {
+    isReference = true
+  }
+  string rate {
+  }
+  string serialNumbers {
+  }
+  number amount {
+  }
+  boolean isTaxable {
+  }
+  unknown commitInventory {
+  }
+  number orderPriority {
+  }
+  string licenseCode {
+  }
+  netsuite.customFieldList options {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  unknown createPo {
+  }
+  netsuite.recordRef createdPo {
+  }
+  number altSalesAmt {
+  }
+  boolean createWo {
+  }
+  netsuite.vendor poVendor {
+    isReference = true
+  }
+  string poCurrency {
+  }
+  number poRate {
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string revRecStartDate {
+  }
+  number revRecTermInMonths {
+  }
+  string revRecEndDate {
+  }
+  boolean deferRevRec {
+  }
+  boolean isClosed {
+  }
+  unknown itemFulfillmentChoice {
+  }
+  netsuite.recordRef catchUpPeriod {
+  }
+  netsuite.recordRef billingSchedule {
+  }
+  boolean fromJob {
+  }
+  number grossAmt {
+  }
+  number taxAmount {
+  }
+  boolean excludeFromRateRequest {
+  }
+  boolean isEstimate {
+  }
+  netsuite.location inventoryLocation {
+    isReference = true
+  }
+  netsuite.subsidiary inventorySubsidiary {
+    isReference = true
+  }
+  number line {
+  }
+  number percentComplete {
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  number quantityBackOrdered {
+  }
+  number quantityBilled {
+  }
+  number quantityCommitted {
+  }
+  number quantityFulfilled {
+  }
+  number quantityPacked {
+  }
+  number quantityPicked {
+  }
+  number tax1Amt {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  string giftCertFrom {
+  }
+  string giftCertRecipientName {
+  }
+  string giftCertRecipientEmail {
+  }
+  string giftCertMessage {
+  }
+  string giftCertNumber {
+  }
+  number shipGroup {
+  }
+  boolean itemIsFulfilled {
+  }
+  netsuite.recordRef shipAddress {
+  }
+  netsuite.recordRef shipMethod {
+  }
+  unknown vsoeSopGroup {
+  }
+  boolean vsoeIsEstimate {
+  }
+  number vsoePrice {
+  }
+  number vsoeAmount {
+  }
+  number vsoeAllocation {
+  }
+  unknown vsoeDeferral {
+  }
+  unknown vsoePermitDiscount {
+  }
+  boolean vsoeDelivered {
+  }
+  string expectedShipDate {
+  }
+  boolean noAutoAssignLocation {
+  }
+  boolean locationAutoAssigned {
+  }
+  string taxDetailsReference {
+  }
+  netsuite.recordRef chargeType {
+  }
+  netsuite.recordRef orderAllocationStrategy {
+  }
+  string requestedDate {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

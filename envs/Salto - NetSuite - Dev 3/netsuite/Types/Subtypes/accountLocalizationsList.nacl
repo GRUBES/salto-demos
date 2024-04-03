@@ -1,0 +1,11 @@
+type netsuite.accountLocalizationsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.accountLocalizations>" accountLocalizations {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

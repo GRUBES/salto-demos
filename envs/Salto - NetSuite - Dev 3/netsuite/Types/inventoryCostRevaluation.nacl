@@ -1,0 +1,54 @@
+type netsuite.inventoryCostRevaluation {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  string tranDate {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string tranId {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  netsuite.recordRef item {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string memo {
+  }
+  number total {
+  }
+  number inventoryValue {
+  }
+  number unitCost {
+  }
+  netsuite.inventoryCostRevaluationCostComponentList costComponentList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

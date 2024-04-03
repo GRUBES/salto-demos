@@ -1,0 +1,16 @@
+type netsuite.invoiceSalesTeam {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.employee employee {
+    isReference = true
+  }
+  netsuite.salesRole salesRole {
+    isReference = true
+  }
+  boolean isPrimary {
+  }
+  number contribution {
+  }
+}

@@ -1,0 +1,8 @@
+type netsuite.customRecordTypeParents {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string childDescr {
+  }
+}

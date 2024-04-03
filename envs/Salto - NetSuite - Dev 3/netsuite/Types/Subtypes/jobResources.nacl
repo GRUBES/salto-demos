@@ -1,0 +1,13 @@
+type netsuite.jobResources {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef jobResource {
+  }
+  string email {
+  }
+  netsuite.roleReference role {
+    isReference = true
+  }
+}

@@ -1,0 +1,10 @@
+type netsuite.workflowaction_triggertype_client is string {
+  _restriction = {
+    values = [
+      "AFTERFIELDEDIT",
+      "AFTERFIELDSOURCING",
+      "BEFOREFIELDEDIT",
+    ]
+    enforce_value = false
+  }
+}

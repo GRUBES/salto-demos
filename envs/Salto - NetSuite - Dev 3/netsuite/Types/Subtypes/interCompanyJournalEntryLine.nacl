@@ -1,0 +1,65 @@
+type netsuite.interCompanyJournalEntryLine {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.subsidiary lineSubsidiary {
+    isReference = true
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  number line {
+  }
+  number debit {
+  }
+  number credit {
+  }
+  netsuite.recordRef taxCode {
+  }
+  string memo {
+  }
+  number taxRate1 {
+  }
+  netsuite.recordRef entity {
+  }
+  number grossAmt {
+  }
+  netsuite.recordRef schedule {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  string startDate {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  string endDate {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef revenueRecognitionRule {
+  }
+  boolean eliminate {
+  }
+  string residual {
+  }
+  netsuite.recordRef amortizationSched {
+  }
+  netsuite.recordRef scheduleNum {
+  }
+  string amortizStartDate {
+  }
+  string amortizationEndDate {
+  }
+  string amortizationResidual {
+  }
+  number tax1Amt {
+  }
+  netsuite.recordRef tax1Acct {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

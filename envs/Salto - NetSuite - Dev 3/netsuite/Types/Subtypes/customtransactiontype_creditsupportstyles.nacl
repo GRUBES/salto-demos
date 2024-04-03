@@ -1,0 +1,10 @@
+type netsuite.customtransactiontype_creditsupportstyles is string {
+  _restriction = {
+    values = [
+      "BASIC",
+      "PURCHASE",
+      "SALES",
+    ]
+    enforce_value = false
+  }
+}

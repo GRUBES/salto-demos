@@ -1,0 +1,11 @@
+type netsuite.customFieldSubAccessList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customFieldSubAccess>" subAccess {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

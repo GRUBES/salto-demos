@@ -1,0 +1,21 @@
+type netsuite.unitsType {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  boolean isInactive {
+  }
+  netsuite.unitsTypeUomList uomList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

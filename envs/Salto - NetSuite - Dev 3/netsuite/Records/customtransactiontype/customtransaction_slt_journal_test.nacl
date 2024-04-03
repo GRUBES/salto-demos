@@ -1,0 +1,24 @@
+netsuite.customtransactiontype customtransaction_slt_journal_test {
+  scriptid = "customtransaction_slt_journal_test"
+  cancloseorder = false
+  isposting = false
+  isvoidable = false
+  name = "Test journal"
+  showstatus = false
+  transactionstyle = "JOURNAL"
+  segments = {
+    classposition = "NONE"
+    
+    locationposition = "NONE"
+    departmentposition = "NONE"
+  }
+  permissions = {
+    permission = {
+      ADMINISTRATOR = {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      }
+    }
+  }
+  _alias = "Test journal"
+}

@@ -1,0 +1,14 @@
+type netsuite.script_status is string {
+  _restriction = {
+    values = [
+      "COMPLETED",
+      "INPROGRESS",
+      "INQUEUE",
+      "NOTSCHEDULED",
+      "RELEASED",
+      "SCHEDULED",
+      "TESTING",
+    ]
+    enforce_value = false
+  }
+}

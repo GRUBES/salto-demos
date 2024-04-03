@@ -1,0 +1,237 @@
+type netsuite.customsegment {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^cseg[0-9a-z_]+"
+    }
+  }
+  string label {
+    _required = true
+  }
+  string recordtype {
+    _required = true
+  }
+  string filteredby {
+  }
+  netsuite.customsegment_fieldtype fieldtype {
+  }
+  string description {
+  }
+  string help {
+  }
+  boolean hasglimpact {
+  }
+  boolean ismandatory {
+  }
+  netsuite.customsegment_displaytype displaytype {
+  }
+  string defaultselection {
+  }
+  netsuite.customsegment_access_search_level defaultrecordaccesslevel {
+  }
+  netsuite.customsegment_access_search_level defaultsearchaccesslevel {
+  }
+  netsuite.customsegment_valuesdisplayorder valuesdisplayorder {
+  }
+  netsuite.customsegment_permissions permissions {
+  }
+  netsuite.customsegment_segmentapplication segmentapplication {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "Custom Segment"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}
+type netsuite.customsegment_permissions_permission {
+  string role {
+    _required = true
+  }
+  netsuite.generic_permission_level valuemgmtaccesslevel {
+  }
+  netsuite.customsegment_access_search_level recordaccesslevel {
+  }
+  netsuite.customsegment_access_search_level searchaccesslevel {
+  }
+}
+type netsuite.customsegment_permissions {
+  "Map<netsuite.customsegment_permissions_permission>" permission {
+    map_key_field = "role"
+  }
+}
+type netsuite.customsegment_segmentapplication_crm_applications_application {
+  netsuite.customsegment_crm_application_id id {
+    _required = true
+  }
+  boolean isapplied {
+    _required = true
+  }
+}
+type netsuite.customsegment_segmentapplication_crm_applications {
+  "Map<netsuite.customsegment_segmentapplication_crm_applications_application>" application {
+    map_key_field = "id"
+  }
+}
+type netsuite.customsegment_segmentapplication_crm {
+  string sourcelist {
+  }
+  netsuite.customsegment_segmentapplication_crm_applications applications {
+  }
+}
+type netsuite.customsegment_segmentapplication_customrecords_applications_application {
+  string id {
+    _required = true
+  }
+  boolean isapplied {
+    _required = true
+  }
+  string sourcelist {
+  }
+}
+type netsuite.customsegment_segmentapplication_customrecords_applications {
+  "Map<netsuite.customsegment_segmentapplication_customrecords_applications_application>" application {
+    map_key_field = "id"
+  }
+}
+type netsuite.customsegment_segmentapplication_customrecords {
+  netsuite.customsegment_segmentapplication_customrecords_applications applications {
+  }
+}
+type netsuite.customsegment_segmentapplication_entities_applications_application {
+  netsuite.customsegment_entities_application_id id {
+    _required = true
+  }
+  boolean isapplied {
+    _required = true
+  }
+}
+type netsuite.customsegment_segmentapplication_entities_applications {
+  "Map<netsuite.customsegment_segmentapplication_entities_applications_application>" application {
+    map_key_field = "id"
+  }
+}
+type netsuite.customsegment_segmentapplication_entities {
+  string sourcelist {
+  }
+  netsuite.customsegment_segmentapplication_entities_applications applications {
+  }
+}
+type netsuite.customsegment_segmentapplication_items_applications_application {
+  netsuite.customsegment_items_application_id id {
+    _required = true
+  }
+  boolean isapplied {
+    _required = true
+  }
+}
+type netsuite.customsegment_segmentapplication_items_applications {
+  "Map<netsuite.customsegment_segmentapplication_items_applications_application>" application {
+    map_key_field = "id"
+  }
+}
+type netsuite.customsegment_segmentapplication_items {
+  netsuite.customsegment_items_subtype subtype {
+    _required = true
+  }
+  string sourcelist {
+  }
+  netsuite.customsegment_segmentapplication_items_applications applications {
+  }
+}
+type netsuite.customsegment_segmentapplication_otherrecords_applications_application {
+  netsuite.customsegment_otherrecords_application_id id {
+    _required = true
+  }
+  boolean isapplied {
+    _required = true
+  }
+}
+type netsuite.customsegment_segmentapplication_otherrecords_applications {
+  "Map<netsuite.customsegment_segmentapplication_otherrecords_applications_application>" application {
+    map_key_field = "id"
+  }
+}
+type netsuite.customsegment_segmentapplication_otherrecords {
+  netsuite.customsegment_segmentapplication_otherrecords_applications applications {
+  }
+}
+type netsuite.customsegment_segmentapplication_transactionbody_applications_application {
+  string id {
+    _required = true
+  }
+  boolean isapplied {
+    _required = true
+  }
+}
+type netsuite.customsegment_segmentapplication_transactionbody_applications {
+  "Map<netsuite.customsegment_segmentapplication_transactionbody_applications_application>" application {
+    map_key_field = "id"
+  }
+}
+type netsuite.customsegment_segmentapplication_transactionbody {
+  string sourcelist {
+  }
+  netsuite.customsegment_segmentapplication_transactionbody_applications applications {
+  }
+}
+type netsuite.customsegment_segmentapplication_transactionline_applications_application {
+  string id {
+    _required = true
+  }
+  boolean isapplied {
+    _required = true
+  }
+}
+type netsuite.customsegment_segmentapplication_transactionline_applications {
+  "Map<netsuite.customsegment_segmentapplication_transactionline_applications_application>" application {
+    map_key_field = "id"
+  }
+}
+type netsuite.customsegment_segmentapplication_transactionline {
+  string sourcelist {
+  }
+  netsuite.customsegment_segmentapplication_transactionline_applications applications {
+  }
+}
+type netsuite.customsegment_segmentapplication {
+  netsuite.customsegment_segmentapplication_crm crm {
+  }
+  netsuite.customsegment_segmentapplication_customrecords customrecords {
+  }
+  netsuite.customsegment_segmentapplication_entities entities {
+  }
+  netsuite.customsegment_segmentapplication_items items {
+  }
+  netsuite.customsegment_segmentapplication_otherrecords otherrecords {
+  }
+  netsuite.customsegment_segmentapplication_transactionbody transactionbody {
+  }
+  netsuite.customsegment_segmentapplication_transactionline transactionline {
+  }
+}

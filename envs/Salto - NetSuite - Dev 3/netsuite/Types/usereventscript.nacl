@@ -1,0 +1,262 @@
+type netsuite.usereventscript {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^customscript[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  string scriptfile {
+    _required = true
+  }
+  string description {
+  }
+  
+  boolean notifyadmins {
+  }
+  string notifyemails {
+  }
+  string notifygroup {
+  }
+  boolean notifyowner {
+  }
+  boolean notifyuser {
+  }
+  string aftersubmitfunction {
+  }
+  string beforeloadfunction {
+  }
+  string beforesubmitfunction {
+  }
+  netsuite.usereventscript_customplugintypes customplugintypes {
+  }
+  netsuite.usereventscript_libraries libraries {
+  }
+  netsuite.usereventscript_scriptcustomfields scriptcustomfields {
+  }
+  netsuite.usereventscript_scriptdeployments scriptdeployments {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "User Event Script"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.usereventscript_customplugintypes_plugintype {
+  string plugintype {
+    _required = true
+  }
+}
+type netsuite.usereventscript_customplugintypes {
+  "List<netsuite.usereventscript_customplugintypes_plugintype>" plugintype {
+  }
+}
+type netsuite.usereventscript_libraries_library {
+  string scriptfile {
+    _required = true
+  }
+}
+type netsuite.usereventscript_libraries {
+  "List<netsuite.usereventscript_libraries_library>" library {
+  }
+}
+type netsuite.usereventscript_scriptcustomfields_scriptcustomfield_customfieldfilters_customfieldfilter {
+  string fldfilter {
+    _required = true
+  }
+  boolean fldfilterchecked {
+  }
+  netsuite.generic_customfield_fldfiltercomparetype fldfiltercomparetype {
+  }
+  string fldfiltersel {
+  }
+  string fldfilterval {
+  }
+  boolean fldfilternotnull {
+  }
+  boolean fldfilternull {
+  }
+  string fldcomparefield {
+  }
+  number index {
+  }
+}
+type netsuite.usereventscript_scriptcustomfields_scriptcustomfield_customfieldfilters {
+  "Map<netsuite.usereventscript_scriptcustomfields_scriptcustomfield_customfieldfilters_customfieldfilter>" customfieldfilter {
+    map_key_field = "fldfilter"
+  }
+}
+type netsuite.usereventscript_scriptcustomfields_scriptcustomfield_roleaccesses_roleaccess {
+  string role {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel accesslevel {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel searchlevel {
+    _required = true
+  }
+}
+type netsuite.usereventscript_scriptcustomfields_scriptcustomfield_roleaccesses {
+  "Map<netsuite.usereventscript_scriptcustomfields_scriptcustomfield_roleaccesses_roleaccess>" roleaccess {
+    map_key_field = "role"
+  }
+}
+type netsuite.usereventscript_scriptcustomfields_scriptcustomfield {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.generic_customfield_fieldtype fieldtype {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+  boolean applyformatting {
+  }
+  boolean defaultchecked {
+  }
+  string defaultselection {
+  }
+  string defaultvalue {
+  }
+  string description {
+  }
+  netsuite.generic_customfield_displaytype displaytype {
+  }
+  netsuite.generic_customfield_dynamicdefault dynamicdefault {
+  }
+  string help {
+  }
+  string linktext {
+  }
+  string minvalue {
+  }
+  string maxvalue {
+  }
+  boolean storevalue {
+  }
+  netsuite.generic_accesslevel_searchlevel accesslevel {
+  }
+  boolean checkspelling {
+  }
+  number displayheight {
+  }
+  number displaywidth {
+  }
+  boolean isformula {
+  }
+  boolean ismandatory {
+  }
+  string maxlength {
+  }
+  netsuite.generic_customfield_onparentdelete onparentdelete {
+  }
+  netsuite.generic_standard_field searchcomparefield {
+  }
+  string searchdefault {
+  }
+  netsuite.generic_accesslevel_searchlevel searchlevel {
+  }
+  netsuite.script_setting setting {
+  }
+  netsuite.usereventscript_scriptcustomfields_scriptcustomfield_customfieldfilters customfieldfilters {
+  }
+  netsuite.usereventscript_scriptcustomfields_scriptcustomfield_roleaccesses roleaccesses {
+  }
+  number index {
+  }
+}
+type netsuite.usereventscript_scriptcustomfields {
+  "Map<netsuite.usereventscript_scriptcustomfields_scriptcustomfield>" scriptcustomfield {
+    map_key_field = "scriptid"
+  }
+}
+type netsuite.usereventscript_scriptdeployments_scriptdeployment {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.script_status status {
+    _required = true
+  }
+  string recordtype {
+    _required = true
+  }
+  boolean allemployees {
+  }
+  boolean allpartners {
+  }
+  boolean allroles {
+  }
+  string auddepartment {
+  }
+  string audemployee {
+  }
+  string audgroup {
+  }
+  string audpartner {
+  }
+  string audslctrole {
+  }
+  string audsubsidiary {
+  }
+  netsuite.script_eventtype eventtype {
+  }
+  boolean isdeployed {
+  }
+  netsuite.script_loglevel loglevel {
+  }
+  string runasrole {
+  }
+  boolean alllocalizationcontexts {
+  }
+  string executioncontext {
+  }
+  string localizationcontext {
+  }
+}
+type netsuite.usereventscript_scriptdeployments {
+  "Map<netsuite.usereventscript_scriptdeployments_scriptdeployment>" scriptdeployment {
+    map_key_field = "scriptid"
+  }
+}

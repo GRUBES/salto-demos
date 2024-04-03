@@ -1,0 +1,15 @@
+netsuite.file SuiteScripts_ns_js_showmsg_js@dbbv {
+  description = "e2e-branch-2"
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/ns-js-showmsg.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/ns-js-showmsg.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "ns-js-showmsg.js"
+  isInactive = false
+}

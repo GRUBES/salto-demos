@@ -1,0 +1,12 @@
+type netsuite.partnerPromoCode {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef promoCode {
+  }
+  string discount {
+  }
+  string endDate {
+  }
+}

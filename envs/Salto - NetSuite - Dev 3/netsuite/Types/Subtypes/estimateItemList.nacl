@@ -1,0 +1,11 @@
+type netsuite.estimateItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.estimateItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

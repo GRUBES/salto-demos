@@ -1,0 +1,20 @@
+type netsuite.itemReceiptExpense {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean markReceived {
+  }
+  number orderLine {
+  }
+  number line {
+  }
+  string account {
+  }
+  string memo {
+  }
+  number amount {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

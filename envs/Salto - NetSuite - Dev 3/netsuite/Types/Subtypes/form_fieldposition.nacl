@@ -1,0 +1,10 @@
+type netsuite.form_fieldposition is string {
+  _restriction = {
+    values = [
+      "BOTTOM",
+      "MIDDLE",
+      "TOP",
+    ]
+    enforce_value = false
+  }
+}

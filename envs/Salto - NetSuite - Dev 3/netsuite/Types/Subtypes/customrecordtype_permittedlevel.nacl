@@ -1,0 +1,12 @@
+type netsuite.customrecordtype_permittedlevel is string {
+  _restriction = {
+    values = [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+    ]
+    enforce_value = false
+  }
+}

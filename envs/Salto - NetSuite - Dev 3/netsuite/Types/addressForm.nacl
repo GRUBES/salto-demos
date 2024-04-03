@@ -1,0 +1,146 @@
+type netsuite.addressForm {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custform[0-9a-z_]+"
+    }
+  }
+  string standard {
+    isAttribute = true
+  }
+  string name {
+    _required = true
+  }
+  netsuite.addressForm_mainFields mainFields {
+  }
+  netsuite.addressForm_customCode customCode {
+  }
+  netsuite.cdata addressTemplate {
+    _required = true
+  }
+  string countries {
+  }
+  string application_id {
+  }
+  _alias = "Address Form"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}
+type netsuite.addressForm_customCode {
+  string scriptFile {
+  }
+}
+type netsuite.addressForm_mainFields_defaultFieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  number index {
+  }
+}
+type netsuite.addressForm_mainFields_defaultFieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.addressForm_mainFields_defaultFieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.addressForm_mainFields_defaultFieldGroup {
+  "Map<netsuite.addressForm_mainFields_defaultFieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+}
+type netsuite.addressForm_mainFields_fieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  number index {
+  }
+}
+type netsuite.addressForm_mainFields_fieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.addressForm_mainFields_fieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.addressForm_mainFields_fieldGroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean showTitle {
+  }
+  boolean singleColumn {
+  }
+  "Map<netsuite.addressForm_mainFields_fieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+  number index {
+  }
+}
+type netsuite.addressForm_mainFields {
+  "Map<netsuite.addressForm_mainFields_fieldGroup>" fieldGroup {
+    map_key_field = "scriptid"
+  }
+  netsuite.addressForm_mainFields_defaultFieldGroup defaultFieldGroup {
+  }
+}

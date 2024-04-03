@@ -1,0 +1,19 @@
+netsuite.file SuiteScripts_NestedLevel1_NestedLevel2_helloworld_ts@dddv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/NestedLevel1/NestedLevel2/helloworld.ts"
+  content = file("netsuite/FileCabinet/SuiteScripts/NestedLevel1/NestedLevel2/helloworld.ts")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_NestedLevel1_NestedLevel2@d,
+  ]
+  _generated_dependencies = [
+    {
+      reference = netsuite.entitycustomfield.instance.custentity10.scriptid
+    },
+  ]
+  _alias = "helloworld.ts"
+  isInactive = false
+}

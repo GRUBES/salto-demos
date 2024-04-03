@@ -1,0 +1,46 @@
+type netsuite.inboundShipmentItems {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number id {
+  }
+  netsuite.recordRef purchaseOrder {
+  }
+  netsuite.recordRef shipmentItem {
+  }
+  string shipmentItemDescription {
+  }
+  string poVendor {
+  }
+  netsuite.recordRef receivingLocation {
+  }
+  number quantityReceived {
+  }
+  number quantityExpected {
+  }
+  number quantityRemaining {
+  }
+  netsuite.recordRef unit {
+  }
+  number poRate {
+  }
+  number expectedRate {
+  }
+  number shipmentItemExchangeRate {
+  }
+  string shipmentItemEffectiveDate {
+  }
+  number unitLandedCost {
+  }
+  number totalUnitCost {
+  }
+  number shipmentItemAmount {
+  }
+  netsuite.recordRef poCurrency {
+  }
+  netsuite.recordRef incoterm {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+}

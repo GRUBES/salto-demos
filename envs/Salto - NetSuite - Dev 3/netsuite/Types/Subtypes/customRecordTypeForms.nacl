@@ -1,0 +1,12 @@
+type netsuite.customRecordTypeForms {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string formEdit {
+  }
+  string formName {
+  }
+  boolean formPref {
+  }
+}

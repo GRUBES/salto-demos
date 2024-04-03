@@ -1,0 +1,16 @@
+type netsuite.inventoryNumberLocations {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string location {
+  }
+  number quantityOnHand {
+  }
+  number quantityAvailable {
+  }
+  number quantityOnOrder {
+  }
+  number quantityInTransit {
+  }
+}

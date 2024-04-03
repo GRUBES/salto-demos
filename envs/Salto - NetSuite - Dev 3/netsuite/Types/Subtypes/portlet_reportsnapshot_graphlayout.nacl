@@ -1,0 +1,11 @@
+type netsuite.portlet_reportsnapshot_graphlayout is string {
+  _restriction = {
+    values = [
+      "BAR",
+      "COLUMN",
+      "LINE",
+      "PIE",
+    ]
+    enforce_value = false
+  }
+}

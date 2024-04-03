@@ -1,0 +1,11 @@
+type netsuite.journalEntryLineList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.journalEntryLine>" line {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

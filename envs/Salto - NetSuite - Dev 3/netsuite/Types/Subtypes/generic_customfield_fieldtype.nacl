@@ -1,0 +1,29 @@
+type netsuite.generic_customfield_fieldtype is string {
+  _restriction = {
+    values = [
+      "CHECKBOX",
+      "CLOBTEXT",
+      "CURRENCY",
+      "DATE",
+      "DATETIMETZ",
+      "DOCUMENT",
+      "EMAIL",
+      "FLOAT",
+      "HELP",
+      "IMAGE",
+      "INLINEHTML",
+      "INTEGER",
+      "MULTISELECT",
+      "PASSWORD",
+      "PERCENT",
+      "PHONE",
+      "RICHTEXT",
+      "SELECT",
+      "TEXT",
+      "TEXTAREA",
+      "TIMEOFDAY",
+      "URL",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,24 @@
+type netsuite.customerPaymentDeposit {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string depositDate {
+  }
+  string refNum {
+  }
+  number total {
+  }
+  number remaining {
+  }
+  string currency {
+  }
+  number amount {
+  }
+}

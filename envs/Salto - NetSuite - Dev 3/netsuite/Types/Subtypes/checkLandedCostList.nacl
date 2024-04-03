@@ -1,0 +1,11 @@
+type netsuite.checkLandedCostList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.landedCostSummary>" landedCost {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

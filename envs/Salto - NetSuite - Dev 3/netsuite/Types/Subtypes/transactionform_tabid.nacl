@@ -1,0 +1,32 @@
+type netsuite.transactionform_tabid is string {
+  _restriction = {
+    values = [
+      "APPLICATIONS",
+      "CHARGES",
+      "CUSTOM",
+      "GLIMPACTTAB",
+      "LINES",
+      "MILESTONES",
+      "MULTIBOOK",
+      "MULTIPARTNER",
+      "PAYEEADDRESS",
+      "PROMOTIONSTAB",
+      "STOREPICKUP",
+      "TAXES",
+      "TEAMSELLING",
+      "TRANSACTIONACCOUNTING",
+      "TRANSACTIONADDRESS",
+      "TRANSACTIONBILLING",
+      "TRANSACTIONCOMMUNICATION",
+      "TRANSACTIONITEMS",
+      "TRANSACTIONOUTPUTOPTIONS",
+      "TRANSACTIONPAYMENT",
+      "TRANSACTIONRELATEDRECORDS",
+      "TRANSACTIONRELATIONSHIPS",
+      "TRANSACTIONSHIPPING",
+      "TRANSACTIONSYSTEMINFORMATION",
+      "WORKFLOW",
+    ]
+    enforce_value = false
+  }
+}

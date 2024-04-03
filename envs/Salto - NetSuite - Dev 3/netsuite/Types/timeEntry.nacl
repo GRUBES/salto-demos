@@ -1,0 +1,60 @@
+type netsuite.timeEntry {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.duration hours {
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  netsuite.recordRef caseTaskEvent {
+  }
+  netsuite.recordRef item {
+  }
+  boolean isBillable {
+  }
+  netsuite.payrollItem payrollItem {
+    isReference = true
+  }
+  boolean paidExternally {
+  }
+  netsuite.price price {
+    isReference = true
+  }
+  number rate {
+  }
+  boolean overrideRate {
+  }
+  string memo {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string billingClass {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.recordRef approvalStatus {
+  }
+  unknown timeType {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

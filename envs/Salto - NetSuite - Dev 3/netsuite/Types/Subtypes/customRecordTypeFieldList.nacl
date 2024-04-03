@@ -1,0 +1,11 @@
+type netsuite.customRecordTypeFieldList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordCustomField>" customField {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

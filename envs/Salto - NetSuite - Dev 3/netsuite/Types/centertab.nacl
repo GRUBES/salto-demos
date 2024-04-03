@@ -1,0 +1,72 @@
+type netsuite.centertab {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custcentertab[0-9a-z_]+"
+    }
+  }
+  string label {
+    _required = true
+  }
+  string center {
+    _required = true
+  }
+  boolean allvendors {
+  }
+  boolean allroles {
+  }
+  boolean allpartners {
+  }
+  boolean allcustomers {
+  }
+  boolean allemployees {
+  }
+  string audslctrole {
+  }
+  netsuite.centertab_portlets portlets {
+  }
+  string application_id {
+  }
+  boolean labelTranslate {
+  }
+  _alias = "Center Tab"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}
+type netsuite.centertab_portlets_portlet {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  netsuite.generic_portlet portlet {
+  }
+  netsuite.generic_portletcolumn portletcolumn {
+  }
+  boolean isportletshown {
+  }
+  number index {
+  }
+}
+type netsuite.centertab_portlets {
+  "Map<netsuite.centertab_portlets_portlet>" portlet {
+    map_key_field = "scriptid"
+  }
+}

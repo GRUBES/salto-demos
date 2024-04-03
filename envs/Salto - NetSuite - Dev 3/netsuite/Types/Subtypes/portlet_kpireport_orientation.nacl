@@ -1,0 +1,9 @@
+type netsuite.portlet_kpireport_orientation is string {
+  _restriction = {
+    values = [
+      "Date",
+      "KPIs",
+    ]
+    enforce_value = false
+  }
+}

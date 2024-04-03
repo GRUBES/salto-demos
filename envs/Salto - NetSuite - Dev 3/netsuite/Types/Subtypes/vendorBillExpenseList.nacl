@@ -1,0 +1,11 @@
+type netsuite.vendorBillExpenseList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.vendorBillExpense>" expense {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

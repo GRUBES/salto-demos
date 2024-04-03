@@ -1,0 +1,15 @@
+type netsuite.generic_savedsearches_daterange is string {
+  _restriction = {
+    values = [
+      "ACTIVITIES",
+      "BONUSES",
+      "FULFILLMENT_EXCEPTION_REASON_DEFAULT_VIEW",
+      "GENERIC_TAX_REPORT_DETAIL",
+      "GENERIC_TAX_REPORT_SUMMARY",
+      "NEWS_ITEM_LIST",
+      "REVENUE_RECOGNITION_ERRORS",
+      "SALES_ORDER_ALLOCATION_ALERTS",
+    ]
+    enforce_value = false
+  }
+}

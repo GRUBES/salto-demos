@@ -1,0 +1,104 @@
+type netsuite.workOrder {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.manufacturingRouting manufacturingRouting {
+    isReference = true
+  }
+  boolean autoCalculateLag {
+  }
+  string status {
+  }
+  string tranId {
+  }
+  netsuite.recordRef entity {
+  }
+  netsuite.job job {
+    isReference = true
+  }
+  netsuite.assemblyItem assemblyItem {
+    isReference = true
+  }
+  boolean expandAssembly {
+  }
+  boolean isWip {
+  }
+  number quantity {
+  }
+  netsuite.recordRef billOfMaterials {
+  }
+  netsuite.recordRef units {
+  }
+  string tranDate {
+  }
+  unknown orderStatus {
+  }
+  boolean firmed {
+  }
+  string memo {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.workOrderItemList itemList {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  unknown schedulingMethod {
+  }
+  netsuite.salesTeamList salesTeamList {
+  }
+  netsuite.partnersList partnersList {
+  }
+  netsuite.recordRef createdFrom {
+  }
+  string sourceTransactionId {
+  }
+  number sourceTransactionLine {
+  }
+  boolean specialOrder {
+  }
+  number buildable {
+  }
+  netsuite.customFieldList options {
+  }
+  number built {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  netsuite.recordRef revision {
+  }
+  netsuite.recordRef billOfMaterialsRevision {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  string requestedDate {
+  }
+  string actualProductionStartDate {
+  }
+  string actualProductionEndDate {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,15 @@
+type netsuite.generic_repeat_time_in_minutes is string {
+  _restriction = {
+    values = [
+      "120",
+      "15",
+      "240",
+      "30",
+      "360",
+      "480",
+      "60",
+      "720",
+    ]
+    enforce_value = false
+  }
+}

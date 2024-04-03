@@ -1,0 +1,11 @@
+netsuite.folder Templates_Letter_Templates_Mail_Merge_Folder@dsdss {
+  description = "Mail Merge Attachments Folder"
+  bundleable = false
+  isprivate = false
+  path = "/Templates/Letter Templates/Mail Merge Folder"
+  isInactive = false
+  _parent = [
+    netsuite.folder.instance.Templates_Letter_Templates@ds,
+  ]
+  _alias = "Mail Merge Folder"
+}

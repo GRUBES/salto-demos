@@ -1,0 +1,12 @@
+netsuite.folder Templates_Fax_Templates@ds {
+  description = "Fax Templates Folder"
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/Fax Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "Fax Templates"
+  isInactive = false
+}

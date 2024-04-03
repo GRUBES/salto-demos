@@ -1,0 +1,14 @@
+type netsuite.generic_day_of_week is string {
+  _restriction = {
+    values = [
+      "FRIDAY",
+      "MONDAY",
+      "SATURDAY",
+      "SUNDAY",
+      "THURSDAY",
+      "TUESDAY",
+      "WEDNESDAY",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,12 @@
+netsuite.folder SuiteScripts_NestedLevel1_NestedLevel2@d {
+  description = "bla2"
+  bundleable = false
+  
+  isprivate = false
+  path = "/SuiteScripts/NestedLevel1/NestedLevel2"
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_NestedLevel1@d,
+  ]
+  _alias = "NestedLevel2"
+  isInactive = false
+}

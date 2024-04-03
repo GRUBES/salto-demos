@@ -1,0 +1,119 @@
+type netsuite.sublist {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custsublist[0-9a-z_]+"
+    }
+  }
+  string label {
+    _required = true
+  }
+  string savedsearch {
+    _required = true
+  }
+  netsuite.generic_tab_type sublisttype {
+    _required = true
+  }
+  string tab {
+  }
+  string field {
+  }
+  boolean purchase {
+  }
+  boolean sale {
+  }
+  boolean opportunity {
+  }
+  boolean journal {
+  }
+  boolean expensereport {
+  }
+  boolean inventoryadjustment {
+  }
+  boolean assemblybuild {
+  }
+  boolean fulfillmentrequest {
+  }
+  boolean storepickup {
+  }
+  boolean itemreceipt {
+  }
+  boolean itemfulfillment {
+  }
+  boolean payment {
+  }
+  boolean vendorpayment {
+  }
+  boolean deposit {
+  }
+  boolean depositapplication {
+  }
+  boolean customer {
+  }
+  boolean job {
+  }
+  boolean vendor {
+  }
+  boolean employee {
+  }
+  boolean partner {
+  }
+  boolean contact {
+  }
+  boolean inventoryitem {
+  }
+  boolean noninventoryitem {
+  }
+  boolean service {
+  }
+  boolean othercharge {
+  }
+  boolean itemgroup {
+  }
+  boolean kit {
+  }
+  boolean billofmaterials {
+  }
+  boolean case {
+  }
+  boolean task {
+  }
+  boolean call {
+  }
+  boolean event {
+  }
+  boolean solution {
+  }
+  boolean campaign {
+  }
+  boolean issue {
+  }
+  string customtransactions {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "Sublist"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}

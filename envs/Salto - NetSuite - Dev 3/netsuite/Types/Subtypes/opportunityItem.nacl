@@ -1,0 +1,73 @@
+type netsuite.opportunityItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.job job {
+    isReference = true
+  }
+  netsuite.recordRef item {
+  }
+  number line {
+  }
+  number quantityAvailable {
+  }
+  number quantityOnHand {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  string description {
+  }
+  netsuite.price price {
+    isReference = true
+  }
+  string rate {
+  }
+  number amount {
+  }
+  number altSalesAmt {
+  }
+  number revRecTermInMonths {
+  }
+  netsuite.customFieldList options {
+  }
+  boolean fromJob {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  boolean isEstimate {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  number taxAmount {
+  }
+  string taxDetailsReference {
+  }
+  number grossAmt {
+  }
+  number tax1Amt {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  string expectedShipDate {
+  }
+  netsuite.recordRef subscription {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

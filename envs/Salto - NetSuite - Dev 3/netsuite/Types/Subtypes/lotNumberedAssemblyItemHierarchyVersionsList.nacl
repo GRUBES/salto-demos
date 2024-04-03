@@ -1,0 +1,11 @@
+type netsuite.lotNumberedAssemblyItemHierarchyVersionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.lotNumberedAssemblyItemHierarchyVersions>" lotNumberedAssemblyItemHierarchyVersions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

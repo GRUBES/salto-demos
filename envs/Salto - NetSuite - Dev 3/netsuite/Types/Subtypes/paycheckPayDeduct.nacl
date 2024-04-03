@@ -1,0 +1,16 @@
+type netsuite.paycheckPayDeduct {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef payItem {
+  }
+  number line {
+  }
+  number wageBase {
+  }
+  number amount {
+  }
+  boolean manualEntry {
+  }
+}

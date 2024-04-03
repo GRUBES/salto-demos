@@ -1,0 +1,11 @@
+type netsuite.jobMilestonesList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.jobMilestones>" milestones {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}
