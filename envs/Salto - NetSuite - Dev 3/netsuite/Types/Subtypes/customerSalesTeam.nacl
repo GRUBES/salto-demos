@@ -1,0 +1,6 @@
+type netsuite.customerSalesTeam {
+  annotations {
+    hidden_string source {
+    }
+  }
+}

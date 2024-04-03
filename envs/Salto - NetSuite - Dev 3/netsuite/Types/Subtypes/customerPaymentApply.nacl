@@ -1,0 +1,34 @@
+type netsuite.customerPaymentApply {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string applyDate {
+  }
+  string job {
+  }
+  string type {
+  }
+  string refNum {
+  }
+  number total {
+  }
+  number due {
+  }
+  string currency {
+  }
+  string discDate {
+  }
+  number discAmt {
+  }
+  number disc {
+  }
+  number amount {
+  }
+}

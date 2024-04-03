@@ -1,0 +1,11 @@
+type netsuite.serializedInventoryItemHierarchyVersionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.serializedInventoryItemHierarchyVersions>" serializedInventoryItemHierarchyVersions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

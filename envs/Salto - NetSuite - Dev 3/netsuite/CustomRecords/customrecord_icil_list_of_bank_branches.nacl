@@ -1,0 +1,574 @@
+type netsuite.customrecord_icil_list_of_bank_branches {
+  annotations {
+    serviceid scriptid {
+    }
+    string recordname {
+    }
+    string customsegment {
+    }
+    netsuite.customrecordtype_accesstype accesstype {
+    }
+    boolean allowattachments {
+    }
+    boolean allowinlineediting {
+    }
+    boolean allowinlinedeleting {
+    }
+    boolean allowinlinedetaching {
+    }
+    boolean allowmobileaccess {
+    }
+    boolean allownumberingoverride {
+    }
+    boolean allowquickadd {
+    }
+    boolean allowquicksearch {
+    }
+    boolean allowuiaccess {
+    }
+    string description {
+    }
+    boolean enabledle {
+    }
+    boolean enablekeywords {
+    }
+    boolean enablemailmerge {
+    }
+    boolean enablenametranslation {
+    }
+    boolean enablenumbering {
+    }
+    boolean enableoptimisticlocking {
+    }
+    boolean enablesystemnotes {
+    }
+    boolean hierarchical {
+    }
+    string numberingprefix {
+    }
+    string numberingsuffix {
+    }
+    string numberingmindigits {
+    }
+    string numberinginit {
+    }
+    string icon {
+    }
+    boolean iconbuiltin {
+    }
+    netsuite.generic_custom_record_icon iconindex {
+    }
+    boolean includeinsearchmenu {
+    }
+    boolean includename {
+    }
+    
+    boolean isordered {
+    }
+    boolean showcreationdate {
+    }
+    boolean showcreationdateonlist {
+    }
+    boolean showid {
+    }
+    boolean showlastmodified {
+    }
+    boolean showlastmodifiedonlist {
+    }
+    boolean shownotes {
+    }
+    boolean showowner {
+    }
+    boolean showownerallowchange {
+    }
+    boolean showowneronlist {
+    }
+    netsuite.customrecordtype_instances instances {
+    }
+    netsuite.customrecordtype_links links {
+    }
+    netsuite.customrecordtype_permissions permissions {
+    }
+    netsuite.customrecordtype_recordsublists recordsublists {
+    }
+    netsuite.customrecordtype_subtabs subtabs {
+    }
+    string application_id {
+    }
+    hidden_string source {
+    }
+    hidden_string internalId {
+    }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
+  }
+  serviceid scriptid {
+    _required = true
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.customRecordTranslationsList translationsList {
+  }
+  string custom_custrecord_icil_branch_show {
+    scriptid = "custrecord_icil_branch_show"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL branch show"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 0
+  }
+  number custom_custrecord_icil_bank_code_line {
+    scriptid = "custrecord_icil_bank_code_line"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = true
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "INTEGER"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Bank code"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 1
+  }
+  string custom_custrecord_icil_bank_name_line {
+    scriptid = "custrecord_icil_bank_name_line"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Bank name"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 2
+  }
+  number custom_custrecord_icil_branch_code_line {
+    scriptid = "custrecord_icil_branch_code_line"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = true
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "INTEGER"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch code"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 3
+  }
+  string custom_custrecord_icil_branch_name_line {
+    scriptid = "custrecord_icil_branch_name_line"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch name"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 4
+  }
+  string custom_custrecord_icil_branch_address {
+    scriptid = "custrecord_icil_branch_address"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch address"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 5
+  }
+  string custom_custrecord_icil_branch_city {
+    scriptid = "custrecord_icil_branch_city"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch city"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 6
+  }
+  number custom_custrecord_icil_branch_zip {
+    scriptid = "custrecord_icil_branch_zip"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = true
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "INTEGER"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch zip"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 7
+  }
+  string custom_custrecord_icil_branch_postoffice_box {
+    scriptid = "custrecord_icil_branch_postoffice_box"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch post office box"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 8
+  }
+  string custom_custrecord_icil_branch_phone {
+    scriptid = "custrecord_icil_branch_phone"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch phone"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 9
+  }
+  string custom_custrecord_icil_branch_fax {
+    scriptid = "custrecord_icil_branch_fax"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL branch fax"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 10
+  }
+  string custom_custrecord_icil_branch_classification {
+    scriptid = "custrecord_icil_branch_classification"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    description = '''
+סוג סניף - בשדה זה ניתן למצוא את סיווג הסניף (המקרא לסוג הסניף מופיע גם בגיליון מקרא בקובץ עצמו): 
+0) סניף רגיל. 
+1) סניף מיוחד - שירותים מוגבלים. 
+2) סניף מיוחד - מועדים שונים מהמועדים המקובלים. 
+3) סניף מיוחד - לקוחות בעלי מאפיינים מסוימים. 
+4) בסניף זה פועל דלפק למשכנתאות. 
+5) סניף מיוחד- הכפוף מבחינה ניהולית לסניף אחר. 
+6) מחלקה של סניף. 
+7) שלוחה של סניף. 
+8) יחידת ביצוע.
+'''
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    help = '''
+סוג סניף - בשדה זה ניתן למצוא את סיווג הסניף (המקרא לסוג הסניף מופיע גם בגיליון מקרא בקובץ עצמו): 
+0) סניף רגיל. 
+1) סניף מיוחד - שירותים מוגבלים. 
+2) סניף מיוחד - מועדים שונים מהמועדים המקובלים. 
+3) סניף מיוחד - לקוחות בעלי מאפיינים מסוימים. 
+4) בסניף זה פועל דלפק למשכנתאות. 
+5) סניף מיוחד- הכפוף מבחינה ניהולית לסניף אחר. 
+6) מחלקה של סניף. 
+7) שלוחה של סניף. 
+8) יחידת ביצוע.
+'''
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch classification"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 11
+  }
+  string custom_custrecord_icil_branch_open_date {
+    scriptid = "custrecord_icil_branch_open_date"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "DATE"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch open date"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 12
+  }
+  string custom_custrecord_icil_branch_closing_date {
+    scriptid = "custrecord_icil_branch_closing_date"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "DATE"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL Branch closing date"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 13
+  }
+  number custom_custrecord_icil_bank_merged_branch {
+    scriptid = "custrecord_icil_bank_merged_branch"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = true
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "INTEGER"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL The bank that merged"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 14
+  }
+  number custom_custrecord_icil_branch_merged_branch {
+    scriptid = "custrecord_icil_branch_merged_branch"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = true
+    checkspelling = false
+    defaultchecked = false
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "INTEGER"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "ICIL The branch that merged"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = true
+    storevalue = true
+    index = 15
+  }
+  scriptid = "customrecord_icil_list_of_bank_branches"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = true
+  allowinlinedeleting = true
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  description = '''
+מכיל את השדות הבאים
+קוד הבנק
+שם הבנק
+מס' הסניף
+שם הסניף
+כתובת הסניף
+מיקוד
+ישוב
+מס' טלפון
+מס' פקס
+סניף אם
+תאריך פתיחה
+תאריך סגירה - של בנקים שנסגרו החל מחודש ינואר שלפני 3 שנים ועד יום עדכון הקובץ
+בנק ממזג - זהו הבנק שקיבל את הלקוחות של סניף שנסגר
+סניף ממזג - זהו הסניף שקיבל את הלקוחות של סניף שנסגר
+סוג סניף - בשדה זה ניתן למצוא את סיווג הסניף (המקרא לסוג הסניף מופיע גם בגיליון מקרא בקובץ עצמו): 
+סוג בנק - בשדה זה ניתן למצוא את סוג הבנק (המקרא לסוג הבנק מופיע גם בגיליון מקרא בקובץ עצמו
+'''
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenumbering = false
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  
+  isordered = false
+  recordname = "ICIL list of bank branches"
+  showcreationdate = false
+  showcreationdateonlist = true
+  showid = true
+  showlastmodified = false
+  showlastmodifiedonlist = true
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  metadataType = "customrecordtype"
+  _alias = "ICIL list of bank branches"
+  isInactive = false
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

@@ -1,0 +1,11 @@
+type netsuite.itemCustomFieldFilterList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.itemCustomFieldFilter>" filter {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

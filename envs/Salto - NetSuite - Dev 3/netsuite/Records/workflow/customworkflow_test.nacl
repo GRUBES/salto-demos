@@ -1,0 +1,54 @@
+netsuite.workflow customworkflow_test {
+  scriptid = "customworkflow_test"
+  initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+  initoncreate = false
+  initonvieworupdate = false
+  islogenabled = false
+  keephistory = "ONLYWHENTESTING"
+  name = "daniel.1"
+  recordtypes = netsuite.customrecord324.attr.scriptid
+  releasestatus = "TESTING"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowstates = {
+    workflowstate = {
+      workflowstate111 = {
+        scriptid = "workflowstate111"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 243
+        positiony = 133
+        workflowactions = {
+          ONENTRY = {
+            triggertype = "ONENTRY"
+            sendemailaction = {
+              workflowaction302 = {
+                scriptid = "workflowaction302"
+                attachmenttype = "SPECIFIC"
+                contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+                includerecordlink = false
+                recipient = "[ACCOUNT_SPECIFIC_VALUE]"
+                recipienttype = "SPECIFIC"
+                schedulemode = "DELAY"
+                sender = "[ACCOUNT_SPECIFIC_VALUE]"
+                sendertype = "SPECIFIC"
+                template = netsuite.emailtemplate.instance.custemailtmplstandardemailtemplate.scriptid
+                usetemplate = true
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                index = 0
+                isInactive = false
+              }
+            }
+          }
+        }
+        index = 0
+      }
+    }
+  }
+  isInactive = false
+  _alias = "daniel.1"
+}

@@ -1,0 +1,14 @@
+netsuite.nexus _unitedStates_Arizona {
+  country = "_unitedStates"
+  state = {
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Arizona)"
+  }
+  taxAgency = {
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Tax Agency AZ (302-1637709627))"
+  }
+  description = "AZ"
+  identifier = "_unitedStates_Arizona"
+  _alias = "_unitedStates_Arizona"
+}

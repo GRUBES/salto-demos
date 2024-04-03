@@ -1,0 +1,9 @@
+type netsuite.workflowaction_attachmenttype is string {
+  _restriction = {
+    values = [
+      "FIELD",
+      "SPECIFIC",
+    ]
+    enforce_value = false
+  }
+}

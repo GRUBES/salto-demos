@@ -1,0 +1,11 @@
+type netsuite.promotionCodePartners {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.partner partner {
+    isReference = true
+  }
+  string code {
+  }
+}

@@ -1,0 +1,10 @@
+type netsuite.form_displaytype is string {
+  _restriction = {
+    values = [
+      "DISABLED",
+      "INLINETEXT",
+      "NORMAL",
+    ]
+    enforce_value = false
+  }
+}

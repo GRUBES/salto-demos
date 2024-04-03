@@ -1,0 +1,9 @@
+type netsuite.form_buttonstyle is string {
+  _restriction = {
+    values = [
+      "BUTTON",
+      "MENU",
+    ]
+    enforce_value = false
+  }
+}

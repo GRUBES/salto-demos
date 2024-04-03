@@ -1,0 +1,12 @@
+type netsuite.portlet_trendgraph_trendtype is string {
+  _restriction = {
+    values = [
+      "DAILY",
+      "MONTHLY",
+      "QUARTERLY",
+      "WEEKLY",
+      "YEARLY",
+    ]
+    enforce_value = false
+  }
+}

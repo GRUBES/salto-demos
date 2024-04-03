@@ -1,0 +1,37 @@
+type netsuite.kpi_snapshots_daterange_or_period is string {
+  _restriction = {
+    values = [
+      "BANKBAL",
+      "COGS",
+      "CREDITCARDBAL",
+      "DEFERREDREVENUE",
+      "EQUITY",
+      "EXPENSES",
+      "FIXEDASSET",
+      "INCOME",
+      "INTTURNOVRPERPERIOD",
+      "INVENTORY",
+      "LONGTERMLIAB",
+      "NETCASHFLOW",
+      "NEWBUSINESS",
+      "NEWCUSTOMERS",
+      "ONTIMERECEIPTS",
+      "ONTIMESHIPMENTS",
+      "OPERATINGEXPENSES",
+      "OPERCASHFLOW",
+      "OTHERASSET",
+      "OTHERCURRENTASSET",
+      "OTHERCURRENTLIAB",
+      "PAYABLES",
+      "PAYROLL",
+      "PROFIT",
+      "RECEIVABLES",
+      "REVENUE",
+      "SALES",
+      "SALESCASHBASIS",
+      "UTILIZATION",
+      "VENDORBALANCE",
+    ]
+    enforce_value = false
+  }
+}

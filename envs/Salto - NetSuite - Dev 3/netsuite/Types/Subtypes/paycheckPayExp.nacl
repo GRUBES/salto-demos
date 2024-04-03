@@ -1,0 +1,16 @@
+type netsuite.paycheckPayExp {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number line {
+  }
+  number origDoc {
+  }
+  string transaction {
+  }
+  number amount {
+  }
+}

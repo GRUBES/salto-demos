@@ -1,0 +1,15 @@
+type netsuite.centercategory_tasktype is string {
+  _restriction = {
+    values = [
+      "CARD",
+      "EDIT",
+      "LINK",
+      "LIST",
+      "SCRIPT",
+      "SRCH",
+      "SRCH_FORM",
+      "SRCH_RSLT",
+    ]
+    enforce_value = false
+  }
+}

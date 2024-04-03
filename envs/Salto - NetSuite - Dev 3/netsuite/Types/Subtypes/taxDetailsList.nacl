@@ -1,0 +1,11 @@
+type netsuite.taxDetailsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.taxDetails>" taxDetails {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

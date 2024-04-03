@@ -1,0 +1,11 @@
+type netsuite.customRecordTypePermissionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordTypePermissions>" permissions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

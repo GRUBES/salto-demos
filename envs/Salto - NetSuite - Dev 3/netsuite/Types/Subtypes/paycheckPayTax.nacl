@@ -1,0 +1,26 @@
+type netsuite.paycheckPayTax {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number line {
+  }
+  boolean apply {
+  }
+  string payTax {
+  }
+  number payItem {
+  }
+  number taxableWageBase {
+  }
+  number taxedWageBase {
+  }
+  number reportableWageBase {
+  }
+  boolean isExempt {
+  }
+  boolean isResidentTax {
+  }
+  number amount {
+  }
+}

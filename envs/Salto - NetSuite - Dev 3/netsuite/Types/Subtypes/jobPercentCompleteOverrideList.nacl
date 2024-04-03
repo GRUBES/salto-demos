@@ -1,0 +1,11 @@
+type netsuite.jobPercentCompleteOverrideList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.jobPercentCompleteOverride>" jobPercentCompleteOverride {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

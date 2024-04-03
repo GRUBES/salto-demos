@@ -1,0 +1,73 @@
+netsuite.customsegment cseg_sales_region {
+  scriptid = "cseg_sales_region"
+  defaultrecordaccesslevel = "VIEW"
+  defaultsearchaccesslevel = "VIEW"
+  displaytype = "NORMAL"
+  fieldtype = "SELECT"
+  hasglimpact = false
+  help = "Sales Region"
+  ismandatory = false
+  label = "Sales Region"
+  recordtype = netsuite.customrecord_cseg_sales_region.attr.scriptid
+  valuesdisplayorder = "SUBLIST"
+  segmentapplication = {
+    transactionbody = {
+      applications = {
+        application = {
+          SALE = {
+            id = "SALE"
+            isapplied = true
+          }
+          PURCHASE = {
+            id = "PURCHASE"
+            isapplied = true
+          }
+        }
+      }
+    }
+    transactionline = {
+      applications = {
+        application = {
+          TIME = {
+            id = "TIME"
+            isapplied = true
+          }
+          EXPENSE = {
+            id = "EXPENSE"
+            isapplied = true
+          }
+          PURCHASE = {
+            id = "PURCHASE"
+            isapplied = true
+          }
+          SALE = {
+            id = "SALE"
+            isapplied = true
+          }
+        }
+      }
+    }
+    items = {
+      subtype = "BOTH"
+      applications = {
+        application = {
+          SERVICEITEM = {
+            id = "SERVICEITEM"
+            isapplied = true
+          }
+        }
+      }
+    }
+    otherrecords = {
+      applications = {
+        application = {
+          ACCOUNT = {
+            id = "ACCOUNT"
+            isapplied = true
+          }
+        }
+      }
+    }
+  }
+  _alias = "Sales Region"
+}

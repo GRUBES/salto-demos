@@ -1,0 +1,11 @@
+type netsuite.paycheckPayPtoList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.paycheckPayPto>" paycheckPayPto {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

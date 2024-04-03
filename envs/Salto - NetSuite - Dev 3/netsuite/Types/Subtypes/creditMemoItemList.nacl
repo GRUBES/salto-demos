@@ -1,0 +1,11 @@
+type netsuite.creditMemoItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.creditMemoItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

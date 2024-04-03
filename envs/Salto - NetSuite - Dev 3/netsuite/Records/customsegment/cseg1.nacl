@@ -1,0 +1,136 @@
+netsuite.customsegment cseg1 {
+  scriptid = "cseg1"
+  defaultrecordaccesslevel = "EDIT"
+  defaultsearchaccesslevel = "VIEW"
+  displaytype = "NORMAL"
+  fieldtype = "SELECT"
+  hasglimpact = false
+  ismandatory = false
+  label = "Stam2"
+  recordtype = netsuite.customrecord_cseg1.attr.scriptid
+  valuesdisplayorder = "SUBLIST"
+  segmentapplication = {
+    transactionbody = {
+      sourcelist = "STDBODYACCOUNT"
+      applications = {
+        application = {
+          PURCHASE = {
+            id = "PURCHASE"
+            isapplied = true
+          }
+          OTHERTRANSACTION = {
+            id = "OTHERTRANSACTION"
+            isapplied = true
+          }
+          CUSTOMERPAYMENT = {
+            id = "CUSTOMERPAYMENT"
+            isapplied = true
+          }
+          DEPOSIT = {
+            id = "DEPOSIT"
+            isapplied = true
+          }
+          custompurchase_slt_expense_report = {
+            id = netsuite.customtransactiontype.instance.custompurchase_slt_expense_report.scriptid
+            isapplied = true
+          }
+          EXPENSEREPORT = {
+            id = "EXPENSEREPORT"
+            isapplied = true
+          }
+          INVENTORYADJUSTMENT = {
+            id = "INVENTORYADJUSTMENT"
+            isapplied = true
+          }
+          ITEMFULFILLMENT = {
+            id = "ITEMFULFILLMENT"
+            isapplied = true
+          }
+          ITEMRECEIPT = {
+            id = "ITEMRECEIPT"
+            isapplied = true
+          }
+          JOURNALENTRY = {
+            id = "JOURNALENTRY"
+            isapplied = true
+          }
+          OPPORTUNITY = {
+            id = "OPPORTUNITY"
+            isapplied = true
+          }
+          customtransaction_slt_header_test = {
+            id = netsuite.customtransactiontype.instance.customtransaction_slt_header_test.scriptid
+            isapplied = true
+          }
+          customtransaction_slt_journal_test = {
+            id = netsuite.customtransactiontype.instance.customtransaction_slt_journal_test.scriptid
+            isapplied = true
+          }
+          TRANSFERORDER = {
+            id = "TRANSFERORDER"
+            isapplied = true
+          }
+          VENDORPAYMENT = {
+            id = "VENDORPAYMENT"
+            isapplied = true
+          }
+          customtransaction_slt_basic_test = {
+            id = netsuite.customtransactiontype.instance.customtransaction_slt_basic_test.scriptid
+            isapplied = true
+          }
+        }
+      }
+    }
+    crm = {
+      sourcelist = "STDEVENTOPPORTUNITY"
+      applications = {
+        application = {
+          CALENDAREVENT = {
+            id = "CALENDAREVENT"
+            isapplied = true
+          }
+          PHONECALL = {
+            id = "PHONECALL"
+            isapplied = true
+          }
+        }
+      }
+    }
+    items = {
+      subtype = "BOTH"
+    }
+    otherrecords = {
+      applications = {
+        application = {
+          ACCOUNT = {
+            id = "ACCOUNT"
+            isapplied = true
+          }
+        }
+      }
+    }
+    customrecords = {
+      applications = {
+        application = {
+          customrecord_lsa = {
+            id = "[scriptid=customrecord_lsa]"
+            isapplied = true
+          }
+          customrecord_slt_testforrest = {
+            id = netsuite.customrecord_slt_testforrest.attr.scriptid
+            isapplied = true
+          }
+        }
+      }
+    }
+  }
+  permissions = {
+    permission = {
+      customrole1003 = {
+        role = netsuite.role.instance.customrole1003.scriptid
+        valuemgmtaccesslevel = "FULL"
+      }
+    }
+  }
+  _alias = "Stam2"
+}

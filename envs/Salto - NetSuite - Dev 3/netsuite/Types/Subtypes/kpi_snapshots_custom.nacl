@@ -1,0 +1,17 @@
+type netsuite.kpi_snapshots_custom is string {
+  _restriction = {
+    values = [
+      "CUSTOM",
+      "CUSTOM10",
+      "CUSTOM2",
+      "CUSTOM3",
+      "CUSTOM4",
+      "CUSTOM5",
+      "CUSTOM6",
+      "CUSTOM7",
+      "CUSTOM8",
+      "CUSTOM9",
+    ]
+    enforce_value = false
+  }
+}

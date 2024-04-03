@@ -1,0 +1,11 @@
+type netsuite.customerCurrencyList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customerCurrency>" currency {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

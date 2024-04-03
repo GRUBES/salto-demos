@@ -1,0 +1,349 @@
+type netsuite.customrecord_cseg2 {
+  annotations {
+    serviceid scriptid {
+    }
+    string recordname {
+    }
+    string customsegment {
+    }
+    netsuite.customrecordtype_accesstype accesstype {
+    }
+    boolean allowattachments {
+    }
+    boolean allowinlineediting {
+    }
+    boolean allowinlinedeleting {
+    }
+    boolean allowinlinedetaching {
+    }
+    boolean allowmobileaccess {
+    }
+    boolean allownumberingoverride {
+    }
+    boolean allowquickadd {
+    }
+    boolean allowquicksearch {
+    }
+    boolean allowuiaccess {
+    }
+    string description {
+    }
+    boolean enabledle {
+    }
+    boolean enablekeywords {
+    }
+    boolean enablemailmerge {
+    }
+    boolean enablenametranslation {
+    }
+    boolean enablenumbering {
+    }
+    boolean enableoptimisticlocking {
+    }
+    boolean enablesystemnotes {
+    }
+    boolean hierarchical {
+    }
+    string numberingprefix {
+    }
+    string numberingsuffix {
+    }
+    string numberingmindigits {
+    }
+    string numberinginit {
+    }
+    string icon {
+    }
+    boolean iconbuiltin {
+    }
+    netsuite.generic_custom_record_icon iconindex {
+    }
+    boolean includeinsearchmenu {
+    }
+    boolean includename {
+    }
+    
+    boolean isordered {
+    }
+    boolean showcreationdate {
+    }
+    boolean showcreationdateonlist {
+    }
+    boolean showid {
+    }
+    boolean showlastmodified {
+    }
+    boolean showlastmodifiedonlist {
+    }
+    boolean shownotes {
+    }
+    boolean showowner {
+    }
+    boolean showownerallowchange {
+    }
+    boolean showowneronlist {
+    }
+    netsuite.customrecordtype_instances instances {
+    }
+    netsuite.customrecordtype_links links {
+    }
+    netsuite.customrecordtype_permissions permissions {
+    }
+    netsuite.customrecordtype_recordsublists recordsublists {
+    }
+    netsuite.customrecordtype_subtabs subtabs {
+    }
+    string application_id {
+    }
+    hidden_string source {
+    }
+    hidden_string internalId {
+    }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
+    }
+  }
+  serviceid scriptid {
+    _required = true
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.customRecordTranslationsList translationsList {
+  }
+  string custom_custrecord_newfield {
+    scriptid = "custrecord_newfield"
+    accesslevel = "2"
+    allowquickadd = false
+    applyformatting = false
+    checkspelling = false
+    defaultchecked = false
+    description = "This is a field that is defined in a 'custom record'"
+    displaytype = "NORMAL"
+    encryptatrest = false
+    fieldtype = "TEXT"
+    globalsearch = false
+    isformula = false
+    ismandatory = false
+    isparent = false
+    label = "Field in a custom & record"
+    rolerestrict = false
+    searchlevel = "2"
+    showinlist = false
+    storevalue = true
+    index = 0
+  }
+  scriptid = "customrecord_cseg2"
+  allowattachments = false
+  allowinlinedeleting = false
+  allowinlinedetaching = false
+  allowinlineediting = false
+  allowquickadd = false
+  allowquicksearch = false
+  customsegment = netsuite.customsegment.instance.cseg2.scriptid
+  enabledle = false
+  enablekeywords = false
+  enablemailmerge = false
+  enableoptimisticlocking = false
+  enablesystemnotes = true
+  iconbuiltin = true
+  includeinsearchmenu = false
+  showcreationdate = false
+  showcreationdateonlist = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  instances = {
+    instance = {
+      val_5934_2239021_682 = {
+        scriptid = "val_5934_2239021_682"
+        
+        name = "EMEA"
+        index = 0
+        isInactive = false
+      }
+      test = {
+        scriptid = "test"
+        
+        name = "APAC"
+        index = 1
+        isInactive = false
+      }
+      val_5936_2239021_687 = {
+        scriptid = "val_5936_2239021_687"
+        
+        name = "ISR"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 2
+        isInactive = false
+      }
+      val_5937_2239021_815 = {
+        scriptid = "val_5937_2239021_815"
+        
+        name = "UK"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 3
+        isInactive = false
+      }
+      val_5937_2239021_8150 = {
+        scriptid = "val_5937_2239021_8150"
+        
+        name = "UKX"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 4
+        isInactive = false
+      }
+      val_5937_2239021_8151 = {
+        scriptid = "val_5937_2239021_8151"
+        
+        name = "UKY"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 5
+        isInactive = false
+      }
+      val_5937_2239021_8152 = {
+        scriptid = "val_5937_2239021_8152"
+        
+        name = "UKZ"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 6
+        isInactive = false
+      }
+      val_5937_2239021_8153 = {
+        scriptid = "val_5937_2239021_8153"
+        
+        name = "UKA"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 7
+        isInactive = false
+      }
+      val_5937_2239021_8154 = {
+        scriptid = "val_5937_2239021_8154"
+        
+        name = "UKB"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 8
+        isInactive = false
+      }
+      val_5937_2239021_8155 = {
+        scriptid = "val_5937_2239021_8155"
+        
+        name = "UKC"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 9
+        isInactive = false
+      }
+      val_5937_2239021_8156 = {
+        scriptid = "val_5937_2239021_8156"
+        
+        name = "UKD"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 10
+        isInactive = false
+      }
+      val_5937_2239021_8157 = {
+        scriptid = "val_5937_2239021_8157"
+        
+        name = "UKE"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 11
+        isInactive = false
+      }
+      val_5937_2239021_8158 = {
+        scriptid = "val_5937_2239021_8158"
+        
+        name = "UKF"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
+        index = 12
+        isInactive = false
+      }
+      val_5937_2239021_8159 = {
+        scriptid = "val_5937_2239021_8159"
+        
+        name = "UKG"
+        parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5937_2239021_8153.scriptid
+        index = 13
+        isInactive = false
+      }
+      val_94986_t2480649_569 = {
+        scriptid = "val_94986_t2480649_569"
+        
+        name = "a-2"
+        index = 14
+        isInactive = false
+      }
+      val_95588_t2480649_309 = {
+        scriptid = "val_95588_t2480649_309"
+        
+        name = "b1b1"
+        index = 15
+        isInactive = false
+      }
+      val_95589_t2480649_371 = {
+        scriptid = "val_95589_t2480649_371"
+        
+        name = "c1c1"
+        index = 16
+        isInactive = false
+      }
+    }
+  }
+  links = {
+    link = {
+      BASICSETUPCOMPANY = {
+        linkcategory = "BASICSETUPCOMPANY"
+        linktasktype = "LIST"
+      }
+    }
+  }
+  metadataType = "customrecordtype"
+  _alias = "Region"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

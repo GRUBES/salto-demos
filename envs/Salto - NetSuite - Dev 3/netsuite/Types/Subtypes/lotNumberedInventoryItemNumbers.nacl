@@ -1,0 +1,12 @@
+type netsuite.lotNumberedInventoryItemNumbers {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef serialNumber {
+  }
+  number quantityOnHand {
+  }
+  string expirationDate {
+  }
+}

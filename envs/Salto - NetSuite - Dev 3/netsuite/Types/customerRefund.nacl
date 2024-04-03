@@ -1,0 +1,130 @@
+type netsuite.customerRefund {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string status {
+  }
+  string transactionNumber {
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  netsuite.recordRef customForm {
+  }
+  number balance {
+  }
+  netsuite.account arAcct {
+    isReference = true
+  }
+  string currencyName {
+  }
+  number exchangeRate {
+  }
+  number total {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  string tranDate {
+  }
+  netsuite.recordRef voidJournal {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string memo {
+  }
+  netsuite.paymentMethod paymentMethod {
+    isReference = true
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  boolean toBePrinted {
+  }
+  string tranId {
+  }
+  string debitCardIssueNo {
+  }
+  netsuite.recordRef creditCardProcessor {
+  }
+  boolean chargeIt {
+  }
+  string pnRefNum {
+  }
+  string validFrom {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef paymentOption {
+  }
+  string inputAuthCode {
+  }
+  string inputReferenceCode {
+  }
+  string checkNumber {
+  }
+  string paymentCardCsc {
+  }
+  netsuite.recordRef paymentProcessingProfile {
+  }
+  unknown handlingMode {
+  }
+  string outputAuthCode {
+  }
+  string outputReferenceCode {
+  }
+  unknown paymentOperation {
+  }
+  string dynamicDescriptor {
+  }
+  netsuite.recordRef creditCard {
+  }
+  boolean ccIsPurchaseCardBin {
+  }
+  string ccNumber {
+  }
+  boolean ccProcessAsPurchaseCard {
+  }
+  string ccExpireDate {
+  }
+  string ccName {
+  }
+  string ccStreet {
+  }
+  string ccZipCode {
+  }
+  boolean ccApproved {
+  }
+  netsuite.customerRefundApplyList applyList {
+  }
+  netsuite.customerRefundDepositList depositList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.recordRef payeeAddressList {
+  }
+  netsuite.address payeeAddress {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

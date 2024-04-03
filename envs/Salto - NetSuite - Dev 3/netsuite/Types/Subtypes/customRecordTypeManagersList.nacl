@@ -1,0 +1,11 @@
+type netsuite.customRecordTypeManagersList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordTypeManagers>" managers {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

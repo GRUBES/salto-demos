@@ -1,0 +1,42 @@
+type netsuite.inventoryTransfer {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string tranDate {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string tranId {
+  }
+  string memo {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.location transferLocation {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.inventoryTransferInventoryList inventoryList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

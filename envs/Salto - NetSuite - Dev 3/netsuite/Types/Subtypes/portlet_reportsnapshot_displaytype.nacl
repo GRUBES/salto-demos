@@ -1,0 +1,9 @@
+type netsuite.portlet_reportsnapshot_displaytype is string {
+  _restriction = {
+    values = [
+      "GRAPH",
+      "LIST",
+    ]
+    enforce_value = false
+  }
+}

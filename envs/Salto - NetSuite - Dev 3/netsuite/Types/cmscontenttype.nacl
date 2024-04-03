@@ -1,0 +1,54 @@
+type netsuite.cmscontenttype {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custcontenttype[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  string customrecordid {
+    _required = true
+  }
+  string description {
+  }
+  string iconimagepath {
+  }
+  string application_id {
+  }
+  _alias = "CMS Content Type"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}

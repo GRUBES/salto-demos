@@ -1,0 +1,63 @@
+type netsuite.advancedpdftemplate {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custtmpl[0-9a-z_]+"
+    }
+  }
+  netsuite.advancedpdftemplate_standard standard {
+    isAttribute = true
+  }
+  string title {
+    _required = true
+  }
+  string description {
+  }
+  boolean displaysourcecode {
+  }
+  boolean preferred {
+  }
+  
+  string trantype {
+  }
+  string printtype {
+  }
+  string savedsearch {
+  }
+  string recordtype {
+  }
+  netsuite.fileContent content {
+    additionalFileSuffix = "xml"
+  }
+  string application_id {
+  }
+  _alias = "Advanced PDF Template"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}

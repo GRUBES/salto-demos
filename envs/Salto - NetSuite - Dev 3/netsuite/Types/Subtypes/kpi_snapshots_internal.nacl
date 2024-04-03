@@ -1,0 +1,39 @@
+type netsuite.kpi_snapshots_internal is string {
+  _restriction = {
+    values = [
+      "ACCTUPTIME",
+      "AGGREGATEDBOOKINGS",
+      "BOOKINGS",
+      "CARTABANDON",
+      "CHECKOUTABANDON",
+      "CURRENTLOGGEDINUSERS",
+      "CUSTOMERSWON",
+      "EMPLOYEES",
+      "ETECASEEOVERFIVE",
+      "ETECASEEOVERTWO",
+      "ETECASEVOVERFIVE",
+      "ETECASEVOVERTWO",
+      "ETECUSTEOVERFIVE",
+      "ETECUSTEOVERTWO",
+      "ETECUSTVOVERFIVE",
+      "ETECUSTVOVERTWO",
+      "ETESOEOVERFIVE",
+      "ETESOEOVERTWO",
+      "ETESOVOVERFIVE",
+      "ETESOVOVERTWO",
+      "NEWBUSINESS",
+      "NEWBUSINESSORD",
+      "NEWCUSTOMERS",
+      "NEWCUSTOMERSORD",
+      "ORDERS",
+      "PAGETIMESOVERFIVE",
+      "PAGETIMESOVERTWO",
+      "RPAGETIMESOVERFIVE",
+      "RPAGETIMESOVERTWO",
+      "SPAGETIMESOVERFIVE",
+      "SPAGETIMESOVERTWO",
+      "VENDORBALANCE",
+    ]
+    enforce_value = false
+  }
+}

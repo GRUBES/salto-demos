@@ -1,0 +1,11 @@
+type netsuite.partnerTaxRegistrationList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.partnerTaxRegistration>" partnerTaxRegistration {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

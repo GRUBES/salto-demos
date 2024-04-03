@@ -1,0 +1,12 @@
+netsuite.folder Templates_PDF_Templates@ds {
+  description = "PDF Templates Folder"
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/PDF Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "PDF Templates"
+  isInactive = false
+}

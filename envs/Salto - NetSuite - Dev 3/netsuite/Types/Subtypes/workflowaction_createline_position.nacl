@@ -1,0 +1,9 @@
+type netsuite.workflowaction_createline_position is string {
+  _restriction = {
+    values = [
+      "AFTERLASTLINE",
+      "BEFOREFIRSTLINE",
+    ]
+    enforce_value = false
+  }
+}

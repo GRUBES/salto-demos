@@ -1,0 +1,34 @@
+type netsuite.csvimports_transactionformrecordtypes is string {
+  _restriction = {
+    values = [
+      "ADVINTERCOMPANYJOURNALENTRY",
+      "CASHSALE",
+      "CHECK",
+      "CREDITCARDCHARGE",
+      "CREDITMEMO",
+      "CUSTOMERPAYMENT",
+      "ESTIMATE",
+      "EXPENSEREPORT",
+      "INTERCOMPANYJOURNALENTRY",
+      "INVENTORYADJUSTMENT",
+      "INVENTORYCOSTREVALUATION",
+      "INVENTORYTRANSFER",
+      "INVOICE",
+      "JOURNALENTRY",
+      "OPPORTUNITY",
+      "ORDERRESERVATION",
+      "PERIODENDJOURNAL",
+      "PURCHASEORDER",
+      "RETURNAUTHORIZATION",
+      "SALESORDER",
+      "STATISTICALJOURNALENTRY",
+      "TRANSFERORDER",
+      "VENDORBILL",
+      "VENDORCREDIT",
+      "VENDORPAYMENT",
+      "VENDORPREPAYMENT",
+      "VENDORRETURNAUTHORIZATION",
+    ]
+    enforce_value = false
+  }
+}

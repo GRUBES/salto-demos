@@ -1,0 +1,8 @@
+type netsuite.allrecord_script_deployment_recordtype is string {
+  _restriction = {
+    values = [
+      "RECORD",
+    ]
+    enforce_value = false
+  }
+}

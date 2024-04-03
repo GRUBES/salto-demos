@@ -1,0 +1,26 @@
+type netsuite.customerRefundApply {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string applyDate {
+  }
+  string type {
+  }
+  string refNum {
+  }
+  number total {
+  }
+  number due {
+  }
+  string currency {
+  }
+  number amount {
+  }
+}

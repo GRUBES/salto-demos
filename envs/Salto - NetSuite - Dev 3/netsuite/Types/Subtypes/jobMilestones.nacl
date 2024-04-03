@@ -1,0 +1,16 @@
+type netsuite.jobMilestones {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string milestoneName {
+  }
+  string milestoneOrder {
+  }
+  string milestoneEstComplete {
+  }
+  boolean milestoneCompleted {
+  }
+  string milestoneComments {
+  }
+}

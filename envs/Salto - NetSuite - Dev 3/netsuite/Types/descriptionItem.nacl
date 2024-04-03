@@ -1,0 +1,58 @@
+type netsuite.descriptionItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string description {
+  }
+  boolean includeChildren {
+  }
+  netsuite.recordRef customForm {
+  }
+  serviceid itemId {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  boolean isInactive {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  _alias = "Description Item"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

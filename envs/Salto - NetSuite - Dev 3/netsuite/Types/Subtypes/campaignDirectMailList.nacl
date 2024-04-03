@@ -1,0 +1,11 @@
+type netsuite.campaignDirectMailList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.campaignDirectMail>" campaignDirectMail {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

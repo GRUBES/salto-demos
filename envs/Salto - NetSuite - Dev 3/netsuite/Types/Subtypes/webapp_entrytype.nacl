@@ -1,0 +1,14 @@
+type netsuite.webapp_entrytype is string {
+  _restriction = {
+    values = [
+      "CART",
+      "CHECKOUT",
+      "CUSTCENTER",
+      "HOMEPAGE",
+      "LOGIN",
+      "LOGOUT",
+      "REGISTER",
+    ]
+    enforce_value = false
+  }
+}

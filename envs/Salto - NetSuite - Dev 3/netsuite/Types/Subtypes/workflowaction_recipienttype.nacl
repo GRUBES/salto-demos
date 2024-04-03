@@ -1,0 +1,11 @@
+type netsuite.workflowaction_recipienttype is string {
+  _restriction = {
+    values = [
+      "ADDRESS",
+      "CURRENTRECORD",
+      "FIELD",
+      "SPECIFIC",
+    ]
+    enforce_value = false
+  }
+}

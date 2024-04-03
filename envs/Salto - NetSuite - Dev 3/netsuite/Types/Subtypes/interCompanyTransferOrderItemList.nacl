@@ -1,0 +1,11 @@
+type netsuite.interCompanyTransferOrderItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.interCompanyTransferOrderItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

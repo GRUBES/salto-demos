@@ -1,0 +1,32 @@
+netsuite.entitycustomfield custentity_tufin_demoz {
+  scriptid = "custentity_tufin_demoz"
+  accesslevel = "2"
+  appliestocontact = false
+  appliestocustomer = false
+  appliestoemployee = false
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "HELP"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "TufinDemoEntityField (2)"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = false
+  _alias = "TufinDemoEntityField (2)"
+}

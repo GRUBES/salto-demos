@@ -1,0 +1,117 @@
+type netsuite.financiallayout {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^customlayout[0-9a-z_]+"
+    }
+  }
+  string layout {
+    _required = true
+  }
+  string name {
+    _required = true
+  }
+  netsuite.financiallayout_dependencies dependencies {
+  }
+  "List<netsuite.financiallayout_rows>" rows {
+  }
+  netsuite.financiallayout_fields flags {
+  }
+  _alias = "Financial Layout"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
+}
+type netsuite.financiallayout_rows {
+  number FIELD_KEY {
+  }
+  string FIELD_NAME {
+  }
+  string KEY_SCRIPT_ID {
+  }
+  string FIELD_TYPE {
+  }
+  number FIELD_PRIORITY {
+  }
+  number SEQ_NUMBER {
+  }
+  number KEY_PARENT {
+  }
+  string FIELD_DEFAULT_TOTAL_NAME {
+  }
+  boolean FLAG_SHOW_NAME {
+  }
+  boolean FLAG_SHOW_TOTAL_NAME {
+  }
+  string FIELD_COLLAPSED_SECTION {
+  }
+  string FIELD_FINANCIAL_MARKER {
+  }
+  number KEY_STYLE {
+  }
+  boolean FLAG_SECTION_USE_EXPRESSIONS {
+  }
+  number KEY_SECTION {
+  }
+  string KEY_SECTION_COMP_ID {
+  }
+  number KEY_TOTAL_STYLE {
+  }
+  number KEY_BODY_STYLE {
+  }
+  boolean FLAG_TOP_ROW {
+  }
+  "List<netsuite.financiallayout_rowRecord>" RECORDS {
+  }
+}
+type netsuite.financiallayout_dependencies {
+  string dependency {
+    _required = true
+  }
+}
+type netsuite.financiallayout_fields {
+  number FIELD_KEY {
+  }
+  string KEY_SCRIPT_ID {
+  }
+  string KEY_PACKAGE {
+  }
+  string FIELD_NAME {
+  }
+  string FIELD_FINANCIAL_TYPE {
+  }
+  string FIELD_EXPAND_LEVEL {
+  }
+  string FIELD_OVERALL_INDENT {
+  }
+  number KEY_DEFAULT_HEADER_STYLE {
+  }
+  number KEY_DEFAULT_SECTION_STYLE {
+  }
+  number KEY_DEFAULT_FORMULA_STYLE {
+  }
+  number KEY_DEFAULT_TEXT_STYLE {
+  }
+}
+type netsuite.financiallayout_rowRecord {
+  string FIELD_GROUP_BY {
+  }
+  boolean FIELD_GROUP_BY_FULL {
+  }
+  number FIELD_ORDER_GROUP {
+  }
+  string FIELD_ORDER_TYPE {
+  }
+  boolean FLAG_ORDER_DESC {
+  }
+}

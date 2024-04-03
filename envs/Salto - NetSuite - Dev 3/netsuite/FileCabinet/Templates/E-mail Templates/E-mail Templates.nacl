@@ -1,0 +1,12 @@
+netsuite.folder Templates_E_mail_Templates@dbs {
+  description = "E-mail Templates Folder"
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/E-mail Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "E-mail Templates"
+  isInactive = false
+}

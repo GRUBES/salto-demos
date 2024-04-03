@@ -1,0 +1,11 @@
+type netsuite.statisticalJournalEntryLineList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.statisticalJournalEntryLine>" statisticalJournalEntryLine {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

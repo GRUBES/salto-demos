@@ -1,0 +1,11 @@
+type netsuite.campaignEventList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.campaignEvent>" campaignEvent {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

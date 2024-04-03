@@ -1,0 +1,14 @@
+type netsuite.customsegment_items_application_id is string {
+  _restriction = {
+    values = [
+      "ASSEMBLYITEM",
+      "INVENTORYITEM",
+      "ITEMGROUP",
+      "KITITEM",
+      "NONINVENTORYITEM",
+      "OTHERCHARGEITEM",
+      "SERVICEITEM",
+    ]
+    enforce_value = false
+  }
+}

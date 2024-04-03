@@ -1,0 +1,62 @@
+type netsuite.itemReceipt {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  number exchangeRate {
+  }
+  netsuite.recordRef entity {
+  }
+  string currencyName {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.recordRef createdFrom {
+  }
+  string tranDate {
+  }
+  netsuite.partner partner {
+    isReference = true
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string tranId {
+  }
+  netsuite.inboundShipment inboundShipment {
+    isReference = true
+  }
+  string memo {
+  }
+  netsuite.itemFulfillment itemFulfillment {
+    isReference = true
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  unknown landedCostMethod {
+  }
+  boolean landedCostPerLine {
+  }
+  netsuite.itemReceiptItemList itemList {
+  }
+  netsuite.itemReceiptExpenseList expenseList {
+  }
+  netsuite.purchLandedCostList landedCostsList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

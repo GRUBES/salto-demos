@@ -1,0 +1,34 @@
+type netsuite.statisticalJournalEntryLine {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  number line {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef scheduleNum {
+  }
+  number debit {
+  }
+  string memo {
+  }
+  netsuite.recordRef entity {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.recordRef lineUnit {
+  }
+  string previewDebit {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

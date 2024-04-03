@@ -1,0 +1,84 @@
+type netsuite.purchaseOrderItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  number line {
+  }
+  number quantityOnShipments {
+  }
+  string vendorName {
+  }
+  number quantityReceived {
+  }
+  number quantityBilled {
+  }
+  number quantityAvailable {
+  }
+  number quantityOnHand {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  number quantity {
+  }
+  number tax1Amt {
+  }
+  number grossAmt {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string serialNumbers {
+  }
+  string description {
+  }
+  netsuite.recordRef purchaseContract {
+  }
+  string rate {
+  }
+  number amount {
+  }
+  netsuite.customFieldList options {
+  }
+  number taxAmount {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.recordRef landedCostCategory {
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  boolean isBillable {
+  }
+  unknown billVarianceStatus {
+  }
+  boolean matchBillToReceipt {
+  }
+  string expectedReceiptDate {
+  }
+  boolean isClosed {
+  }
+  string taxDetailsReference {
+  }
+  netsuite.recordRef createdFrom {
+  }
+  netsuite.recordRefList linkedOrderList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

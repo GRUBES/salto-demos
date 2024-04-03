@@ -1,0 +1,11 @@
+type netsuite.paymentMethodVisualsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.paymentMethodVisuals>" paymentMethodVisuals {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

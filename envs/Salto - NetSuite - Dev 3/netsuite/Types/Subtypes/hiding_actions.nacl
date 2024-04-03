@@ -1,0 +1,9 @@
+type netsuite.hiding_actions is string {
+  _restriction = {
+    values = [
+      "HIDE",
+      "UNHIDE",
+    ]
+    enforce_value = false
+  }
+}

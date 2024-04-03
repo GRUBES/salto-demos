@@ -1,0 +1,28 @@
+type netsuite.generic_entity_tab is string {
+  _restriction = {
+    values = [
+      "ENTITYACCESS",
+      "ENTITYACCOUNTING",
+      "ENTITYBUDGET",
+      "ENTITYCOMMUNICATION",
+      "ENTITYCOMPENSATIONTRACKING",
+      "ENTITYFINANCIAL",
+      "ENTITYGENERAL",
+      "ENTITYHUMANRESOURCES",
+      "ENTITYINFO",
+      "ENTITYMAIN",
+      "ENTITYMARKETING",
+      "ENTITYPL",
+      "ENTITYPREFERENCES",
+      "ENTITYQUALIFICATION",
+      "ENTITYRELATEDRECORDS",
+      "ENTITYRELATIONSHIPS",
+      "ENTITYSALES",
+      "ENTITYSUBSCRIPTIONS",
+      "ENTITYSUPPORT",
+      "ENTITYTIMEOFF",
+      "ENTITYTIMETRACKING",
+    ]
+    enforce_value = false
+  }
+}

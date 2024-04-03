@@ -1,0 +1,11 @@
+type netsuite.accountingPeriodFiscalCalendarsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.accountingPeriodFiscalCalendars>" accountingPeriodFiscalCalendars {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

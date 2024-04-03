@@ -1,0 +1,98 @@
+type netsuite.sspapplication {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^webapp[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  netsuite.plugintype_status status {
+    _required = true
+  }
+  string rootpath {
+    _required = true
+  }
+  string appfolder {
+    _required = true
+  }
+  string runtimeversion {
+    _required = true
+  }
+  string description {
+  }
+  
+  netsuite.plugintype_loglevel loglevel {
+  }
+  boolean systemdomain {
+  }
+  string defaultsspfile {
+  }
+  netsuite.sspapplication_entrypoints entrypoints {
+  }
+  netsuite.sspapplication_libraries libraries {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "SSP Application"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
+}
+type netsuite.sspapplication_entrypoints_entrypoint {
+  netsuite.webapp_entrytype entrytype {
+    _required = true
+  }
+  string entryitem {
+    _required = true
+  }
+  string entryparameter {
+  }
+}
+type netsuite.sspapplication_entrypoints {
+  "List<netsuite.sspapplication_entrypoints_entrypoint>" entrypoint {
+  }
+}
+type netsuite.sspapplication_libraries_library {
+  string scriptfile {
+    _required = true
+  }
+}
+type netsuite.sspapplication_libraries {
+  "List<netsuite.sspapplication_libraries_library>" library {
+  }
+}

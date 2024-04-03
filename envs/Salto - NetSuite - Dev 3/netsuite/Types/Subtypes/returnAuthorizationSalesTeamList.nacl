@@ -1,0 +1,11 @@
+type netsuite.returnAuthorizationSalesTeamList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.returnAuthorizationSalesTeam>" salesTeam {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,11 @@
+type netsuite.customRecordTypeParentsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordTypeParents>" parents {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

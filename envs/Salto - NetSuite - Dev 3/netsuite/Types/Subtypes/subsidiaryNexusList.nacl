@@ -1,0 +1,11 @@
+type netsuite.subsidiaryNexusList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.subsidiaryNexus>" nexus {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,11 @@
+type netsuite.customListCustomValueList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customListCustomValue>" customValue {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

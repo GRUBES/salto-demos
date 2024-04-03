@@ -1,0 +1,98 @@
+type netsuite.customRecordCustomField {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  unknown fieldType {
+  }
+  string scriptId {
+  }
+  string label {
+  }
+  netsuite.recordRef owner {
+  }
+  string description {
+  }
+  netsuite.recordRef selectRecordType {
+  }
+  boolean storeValue {
+  }
+  boolean showInList {
+  }
+  boolean globalSearch {
+  }
+  boolean isParent {
+  }
+  netsuite.recordRef insertBefore {
+  }
+  netsuite.recordRef subtab {
+  }
+  unknown displayType {
+  }
+  number displayWidth {
+  }
+  number displayHeight {
+  }
+  string help {
+  }
+  netsuite.recordRef parentSubtab {
+  }
+  string linkText {
+  }
+  boolean isMandatory {
+  }
+  boolean checkSpelling {
+  }
+  number maxLength {
+  }
+  number minValue {
+  }
+  number maxValue {
+  }
+  boolean defaultChecked {
+  }
+  string defaultValue {
+  }
+  boolean isFormula {
+  }
+  netsuite.recordRef defaultSelection {
+  }
+  unknown dynamicDefault {
+  }
+  netsuite.recordRef searchDefault {
+  }
+  netsuite.recordRef searchCompareField {
+  }
+  netsuite.recordRef sourceList {
+  }
+  netsuite.recordRef sourceFrom {
+  }
+  netsuite.recordRef sourcefilterby {
+  }
+  netsuite.recordRef customSegment {
+  }
+  string recType {
+  }
+  boolean roleRestrict {
+  }
+  netsuite.customRecordCustomFieldFilterList filterList {
+  }
+  unknown accessLevel {
+  }
+  unknown searchLevel {
+  }
+  netsuite.customFieldRoleAccessList roleAccessList {
+  }
+  netsuite.customFieldDepartmentAccessList deptAccessList {
+  }
+  netsuite.customFieldSubAccessList subAccessList {
+  }
+  netsuite.customFieldTranslationsList translationsList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,11 @@
+type netsuite.phoneCallContactList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.phoneCallContact>" contact {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

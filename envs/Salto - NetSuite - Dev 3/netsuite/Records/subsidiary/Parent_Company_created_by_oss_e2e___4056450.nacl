@@ -1,0 +1,31 @@
+netsuite.subsidiary Parent_Company_created_by_oss_e2e___4056450@sussssbs {
+  name = "created by oss e2e - 4056450"
+  parent = netsuite.subsidiary.instance.Parent_Company@s
+  isInactive = false
+  showSubsidiaryName = false
+  state = "AZ"
+  country = "_unitedStates"
+  mainAddress = {
+    country = "_uSMinorOutlyingIslands"
+    addressee = "testSub"
+    state = "AZ"
+    addrText = "testSub<br>AZ <br>United States Minor Outlying Islands"
+    override = false
+  }
+  isElimination = false
+  currency = netsuite.currency.instance.USA
+  edition = "US"
+  nexusList = {
+    nexus = [
+      {
+        nexusId = netsuite.nexus.instance._unitedStates_Arizona
+        country = "US"
+      },
+    ]
+  }
+  checkLayout = {
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
+  }
+  identifier = "Parent Company_created by oss e2e - 4056450"
+  _alias = "created by oss e2e - 4056450"
+}

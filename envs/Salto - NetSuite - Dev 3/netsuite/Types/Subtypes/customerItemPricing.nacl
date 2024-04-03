@@ -1,0 +1,15 @@
+type netsuite.customerItemPricing {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  netsuite.recordRef level {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number price {
+  }
+}

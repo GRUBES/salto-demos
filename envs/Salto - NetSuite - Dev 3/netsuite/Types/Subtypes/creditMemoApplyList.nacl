@@ -1,0 +1,11 @@
+type netsuite.creditMemoApplyList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.creditMemoApply>" apply {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

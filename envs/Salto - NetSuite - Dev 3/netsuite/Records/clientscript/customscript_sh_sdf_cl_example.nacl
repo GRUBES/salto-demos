@@ -1,0 +1,53 @@
+netsuite.clientscript customscript_sh_sdf_cl_example {
+  scriptid = "customscript_sh_sdf_cl_example"
+  description = "Example script to be imported into the SDF Project for Lesson 4 of the SuiteHub SDF Course."
+  
+  name = "SDF Course - Lesson 4 - Example CL"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_sdf_course_lesson_4_sh_sdf_cl_example_js@dbdbduuuv.path
+  scriptcustomfields = {
+    scriptcustomfield = {
+      custscript_sh_sdf_eom = {
+        scriptid = "custscript_sh_sdf_eom"
+        accesslevel = "2"
+        applyformatting = false
+        checkspelling = false
+        defaultchecked = false
+        defaultselection = "[ACCOUNT_SPECIFIC_VALUE]"
+        description = "Yay!"
+        displaytype = "NORMAL"
+        fieldtype = "SELECT"
+        help = "Job well done!!"
+        isformula = false
+        ismandatory = false
+        label = "Employee of the Month"
+        onparentdelete = "SET_NULL"
+        searchlevel = "2"
+        selectrecordtype = "-4"
+        storevalue = true
+        index = 0
+      }
+    }
+  }
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploy_sh_sdf_cl_example = {
+        scriptid = "customdeploy_sh_sdf_cl_example"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        custscript_sh_sdf_eom = "[ACCOUNT_SPECIFIC_VALUE]"
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|RESTWEBSERVICES|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "CALENDAREVENT"
+        status = "TESTING"
+      }
+    }
+  }
+  _alias = "SDF Course - Lesson 4 - Example CL"
+  isInactive = false
+}

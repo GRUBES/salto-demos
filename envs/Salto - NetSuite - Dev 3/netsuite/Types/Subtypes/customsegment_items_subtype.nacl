@@ -1,0 +1,10 @@
+type netsuite.customsegment_items_subtype is string {
+  _restriction = {
+    values = [
+      "BOTH",
+      "PURCHASE",
+      "SALE",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,17 @@
+netsuite.bundle bundle_245955 {
+  id = "245955"
+  name = "SuiteCloud Development Integration"
+  version = "1.00.0"
+  isManaged = false
+  dateInstalled = "2021-08-16T14:53:43.000Z"
+  installedFrom = "Production"
+  publisher = {
+    id = "5232642"
+    name = "NetSuite Platform Solutions Group - SuiteCloud Development Integration"
+  }
+  installedBy = {
+    id = -5
+    name = "Omri Litvak"
+  }
+  _alias = "SuiteCloud Development Integration"
+}

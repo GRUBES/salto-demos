@@ -1,0 +1,91 @@
+type netsuite.issue {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string issueNumber {
+  }
+  netsuite.recordRef issueType {
+  }
+  netsuite.recordRef product {
+  }
+  netsuite.recordRef module {
+  }
+  netsuite.recordRef item {
+  }
+  netsuite.recordRef productTeam {
+  }
+  netsuite.recordRef source {
+  }
+  netsuite.recordRef reportedBy {
+  }
+  netsuite.recordRef reproduce {
+  }
+  netsuite.recordRef versionBroken {
+  }
+  netsuite.recordRef buildBroken {
+  }
+  netsuite.recordRef versionTarget {
+  }
+  netsuite.recordRef buildTarget {
+  }
+  netsuite.recordRef versionFixed {
+  }
+  netsuite.recordRef buildFixed {
+  }
+  netsuite.recordRef severity {
+  }
+  netsuite.recordRef priority {
+  }
+  boolean isShowStopper {
+  }
+  netsuite.recordRef assigned {
+  }
+  netsuite.recordRef reviewer {
+  }
+  boolean isReviewed {
+  }
+  netsuite.recordRef issueStatus {
+  }
+  netsuite.recordRefList issueTagsList {
+  }
+  string issueAbstract {
+  }
+  string newDetails {
+  }
+  boolean isOwner {
+  }
+  unknown trackCode {
+  }
+  boolean emailAssignee {
+  }
+  netsuite.emailEmployeesList emailEmployeesList {
+  }
+  netsuite.recordRefList emailCellsList {
+  }
+  string externalAbstract {
+  }
+  string externalDetails {
+  }
+  netsuite.issueVersionList brokenInVersionList {
+  }
+  netsuite.issueVersionList targetVersionList {
+  }
+  netsuite.issueVersionList fixedInVersionList {
+  }
+  netsuite.issueRelatedIssuesList relatedIssuesList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

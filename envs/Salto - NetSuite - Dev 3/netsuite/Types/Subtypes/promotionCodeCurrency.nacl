@@ -1,0 +1,11 @@
+type netsuite.promotionCodeCurrency {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number minimumOrderAmount {
+  }
+}

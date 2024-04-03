@@ -1,0 +1,8 @@
+type netsuite.dimensionList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.dimensionRef>" dimension {
+  }
+}

@@ -1,0 +1,11 @@
+type netsuite.promotionCodeCurrencyList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.promotionCodeCurrency>" currency {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

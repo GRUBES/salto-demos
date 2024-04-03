@@ -1,0 +1,14 @@
+type netsuite.customFieldTranslations {
+  annotations {
+    hidden_string source {
+    }
+  }
+  unknown locale {
+  }
+  string localeDescription {
+  }
+  string label {
+  }
+  string help {
+  }
+}

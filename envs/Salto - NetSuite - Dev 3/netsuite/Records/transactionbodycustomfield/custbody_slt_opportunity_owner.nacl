@@ -1,0 +1,54 @@
+netsuite.transactionbodycustomfield custbody_slt_opportunity_owner {
+  scriptid = "custbody_slt_opportunity_owner"
+  accesslevel = "2"
+  applyformatting = false
+  bodycustomerpayment = false
+  bodydeposit = false
+  bodydepositapplication = false
+  bodyexpensereport = false
+  bodyinventoryadjustment = false
+  bodyitemfulfillment = false
+  bodyitemfulfillmentorder = false
+  bodyitemreceipt = false
+  bodyitemreceiptorder = false
+  bodyjournal = false
+  bodyopportunity = false
+  bodyothertransaction = false
+  bodypickingticket = false
+  bodyprintflag = false
+  bodyprintpackingslip = false
+  bodyprintstatement = false
+  bodypurchase = false
+  bodysale = true
+  bodytransferorder = false
+  bodyvendorpayment = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "SELECT"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Opportunity owner"
+  onparentdelete = "SET_NULL"
+  searchlevel = "2"
+  selectrecordtype = "-4"
+  showhierarchy = false
+  showinlist = true
+  storevalue = true
+  subtab = "TRANSACTIONMAIN"
+  customfieldfilters = {
+    customfieldfilter = {
+      STDENTITYEMPLOYEESTATUS = {
+        fldfilter = "STDENTITYEMPLOYEESTATUS"
+        fldfiltercomparetype = "EQ"
+        fldfilternotnull = false
+        fldfilternull = true
+        index = 0
+      }
+    }
+  }
+  _alias = "Opportunity owner"
+}

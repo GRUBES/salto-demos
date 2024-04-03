@@ -1,0 +1,9 @@
+type netsuite.role_restrict is string {
+  _restriction = {
+    values = [
+      "EDIT",
+      "VIEWANDEDIT",
+    ]
+    enforce_value = false
+  }
+}

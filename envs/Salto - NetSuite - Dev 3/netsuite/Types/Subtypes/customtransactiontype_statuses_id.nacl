@@ -1,0 +1,31 @@
+type netsuite.customtransactiontype_statuses_id is string {
+  _restriction = {
+    values = [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P",
+      "Q",
+      "R",
+      "S",
+      "T",
+      "U",
+      "W",
+      "X",
+      "Z",
+    ]
+    enforce_value = false
+  }
+}

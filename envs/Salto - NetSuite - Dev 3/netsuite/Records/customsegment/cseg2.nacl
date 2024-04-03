@@ -1,0 +1,26 @@
+netsuite.customsegment cseg2 {
+  scriptid = "cseg2"
+  defaultrecordaccesslevel = "VIEW"
+  defaultsearchaccesslevel = "EDIT"
+  displaytype = "NORMAL"
+  fieldtype = "SELECT"
+  hasglimpact = false
+  ismandatory = false
+  label = "Region"
+  recordtype = netsuite.customrecord_cseg2.attr.scriptid
+  valuesdisplayorder = "SUBLIST"
+  segmentapplication = {
+    items = {
+      subtype = "BOTH"
+    }
+  }
+  permissions = {
+    permission = {
+      customrole1003 = {
+        role = netsuite.role.instance.customrole1003.scriptid
+        valuemgmtaccesslevel = "FULL"
+      }
+    }
+  }
+  _alias = "Region"
+}

@@ -1,0 +1,10 @@
+type netsuite.price {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number value {
+  }
+  number quantity {
+  }
+}

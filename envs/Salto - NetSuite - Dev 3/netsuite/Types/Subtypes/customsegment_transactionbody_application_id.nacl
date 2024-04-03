@@ -1,0 +1,26 @@
+type netsuite.customsegment_transactionbody_application_id is string {
+  _restriction = {
+    values = [
+      "ASSEMBLYBUILD",
+      "CUSTOMERPAYMENT",
+      "DEPOSIT",
+      "EXPENSEREPORT",
+      "INVENTORYADJUSTMENT",
+      "ITEMFULFILLMENT",
+      "ITEMRECEIPT",
+      "JOURNALENTRY",
+      "OPPORTUNITY",
+      "OTHERTRANSACTION",
+      "PAYCHECKJOURNAL",
+      "PERIODENDJOURNAL",
+      "PURCHASE",
+      "REVENUEARRANGEMENT",
+      "SALE",
+      "STORE",
+      "TEGATA",
+      "TRANSFERORDER",
+      "VENDORPAYMENT",
+    ]
+    enforce_value = false
+  }
+}

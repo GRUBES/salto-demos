@@ -1,0 +1,211 @@
+type netsuite.transactioncolumncustomfield {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custcol[0-9a-z_]+"
+    }
+  }
+  netsuite.generic_customfield_fieldtype fieldtype {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  string selectrecordtype {
+  }
+  boolean applyformatting {
+  }
+  boolean defaultchecked {
+  }
+  string defaultselection {
+  }
+  string defaultvalue {
+  }
+  string description {
+  }
+  netsuite.generic_customfield_displaytype displaytype {
+  }
+  netsuite.generic_customfield_dynamicdefault dynamicdefault {
+  }
+  string help {
+  }
+  string linktext {
+  }
+  string minvalue {
+  }
+  string maxvalue {
+  }
+  boolean storevalue {
+  }
+  netsuite.generic_accesslevel_searchlevel accesslevel {
+  }
+  boolean encryptatrest {
+  }
+  number displayheight {
+  }
+  number displaywidth {
+  }
+  boolean isformula {
+  }
+  boolean ismandatory {
+  }
+  string maxlength {
+  }
+  netsuite.generic_customfield_onparentdelete onparentdelete {
+  }
+  netsuite.generic_standard_field searchcomparefield {
+  }
+  string searchdefault {
+  }
+  netsuite.generic_accesslevel_searchlevel searchlevel {
+  }
+  boolean showhierarchy {
+  }
+  string sourcefilterby {
+  }
+  string sourcefrom {
+  }
+  string sourcelist {
+  }
+  boolean colbuild {
+  }
+  boolean colexpense {
+  }
+  boolean colexpensereport {
+  }
+  boolean colgrouponinvoices {
+  }
+  boolean colinventoryadjustment {
+  }
+  boolean colfulfillmentrequest {
+  }
+  boolean colstorepickup {
+  }
+  boolean colitemfulfillment {
+  }
+  string colitemfulfillmentorder {
+  }
+  boolean colitemreceipt {
+  }
+  string colitemreceiptorder {
+  }
+  boolean coljournal {
+  }
+  boolean colperiodendjournal {
+  }
+  boolean colkititem {
+  }
+  boolean colopportunity {
+  }
+  boolean colpackingslip {
+  }
+  boolean colpaycheckcompanycontribution {
+  }
+  boolean colpaycheckcompanytax {
+  }
+  boolean colpaycheckdeduction {
+  }
+  boolean colpaycheckearning {
+  }
+  boolean colpaycheckemployeetax {
+  }
+  boolean colpickingticket {
+  }
+  boolean colprintflag {
+  }
+  boolean colpurchase {
+  }
+  boolean colreturnform {
+  }
+  boolean colsale {
+  }
+  boolean colstore {
+  }
+  boolean colstorehidden {
+  }
+  boolean colstorewithgroups {
+  }
+  boolean coltime {
+  }
+  boolean coltransferorder {
+  }
+  string columncustomtransactions {
+  }
+  netsuite.transactioncolumncustomfield_customfieldfilters customfieldfilters {
+  }
+  netsuite.transactioncolumncustomfield_roleaccesses roleaccesses {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "Transaction Column Custom Field"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}
+type netsuite.transactioncolumncustomfield_customfieldfilters_customfieldfilter {
+  string fldfilter {
+    _required = true
+  }
+  boolean fldfilterchecked {
+  }
+  netsuite.generic_customfield_fldfiltercomparetype fldfiltercomparetype {
+  }
+  string fldfiltersel {
+  }
+  string fldfilterval {
+  }
+  boolean fldfilternotnull {
+  }
+  boolean fldfilternull {
+  }
+  string fldcomparefield {
+  }
+  number index {
+  }
+}
+type netsuite.transactioncolumncustomfield_customfieldfilters {
+  "Map<netsuite.transactioncolumncustomfield_customfieldfilters_customfieldfilter>" customfieldfilter {
+    map_key_field = "fldfilter"
+  }
+}
+type netsuite.transactioncolumncustomfield_roleaccesses_roleaccess {
+  string role {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel accesslevel {
+    _required = true
+  }
+  netsuite.generic_accesslevel_searchlevel searchlevel {
+    _required = true
+  }
+}
+type netsuite.transactioncolumncustomfield_roleaccesses {
+  "Map<netsuite.transactioncolumncustomfield_roleaccesses_roleaccess>" roleaccess {
+    map_key_field = "role"
+  }
+}

@@ -1,0 +1,11 @@
+type netsuite.paycheckPayDisburseList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.paycheckPayDisburse>" paycheckPayDisburse {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

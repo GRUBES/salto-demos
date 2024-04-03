@@ -1,0 +1,28 @@
+type netsuite.binWorksheet {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string tranDate {
+  }
+  string memo {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string tranId {
+  }
+  netsuite.binWorksheetItemList itemList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

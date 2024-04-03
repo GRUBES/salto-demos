@@ -1,0 +1,33 @@
+netsuite.role customrole_seggev_3 {
+  scriptid = "customrole_seggev_3"
+  centertype = "ACCOUNTCENTER"
+  coreadminpermission = false
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = false
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = false
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "seggev_3"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "OWN"
+  subsidiaryviewingallowed = false
+  tfaduration = "0"
+  tfarequired = "OFF"
+  permissions = {
+    permission = {
+      TRAN_AUDIT = {
+        permkey = "TRAN_AUDIT"
+        permlevel = "FULL"
+      }
+      LIST_OTHER_ADDRESS = {
+        permkey = "LIST_OTHER_ADDRESS"
+        permlevel = "FULL"
+      }
+    }
+  }
+  isInactive = false
+  _alias = "seggev_3"
+}

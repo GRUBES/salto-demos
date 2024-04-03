@@ -1,0 +1,90 @@
+type netsuite.vendorPayment {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  number balance {
+  }
+  netsuite.account apAcct {
+    isReference = true
+  }
+  netsuite.recordRef entity {
+  }
+  string tranDate {
+  }
+  netsuite.recordRef voidJournal {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  string currencyName {
+  }
+  number exchangeRate {
+  }
+  boolean toAch {
+  }
+  boolean toBePrinted {
+  }
+  boolean printVoucher {
+  }
+  string tranId {
+  }
+  number total {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  string memo {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string status {
+  }
+  string transactionNumber {
+  }
+  netsuite.vendorPaymentApplyList applyList {
+  }
+  netsuite.vendorPaymentCreditList creditList {
+  }
+  boolean billPay {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  number availableBalance {
+  }
+  boolean isInTransitPayment {
+  }
+  netsuite.recordRef approvalStatus {
+  }
+  netsuite.recordRef nextApprover {
+  }
+  netsuite.recordRef payeeAddressList {
+  }
+  netsuite.address payeeAddress {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

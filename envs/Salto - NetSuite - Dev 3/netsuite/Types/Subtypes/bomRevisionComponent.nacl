@@ -1,0 +1,25 @@
+type netsuite.bomRevisionComponent {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  string description {
+  }
+  number componentYield {
+  }
+  number bomQuantity {
+  }
+  unknown itemSource {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

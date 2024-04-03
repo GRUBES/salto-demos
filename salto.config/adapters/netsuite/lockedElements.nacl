@@ -1,0 +1,78 @@
+netsuite {
+  fetch = {
+    lockedElementsToExclude = {
+      fileCabinet = [
+      ]
+      types = [
+        {
+          name = "clientscript"
+          ids = [
+            "customscript_lsa_cs_custom_button",
+          ]
+        },
+        {
+          name = "customrecordtype"
+          ids = [
+            "customrecord_lsa",
+          ]
+        },
+        {
+          name = "entitycustomfield"
+          ids = [
+            "custentity_date_lsa",
+            "custentity_link_name_lsa",
+            "custentity_link_lsa",
+          ]
+        },
+        {
+          name = "massupdatescript"
+          ids = [
+            "customscript_lsa_massupdate",
+          ]
+        },
+        {
+          name = "savedsearch"
+          ids = [
+            "customsearch_lsa_contact_event_max_date",
+            "customsearch_lsa_opp_task_max_date",
+            "customsearch_lsa_customer",
+            "customsearch_lsa_sales_user_search",
+            "customsearch_lsa_contact_note_max_date",
+            "customsearch_lsa_contact_task_max_date",
+            "customsearch_lsa_opportunities",
+            "customsearch_lsa_cust_activity_max_date",
+            "customsearch_lsa_opp_note_max_date",
+            "customsearch_lsa_contact_call_max_date",
+            "customsearch_lsa_opp_message_max_date",
+            "customsearch_lsa_contact_msgfr_max_date",
+            "customsearch_lsa_contact_msgto_max_date",
+            "customsearch_lsa_opp_activity_max_date",
+            "customsearch_lsa_activity_max_date",
+            "customsearch_lsa_contacts",
+          ]
+        },
+        {
+          name = "suitelet"
+          ids = [
+            "customscript_lsa_sl_update_lsa",
+          ]
+        },
+        {
+          name = "transactionbodycustomfield"
+          ids = [
+            "custbody_link_lsa",
+            "custbody_date_lsa",
+            "custbody_link_name_lsa",
+          ]
+        },
+        {
+          name = "usereventscript"
+          ids = [
+            "customscript_lsa_ue_lead",
+            "customscript_lsa_ue_communication",
+          ]
+        },
+      ]
+    }
+  }
+}

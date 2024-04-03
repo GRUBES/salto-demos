@@ -1,0 +1,54 @@
+type netsuite.cashSaleExpCost {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string taxDetailsReference {
+  }
+  string billedDate {
+  }
+  string jobDisp {
+  }
+  string employeeDisp {
+  }
+  string categoryDisp {
+  }
+  string memo {
+  }
+  string department {
+  }
+  string class {
+  }
+  string location {
+  }
+  number originalAmount {
+  }
+  number amount {
+  }
+  number taxAmount {
+  }
+  string taxableDisp {
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string revRecStartDate {
+  }
+  string revRecEndDate {
+  }
+  number grossAmt {
+  }
+  number tax1Amt {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+}

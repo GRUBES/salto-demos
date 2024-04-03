@@ -1,0 +1,18 @@
+type netsuite.budgetCategory {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  boolean budgetType {
+  }
+  boolean isInactive {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+}

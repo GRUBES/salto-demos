@@ -1,0 +1,43 @@
+type netsuite.manufacturingCostTemplate {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  serviceid name {
+  }
+  string memo {
+  }
+  boolean isInactive {
+  }
+  netsuite.manufacturingCostDetailList costDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  _alias = "Manufacturing Cost Template"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

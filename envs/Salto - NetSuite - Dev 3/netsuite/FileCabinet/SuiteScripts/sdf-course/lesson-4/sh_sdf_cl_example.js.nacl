@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_sdf_course_lesson_4_sh_sdf_cl_example_js@dbdbduuuv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/sdf-course/lesson-4/sh_sdf_cl_example.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/sdf-course/lesson-4/sh_sdf_cl_example.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_sdf_course_lesson_4@dbdb,
+  ]
+  _alias = "sh_sdf_cl_example.js"
+  isInactive = false
+}

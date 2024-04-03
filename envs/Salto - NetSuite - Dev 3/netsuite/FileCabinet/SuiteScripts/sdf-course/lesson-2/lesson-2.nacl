@@ -1,0 +1,11 @@
+netsuite.folder SuiteScripts_sdf_course_lesson_2@dbdb {
+  bundleable = false
+  
+  isprivate = false
+  path = "/SuiteScripts/sdf-course/lesson-2"
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_sdf_course@db,
+  ]
+  _alias = "lesson-2"
+  isInactive = false
+}

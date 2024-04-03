@@ -1,0 +1,93 @@
+type netsuite.markupItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string description {
+  }
+  boolean nonPosting {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  boolean includeChildren {
+  }
+  string rate {
+  }
+  boolean isPreTax {
+  }
+  netsuite.recordRef customForm {
+  }
+  string itemId {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  string vendorName {
+  }
+  netsuite.markupItem parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.recordRef taxSchedule {
+  }
+  netsuite.account deferredRevenueAccount {
+    isReference = true
+  }
+  netsuite.account expenseAccount {
+    isReference = true
+  }
+  netsuite.account incomeAccount {
+    isReference = true
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  netsuite.recordRef salesTaxCode {
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Markup Item"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

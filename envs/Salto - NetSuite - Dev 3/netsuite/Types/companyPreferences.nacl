@@ -1,0 +1,427 @@
+settings netsuite.companyPreferences {
+  boolean BYPASS_BANKFEEDS_INSTALLED_CHECK {
+    label = "Bypass SuiteApp Marketplace installation requirement for BankFeeds App"
+    type = "checkbox"
+  }
+  boolean EMAILMAINTENANCECOMPLETE {
+    label = "Maintenance Complete Email Notification"
+    type = "checkbox"
+  }
+  boolean PERFORMANCELOGGING {
+    label = "Enable legacy SuiteScript performance logging"
+    type = "checkbox"
+  }
+  boolean ALLOWLANGUAGE_XX_US_WTHID {
+    label = "Allow User to Change to Pseudo Language with IDs"
+    type = "checkbox"
+  }
+  boolean SHOWINDIVIDUALSASCONTACTS {
+    label = "Show Individuals as Contacts"
+    type = "checkbox"
+  }
+  number FICONNECTIVITYACCTSTARTBUFFERDAYS {
+    label = "Number of days extra buffer to request as start of FI Connectivity transaction requests"
+    type = "integer"
+  }
+  number PASSWORDEXPIREDAYS {
+    label = "Password Expiration in Days"
+    type = "integer"
+  }
+  boolean COLLAPSEVSOEFIELDSET {
+    label = "Collapse VSOE Column by Default on Sales Transactions"
+    type = "checkbox"
+  }
+  netsuite.selectOption PHONEFORMAT {
+    label = "Phone Number Format"
+    type = "select"
+  }
+  boolean FREEFORMSTATES {
+    label = "Allow Free-Form States in Addresses"
+    type = "checkbox"
+  }
+  number FLP_CHECKS_LEGACY_SEARCH {
+    label = "Enable Field Access checking of standard fields in Legacy Search (0 - off, 1 - logging only, 2 - full control)"
+    type = "integer"
+  }
+  number MINPASSWORDLENGTH {
+    label = "Minimum Password Length"
+    type = "integer"
+  }
+  netsuite.selectOption subcustomerform {
+    label = "Preferred Subcustomer Form"
+    type = "select"
+  }
+  boolean ASSIGNTASKSTOPARTNERS {
+    label = "Assign Tasks to Partners"
+    type = "checkbox"
+  }
+  netsuite.selectOption ACCOUNT_LEVEL_SWITCH {
+    label = "Execute SuiteScript 2.x Server Scripts as"
+    type = "select"
+  }
+  boolean custscript_lsa_primary_sales_rep {
+    label = "Track Only Primary Sales Rep Activities"
+    type = "checkbox"
+  }
+  netsuite.selectOption CALENDARSYSTEM {
+    label = "Calendar System"
+    type = "select"
+  }
+  boolean HORIZONTALLABEL {
+    label = "Horizontal labels"
+    type = "checkbox"
+  }
+  netsuite.selectOption LONGDATEFORMAT {
+    label = "Long Date Format"
+    type = "select"
+  }
+  boolean DISABLE_CUSTOMER_SATISFACTION {
+    label = "Do not display customer satisfaction surveys"
+    type = "checkbox"
+  }
+  number BANK_IMPORT_SCHEDULE_MIN_TIME {
+    label = "Bank import schedule minimum time of day"
+    type = "integer"
+  }
+  boolean custscript_lsa_message {
+    label = "Messages"
+    type = "checkbox"
+  }
+  boolean custscript_lsa_marketingcampaign {
+    label = "Marketing Campaign"
+    type = "checkbox"
+  }
+  number MAXDROPDOWNSIZE {
+    label = "Maximum Entries in Dropdowns"
+    type = "integer"
+  }
+  number MAXREPORTROWS_BACKEND {
+    label = "Maximum number of rows allowed in a report running on backend"
+    type = "integer"
+  }
+  boolean LASTNAMEFIRST {
+    label = "Use Last Name First for Employees"
+    type = "checkbox"
+  }
+  boolean EMAILEMPLOYEEONAPPROVAL {
+    label = "Email Employee on Approvals"
+    type = "checkbox"
+  }
+  boolean FC_UI_HIDE_HIERARCHY_FOLDER_INFO {
+    label = "Hide File Cabinet Hierarchical Info"
+    type = "checkbox"
+  }
+  netsuite.selectOption NEGATIVE_NUMBER_FORMAT {
+    label = "Negative Number Format"
+    type = "select"
+  }
+  boolean INACTIVATE_CONTACTS {
+    label = "Auto Inactivate Contacts with Customers"
+    type = "checkbox"
+  }
+  boolean LASTNAMEFIRSTENTITIES {
+    label = "Use Last Name First for Entities"
+    type = "checkbox"
+  }
+  netsuite.selectOption CUSTOMLANDINGPAGE {
+    label = "Landing Page"
+    type = "select"
+  }
+  boolean CONTACTONBILLTO {
+    label = "Add Primary Contact to Bill To Address"
+    type = "checkbox"
+  }
+  netsuite.selectOption TIMEFORMAT {
+    label = "Time Format"
+    type = "select"
+  }
+  boolean ALLOWLANGUAGE_XX_US {
+    label = "Allow User to Change to Pseudo Language"
+    type = "checkbox"
+  }
+  boolean custscript_lsa_enable_manual_update {
+    label = "Enable LSA Manual Update"
+    type = "checkbox"
+  }
+  number custscript_lsa_activity_days_filter {
+    label = "Activity Duration Filter (days)"
+    type = "integer"
+  }
+  number MAXREPORTROWS {
+    label = "Maximum number of rows allowed in a report"
+    type = "integer"
+  }
+  number IDLE_SESSION_TIMEOUT {
+    label = "Idle Session Timeout In Minutes"
+    type = "integer"
+  }
+  netsuite.selectOption FIRSTDAYOFWEEK {
+    label = "First Day of Week"
+    type = "select"
+  }
+  boolean SHOWEMPLOYEESASCONTACTS {
+    label = "Show Employees as Contacts"
+    type = "checkbox"
+  }
+  boolean REPORTGRID {
+    label = "Show Reports in Grid"
+    type = "checkbox"
+  }
+  netsuite.selectOption FONT {
+    label = "Screen Font"
+    type = "select"
+  }
+  boolean AUTONOMOUS_ENTITY_NUMBERING {
+    label = "Use Autonomous (Non-Gapless) Entity Numbering"
+    type = "checkbox"
+  }
+  boolean INCR_NUM_OF_BULK_PROCESSING_THREADS {
+    label = "Increase number of bulk processing threads to 10"
+    type = "checkbox"
+  }
+  boolean AUTONAMECUSTOMERS {
+    label = "Auto Name Customers"
+    type = "checkbox"
+  }
+  number FLP_CHECKS_RECORD_SERVICE_INTERNAL {
+    label = "Enable Field Access checking in Record Service for internal access control (0 - off, 1 - logging only, 2 - full control)"
+    type = "integer"
+  }
+  boolean SHOWQUICKADD {
+    label = "Show Quick Add Row on Lists"
+    type = "checkbox"
+  }
+  boolean USEOLDNUMBERFORMATTING {
+    label = "Restore Old Number Formatting"
+    type = "checkbox"
+  }
+  netsuite.selectOption CUSTOMERROLE {
+    label = "Default Role for New Customers"
+    type = "select"
+  }
+  boolean FLIPSIGNFOREXPENSEACCOUNTSINSEARCH {
+    label = "Determines whether we should avoid inverting sign for amounts on transactions posted to expense accounts"
+    type = "checkbox"
+  }
+  boolean ALLOC_SCHEDULE_ALLOW_JE_USER_EVENTS {
+    label = "Allow User Events during JE generation via Allocation Schedule"
+    type = "checkbox"
+  }
+  boolean LOGSYSTEMNOTESONUPDATEONLY {
+    label = "Log System Notes on Update Only"
+    type = "checkbox"
+  }
+  boolean PREPOPULATECONTACTADDRESS {
+    label = "Pre-Populate Contact Address"
+    type = "checkbox"
+  }
+  boolean UNRESTRICTED_SEARCH_FORMULA_FIELDS {
+    label = "Is usage of restricted search formula fields allowed"
+    type = "checkbox"
+  }
+  number RATING_ENGINE_YEAR_LIMIT {
+    label = "Max Number of Years for Non-Evergreen Subscription"
+    type = "integer"
+  }
+  boolean custscript_lsa_task_completed {
+    label = "Track Only Completed Tasks"
+    type = "checkbox"
+  }
+  number LISTSEGMENTSIZE {
+    label = "Number of Rows in List Segments"
+    type = "integer"
+  }
+  boolean custscript_lsa_task {
+    label = "Tasks"
+    type = "checkbox"
+  }
+  boolean SHOWLISTONERESULT {
+    label = "Show List When Only One Result"
+    type = "checkbox"
+  }
+  boolean HIDEATTACHMENTFOLDERS {
+    label = "Hide Attachment Folders"
+    type = "checkbox"
+  }
+  number MAXREPORTDIMENSIONS {
+    label = "Maximum number of dimension columns allowed in a report"
+    type = "integer"
+  }
+  number BANK_IMPORT_SCHEDULE_MAX_TIME {
+    label = "Bank import schedule maximum time of day"
+    type = "integer"
+  }
+  boolean LEGACY_SUBSID_RESTRICTIONS {
+    label = "Enable Legacy Subsidiary Restrictions"
+    type = "checkbox"
+  }
+  boolean ALLOWLANGUAGE_ES_AR_ONLQA {
+    label = "Allow User to Change to Spanish (Argentina) (LQA) Language"
+    type = "checkbox"
+  }
+  boolean ALLOWCREATINGPOLYMORPHICEMPLOYEES {
+    label = "TEMPORARY: Allow creating polymorphic employees"
+    type = "checkbox"
+  }
+  boolean custscript_lsa_event_completed {
+    label = "Track Only Completed Events"
+    type = "checkbox"
+  }
+  boolean DELAYLOADINGSUBLISTS {
+    label = "Delay Loading of Sublists"
+    type = "checkbox"
+  }
+  boolean custscript_lsa_phonecall_completed {
+    label = "Track Only Completed Phone Calls"
+    type = "checkbox"
+  }
+  number NEWUSERLINKEXPIRATION {
+    label = "User Registration Link Expiration In Hours"
+    type = "integer"
+  }
+  boolean custscript_lsa_task_note {
+    label = "Notes"
+    type = "checkbox"
+  }
+  netsuite.selectOption NUMBERFORMAT {
+    label = "Number Format"
+    type = "select"
+  }
+  boolean custscript_lsa_task_event {
+    label = "Events"
+    type = "checkbox"
+  }
+  netsuite.selectOption CUSTOM_PRIVATE_LOGIN_PAGE {
+    label = "Customer Center Login Page"
+    type = "select"
+  }
+  boolean CUSTOMERSHOWHELPLINK {
+    label = "Show Help Link in Customer Center"
+    type = "checkbox"
+  }
+  netsuite.selectOption INTERNALWEBSITE {
+    label = "Internal Web Site"
+    type = "select"
+  }
+  boolean SHOW_TRAN_NUMBERING_SETUP {
+    label = "Show Transaction Numbering Setup"
+    type = "checkbox"
+  }
+  string ALLOWSUBSIDHIERARCHYCHANGE {
+    label = "Allow subsidiary hierarchy to be modified [Max: 30 Days]"
+    type = "date"
+  }
+  boolean ALLOWLANGUAGE_DE_DE_ONLQA {
+    label = "Allow User to Change to German (LQA) Language"
+    type = "checkbox"
+  }
+  number FLP_CHECKS_RECORD_SERVICE_EXTERNAL {
+    label = "Enable Field Access checking in Record Service for configurable access control (0 - off, 1 - logging only, 2 - full control)"
+    type = "integer"
+  }
+  number MAXSEARCHROWS_BACKEND {
+    label = "Maximum number of rows allowed in a search running on backend"
+    type = "integer"
+  }
+  boolean GLIMPACTINGENTITY {
+    label = "Entity on A/R and A/P posting lines as GL Impacting field"
+    type = "checkbox"
+  }
+  netsuite.selectOption PHASING_DESIGNATION {
+    label = "Phasing Designation for QA accounts"
+    type = "select"
+  }
+  boolean FC_LEGACY_FOLDER_ACCESS {
+    label = "Allow legacy folder access for new File Cabinet API"
+    type = "checkbox"
+  }
+  boolean ALLOWLANGUAGE_HE_IL {
+    label = "Allow User to Change to Hebrew Language"
+    type = "checkbox"
+  }
+  boolean CREATE_AUTOMATED_MEMDOC_AS_SYSTEM {
+    label = "Create automatic Memorized Transactions as -System-"
+    type = "checkbox"
+  }
+  boolean HOSTING_FILES_PUBLIC {
+    label = "Web Site Hosting files always available"
+    type = "checkbox"
+  }
+  netsuite.selectOption PASSWORD_POLICY {
+    label = "Password Policy"
+    type = "select"
+  }
+  netsuite.selectOption DATEFORMAT {
+    label = "Date Format"
+    type = "select"
+  }
+  boolean ENABLE_FLP_CLIENT_CHANGE_CHECK {
+    label = "Enable logging of unauthorized custom field access on client"
+    type = "checkbox"
+  }
+  number FLP_CHECKS_SS_WF {
+    label = "Enable Field Access checking in SuiteScript and Workflow (0 - off, 1 - logging only, 2 - full control)"
+    type = "integer"
+  }
+  boolean CHECK_LINE_ITME_AMOUNT_ON_CC_SO {
+    label = "Check line item amount calculation on Customer Center sales orders"
+    type = "checkbox"
+  }
+  boolean FC_SUBFOLDER_CONNECT_BY_APPROACH {
+    label = "Change File Cabinet Subfolder Query Approach to Connect By"
+    type = "checkbox"
+  }
+  boolean ORACLE_GUIDED_LEARNING {
+    label = "Enable NetSuite Guided Learning"
+    type = "checkbox"
+  }
+  number MAX_CUSTOMER_HIERARCHY_SIZE {
+    label = "Maximum customer hierarchy size"
+    type = "integer"
+  }
+  boolean ALLOWLANGUAGE_FR_FR_ONLQA {
+    label = "Allow User to Change to French (LQA) Language"
+    type = "checkbox"
+  }
+  number FICONNECTIVITYIMPORTTOLERANCEMINS {
+    label = "Minimum amount of minutes required between successful FI Connectivity imports of the same Format Profile"
+    type = "integer"
+  }
+  netsuite.selectOption SEARCHSORTING {
+    label = "Search Sorting"
+    type = "select"
+  }
+  boolean INTERCO_ORDER_GENERATION_BULK {
+    label = "Run intercompany order autogeneration in background"
+    type = "checkbox"
+  }
+  boolean ABBREVIATESTATES {
+    label = "Use State Abbreviations in Addresses"
+    type = "checkbox"
+  }
+  boolean ITEMNUMBERING {
+    label = "Show Display Name with Item Codes"
+    type = "checkbox"
+  }
+  boolean custscript_lsa_phonecall {
+    label = "Phone calls"
+    type = "checkbox"
+  }
+  boolean TIMESELECTORSUSEFIRSTFISCALMONTH {
+    label = "Time Selectors Use Fiscal Calendars Based on First Month"
+    type = "checkbox"
+  }
+  netsuite.selectOption COMPANYLOGOFOLDER {
+    label = "Company Logo Folder"
+    type = "select"
+  }
+  string configType {
+    _required = true
+    _hidden_value = true
+  }
+  _alias = "Company Preferences"
+  boolean USE_DART_SASS_COMPILER {
+    label = "Use Dart Sass compiler"
+    type = "checkbox"
+  }
+}

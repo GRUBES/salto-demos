@@ -1,0 +1,28 @@
+netsuite.clientscript customscript115 {
+  scriptid = "customscript115"
+  description = "Test script from Huy 1 - Another change"
+  
+  name = "e2e-branch-2"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_ns_js_showmsg_js@dbbv.path
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploy1 = {
+        scriptid = "customdeploy1"
+        allemployees = false
+        alllocalizationcontexts = true
+        allpartners = false
+        allroles = false
+        executioncontext = "ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|RESTWEBSERVICES|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKBOOKBUILDER|WORKFLOW"
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = "CONTACT"
+        status = "TESTING"
+      }
+    }
+  }
+  _alias = "e2e-branch-2"
+  isInactive = false
+}

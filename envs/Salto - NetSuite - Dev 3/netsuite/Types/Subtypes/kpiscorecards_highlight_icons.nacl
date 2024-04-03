@@ -1,0 +1,26 @@
+type netsuite.kpiscorecards_highlight_icons is string {
+  _restriction = {
+    values = [
+      "BLUE_FLAG",
+      "BLUE_NEW",
+      "CHECKMARK",
+      "DOLLAR_SIGN_1",
+      "DOLLAR_SIGN_2",
+      "DOLLAR_SIGN_3",
+      "EXCLAMATION_MARK",
+      "FIREBALL",
+      "GREEN_FLAG",
+      "HEART",
+      "ORANGE_FLAG",
+      "RED_ARROW_LEFT",
+      "RED_ARROW_RIGHT",
+      "RED_FLAG",
+      "RED_NEW",
+      "STARBURST",
+      "STARBURST_NEW",
+      "X_MARK",
+      "YELLOW_FLAG",
+    ]
+    enforce_value = false
+  }
+}

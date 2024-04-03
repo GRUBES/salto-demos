@@ -1,0 +1,14 @@
+type netsuite.expenseCategoryRates {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number defaultRate {
+  }
+}

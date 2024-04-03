@@ -1,0 +1,11 @@
+type netsuite.transactionColumnCustomFieldFilterList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.transactionColumnCustomFieldFilter>" filter {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

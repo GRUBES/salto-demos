@@ -1,0 +1,10 @@
+type netsuite.calendarEventResource {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef resource {
+  }
+  string location {
+  }
+}

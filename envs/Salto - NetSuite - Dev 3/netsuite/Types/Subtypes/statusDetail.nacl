@@ -1,0 +1,15 @@
+type netsuite.statusDetail {
+  annotations {
+    hidden_string source {
+    }
+  }
+  unknown code {
+  }
+  string message {
+  }
+  boolean afterSubmitFailed {
+  }
+  unknown type {
+    isAttribute = true
+  }
+}

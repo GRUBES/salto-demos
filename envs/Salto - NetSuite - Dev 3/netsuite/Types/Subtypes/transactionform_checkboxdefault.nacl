@@ -1,0 +1,10 @@
+type netsuite.transactionform_checkboxdefault is string {
+  _restriction = {
+    values = [
+      "CHECKED",
+      "UNCHECKED",
+      "USE_FIELD_DEFAULT",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,12 @@
+netsuite.folder Templates_Marketing_Templates@ds {
+  description = "Marketing Templates Folder"
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/Marketing Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "Marketing Templates"
+  isInactive = false
+}

@@ -1,0 +1,11 @@
+type netsuite.supportCaseTimeItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.timeItem>" timeItem {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

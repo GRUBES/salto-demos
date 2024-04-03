@@ -1,0 +1,56 @@
+type netsuite.invoiceTime {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string billedDate {
+  }
+  string employeeDisp {
+  }
+  string itemDisp {
+  }
+  string jobDisp {
+  }
+  string department {
+  }
+  string class {
+  }
+  string location {
+  }
+  string quantity {
+  }
+  number rate {
+  }
+  string unitDisp {
+  }
+  number amount {
+  }
+  string memo {
+  }
+  number taxAmount {
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  string revRecStartDate {
+  }
+  string revRecEndDate {
+  }
+  number grossAmt {
+  }
+  string taxDetailsReference {
+  }
+  number tax1Amt {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+}

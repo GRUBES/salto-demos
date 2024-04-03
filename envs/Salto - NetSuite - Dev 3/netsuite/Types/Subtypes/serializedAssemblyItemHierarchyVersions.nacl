@@ -1,0 +1,16 @@
+type netsuite.serializedAssemblyItemHierarchyVersions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean isIncluded {
+  }
+  netsuite.recordRef hierarchyVersion {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  netsuite.recordRef hierarchyNode {
+  }
+}

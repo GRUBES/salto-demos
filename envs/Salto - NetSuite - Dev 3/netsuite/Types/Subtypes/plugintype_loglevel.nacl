@@ -1,0 +1,11 @@
+type netsuite.plugintype_loglevel is string {
+  _restriction = {
+    values = [
+      "AUDIT",
+      "DEBUG",
+      "EMERGENCY",
+      "ERROR",
+    ]
+    enforce_value = false
+  }
+}

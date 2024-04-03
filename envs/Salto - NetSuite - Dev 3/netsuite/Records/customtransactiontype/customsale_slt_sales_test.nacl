@@ -1,0 +1,22 @@
+netsuite.customtransactiontype customsale_slt_sales_test {
+  scriptid = "customsale_slt_sales_test"
+  cancloseorder = false
+  iscredit = false
+  isposting = false
+  isvoidable = false
+  name = "sales"
+  showstatus = false
+  transactionstyle = "SALES"
+  accounting = {
+    specifyaccountontransaction = false
+  }
+  permissions = {
+    permission = {
+      ADMINISTRATOR = {
+        permittedlevel = "FULL"
+        permittedrole = "ADMINISTRATOR"
+      }
+    }
+  }
+  _alias = "sales"
+}

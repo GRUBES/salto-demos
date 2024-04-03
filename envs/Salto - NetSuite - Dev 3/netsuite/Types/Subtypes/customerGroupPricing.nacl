@@ -1,0 +1,10 @@
+type netsuite.customerGroupPricing {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef group {
+  }
+  netsuite.recordRef level {
+  }
+}

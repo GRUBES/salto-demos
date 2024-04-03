@@ -1,0 +1,32 @@
+netsuite.entitycustomfield custentity_seggev {
+  scriptid = "custentity_seggev"
+  accesslevel = "2"
+  appliestocontact = true
+  appliestocustomer = true
+  appliestoemployee = true
+  appliestogroup = true
+  appliestoothername = true
+  appliestopartner = true
+  appliestopricelist = true
+  appliestoprojecttemplate = true
+  appliestostatement = true
+  appliestovendor = true
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = true
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "TEXT"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "seggev try datasets"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "seggev try datasets"
+}

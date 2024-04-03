@@ -1,0 +1,8 @@
+type netsuite.locationRegions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef region {
+  }
+}
