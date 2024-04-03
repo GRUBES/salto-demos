@@ -37,4 +37,11 @@ type netsuite.solution {
     isAttribute = true
   }
   _alias = "Solution"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

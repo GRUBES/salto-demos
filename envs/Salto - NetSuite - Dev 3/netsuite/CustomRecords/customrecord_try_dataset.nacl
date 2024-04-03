@@ -1,0 +1,193 @@
+type netsuite.customrecord_try_dataset {
+  annotations {
+    serviceid scriptid {
+    }
+    string recordname {
+    }
+    string customsegment {
+    }
+    netsuite.customrecordtype_accesstype accesstype {
+    }
+    boolean allowattachments {
+    }
+    boolean allowinlineediting {
+    }
+    boolean allowinlinedeleting {
+    }
+    boolean allowinlinedetaching {
+    }
+    boolean allowmobileaccess {
+    }
+    boolean allownumberingoverride {
+    }
+    boolean allowquickadd {
+    }
+    boolean allowquicksearch {
+    }
+    boolean allowuiaccess {
+    }
+    string description {
+    }
+    boolean enabledle {
+    }
+    boolean enablekeywords {
+    }
+    boolean enablemailmerge {
+    }
+    boolean enablenametranslation {
+    }
+    boolean enablenumbering {
+    }
+    boolean enableoptimisticlocking {
+    }
+    boolean enablesystemnotes {
+    }
+    boolean hierarchical {
+    }
+    string numberingprefix {
+    }
+    string numberingsuffix {
+    }
+    string numberingmindigits {
+    }
+    string numberinginit {
+    }
+    string icon {
+    }
+    boolean iconbuiltin {
+    }
+    netsuite.generic_custom_record_icon iconindex {
+    }
+    boolean includeinsearchmenu {
+    }
+    boolean includename {
+    }
+    boolean isordered {
+    }
+    boolean showcreationdate {
+    }
+    boolean showcreationdateonlist {
+    }
+    boolean showid {
+    }
+    boolean showlastmodified {
+    }
+    boolean showlastmodifiedonlist {
+    }
+    boolean shownotes {
+    }
+    boolean showowner {
+    }
+    boolean showownerallowchange {
+    }
+    boolean showowneronlist {
+    }
+    netsuite.customrecordtype_instances instances {
+    }
+    netsuite.customrecordtype_links links {
+    }
+    netsuite.customrecordtype_permissions permissions {
+    }
+    netsuite.customrecordtype_recordsublists recordsublists {
+    }
+    netsuite.customrecordtype_subtabs subtabs {
+    }
+    string application_id {
+    }
+    netsuite.bundle bundle {
+    }
+    hidden_string source {
+    }
+    boolean isInactive {
+    }
+    hidden_string internalId {
+    }
+  }
+  serviceid scriptid {
+    _required = true
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.customRecordTranslationsList translationsList {
+  }
+  scriptid = "customrecord_try_dataset"
+  accesstype = "CUSTRECORDENTRYPERM"
+  allowattachments = true
+  allowinlinedeleting = false
+  allowinlinedetaching = true
+  allowinlineediting = false
+  allowmobileaccess = false
+  allownumberingoverride = false
+  allowquickadd = true
+  allowquicksearch = false
+  allowuiaccess = true
+  enabledle = true
+  enablekeywords = true
+  enablemailmerge = false
+  enablenumbering = false
+  enableoptimisticlocking = true
+  enablesystemnotes = true
+  hierarchical = false
+  iconbuiltin = true
+  includeinsearchmenu = true
+  includename = true
+  isordered = false
+  recordname = "seggev try datasets"
+  showcreationdate = false
+  showcreationdateonlist = false
+  showid = false
+  showlastmodified = false
+  showlastmodifiedonlist = false
+  shownotes = true
+  showowner = false
+  showownerallowchange = false
+  showowneronlist = false
+  metadataType = "customrecordtype"
+  isInactive = false
+  _alias = "seggev try datasets"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

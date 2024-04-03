@@ -91,6 +91,30 @@ type netsuite.othercustomfield {
     _hidden_value = true
   }
   _alias = "Other Custom Field"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.othercustomfield_customfieldfilters_customfieldfilter {
   string fldfilter {

@@ -16,8 +16,7 @@ type netsuite.suitelet {
   }
   string description {
   }
-  boolean isinactive {
-  }
+  
   boolean notifyadmins {
   }
   string notifyemails {
@@ -42,6 +41,38 @@ type netsuite.suitelet {
     _hidden_value = true
   }
   _alias = "Suitelet"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }
 type netsuite.suitelet_customplugintypes_plugintype {
   string plugintype {

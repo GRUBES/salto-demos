@@ -1,7 +1,7 @@
 netsuite.clientscript customscript_sh_sdf_cl_example {
   scriptid = "customscript_sh_sdf_cl_example"
   description = "Example script to be imported into the SDF Project for Lesson 4 of the SuiteHub SDF Course."
-  isinactive = false
+  
   name = "SDF Course - Lesson 4 - Example CL"
   notifyadmins = false
   notifyowner = true
@@ -49,4 +49,5 @@ netsuite.clientscript customscript_sh_sdf_cl_example {
     }
   }
   _alias = "SDF Course - Lesson 4 - Example CL"
+  isInactive = false
 }

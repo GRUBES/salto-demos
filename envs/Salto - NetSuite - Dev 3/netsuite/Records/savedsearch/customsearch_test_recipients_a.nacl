@@ -1,0 +1,129 @@
+netsuite.savedsearch customsearch_test_recipients_a {
+  scriptid = "customsearch_test_recipients_a"
+  dependencies = {
+    dependency = [
+      netsuite.othercustomfield.instance.custrecord_employee.scriptid,
+    ]
+  }
+  definition = "ee46c5441118691d72b1284e402c08fdaaadd21e08995afe4a5f31e58e961a54@GZC@2023.2.17@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"
+  return_fields = [
+    {
+      FIELD_ALIAS = "Account_NAME"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_DISPLAYNAME"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_TYPE"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_DESCRIPTION"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_BALANCE"
+      FIELD_INDEX = 5
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  detail_fields = [
+    {
+      FIELD_ALIAS = "Account_NAME"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_DISPLAYNAME"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_TYPE"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_DESCRIPTION"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Account_BALANCE"
+      FIELD_INDEX = 6
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Account_NAME"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+  ]
+  audience = {
+    FIELD_DESCRIPTION = "SearchEvent_TSTDRV2257860"
+    FIELD_FREQUENCY = "YEAR"
+    FIELD_PERIOD = 1
+    FIELD_START = "2022-12-29 08:00:00.0 UTC"
+    FIELD_DURATION = "0.0416666666666667"
+    FIELD_TIMEZONE = "America/Los_Angeles"
+    FIELD_DOW = 4
+    FIELD_DOWIM = 4
+  }
+  alert_recipients = [
+    {
+      FIELD_NAME = "CUSTRECORD_EMPLOYEE"
+    },
+  ]
+  KEY_SCRIPT_ID = "customsearch_test_recipients_a"
+  FIELD_DEFAULT_NAME = "My Custom Account Search"
+  FIELD_SEARCH_TYPE = "Account"
+  FLAG_PUBLIC = true
+  FLAG_LIST = false
+  FLAG_PORTLET = false
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "STARTSWITH"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FIELD_EMAIL_FROM = "&quot;Salto&quot; &lt;services@salto.io&gt;"
+  FIELD_EMAIL_SUBJECT = "Some Subject"
+  FIELD_EMAIL_BODY = "{type}"
+  FIELD_EMAIL_COMMENT = "Intro"
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = true
+  FLAG_SCHEDULED_ALERT_SUMMARIES = true
+  FLAG_SEND_EMPTY_RESULTS = true
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = true
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FIELD_CAL = "NLEvent(sDescr=&apos;SearchEvent_TSTDRV2257860&apos;, sFrequency=&apos;YEAR&apos;, nPeriod=1, dFrom=TIMESTAMP &apos;2022-12-29 00:00:00 America/Los_Angeles&apos;, nDuration=0.0416666666666667, dFinal=null, sTimeZone=&apos;America/Los_Angeles&apos;, nDOW=4, nDOWIM=4)"
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  KEY_AUDIENCE = 0
+  _alias = "My Custom Account Search"
+}

@@ -16,12 +16,12 @@ type netsuite.subsidiary {
   }
   string url {
   }
-  netsuite.file logo {
+  netsuite.fileReference logo {
     isReference = true
   }
   string tranPrefix {
   }
-  netsuite.file pageLogo {
+  netsuite.fileReference pageLogo {
     isReference = true
   }
   string state {
@@ -97,4 +97,16 @@ type netsuite.subsidiary {
   serviceid identifier {
   }
   _alias = "Subsidiary"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

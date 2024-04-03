@@ -22,7 +22,7 @@ type netsuite.note {
   }
   netsuite.recordRef entity {
   }
-  netsuite.folder folder {
+  netsuite.folderReference folder {
     isReference = true
   }
   netsuite.recordRef item {

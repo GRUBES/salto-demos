@@ -4,7 +4,7 @@ netsuite.role customrole1003 {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = true
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -266,4 +266,5 @@ netsuite.role customrole1003 {
     }
   }
   _alias = "Custom Developer With more certain WF permissions"
+  isInactive = true
 }

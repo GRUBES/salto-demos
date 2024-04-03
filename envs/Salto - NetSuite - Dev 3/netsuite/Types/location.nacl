@@ -31,7 +31,7 @@ type netsuite.location {
   }
   number longitude {
   }
-  netsuite.file logo {
+  netsuite.fileReference logo {
     isReference = true
   }
   boolean useBins {
@@ -78,4 +78,16 @@ type netsuite.location {
   serviceid identifier {
   }
   _alias = "Location"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

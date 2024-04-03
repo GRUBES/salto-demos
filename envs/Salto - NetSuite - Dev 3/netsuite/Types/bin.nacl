@@ -26,4 +26,11 @@ type netsuite.bin {
   serviceid identifier {
   }
   _alias = "Bin"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

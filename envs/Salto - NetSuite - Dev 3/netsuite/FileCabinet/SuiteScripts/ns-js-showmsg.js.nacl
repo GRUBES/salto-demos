@@ -1,7 +1,7 @@
 netsuite.file SuiteScripts_ns_js_showmsg_js@dbbv {
-  description = "e2e-branch-1"
+  description = "e2e-branch-2"
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file SuiteScripts_ns_js_showmsg_js@dbbv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "ns-js-showmsg.js"
+  isInactive = false
 }

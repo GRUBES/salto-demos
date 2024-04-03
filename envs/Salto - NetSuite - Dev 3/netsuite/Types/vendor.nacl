@@ -55,7 +55,7 @@ type netsuite.vendor {
   }
   unknown globalSubscriptionStatus {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown emailPreference {
@@ -183,5 +183,8 @@ type netsuite.vendor {
   }
   string custom_custentity_payoneer_username {
     field_instance = netsuite.entitycustomfield.instance.custentity_payoneer_username.scriptid
+  }
+  string custom_custentity_seggev {
+    field_instance = netsuite.entitycustomfield.instance.custentity_seggev.scriptid
   }
 }

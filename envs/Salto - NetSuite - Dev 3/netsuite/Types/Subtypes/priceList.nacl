@@ -5,4 +5,7 @@ type netsuite.priceList {
   }
   "List<netsuite.price>" price {
   }
+  string custom_custentity_seggev {
+    field_instance = netsuite.entitycustomfield.instance.custentity_seggev.scriptid
+  }
 }

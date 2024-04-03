@@ -3,7 +3,7 @@ netsuite.workflow customworkflow1 {
   initcontexts = "BANKCONNECTIVITY"
   initoncreate = true
   initonvieworupdate = false
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "Lior's New WORKFLOW"
@@ -47,4 +47,5 @@ netsuite.workflow customworkflow1 {
     }
   }
   _alias = "Lior's New WORKFLOW"
+  isInactive = false
 }

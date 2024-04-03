@@ -1,7 +1,7 @@
 netsuite.customlist customlist17 {
   scriptid = "customlist17"
   description = "Favorite TV shows from the past decade, rated 7 and above"
-  isinactive = false
+  
   ismatrixoption = false
   isordered = true
   name = "Ofer's favorite TV shows"
@@ -10,46 +10,53 @@ netsuite.customlist customlist17 {
       val_53700_t2257860_969 = {
         scriptid = "val_53700_t2257860_969"
         abbreviation = "S"
-        isinactive = false
+        
         value = "Stranger Things"
         index = 0
+        isInactive = false
       }
       val_53701_t2257860_613 = {
         scriptid = "val_53701_t2257860_613"
         abbreviation = "J"
-        isinactive = false
+        
         value = "Jack Ryan"
         index = 1
+        isInactive = false
       }
       val_53702_t2257860_270 = {
         scriptid = "val_53702_t2257860_270"
         abbreviation = "C"
-        isinactive = false
+        
         value = "Cobra Kai"
         index = 2
+        isInactive = false
       }
       val_53703_t2257860_474 = {
         scriptid = "val_53703_t2257860_474"
         abbreviation = "B"
-        isinactive = false
+        
         value = "Breaking Bad"
         index = 3
+        isInactive = false
       }
       val_53704_t2257860_779 = {
         scriptid = "val_53704_t2257860_779"
         abbreviation = "T"
-        isinactive = false
+        
         value = "The Wire"
         index = 4
+        isInactive = false
       }
       val_53705_t2257860_335 = {
         scriptid = "val_53705_t2257860_335"
         abbreviation = "F"
-        isinactive = false
+        
         value = "Fargo"
         index = 5
+        isInactive = false
       }
     }
   }
   _alias = "Ofer's favorite TV shows"
+  isInactive = false
 }

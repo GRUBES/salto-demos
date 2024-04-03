@@ -14,8 +14,7 @@ type netsuite.entryForm {
   }
   string recordType {
   }
-  boolean inactive {
-  }
+  
   boolean preferred {
   }
   boolean storedWithRecord {
@@ -39,6 +38,33 @@ type netsuite.entryForm {
   string application_id {
   }
   _alias = "Entry Form"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "inactive"
+  }
 }
 type netsuite.entryForm_actionbar_buttons_button {
   netsuite.entryform_buttonid id {

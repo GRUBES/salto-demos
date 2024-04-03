@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_NestedLevel1_NestedLevel2_helloworld_ts@dddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -15,4 +15,5 @@ netsuite.file SuiteScripts_NestedLevel1_NestedLevel2_helloworld_ts@dddv {
     },
   ]
   _alias = "helloworld.ts"
+  isInactive = false
 }

@@ -4,7 +4,7 @@ netsuite.workflow customworkflow8 {
   initoncreate = true
   initonvieworupdate = false
   inittriggertype = "AFTERSUBMIT"
-  isinactive = false
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "DP Workflow"
@@ -31,7 +31,7 @@ netsuite.workflow customworkflow8 {
                 conditionsavedsearch = netsuite.savedsearch.instance.customsearch223.scriptid
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYTRANDATE"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuedate = "LY"
@@ -40,12 +40,13 @@ netsuite.workflow customworkflow8 {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction1282 = {
                 scriptid = "workflowaction1282"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = netsuite.transactionbodycustomfield.instance.custbodydp_transaction_field_1.scriptid
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuetext = "You've updated this field, congratulations!"
@@ -54,6 +55,7 @@ netsuite.workflow customworkflow8 {
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -63,4 +65,5 @@ netsuite.workflow customworkflow8 {
     }
   }
   _alias = "DP Workflow"
+  isInactive = false
 }

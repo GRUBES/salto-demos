@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_InnerFolder2_helloworld_ts@ddv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_InnerFolder2_helloworld_ts@ddv {
     netsuite.folder.instance.SuiteScripts_InnerFolder2@d,
   ]
   _alias = "helloworld.ts"
+  isInactive = false
 }

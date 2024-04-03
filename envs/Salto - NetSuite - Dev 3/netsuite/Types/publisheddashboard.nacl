@@ -25,6 +25,25 @@ type netsuite.publisheddashboard {
   string application_id {
   }
   _alias = "Published Dashboard"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.publisheddashboard_dashboards_dashboard_centercolumn_analytics {
   netsuite.portlet_analytics_portlettype portlettype {

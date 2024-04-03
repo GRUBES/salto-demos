@@ -11,7 +11,7 @@ netsuite.subsidiary Parent_Company_created_by_oss_e2e___8783175@sussssbs {
     state = "AZ"
     addrText = "testSub<br>AZ <br>US Minor Outlying Islands"
     override = false
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
   }
   isElimination = false
   currency = netsuite.currency.instance.USA
@@ -25,8 +25,8 @@ netsuite.subsidiary Parent_Company_created_by_oss_e2e___8783175@sussssbs {
     ]
   }
   checkLayout = {
-    name = "Standard Check Layout"
-    id = "[ACCOUNT_SPECIFIC_VALUE]"
+    
+    id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
   identifier = "Parent Company_created by oss e2e - 8783175"
   _alias = "created by oss e2e - 8783175"

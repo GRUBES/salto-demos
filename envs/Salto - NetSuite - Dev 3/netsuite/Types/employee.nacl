@@ -67,7 +67,7 @@ type netsuite.employee {
   }
   unknown globalSubscriptionStatus {
   }
-  netsuite.file image {
+  netsuite.fileReference image {
     isReference = true
   }
   unknown payFrequency {
@@ -254,5 +254,15 @@ type netsuite.employee {
   _alias = "Employee"
   boolean custom_custentity_has_mgr_reviewed {
     field_instance = netsuite.entitycustomfield.instance.custentity_has_mgr_reviewed.scriptid
+  }
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  string custom_custentity_seggev {
+    field_instance = netsuite.entitycustomfield.instance.custentity_seggev.scriptid
   }
 }

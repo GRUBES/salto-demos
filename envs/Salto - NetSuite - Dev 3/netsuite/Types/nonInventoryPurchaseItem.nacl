@@ -122,4 +122,11 @@ type netsuite.nonInventoryPurchaseItem {
   serviceid identifier {
   }
   _alias = "Non-inventory Purchase Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

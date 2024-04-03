@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_InnerFolder_sub_folder_for_checks_Screen_Shot_4_png@ddbbbdssv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_InnerFolder_sub_folder_for_checks_Screen_Shot_4_png@d
     netsuite.folder.instance.SuiteScripts_InnerFolder_sub_folder_for_checks@ddbbb,
   ]
   _alias = "Screen Shot 4.png"
+  isInactive = false
 }

@@ -3,10 +3,11 @@ netsuite.emailtemplate custemailtmpl_204_t2480649_968 {
   addcompanyaddress = true
   addunsubscribelink = true
   description = "this is nothing"
-  isinactive = false
+  
   isprivate = false
   name = "new_email_me"
   usesmedia = false
   content = file("netsuite/emailtemplate/custemailtmpl_204_t2480649_968.html")
   _alias = "new_email_me"
+  isInactive = false
 }

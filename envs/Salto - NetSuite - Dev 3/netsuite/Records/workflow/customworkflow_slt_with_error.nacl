@@ -3,7 +3,7 @@ netsuite.workflow customworkflow_slt_with_error {
   initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
   initoncreate = true
   initonvieworupdate = true
-  isinactive = true
+  
   islogenabled = false
   keephistory = "ONLYWHENTESTING"
   name = "With unexpected error"
@@ -30,7 +30,7 @@ netsuite.workflow customworkflow_slt_with_error {
                 scriptid = "workflowaction66"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = netsuite.transactionbodycustomfield.instance.custbody_slt_opportunity_owner_modify.scriptid
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuetype = "STATIC"
@@ -38,12 +38,13 @@ netsuite.workflow customworkflow_slt_with_error {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
               workflowaction67 = {
                 scriptid = "workflowaction67"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = "STDBODYACCOUNT"
-                isinactive = false
+                
                 schedulemode = "DELAY"
                 valuechecked = false
                 valuetype = "STATIC"
@@ -51,6 +52,7 @@ netsuite.workflow customworkflow_slt_with_error {
                   type = "VISUAL_BUILDER"
                 }
                 index = 1
+                isInactive = false
               }
             }
           }
@@ -62,7 +64,7 @@ netsuite.workflow customworkflow_slt_with_error {
                 checkconditionbeforeexecution = true
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 eventtypes = "COPY"
-                isinactive = false
+                
                 label = "error"
                 saverecordfirst = true
                 initcondition = {
@@ -70,6 +72,7 @@ netsuite.workflow customworkflow_slt_with_error {
                   type = "FORMULA"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -79,4 +82,5 @@ netsuite.workflow customworkflow_slt_with_error {
     }
   }
   _alias = "With unexpected error"
+  isInactive = true
 }

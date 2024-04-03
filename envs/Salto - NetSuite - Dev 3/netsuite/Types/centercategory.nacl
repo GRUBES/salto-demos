@@ -22,6 +22,25 @@ type netsuite.centercategory {
   boolean labelTranslate {
   }
   _alias = "Center Category"
+  _important_values = [
+    {
+      value = "label"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
 }
 type netsuite.centercategory_links_link {
   netsuite.generic_task linkid {

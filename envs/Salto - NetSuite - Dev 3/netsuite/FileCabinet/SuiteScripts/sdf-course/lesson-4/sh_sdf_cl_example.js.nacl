@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_sdf_course_lesson_4_sh_sdf_cl_example_js@dbdbduuuv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_sdf_course_lesson_4_sh_sdf_cl_example_js@dbdbduuuv {
     netsuite.folder.instance.SuiteScripts_sdf_course_lesson_4@dbdb,
   ]
   _alias = "sh_sdf_cl_example.js"
+  isInactive = false
 }

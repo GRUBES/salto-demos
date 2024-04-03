@@ -10,10 +10,12 @@ type netsuite.employeeCompanyContribution {
   }
   number limit {
   }
-  boolean inactive {
-  }
+  
   string effectiveDate {
   }
   string expirationDate {
+  }
+  boolean isInactive {
+    originalName = "inactive"
   }
 }

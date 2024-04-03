@@ -131,6 +131,13 @@ type netsuite.savedsearch {
     _hidden_value = true
   }
   _alias = "Saved Search"
+  _important_values = [
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
 }
 type netsuite.savedsearch_dependencies {
   "List<string>" dependency {

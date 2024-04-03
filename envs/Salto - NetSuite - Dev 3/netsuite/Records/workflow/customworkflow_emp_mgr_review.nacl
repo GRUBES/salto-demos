@@ -3,7 +3,7 @@ netsuite.workflow customworkflow_emp_mgr_review {
   initoncreate = false
   initonvieworupdate = false
   initsavedsearchfilter = netsuite.savedsearch.instance.customsearchx_employees_not_reviewed.scriptid
-  isinactive = false
+  
   islogenabled = true
   keephistory = "ONLYWHENTESTING"
   name = "Employee Manager Review - Scheduled"
@@ -43,13 +43,14 @@ netsuite.workflow customworkflow_emp_mgr_review {
                 scriptid = "workflowaction1283"
                 contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
                 field = netsuite.entitycustomfield.instance.custentity_has_mgr_reviewed.scriptid
-                isinactive = false
+                
                 ismandatory = true
                 issublistfield = false
                 initcondition = {
                   type = "VISUAL_BUILDER"
                 }
                 index = 0
+                isInactive = false
               }
             }
           }
@@ -59,4 +60,5 @@ netsuite.workflow customworkflow_emp_mgr_review {
     }
   }
   _alias = "Employee Manager Review - Scheduled"
+  isInactive = false
 }

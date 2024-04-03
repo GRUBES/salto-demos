@@ -11,8 +11,10 @@ type netsuite.assemblyItemBillOfMaterials {
   }
   netsuite.recordRefList defaultForLocationList {
   }
-  string inactive {
-  }
+  
   string memo {
+  }
+  string isInactive {
+    originalName = "inactive"
   }
 }

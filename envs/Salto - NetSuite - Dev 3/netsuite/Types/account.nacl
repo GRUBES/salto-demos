@@ -85,4 +85,19 @@ type netsuite.account {
     field_instance = netsuite.othercustomfield.instance.custrecord_account_last_mod.scriptid
   }
   _alias = "Account"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.employee custom_custrecord_employee {
+    field_instance = netsuite.othercustomfield.instance.custrecord_employee.scriptid
+  }
 }

@@ -12,12 +12,14 @@ type netsuite.employeeEarning {
   }
   number defaultHours {
   }
-  boolean inactive {
-  }
+  
   boolean defaultEarning {
   }
   string effectiveDate {
   }
   string expirationDate {
+  }
+  boolean isInactive {
+    originalName = "inactive"
   }
 }

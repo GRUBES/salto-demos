@@ -25,6 +25,8 @@ type netsuite.employeeDirectDeposit {
   }
   number amount {
   }
-  boolean inactive {
+  
+  boolean isInactive {
+    originalName = "inactive"
   }
 }

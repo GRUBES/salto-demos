@@ -3,7 +3,7 @@ type netsuite.customerDownload {
     hidden_string source {
     }
   }
-  netsuite.file file {
+  netsuite.fileReference file {
     isReference = true
   }
   string licenseCode {

@@ -1,6 +1,6 @@
 netsuite.file SuiteScripts_Screen_Shot_1_png@dssv {
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -10,4 +10,5 @@ netsuite.file SuiteScripts_Screen_Shot_1_png@dssv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "Screen Shot 1.png"
+  isInactive = false
 }

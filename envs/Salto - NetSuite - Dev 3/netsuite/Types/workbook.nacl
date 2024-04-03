@@ -10,63 +10,412 @@ type netsuite.workbook {
     _required = true
   }
   netsuite.cdata definition {
-    _required = true
+    
+    do_not_add = true
   }
-  netsuite.workbook_charts charts {
+  "List<netsuite.workbook_chart_outer>" charts {
   }
   netsuite.workbook_dependencies dependencies {
+    do_not_add = true
   }
-  netsuite.workbook_pivots pivots {
+  "List<netsuite.workbook_pivot_outer>" pivots {
   }
-  netsuite.workbook_tables tables {
-  }
+  
   string application_id {
+    do_not_add = true
   }
   boolean nameTranslate {
   }
   _alias = "Workbook"
-}
-type netsuite.workbook_charts_chart {
-  serviceid scriptid {
-    _required = true
-    isAttribute = true
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+  ]
+  "List<netsuite.workbook_dsLink_outer>" datasetLinks {
   }
-  number index {
+  "List<netsuite.workbook_data_view_outer>" dataViews {
+  }
+  netsuite.workbook_inner_workbook Workbook {
   }
 }
-type netsuite.workbook_charts {
-  "Map<netsuite.workbook_charts_chart>" chart {
-    map_key_field = "scriptid"
-  }
-}
+
+
 type netsuite.workbook_dependencies {
-  string dependency {
+  "List<string>" dependency {
     _required = true
   }
 }
-type netsuite.workbook_pivots_pivot {
-  serviceid scriptid {
+
+
+
+
+type netsuite.workbook_audience {
+  "List<unknown>" AudienceItems {
+  }
+  boolean isPublic {
+  }
+}
+type netsuite.workbook_base_record {
+  string id {
+  }
+  string label {
+  }
+}
+type netsuite.workbook_cell_conditional_format {
+  "List<netsuite.workbook_format_rule>" formatRules {
+  }
+  string id {
+  }
+}
+type netsuite.workbook_chart_or_pivot {
+  unknown id {
+  }
+  string scriptId {
+  }
+  unknown applicationId {
+  }
+  string version {
+  }
+  netsuite.workbook_translation name {
+  }
+  string workbook {
+  }
+  "List<string>" datasets {
+  }
+  string format {
+  }
+  number order {
+  }
+  string definition {
+  }
+  string datasetLink {
+    do_not_add = true
+  }
+}
+type netsuite.workbook_chart_outer {
+  netsuite.workbook_chart_or_pivot chart {
     _required = true
-    isAttribute = true
   }
-  number index {
+  xml_type = true
+  default_xml_type = "chart"
+}
+type netsuite.workbook_color {
+  netsuite.workbook_rgb_color rgbColor {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.workbook_column {
+  "List<netsuite.workbook_conditional_format>" conditionalFormat {
+  }
+  netsuite.workbook_criteria criterion {
+  }
+  netsuite.workbook_translation customLabel {
+  }
+  number dataSetColumnId {
+  }
+  string datasetScriptId {
+  }
+  string fieldStateName {
+  }
+  netsuite.workbook_sorting sorting {
+  }
+  netsuite.workbook_target_field_context targetFieldContext {
+  }
+  number width {
   }
 }
-type netsuite.workbook_pivots {
-  "Map<netsuite.workbook_pivots_pivot>" pivot {
-    map_key_field = "scriptid"
+type netsuite.workbook_condition {
+  "List<netsuite.workbook_criteria>" children {
+  }
+  netsuite.workbook_operator operator {
+  }
+  netsuite.workbook_target_field_context targetFieldContext {
+  }
+  netsuite.workbook_meta meta {
+  }
+  netsuite.workbook_field_or_formula field {
+  }
+  string fieldStateName {
   }
 }
-type netsuite.workbook_tables_table {
-  serviceid scriptid {
+type netsuite.workbook_conditional_format {
+  netsuite.workbook_cell_conditional_format cellConditionalFormat {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.workbook_conditional_format_filter {
+  netsuite.workbook_expression_value expressions {
+  }
+  netsuite.workbook_operator operator {
+  }
+}
+type netsuite.workbook_conditional_format_rule {
+  netsuite.workbook_format_rule_filter filter {
+  }
+  string id {
+  }
+  netsuite.workbook_style style {
+  }
+}
+type netsuite.workbook_criteria {
+  netsuite.workbook_condition condition {
+    do_not_add = true
+  }
+  netsuite.workbook_filter filter {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.workbook_data_view {
+  unknown id {
+  }
+  string scriptId {
+  }
+  unknown applicationId {
+  }
+  string version {
+  }
+  netsuite.workbook_translation name {
+  }
+  string workbook {
+  }
+  "List<string>" datasets {
+  }
+  "List<netsuite.workbook_column>" columns {
+  }
+  number order {
+  }
+}
+type netsuite.workbook_data_view_outer {
+  netsuite.workbook_data_view dataView {
     _required = true
-    isAttribute = true
   }
-  number index {
+  xml_type = true
+  default_xml_type = "dataView"
+}
+type netsuite.workbook_dsLink {
+  unknown id {
+  }
+  string scriptId {
+  }
+  unknown applicationId {
+  }
+  string version {
+  }
+  netsuite.workbook_translation name {
+  }
+  string workbook {
+  }
+  "List<string>" datasets {
+  }
+  string mapping {
   }
 }
-type netsuite.workbook_tables {
-  "Map<netsuite.workbook_tables_table>" table {
-    map_key_field = "scriptid"
+type netsuite.workbook_dsLink_outer {
+  netsuite.workbook_dsLink dsLink {
+    _required = true
+  }
+  xml_type = true
+  default_xml_type = "dsLink"
+}
+type netsuite.workbook_expression {
+  string label {
+  }
+  unknown subType {
+  }
+  "List<string>" uiData {
+  }
+  netsuite.workbook_expression_value value {
+  }
+}
+type netsuite.workbook_expression_value {
+  string type {
+  }
+  unknown value {
+  }
+}
+type netsuite.workbook_field_or_formula {
+  netsuite.workbook_field_reference fieldReference {
+    do_not_add = true
+  }
+  netsuite.workbook_formula dataSetFormula {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.workbook_field_reference {
+  string id {
+  }
+  netsuite.workbook_join_trail joinTrail {
+  }
+  string label {
+  }
+  string uniqueId {
+  }
+  string fieldValidityState {
+    do_not_add = true
+  }
+}
+type netsuite.workbook_filter {
+  boolean caseSensitive {
+  }
+  "List<netsuite.workbook_expression>" expressions {
+  }
+  netsuite.workbook_operator operator {
+  }
+  netsuite.workbook_target_field_context targetFieldContext {
+  }
+  netsuite.workbook_field_or_formula field {
+  }
+  string fieldStateName {
+  }
+  netsuite.workbook_meta meta {
+  }
+}
+type netsuite.workbook_format_rule {
+  netsuite.workbook_conditional_format_rule conditionalFormatRule {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.workbook_format_rule_filter {
+  netsuite.workbook_conditional_format_filter conditionalFormatFilter {
+    do_not_add = true
+  }
+  xml_type = true
+}
+type netsuite.workbook_formula {
+  "List<netsuite.workbook_field_or_formula>" fields {
+  }
+  netsuite.workbook_formula_formula formula {
+  }
+}
+type netsuite.workbook_formula_formula {
+  string dataType {
+  }
+  string formulaSQL {
+  }
+  string id {
+  }
+  netsuite.workbook_translation label {
+  }
+  string uniqueId {
+  }
+  xml_type = true
+  default_xml_type = "formula"
+  ignore_t_value = true
+}
+type netsuite.workbook_icon {
+  netsuite.workbook_color color {
+  }
+  string image {
+  }
+}
+type netsuite.workbook_inner_workbook {
+  unknown id {
+  }
+  string scriptId {
+  }
+  unknown applicationId {
+  }
+  string version {
+  }
+  netsuite.workbook_translation name {
+  }
+  netsuite.workbook_audience audience {
+  }
+  number ownerId {
+  }
+  netsuite.workbook_translation description {
+  }
+  "List<string>" dataViewIDs {
+  }
+  "List<string>" pivotIDs {
+  }
+  "List<string>" chartIDs {
+  }
+  xml_type = true
+  default_xml_type = "workbook"
+  ignore_t_value = true
+}
+type netsuite.workbook_join {
+  string id {
+  }
+  string targetRecordType {
+  }
+}
+type netsuite.workbook_join_trail {
+  netsuite.workbook_base_record baseRecord {
+  }
+  "List<netsuite.workbook_join>" joins {
+  }
+}
+type netsuite.workbook_meta {
+  string selectorType {
+  }
+  string subType {
+  }
+}
+type netsuite.workbook_operator {
+  string code {
+    default_value = "AND"
+  }
+}
+type netsuite.workbook_pivot_outer {
+  netsuite.workbook_chart_or_pivot pivot {
+    _required = true
+  }
+  xml_type = true
+  default_xml_type = "pivot"
+}
+type netsuite.workbook_rgb_color {
+  number blue {
+  }
+  number green {
+  }
+  number red {
+  }
+}
+type netsuite.workbook_sorting {
+  boolean caseSensitive {
+  }
+  string direction {
+    _restriction = {
+      values = [
+        "ASCENDING",
+        "DESCENDING",
+      ]
+    }
+  }
+  string localeId {
+  }
+  boolean nullFirst {
+  }
+  number order {
+  }
+}
+type netsuite.workbook_style {
+  netsuite.workbook_color backgroundColor {
+  }
+  netsuite.workbook_icon icon {
+  }
+}
+type netsuite.workbook_target_field_context {
+  string name {
+    default_value = "DEFAULT"
+  }
+}
+type netsuite.workbook_translation {
+  string translationScriptId {
   }
 }

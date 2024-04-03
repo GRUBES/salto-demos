@@ -15,13 +15,15 @@ type netsuite.itemRevision {
   }
   string memo {
   }
-  boolean inactive {
-  }
+  
   string internalId {
     isAttribute = true
     _hidden_value = true
   }
   string externalId {
     isAttribute = true
+  }
+  boolean isInactive {
+    originalName = "inactive"
   }
 }

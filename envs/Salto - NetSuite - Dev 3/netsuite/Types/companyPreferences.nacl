@@ -420,4 +420,8 @@ settings netsuite.companyPreferences {
     _hidden_value = true
   }
   _alias = "Company Preferences"
+  boolean USE_DART_SASS_COMPILER {
+    label = "Use Dart Sass compiler"
+    type = "checkbox"
+  }
 }

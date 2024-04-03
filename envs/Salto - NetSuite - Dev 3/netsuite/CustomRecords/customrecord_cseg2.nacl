@@ -62,8 +62,7 @@ type netsuite.customrecord_cseg2 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -99,6 +98,10 @@ type netsuite.customrecord_cseg2 {
     hidden_string source {
     }
     hidden_string internalId {
+    }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
     }
   }
   serviceid scriptid {
@@ -158,117 +161,134 @@ type netsuite.customrecord_cseg2 {
     instance = {
       val_5934_2239021_682 = {
         scriptid = "val_5934_2239021_682"
-        isinactive = false
+        
         name = "EMEA"
         index = 0
+        isInactive = false
       }
       test = {
         scriptid = "test"
-        isinactive = false
+        
         name = "APAC"
         index = 1
+        isInactive = false
       }
       val_5936_2239021_687 = {
         scriptid = "val_5936_2239021_687"
-        isinactive = false
+        
         name = "ISR"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 2
+        isInactive = false
       }
       val_5937_2239021_815 = {
         scriptid = "val_5937_2239021_815"
-        isinactive = false
+        
         name = "UK"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 3
+        isInactive = false
       }
       val_5937_2239021_8150 = {
         scriptid = "val_5937_2239021_8150"
-        isinactive = false
+        
         name = "UKX"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 4
+        isInactive = false
       }
       val_5937_2239021_8151 = {
         scriptid = "val_5937_2239021_8151"
-        isinactive = false
+        
         name = "UKY"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 5
+        isInactive = false
       }
       val_5937_2239021_8152 = {
         scriptid = "val_5937_2239021_8152"
-        isinactive = false
+        
         name = "UKZ"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 6
+        isInactive = false
       }
       val_5937_2239021_8153 = {
         scriptid = "val_5937_2239021_8153"
-        isinactive = false
+        
         name = "UKA"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 7
+        isInactive = false
       }
       val_5937_2239021_8154 = {
         scriptid = "val_5937_2239021_8154"
-        isinactive = false
+        
         name = "UKB"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 8
+        isInactive = false
       }
       val_5937_2239021_8155 = {
         scriptid = "val_5937_2239021_8155"
-        isinactive = false
+        
         name = "UKC"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 9
+        isInactive = false
       }
       val_5937_2239021_8156 = {
         scriptid = "val_5937_2239021_8156"
-        isinactive = false
+        
         name = "UKD"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 10
+        isInactive = false
       }
       val_5937_2239021_8157 = {
         scriptid = "val_5937_2239021_8157"
-        isinactive = false
+        
         name = "UKE"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 11
+        isInactive = false
       }
       val_5937_2239021_8158 = {
         scriptid = "val_5937_2239021_8158"
-        isinactive = false
+        
         name = "UKF"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5934_2239021_682.scriptid
         index = 12
+        isInactive = false
       }
       val_5937_2239021_8159 = {
         scriptid = "val_5937_2239021_8159"
-        isinactive = false
+        
         name = "UKG"
         parent = netsuite.customrecord_cseg2.attr.instances.instance.val_5937_2239021_8153.scriptid
         index = 13
+        isInactive = false
       }
       val_94986_t2480649_569 = {
         scriptid = "val_94986_t2480649_569"
-        isinactive = false
+        
         name = "a-2"
         index = 14
+        isInactive = false
       }
       val_95588_t2480649_309 = {
         scriptid = "val_95588_t2480649_309"
-        isinactive = false
+        
         name = "b1b1"
         index = 15
+        isInactive = false
       }
       val_95589_t2480649_371 = {
         scriptid = "val_95589_t2480649_371"
-        isinactive = false
+        
         name = "c1c1"
         index = 16
+        isInactive = false
       }
     }
   }
@@ -282,4 +302,48 @@ type netsuite.customrecord_cseg2 {
   }
   metadataType = "customrecordtype"
   _alias = "Region"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

@@ -288,10 +288,10 @@ type netsuite.inventoryItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -515,4 +515,11 @@ type netsuite.inventoryItem {
   serviceid identifier {
   }
   _alias = "Inventory Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

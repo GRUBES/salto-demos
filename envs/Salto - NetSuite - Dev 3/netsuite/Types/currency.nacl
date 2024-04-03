@@ -39,4 +39,16 @@ type netsuite.currency {
     isAttribute = true
   }
   _alias = "Currency"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

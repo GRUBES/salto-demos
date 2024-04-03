@@ -10,7 +10,7 @@ netsuite.addressForm custform_2_t1440050_248 {
           field = {
             COUNTRY = {
               id = "COUNTRY"
-              label = "Country2/"
+              label = "Country2"
               visible = true
               mandatory = true
               displayType = "NORMAL"

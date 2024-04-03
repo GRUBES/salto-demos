@@ -3,7 +3,7 @@ type netsuite.customFieldRoleAccess {
     hidden_string source {
     }
   }
-  netsuite.role role {
+  netsuite.roleReference role {
     isReference = true
   }
   unknown accessLevel {

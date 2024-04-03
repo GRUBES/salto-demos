@@ -7,7 +7,7 @@ type netsuite.jobResources {
   }
   string email {
   }
-  netsuite.role role {
+  netsuite.roleReference role {
     isReference = true
   }
 }

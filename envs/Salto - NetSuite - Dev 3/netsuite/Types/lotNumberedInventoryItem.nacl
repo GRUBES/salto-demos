@@ -301,14 +301,14 @@ type netsuite.lotNumberedInventoryItem {
   }
   string storeDisplayName {
   }
-  netsuite.file storeDisplayThumbnail {
+  netsuite.fileReference storeDisplayThumbnail {
     isReference = true
   }
   unknown weightUnit {
   }
   string weightUnits {
   }
-  netsuite.file storeDisplayImage {
+  netsuite.fileReference storeDisplayImage {
     isReference = true
   }
   string storeDescription {
@@ -490,4 +490,11 @@ type netsuite.lotNumberedInventoryItem {
   serviceid identifier {
   }
   _alias = "Lot Numbered Inventory Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

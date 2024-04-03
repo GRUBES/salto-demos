@@ -14,8 +14,7 @@ type netsuite.promotionsplugin {
   }
   string description {
   }
-  boolean isinactive {
-  }
+  
   boolean notifyadmins {
   }
   string notifyemails {
@@ -40,6 +39,38 @@ type netsuite.promotionsplugin {
     _hidden_value = true
   }
   _alias = "Promotions Plugin"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }
 type netsuite.promotionsplugin_libraries_library {
   string scriptfile {

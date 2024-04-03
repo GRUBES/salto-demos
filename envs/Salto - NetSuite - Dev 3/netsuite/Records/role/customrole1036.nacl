@@ -4,7 +4,7 @@ netsuite.role customrole1036 {
   coreadminpermission = false
   employeerestriction = "NONE"
   employeeselectionunrestricted = false
-  isinactive = true
+  
   ispartnerrole = false
   issalesrole = false
   issinglesignononly = false
@@ -66,4 +66,5 @@ netsuite.role customrole1036 {
     }
   }
   _alias = "With employeeviewingallowed field"
+  isInactive = true
 }

@@ -62,8 +62,7 @@ type netsuite.customrecord_cseg1 {
     }
     boolean includename {
     }
-    boolean isinactive {
-    }
+    
     boolean isordered {
     }
     boolean showcreationdate {
@@ -99,6 +98,10 @@ type netsuite.customrecord_cseg1 {
     hidden_string source {
     }
     hidden_string internalId {
+    }
+    netsuite.bundle bundle {
+    }
+    boolean isInactive {
     }
   }
   serviceid scriptid {
@@ -136,58 +139,67 @@ type netsuite.customrecord_cseg1 {
     instance = {
       val_123 = {
         scriptid = "val_123"
-        isinactive = false
+        
         name = "a"
         index = 0
+        isInactive = false
       }
       val_5913_2239021_335 = {
         scriptid = "val_5913_2239021_335"
-        isinactive = false
+        
         name = "b"
         index = 1
+        isInactive = false
       }
       val_121639_t2257860_428 = {
         scriptid = "val_121639_t2257860_428"
-        isinactive = false
+        
         name = "c"
         index = 2
+        isInactive = false
       }
       val_5915_2239021_234 = {
         scriptid = "val_5915_2239021_234"
-        isinactive = false
+        
         name = "aSon"
         parent = netsuite.customrecord_cseg1.attr.instances.instance.val_123.scriptid
         index = 3
+        isInactive = false
       }
       val_94803_t2480649_686 = {
         scriptid = "val_94803_t2480649_686"
-        isinactive = false
+        
         name = "I'm-new"
         index = 4
+        isInactive = false
       }
       val_94804_t2480649_849 = {
         scriptid = "val_94804_t2480649_849"
-        isinactive = false
+        
         name = "oooo"
         index = 5
+        isInactive = false
       }
       val_94985_t2480649_587 = {
         scriptid = "val_94985_t2480649_587"
-        isinactive = false
+        
         name = "a-1"
         index = 6
+        isInactive = false
       }
       val_95587_t2480649_283 = {
         scriptid = "val_95587_t2480649_283"
-        isinactive = false
+        
         name = "a1a1"
         index = 7
+        isInactive = false
       }
       val_95590_t2480649_577 = {
         scriptid = "val_95590_t2480649_577"
-        isinactive = false
+        
         name = "d1d1"
         index = 8
+        isInactive = false
       }
     }
   }
@@ -201,4 +213,48 @@ type netsuite.customrecord_cseg1 {
   }
   metadataType = "customrecordtype"
   _alias = "Stam2"
+  _self_important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
 }

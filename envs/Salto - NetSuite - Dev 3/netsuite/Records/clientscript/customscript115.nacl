@@ -1,8 +1,8 @@
 netsuite.clientscript customscript115 {
   scriptid = "customscript115"
   description = "Test script from Huy 1 - Another change"
-  isinactive = false
-  name = "e2e-branch-1"
+  
+  name = "e2e-branch-2"
   notifyadmins = false
   notifyowner = true
   notifyuser = false
@@ -23,5 +23,6 @@ netsuite.clientscript customscript115 {
       }
     }
   }
-  _alias = "e2e-branch-1"
+  _alias = "e2e-branch-2"
+  isInactive = false
 }

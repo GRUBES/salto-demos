@@ -16,7 +16,7 @@ netsuite.entitycustomfield custentity14 {
   availableexternally = false
   checkspelling = false
   defaultchecked = false
-  description = "Edited!"
+  description = "Editedd"
   displaytype = "NORMAL"
   encryptatrest = false
   fieldtype = "TEXT"

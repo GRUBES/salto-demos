@@ -10,7 +10,7 @@ type netsuite.contactAccessRoles {
   }
   string email {
   }
-  netsuite.role role {
+  netsuite.roleReference role {
     isReference = true
   }
   string password {

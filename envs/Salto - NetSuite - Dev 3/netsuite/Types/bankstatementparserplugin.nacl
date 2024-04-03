@@ -14,8 +14,7 @@ type netsuite.bankstatementparserplugin {
   }
   string description {
   }
-  boolean isinactive {
-  }
+  
   boolean notifyadmins {
   }
   string notifyemails {
@@ -35,4 +34,36 @@ type netsuite.bankstatementparserplugin {
   string application_id {
   }
   _alias = "Bank Statement Parser Plugin"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "isinactive"
+  }
 }

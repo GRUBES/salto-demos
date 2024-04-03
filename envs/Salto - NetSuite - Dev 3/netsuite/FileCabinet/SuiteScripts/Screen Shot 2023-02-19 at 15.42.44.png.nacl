@@ -1,7 +1,7 @@
 netsuite.file SuiteScripts_Screen_Shot_2023_02_19_at_15_42_44_png@dssbbssvvv {
   description = "my image"
   bundleable = false
-  isinactive = false
+  
   availablewithoutlogin = false
   generateurltimestamp = false
   hideinbundle = false
@@ -11,4 +11,5 @@ netsuite.file SuiteScripts_Screen_Shot_2023_02_19_at_15_42_44_png@dssbbssvvv {
     netsuite.folder.instance.SuiteScripts,
   ]
   _alias = "Screen Shot 2023-02-19 at 15.42.44.png"
+  isInactive = false
 }

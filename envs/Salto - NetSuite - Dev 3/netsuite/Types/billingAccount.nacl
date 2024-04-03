@@ -19,8 +19,7 @@ type netsuite.billingAccount {
   }
   string name {
   }
-  boolean inactive {
-  }
+  
   string memo {
   }
   string createdBy {
@@ -61,5 +60,8 @@ type netsuite.billingAccount {
   }
   string externalId {
     isAttribute = true
+  }
+  boolean isInactive {
+    originalName = "inactive"
   }
 }
