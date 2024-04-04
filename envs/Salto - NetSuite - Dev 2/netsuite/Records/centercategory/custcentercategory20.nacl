@@ -1,7 +1,0 @@
-netsuite.centercategory custcentercategory20 {
-  scriptid = "custcentercategory20"
-  center = netsuite.center.instance.custcenter1.scriptid
-  centertab = netsuite.centertab.instance.custcentertab8.scriptid
-  label = "Issue Management"
-  _alias = "Issue Management"
-}

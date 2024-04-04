@@ -1,8 +1,0 @@
-type netsuite.customtransactiontype_tasktype is string {
-  _restriction = {
-    values = [
-      "LIST",
-    ]
-    enforce_value = false
-  }
-}

@@ -1,8 +1,0 @@
-type netsuite.fldFilterSelList {
-  annotations {
-    hidden_string source {
-    }
-  }
-  "List<netsuite.recordRef>" fldFilterSel {
-  }
-}

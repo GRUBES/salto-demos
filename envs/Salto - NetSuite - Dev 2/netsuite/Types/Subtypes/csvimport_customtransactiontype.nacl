@@ -1,8 +1,0 @@
-type netsuite.csvimport_customtransactiontype is string {
-  _restriction = {
-    values = [
-      "CUSTOMTRANSACTION",
-    ]
-    enforce_value = false
-  }
-}

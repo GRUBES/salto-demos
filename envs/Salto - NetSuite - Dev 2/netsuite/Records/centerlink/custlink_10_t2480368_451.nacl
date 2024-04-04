@@ -1,6 +1,0 @@
-netsuite.centerlink custlink_10_t2480368_451 {
-  scriptid = "custlink_10_t2480368_451"
-  label = "View Saved Reports"
-  url = "https://system.netsuite.com/core/reporting/savedreports.nl?whence="
-  _alias = "View Saved Reports"
-}

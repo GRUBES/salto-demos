@@ -1,9 +1,0 @@
-type netsuite.customsegment_valuesdisplayorder is string {
-  _restriction = {
-    values = [
-      "ALPHABETICAL",
-      "SUBLIST",
-    ]
-    enforce_value = false
-  }
-}

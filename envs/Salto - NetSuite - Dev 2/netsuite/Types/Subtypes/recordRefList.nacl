@@ -1,8 +1,0 @@
-type netsuite.recordRefList {
-  annotations {
-    hidden_string source {
-    }
-  }
-  "List<netsuite.recordRef>" recordRef {
-  }
-}

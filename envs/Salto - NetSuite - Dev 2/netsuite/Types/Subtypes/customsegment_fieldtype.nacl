@@ -1,9 +1,0 @@
-type netsuite.customsegment_fieldtype is string {
-  _restriction = {
-    values = [
-      "MULTISELECT",
-      "SELECT",
-    ]
-    enforce_value = false
-  }
-}

@@ -1,9 +1,0 @@
-type netsuite.vendorRoles {
-  annotations {
-    hidden_string source {
-    }
-  }
-  netsuite.roleReference selectedRole {
-    isReference = true
-  }
-}

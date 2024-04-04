@@ -1,4 +1,0 @@
-type netsuite.cdata is string {
-}
-type netsuite.fileContent is string {
-}

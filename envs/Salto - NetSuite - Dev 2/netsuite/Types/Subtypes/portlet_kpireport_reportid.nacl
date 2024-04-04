@@ -1,2 +1,0 @@
-type netsuite.portlet_kpireport_reportid is string {
-}

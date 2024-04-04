@@ -1,3 +1,0 @@
-type netsuite.folderReference {
-  originalType = netsuite.folder
-}

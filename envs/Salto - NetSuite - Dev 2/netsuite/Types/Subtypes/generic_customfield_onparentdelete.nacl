@@ -1,9 +1,0 @@
-type netsuite.generic_customfield_onparentdelete is string {
-  _restriction = {
-    values = [
-      "NO_ACTION",
-      "SET_NULL",
-    ]
-    enforce_value = false
-  }
-}

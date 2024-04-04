@@ -1,7 +1,0 @@
-netsuite.centercategory custcentercategory31 {
-  scriptid = "custcentercategory31"
-  center = netsuite.center.instance.custcenter1.scriptid
-  centertab = netsuite.centertab.instance.custcentertab8.scriptid
-  label = "Employee/HR"
-  _alias = "Employee/HR"
-}

@@ -1,7 +1,0 @@
-{
-  "baseUrl": "SuiteScripts/ToastInternalScripts/",
-  "paths": {
-    "serverLockTransactions": "toast_serverLockTransactionsaa",
-    "clientLockTransactions": "toast_clientLockTransactionsbb"
-  }
-}

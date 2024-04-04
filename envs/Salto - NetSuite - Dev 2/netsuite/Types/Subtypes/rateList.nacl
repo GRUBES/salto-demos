@@ -1,8 +1,0 @@
-type netsuite.rateList {
-  annotations {
-    hidden_string source {
-    }
-  }
-  "List<netsuite.rate>" rate {
-  }
-}
