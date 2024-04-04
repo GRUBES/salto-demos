@@ -1,6 +1,0 @@
-netsuite.centerlink custlink_8_t2480368_866 {
-  scriptid = "custlink_8_t2480368_866"
-  label = "Mass Email Contacts"
-  url = "https://system.netsuite.com/app/crm/common/merge/mailmerge.nl?templatetype=EMAIL"
-  _alias = "Mass Email Contacts"
-}

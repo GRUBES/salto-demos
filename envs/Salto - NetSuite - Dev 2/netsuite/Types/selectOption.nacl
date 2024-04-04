@@ -1,6 +1,0 @@
-type netsuite.selectOption {
-  string text {
-  }
-  unknown value {
-  }
-}

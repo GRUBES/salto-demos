@@ -1,8 +1,0 @@
-type netsuite.generalTokenSupportedOperationsListList {
-  annotations {
-    hidden_string source {
-    }
-  }
-  "List<unknown>" GeneralTokenSupportedOperationsList {
-  }
-}

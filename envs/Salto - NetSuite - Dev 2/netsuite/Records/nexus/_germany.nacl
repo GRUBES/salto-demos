@@ -1,6 +1,0 @@
-netsuite.nexus _germany {
-  country = "_germany"
-  description = "Germany"
-  identifier = "_germany"
-  _alias = "_germany"
-}

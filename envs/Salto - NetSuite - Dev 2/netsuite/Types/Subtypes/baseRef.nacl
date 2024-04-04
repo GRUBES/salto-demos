@@ -1,8 +1,0 @@
-type netsuite.baseRef {
-  annotations {
-    hidden_string source {
-    }
-  }
-  string name {
-  }
-}

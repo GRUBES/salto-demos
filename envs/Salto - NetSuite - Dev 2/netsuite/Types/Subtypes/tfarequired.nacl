@@ -1,9 +1,0 @@
-type netsuite.tfarequired is string {
-  _restriction = {
-    values = [
-      "OFF",
-      "SMS",
-    ]
-    enforce_value = false
-  }
-}

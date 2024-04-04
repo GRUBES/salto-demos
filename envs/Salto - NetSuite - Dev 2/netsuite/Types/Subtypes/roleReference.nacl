@@ -1,3 +1,0 @@
-type netsuite.roleReference {
-  originalType = netsuite.role
-}

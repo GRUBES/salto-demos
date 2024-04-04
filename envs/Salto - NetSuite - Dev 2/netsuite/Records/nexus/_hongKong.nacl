@@ -1,6 +1,0 @@
-netsuite.nexus _hongKong {
-  country = "_hongKong"
-  description = "Hong Kong"
-  identifier = "_hongKong"
-  _alias = "_hongKong"
-}

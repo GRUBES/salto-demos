@@ -1,6 +1,0 @@
-netsuite.subtab custtab_shalom_test {
-  scriptid = "custtab_shalom_test"
-  tabtype = "ENTITY"
-  title = "Title Chane Test"
-  _alias = "Title Chane Test"
-}

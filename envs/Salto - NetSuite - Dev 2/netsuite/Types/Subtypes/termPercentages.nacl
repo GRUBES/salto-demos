@@ -1,8 +1,0 @@
-type netsuite.termPercentages {
-  annotations {
-    hidden_string source {
-    }
-  }
-  number percentage {
-  }
-}

@@ -1,8 +1,0 @@
-type netsuite.nullField {
-  annotations {
-    hidden_string source {
-    }
-  }
-  "List<string>" name {
-  }
-}

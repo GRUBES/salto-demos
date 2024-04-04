@@ -8,6 +8,8 @@
  * @NApiVersion 2.1
  * @NModuleScope Public
  * @NScriptType UserEventScript
+ * 
+ * Supervisors must approve Employee records.
  */
 define(['N/error', 'N/search'], (error, search) => {
   const errors = {

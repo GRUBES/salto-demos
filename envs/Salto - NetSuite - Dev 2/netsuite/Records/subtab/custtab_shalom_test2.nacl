@@ -1,6 +1,0 @@
-netsuite.subtab custtab_shalom_test2 {
-  scriptid = "custtab_shalom_test2"
-  tabtype = "ENTITY"
-  title = "Title Change Test"
-  _alias = "Title Change Test"
-}

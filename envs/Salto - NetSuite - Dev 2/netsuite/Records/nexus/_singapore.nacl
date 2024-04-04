@@ -1,6 +1,0 @@
-netsuite.nexus _singapore {
-  country = "_singapore"
-  description = "Singapore"
-  identifier = "_singapore"
-  _alias = "_singapore"
-}

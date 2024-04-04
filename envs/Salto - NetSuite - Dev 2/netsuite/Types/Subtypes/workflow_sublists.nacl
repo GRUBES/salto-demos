@@ -1,9 +1,0 @@
-type netsuite.workflow_sublists is string {
-  _restriction = {
-    values = [
-      "EXPENSEREPORT:EXPENSE",
-      "ITEM",
-    ]
-    enforce_value = false
-  }
-}

@@ -1,6 +1,0 @@
-netsuite.subtab custtab_shalom2 {
-  scriptid = "custtab_shalom2"
-  tabtype = "ENTITY"
-  title = "IL Global Bank Details"
-  _alias = "IL Global Bank Details"
-}
