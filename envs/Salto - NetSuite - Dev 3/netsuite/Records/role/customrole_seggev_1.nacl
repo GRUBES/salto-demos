@@ -28,7 +28,7 @@ netsuite.role customrole_seggev_1 {
       }
       customrecord_seggev_1 = {
         permkey = netsuite.customrecord_seggev_1.attr.scriptid
-        permlevel = "VIEW"
+        permlevel = "FULL"
         restriction = "EDIT"
       }
     }

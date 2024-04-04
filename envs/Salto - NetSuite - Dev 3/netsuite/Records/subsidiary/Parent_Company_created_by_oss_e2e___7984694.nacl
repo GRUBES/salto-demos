@@ -1,5 +1,5 @@
-netsuite.subsidiary Parent_Company_created_by_oss_e2e___8145901@sussssbs {
-  name = "created by oss e2e - 8145901"
+netsuite.subsidiary Parent_Company_created_by_oss_e2e___7984694@sussssbs {
+  name = "created by oss e2e - 7984694"
   parent = netsuite.subsidiary.instance.Parent_Company@s
   isInactive = false
   showSubsidiaryName = false
@@ -26,6 +26,6 @@ netsuite.subsidiary Parent_Company_created_by_oss_e2e___8145901@sussssbs {
   checkLayout = {
     id = "[ACCOUNT_SPECIFIC_VALUE] (object) (Standard Check Layout)"
   }
-  identifier = "Parent Company_created by oss e2e - 8145901"
-  _alias = "created by oss e2e - 8145901"
+  identifier = "Parent Company_created by oss e2e - 7984694"
+  _alias = "created by oss e2e - 7984694"
 }

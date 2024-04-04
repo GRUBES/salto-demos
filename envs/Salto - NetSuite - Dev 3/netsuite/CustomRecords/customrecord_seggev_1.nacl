@@ -142,7 +142,7 @@ type netsuite.customrecord_seggev_1 {
   shownotes = true
   showowner = false
   showownerallowchange = false
-  showowneronlist = true
+  showowneronlist = false
   metadataType = "customrecordtype"
   isInactive = false
   _alias = "seggev_1"
