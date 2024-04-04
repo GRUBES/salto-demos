@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollectiontranslations_pivot_dilly {
+  scriptid = "custcollectiontranslations_pivot_dilly"
+  defaultlanguage = "en-US"
+  name = "Pivot 1"
+  strings = {
+    string = {
+      report_name_1711_7 = {
+        scriptid = "report_name_1711_7"
+        defaulttranslation = "Pivot 1"
+        description = "Name of pivot"
+        index = 0
+      }
+    }
+  }
+  _alias = "Pivot 1"
+}

@@ -1,0 +1,10 @@
+type netsuite.customsegment_displaytype is string {
+  _restriction = {
+    values = [
+      "HIDDEN",
+      "LOCKED",
+      "NORMAL",
+    ]
+    enforce_value = false
+  }
+}

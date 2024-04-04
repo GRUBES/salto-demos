@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_crypto_js_js@duv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/crypto_js.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/crypto_js.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "crypto_js.js"
+  isInactive = false
+}

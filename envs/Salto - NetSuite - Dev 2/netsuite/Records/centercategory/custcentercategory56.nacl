@@ -1,0 +1,57 @@
+netsuite.centercategory custcentercategory56 {
+  scriptid = "custcentercategory56"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab17.scriptid
+  label = "Tools"
+  links = {
+    link = {
+      LIST_CUSTJOB = {
+        linkid = "LIST_CUSTJOB"
+        shortlist = false
+        index = 0
+      }
+      LIST_PARTNER = {
+        linkid = "LIST_PARTNER"
+        shortlist = false
+        index = 1
+      }
+      custlink_1_t2480368_521 = {
+        linkobject = netsuite.centerlink.instance.custlink_1_t2480368_521.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+        index = 2
+      }
+      customsearch_esc_customer_group_search = {
+        linklabel = "View Customer Groups"
+        linkobject = "[scriptid=customsearch_esc_customer_group_search]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+        index = 3
+      }
+      ADMI_IMPORTCSV = {
+        linkid = "ADMI_IMPORTCSV"
+        linklabel = "Import Assistant"
+        shortlist = false
+        index = 4
+      }
+      ADMI_SAVEDIMPORTS = {
+        linkid = "ADMI_SAVEDIMPORTS"
+        linklabel = "View Saved Imports"
+        shortlist = false
+        index = 5
+      }
+      custlink_2_t2480368_263 = {
+        linkobject = netsuite.centerlink.instance.custlink_2_t2480368_263.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+        index = 6
+      }
+      TRAN_PRINT = {
+        linkid = "TRAN_PRINT"
+        shortlist = false
+        index = 7
+      }
+    }
+  }
+  _alias = "Tools"
+}

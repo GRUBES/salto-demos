@@ -1,0 +1,11 @@
+type netsuite.advInterCompanyJournalEntryAccountingBookDetailList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.advInterCompanyJournalEntryAccountingBookDetail>" interCompanyJournalEntryAccountingBookDetail {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

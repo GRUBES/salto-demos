@@ -1,0 +1,11 @@
+type netsuite.portlet_reportsnapshot_charttype is string {
+  _restriction = {
+    values = [
+      "AREA",
+      "BAR",
+      "COLUMN",
+      "LINE",
+    ]
+    enforce_value = false
+  }
+}

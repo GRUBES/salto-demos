@@ -1,0 +1,24 @@
+type netsuite.paycheckJournalCompanyContribution {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number id {
+  }
+  netsuite.payrollItem payrollItem {
+    isReference = true
+  }
+  number amount {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

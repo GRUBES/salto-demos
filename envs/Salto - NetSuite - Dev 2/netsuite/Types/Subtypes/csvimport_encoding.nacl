@@ -1,0 +1,17 @@
+type netsuite.csvimport_encoding is string {
+  _restriction = {
+    values = [
+      "Big5",
+      "EUC_KR",
+      "GB18030",
+      "GBK",
+      "ISO_2022_KR",
+      "ISO_8859_1",
+      "MacRoman",
+      "SHIFT_JIS",
+      "UTF_8",
+      "windows-1252",
+    ]
+    enforce_value = false
+  }
+}

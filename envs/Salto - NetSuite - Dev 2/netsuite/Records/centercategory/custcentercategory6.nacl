@@ -1,0 +1,61 @@
+netsuite.centercategory custcentercategory6 {
+  scriptid = "custcentercategory6"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Customer/Receivables"
+  links = {
+    link = {
+      REPO_174 = {
+        linkid = "REPO_174"
+        shortlist = false
+        index = 0
+      }
+      REPO_176 = {
+        linkid = "REPO_176"
+        shortlist = false
+        index = 1
+      }
+      REPO_162 = {
+        linkid = "REPO_162"
+        shortlist = false
+        index = 2
+      }
+      REPO_266 = {
+        linkid = "REPO_266"
+        shortlist = false
+        index = 3
+      }
+      REPO_203 = {
+        linkid = "REPO_203"
+        shortlist = false
+        index = 4
+      }
+      REPO_274 = {
+        linkid = "REPO_274"
+        shortlist = false
+        index = 5
+      }
+      REPO_262 = {
+        linkid = "REPO_262"
+        shortlist = false
+        index = 6
+      }
+      REPO_22 = {
+        linkid = "REPO_22"
+        shortlist = false
+        index = 7
+      }
+      REPO_21 = {
+        linkid = "REPO_21"
+        shortlist = false
+        index = 8
+      }
+      REPO_NEG187 = {
+        linkid = "REPO_NEG187"
+        shortlist = false
+        index = 9
+      }
+    }
+  }
+  _alias = "Customer/Receivables"
+}

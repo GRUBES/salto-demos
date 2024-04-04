@@ -1,0 +1,11 @@
+type netsuite.returnAuthorizationItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.returnAuthorizationItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

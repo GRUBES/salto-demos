@@ -1,0 +1,11 @@
+type netsuite.customerRefundApplyList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customerRefundApply>" apply {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

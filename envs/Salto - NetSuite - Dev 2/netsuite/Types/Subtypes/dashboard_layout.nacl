@@ -1,0 +1,11 @@
+type netsuite.dashboard_layout is string {
+  _restriction = {
+    values = [
+      "SINGLE_COLUMN",
+      "THREE_COLUMN",
+      "TWO_COLUMN",
+      "TWO_COLUMN_RIGHT",
+    ]
+    enforce_value = false
+  }
+}

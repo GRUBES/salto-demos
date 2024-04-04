@@ -1,0 +1,34 @@
+type netsuite.workOrderCompletionOperation {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number operationSequence {
+  }
+  string operationName {
+  }
+  string workCenter {
+  }
+  number machineResources {
+  }
+  number laborResources {
+  }
+  number inputQuantity {
+  }
+  number quantityRemaining {
+  }
+  number predecessorCompletedQuantity {
+  }
+  number completedQuantity {
+  }
+  boolean recordSetup {
+  }
+  number machineSetupTime {
+  }
+  number laborSetupTime {
+  }
+  number machineRunTime {
+  }
+  number laborRunTime {
+  }
+}

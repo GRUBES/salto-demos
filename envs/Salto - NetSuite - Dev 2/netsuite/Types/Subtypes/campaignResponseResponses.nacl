@@ -1,0 +1,14 @@
+type netsuite.campaignResponseResponses {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string response {
+  }
+  string responseDate {
+  }
+  string author {
+  }
+  string note {
+  }
+}

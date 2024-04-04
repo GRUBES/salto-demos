@@ -1,0 +1,19 @@
+netsuite.othercustomfield custrecord1 {
+  scriptid = "custrecord1"
+  accesslevel = "2"
+  applyformatting = false
+  checkspelling = false
+  defaultchecked = false
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "TEXT"
+  isformula = false
+  ismandatory = false
+  label = "some-other"
+  rectype = "-128"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "some-other"
+}

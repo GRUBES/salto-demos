@@ -1,0 +1,15 @@
+type netsuite.taxTypeNexusesTax {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nexus nexus {
+    isReference = true
+  }
+  string description {
+  }
+  netsuite.recordRef saleTaxAcct {
+  }
+  netsuite.recordRef purchTaxAcct {
+  }
+}

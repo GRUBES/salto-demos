@@ -1,0 +1,11 @@
+type netsuite.vendorRolesList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.vendorRoles>" roles {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

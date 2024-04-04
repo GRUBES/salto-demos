@@ -1,0 +1,11 @@
+type netsuite.giftCertRedemptionList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.giftCertRedemption>" giftCertRedemption {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,15 @@
+type netsuite.phoneCallContact {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef company {
+  }
+  netsuite.contact contact {
+    isReference = true
+  }
+  string phone {
+  }
+  string email {
+  }
+}

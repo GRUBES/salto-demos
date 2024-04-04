@@ -1,0 +1,24 @@
+type netsuite.customerDepositApply {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number doc {
+  }
+  number line {
+  }
+  boolean apply {
+  }
+  string applyDate {
+  }
+  string type {
+  }
+  string refNum {
+  }
+  number total {
+  }
+  number amount {
+  }
+  string job {
+  }
+}

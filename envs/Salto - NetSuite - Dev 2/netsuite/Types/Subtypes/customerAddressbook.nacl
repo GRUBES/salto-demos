@@ -1,0 +1,19 @@
+type netsuite.customerAddressbook {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean defaultShipping {
+  }
+  boolean defaultBilling {
+  }
+  boolean isResidential {
+  }
+  string label {
+  }
+  netsuite.address addressbookAddress {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+}

@@ -1,0 +1,28 @@
+type netsuite.creditMemoApply {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  string applyDate {
+  }
+  string job {
+  }
+  string type {
+  }
+  string refNum {
+  }
+  number total {
+  }
+  number due {
+  }
+  string currency {
+  }
+  number amount {
+  }
+  number line {
+  }
+}

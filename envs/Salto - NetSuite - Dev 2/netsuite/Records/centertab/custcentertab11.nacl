@@ -1,0 +1,50 @@
+netsuite.centertab custcentertab11 {
+  scriptid = "custcentertab11"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = false
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Quotes"
+  portlets = {
+    portlet = {
+      portlet_86_3368792_785 = {
+        scriptid = "portlet_86_3368792_785"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+        index = 0
+      }
+      portlet_88_3368792_785 = {
+        scriptid = "portlet_88_3368792_785"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+        index = 1
+      }
+      portlet_81_3368792_785 = {
+        scriptid = "portlet_81_3368792_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+        index = 2
+      }
+      portlet_76_3368792_785 = {
+        scriptid = "portlet_76_3368792_785"
+        isportletshown = false
+        portlet = "LIST"
+        portletcolumn = "2"
+        index = 3
+      }
+      portlet_85_3368792_785 = {
+        scriptid = "portlet_85_3368792_785"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+        index = 4
+      }
+    }
+  }
+  _alias = "Quotes"
+}

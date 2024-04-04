@@ -1,0 +1,6 @@
+netsuite.nexus _newZealand {
+  country = "_newZealand"
+  description = "New Zealand"
+  identifier = "_newZealand"
+  _alias = "_newZealand"
+}

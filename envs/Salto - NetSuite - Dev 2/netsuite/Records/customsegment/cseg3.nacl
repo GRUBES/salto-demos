@@ -1,0 +1,18 @@
+netsuite.customsegment cseg3 {
+  scriptid = "cseg3"
+  defaultrecordaccesslevel = "VIEW"
+  defaultsearchaccesslevel = "VIEW"
+  displaytype = "NORMAL"
+  fieldtype = "SELECT"
+  hasglimpact = false
+  ismandatory = false
+  label = "segment-77"
+  recordtype = netsuite.customrecord_cseg3.attr.scriptid
+  valuesdisplayorder = "SUBLIST"
+  segmentapplication = {
+    items = {
+      subtype = "BOTH"
+    }
+  }
+  _alias = "segment-77"
+}

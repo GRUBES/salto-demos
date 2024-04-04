@@ -1,0 +1,12 @@
+type netsuite.workflowtransition_triggertype is string {
+  _restriction = {
+    values = [
+      "AFTERSUBMIT",
+      "BEFORELOAD",
+      "BEFORESUBMIT",
+      "ONENTRY",
+      "SCHEDULED",
+    ]
+    enforce_value = false
+  }
+}

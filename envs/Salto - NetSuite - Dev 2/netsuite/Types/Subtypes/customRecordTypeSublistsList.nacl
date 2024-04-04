@@ -1,0 +1,11 @@
+type netsuite.customRecordTypeSublistsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordTypeSublists>" sublists {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

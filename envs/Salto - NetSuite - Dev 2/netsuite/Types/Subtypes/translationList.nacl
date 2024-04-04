@@ -1,0 +1,15 @@
+type netsuite.translationList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "Map<netsuite.translation>" translation {
+    map_key_field = [
+      "locale",
+      "language",
+    ]
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

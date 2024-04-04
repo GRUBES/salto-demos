@@ -1,0 +1,251 @@
+netsuite.reportdefinition customreport_306_t2480368_857 {
+  scriptid = "customreport_306_t2480368_857"
+  definition = "ae044356ef716223d378f5080243dd71f3b75bfc46ea12fe9939acfc37b1ba5e@GZC@2023.2.14@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"
+  name = "Shalom Customer Count Test"
+  audience = {
+    allroles = true
+  }
+  components = [
+    {
+      KEY_COMPONENT = 99
+      FLAG_SECONDARY_DIM = false
+      FIELD_CLASS = "com.netledger.app.reporting.measure.NLCustomerMeasure"
+    },
+    {
+      KEY_COMPONENT = 40
+      FLAG_SECONDARY_DIM = false
+      FIELD_CLASS = "com.netledger.app.reporting.dimension.NLQuarterDimension"
+    },
+  ]
+  parameters = {
+    accounting_book_current_id = "1"
+    accounting_book_id = "1"
+  }
+  sorts = [
+    {
+      KEY_COMPONENT = "99"
+      FIELD_ALIAS = "numcustomers"
+      SEQ_NUMBER = 0
+      FLAG_DESCENDING = false
+      FLAG_SUBTOTAL = false
+    },
+  ]
+  fields = [
+    {
+      KEY_COMPONENT = 40
+      FIELD_TABLE = "QTR"
+      FIELD_ALIAS = "SDATETEXT"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = true
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 1
+      FIELD_LABEL = "Quarter"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 99
+      FIELD_TABLE = "ENTITY"
+      FIELD_ALIAS = "SRAWFULLNAME"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 2
+      FIELD_LABEL = "Name (Grouped)"
+      FIELD_URL = "/app/common/entity/entity.nl?id={customer,entity,nkey,x,x}"
+      FIELD_URL_TYPE = "DERIVED"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 99
+      FIELD_TABLE = "ENTITYSTATUS"
+      FIELD_ALIAS = "SNAME"
+      FIELD_TARGET_TABLE = "CUSTJOB"
+      FIELD_FOREIGN_KEY = "ALLCUSTJOB13"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = false
+      SEQ_NUMBER = 3
+      FIELD_LABEL = "Customer Status: Status"
+      FIELD_URL = "/app/common/entity/entity.nl?id={customer,entity,nkey,x,x}"
+      FIELD_URL_TYPE = "DERIVED"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = false
+      FLAG_DISPLAY = true
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "text"
+      FLAG_TOTAL_FORMULA = true
+    },
+    {
+      KEY_COMPONENT = 99
+      FIELD_ALIAS = "NUMCUSTOMERS"
+      FLAG_DIMENSION = false
+      FIELD_UNIT_TYPE = -1
+      FLAG_ROLLUP = false
+      FIELD_DATE_FILTER_INDEX = 0
+      FLAG_APPLY_FORWARDING = true
+      FLAG_MEASURE = true
+      SEQ_NUMBER = 4
+      FIELD_LABEL = "Total"
+      FIELD_URL = "/app/common/entity/entity.nl?id={customer,entity,nkey,x,x}"
+      FIELD_URL_TYPE = "DERIVED"
+      FLAG_DUAL_COLUMN = false
+      FLAG_PERCENT_TOTAL = false
+      FLAG_PERCENT_INCOME = false
+      FLAG_PERCENT_EXPENSE = false
+      FLAG_RUNNING_BAL = false
+      FLAG_SHOW_OPENING_BAL = false
+      FLAG_SHOW_ABS_DIFF = false
+      FLAG_SHOW_PCT_DIFF = false
+      FLAG_SUB_TOTAL = true
+      FLAG_DISPLAY = true
+      FIELD_SUMMARY = " COUNT"
+      FLAG_DROP_DECIMAL = false
+      FLAG_DIV_BY_THOUSAND = false
+      FLAG_NEG_IN_RED = false
+      FIELD_NEG_VAL_FORMAT = "norm"
+      FIELD_FORMAT = "integer"
+      FLAG_TOTAL_FORMULA = true
+    },
+  ]
+  uiPreferences = {
+    PARAMETER_CASH_BASIS = false
+    PARAMETER_TAXCASH_BASIS = "F"
+    PARAMETER_SHOW_ZEROS = true
+    PARAMETER_SHOW_SINGLEROWLINES = false
+    PARAMETER_DISPLAY_TYPE = "data"
+    PARAMETER_INC_VS_EXP = false
+    PARAMETER_GRAPH_TOP = 100001
+    PARAMETER_WEB_STORE = false
+    PARAMETER_ACTIVITY_ONLY = false
+    PARAMETER_ALLOW_WEBQUERY = true
+    PARAMETER_GRAPH_3D = false
+    PARAMETER_SHOW_CURRENCY_SYMBOL = false
+    PARAMETER_EXPAND_LEVEL = 100
+  }
+  criteria = [
+    {
+      descriptor = {
+        FIELD_ALIAS = "DDATE"
+        FIELD_OP_CLASS = "BETWEEN"
+        FILED_TYPE = "DATE"
+        SEQ_NUMBER = 0
+        FIELD_UNIT_TYPE = -1
+        FLAG_IN_FOOTER = true
+        FLAG_CUSTOM_FOOTER = false
+        FLAG_VIRTUAL_FIELD = true
+        FIELD_DESCRIPTOR = "customer,x,creationdate,x,x"
+        FLAG_IS_HIDDEN = false
+      }
+      values = [
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 0
+          FIELD_VALUE = "TM"
+        },
+      ]
+    },
+    {
+      descriptor = {
+        FIELD_ALIAS = "KSUBSIDIARY"
+        FIELD_OP_CLASS = "SUBSIDCHILDRENOF"
+        FILED_TYPE = "SELECT"
+        SEQ_NUMBER = 1
+        FIELD_UNIT_TYPE = -1
+        FLAG_IN_FOOTER = true
+        FLAG_CUSTOM_FOOTER = false
+        FLAG_VIRTUAL_FIELD = true
+        FIELD_DESCRIPTOR = "customer,entity,ksubsidiary,x,x"
+        FLAG_IS_HIDDEN = false
+      }
+      values = [
+        {
+          FIELD_DATE_FILTER_INDEX = 0
+          SEQ_NUMBER = 0
+          FIELD_VALUE = 1
+        },
+      ]
+    },
+  ]
+  flags = {
+    KEY_REPORT_ID = 306
+    KEY_SCRIPT_ID = "CUSTOMREPORT_306_T2480368_857"
+    FIELD_KEY = 306
+    FIELD_CODE = "QUICK_REPORT"
+    FIELD_DESCRIPTION = '''
+This is a test report
+
+'''
+    FIELD_NAME = "Shalom Customer Count Test"
+    FIELD_ORIGINAL_TITLE = "Shalom Customer Count Test"
+    FIELD_PERM_TYPE = "REPO_SFA"
+    KEY_FEATURE = "CRM"
+    FLAG_PERIODS_ALLOWED = false
+    FLAG_DISPLAY_TYPE = "DETAIL"
+    FLAG_ONE_DATE = false
+    FLAG_PRIMARY_OUTER_JOIN = false
+    FLAG_CUSTOM_MODE = true
+    FLAG_CASH_BASIS = false
+    FLAG_SHOW_ZEROS = true
+    FLAG_INACTIVE = false
+    FIELD_VERSION = 8
+    FLAG_PERIODS_ON = false
+    FLAG_USE_FISCAL_YEAR_RANGE = false
+    FLAG_USE_TAX_PERIODS = false
+    KEY_ENTITY = "5"
+    FLAG_SHOW_LINK = true
+    FLAG_SUPPORTS_CONSOL_SUBSIDIARY = true
+    FIELD_TOGGLE_TYPE = "NOTHING"
+    FLAG_AFFECTED_BY_COGS = false
+    FLAG_ACTIVITY_ONLY = false
+  }
+  _alias = "Shalom Customer Count Test"
+}

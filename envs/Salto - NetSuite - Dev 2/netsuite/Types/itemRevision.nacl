@@ -1,0 +1,29 @@
+type netsuite.itemRevision {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef item {
+  }
+  string name {
+  }
+  string effectiveDate {
+  }
+  string obsoleteDate {
+  }
+  string memo {
+  }
+  
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  boolean isInactive {
+    originalName = "inactive"
+  }
+}

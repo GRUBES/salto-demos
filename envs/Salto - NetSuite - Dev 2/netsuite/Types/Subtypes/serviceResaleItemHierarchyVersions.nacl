@@ -1,0 +1,16 @@
+type netsuite.serviceResaleItemHierarchyVersions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean isIncluded {
+  }
+  netsuite.recordRef hierarchyVersion {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  netsuite.recordRef hierarchyNode {
+  }
+}

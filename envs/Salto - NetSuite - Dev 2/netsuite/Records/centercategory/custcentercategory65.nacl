@@ -1,0 +1,56 @@
+netsuite.centercategory custcentercategory65 {
+  scriptid = "custcentercategory65"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab22.scriptid
+  label = "Customer Service"
+  links = {
+    link = {
+      SUPT_MENUOPTIONS = {
+        linkid = "SUPT_MENUOPTIONS"
+        shortlist = false
+        index = 0
+      }
+      SUPT_CENTER_ROLE = {
+        linkid = "SUPT_CENTER_ROLE"
+        shortlist = false
+        index = 1
+      }
+      SUPT_POLICYFORM = {
+        linkid = "SUPT_POLICYFORM"
+        shortlist = false
+        index = 2
+      }
+      SUPT_BUG_SUPPORT = {
+        linkid = "SUPT_BUG_SUPPORT"
+        shortlist = false
+        index = 3
+      }
+      SUPT_BUG_SUPPORT_POPUP = {
+        linkid = "SUPT_BUG_SUPPORT_POPUP"
+        shortlist = false
+        index = 4
+      }
+      SUPT_BUG_BILLING = {
+        linkid = "SUPT_BUG_BILLING"
+        shortlist = false
+        index = 5
+      }
+      EXTL_9 = {
+        linkid = "EXTL_9"
+        shortlist = false
+        index = 6
+      }
+      EXTL_10 = {
+        linkid = "EXTL_10"
+        shortlist = false
+        index = 7
+      }
+      SUPT_ALLOW_LOGIN = {
+        linkid = "SUPT_ALLOW_LOGIN"
+        shortlist = false
+        index = 8
+      }
+    }
+  }
+  _alias = "Customer Service"
+}

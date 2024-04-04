@@ -1,0 +1,61 @@
+netsuite.centercategory custcentercategory27 {
+  scriptid = "custcentercategory27"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Sales"
+  links = {
+    link = {
+      REPO_272 = {
+        linkid = "REPO_272"
+        shortlist = false
+        index = 0
+      }
+      REPO_271 = {
+        linkid = "REPO_271"
+        shortlist = false
+        index = 1
+      }
+      REPO_270 = {
+        linkid = "REPO_270"
+        shortlist = false
+        index = 2
+      }
+      REPO_NEG110 = {
+        linkid = "REPO_NEG110"
+        shortlist = false
+        index = 3
+      }
+      REPO_143 = {
+        linkid = "REPO_143"
+        shortlist = false
+        index = 4
+      }
+      REPO_72 = {
+        linkid = "REPO_72"
+        shortlist = false
+        index = 5
+      }
+      REPO_NEG215 = {
+        linkid = "REPO_NEG215"
+        shortlist = false
+        index = 6
+      }
+      REPO_199 = {
+        linkid = "REPO_199"
+        shortlist = false
+        index = 7
+      }
+      REPO_103 = {
+        linkid = "REPO_103"
+        shortlist = false
+        index = 8
+      }
+      REPO_261 = {
+        linkid = "REPO_261"
+        shortlist = false
+        index = 9
+      }
+    }
+  }
+  _alias = "Sales"
+}

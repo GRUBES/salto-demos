@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_inner_folder_spaces_lock_transaction_config_json@dssduuv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/inner folder spaces/lock_transaction_config.json"
+  content = file("netsuite/FileCabinet/SuiteScripts/inner folder spaces/lock_transaction_config.json")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_inner_folder_spaces@dss,
+  ]
+  _alias = "lock_transaction_config.json"
+  isInactive = false
+}

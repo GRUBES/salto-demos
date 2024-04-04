@@ -1,0 +1,12 @@
+type netsuite.customRecordTranslations {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string locale {
+  }
+  string language {
+  }
+  string label {
+  }
+}

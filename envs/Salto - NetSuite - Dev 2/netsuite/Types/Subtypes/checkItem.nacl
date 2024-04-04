@@ -1,0 +1,60 @@
+type netsuite.checkItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  string vendorName {
+  }
+  number line {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string description {
+  }
+  string binNumbers {
+  }
+  string serialNumbers {
+  }
+  string expirationDate {
+  }
+  string rate {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number amount {
+  }
+  netsuite.customFieldList options {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  number grossAmt {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  number tax1Amt {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  boolean isBillable {
+  }
+  netsuite.landedCost landedCost {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

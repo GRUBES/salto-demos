@@ -1,0 +1,36 @@
+netsuite.centercategory custcentercategory34 {
+  scriptid = "custcentercategory34"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab9.scriptid
+  label = "Import/Export"
+  links = {
+    link = {
+      ADMI_IMPORTCSV = {
+        linkid = "ADMI_IMPORTCSV"
+        shortlist = false
+        index = 0
+      }
+      ADMI_SAVEDIMPORTS = {
+        linkid = "ADMI_SAVEDIMPORTS"
+        shortlist = false
+        index = 1
+      }
+      ADMI_BACKUP = {
+        linkid = "ADMI_BACKUP"
+        shortlist = false
+        index = 2
+      }
+      ADMI_WEBSERVICES_STATUS = {
+        linkid = "ADMI_WEBSERVICES_STATUS"
+        shortlist = false
+        index = 3
+      }
+      ADMI_WEBSERVICES_USAGE_LOG = {
+        linkid = "ADMI_WEBSERVICES_USAGE_LOG"
+        shortlist = false
+        index = 4
+      }
+    }
+  }
+  _alias = "Import/Export"
+}

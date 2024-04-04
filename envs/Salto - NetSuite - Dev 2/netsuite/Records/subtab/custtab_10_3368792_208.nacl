@@ -1,0 +1,6 @@
+netsuite.subtab custtab_10_3368792_208 {
+  scriptid = "custtab_10_3368792_208"
+  tabtype = "CRM"
+  title = "Attachments"
+  _alias = "Attachments"
+}

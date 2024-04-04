@@ -1,0 +1,85 @@
+type netsuite.itemGroup {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  boolean includeStartEndLines {
+  }
+  boolean isVsoeBundle {
+  }
+  netsuite.recordRef defaultItemShipMethod {
+  }
+  boolean availableToPartners {
+  }
+  boolean isInactive {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  string vendorName {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  netsuite.itemGroup parent {
+    isReference = true
+  }
+  string description {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  boolean includeChildren {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  unknown itemCarrier {
+  }
+  netsuite.recordRefList itemShipMethodList {
+  }
+  boolean printItems {
+  }
+  netsuite.itemMemberList memberList {
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.itemGroupHierarchyVersionsList hierarchyVersionsList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Item Group"
+  _important_values = [
+    {
+      value = "description"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

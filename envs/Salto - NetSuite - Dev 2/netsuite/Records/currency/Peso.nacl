@@ -1,0 +1,13 @@
+netsuite.currency Peso {
+  name = "Peso"
+  symbol = "UYU"
+  isBaseCurrency = false
+  isInactive = false
+  overrideCurrencyFormat = true
+  displaySymbol = "£"
+  symbolPlacement = "_beforeNumber"
+  locale = "_unitedStatesEnglish"
+  formatSample = "£‎1,234.56"
+  currencyPrecision = "_two"
+  _alias = "Peso"
+}

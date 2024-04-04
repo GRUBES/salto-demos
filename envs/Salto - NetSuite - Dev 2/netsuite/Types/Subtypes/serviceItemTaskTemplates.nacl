@@ -1,0 +1,12 @@
+type netsuite.serviceItemTaskTemplates {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string taskName {
+  }
+  number taskStartOffset {
+  }
+  netsuite.duration taskDuration {
+  }
+}

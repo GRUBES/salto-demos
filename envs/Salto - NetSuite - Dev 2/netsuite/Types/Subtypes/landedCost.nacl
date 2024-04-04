@@ -1,0 +1,10 @@
+type netsuite.landedCost {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.landedCostDataList landedCostDataList {
+  }
+}

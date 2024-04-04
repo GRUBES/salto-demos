@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_dataset_seggev_try_sdf {
+  scriptid = "custcollection_dataset_seggev_try_sdf"
+  defaultlanguage = "en-US"
+  name = "seggev try sdf"
+  strings = {
+    string = {
+      dataset_name_112_1 = {
+        scriptid = "dataset_name_112_1"
+        defaulttranslation = "seggev try sdf"
+        description = "Name in dataset"
+        index = 0
+      }
+    }
+  }
+  _alias = "seggev try sdf"
+}

@@ -1,0 +1,14 @@
+type netsuite.paycheckPaySummary {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string payItem {
+  }
+  string payItemType {
+  }
+  number amount {
+  }
+  number ytdAmount {
+  }
+}

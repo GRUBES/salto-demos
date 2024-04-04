@@ -1,0 +1,16 @@
+type netsuite.accountLocalizations {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef accountingContext {
+  }
+  string acctNumber {
+  }
+  string acctName {
+  }
+  string legalName {
+  }
+  unknown locale {
+  }
+}

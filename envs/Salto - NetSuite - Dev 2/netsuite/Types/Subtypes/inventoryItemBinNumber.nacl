@@ -1,0 +1,16 @@
+type netsuite.inventoryItemBinNumber {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef binNumber {
+  }
+  string onHand {
+  }
+  string onHandAvail {
+  }
+  string location {
+  }
+  boolean preferredBin {
+  }
+}

@@ -1,0 +1,179 @@
+type netsuite.downloadItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string salesDescription {
+  }
+  netsuite.recordRef quantityPricingSchedule {
+  }
+  netsuite.account deferredRevenueAccount {
+    isReference = true
+  }
+  boolean onSpecial {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  netsuite.downloadItem parent {
+    isReference = true
+  }
+  boolean isOnline {
+  }
+  boolean isGcoCompliant {
+  }
+  boolean offerSupport {
+  }
+  boolean isInactive {
+  }
+  boolean availableToPartners {
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  boolean includeChildren {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.account incomeAccount {
+    isReference = true
+  }
+  number numOfAllowedDownloads {
+  }
+  number daysBeforeExpiration {
+  }
+  boolean immediateDownload {
+  }
+  boolean isTaxable {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  netsuite.recordRef taxSchedule {
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  netsuite.recordRef billingSchedule {
+  }
+  boolean isFulfillable {
+  }
+  boolean useMarginalRates {
+  }
+  unknown overallQuantityPricingType {
+  }
+  netsuite.pricingGroup pricingGroup {
+    isReference = true
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  number vsoePrice {
+  }
+  unknown vsoeSopGroup {
+  }
+  unknown vsoeDeferral {
+  }
+  unknown vsoePermitDiscount {
+  }
+  boolean vsoeDelivered {
+  }
+  netsuite.recordRef itemRevenueCategory {
+  }
+  boolean deferRevRec {
+  }
+  netsuite.recordRef revenueRecognitionRule {
+  }
+  netsuite.recordRef revRecForecastRule {
+  }
+  netsuite.recordRef revenueAllocationGroup {
+  }
+  netsuite.recordRef createRevenuePlansOn {
+  }
+  boolean directRevenuePosting {
+  }
+  string storeDisplayName {
+  }
+  netsuite.fileReference storeDisplayThumbnail {
+    isReference = true
+  }
+  netsuite.fileReference storeDisplayImage {
+    isReference = true
+  }
+  string featuredDescription {
+  }
+  string storeDescription {
+  }
+  string storeDetailedDescription {
+  }
+  netsuite.recordRef storeItemTemplate {
+  }
+  string pageTitle {
+  }
+  string metaTagHtml {
+  }
+  boolean excludeFromSitemap {
+  }
+  unknown sitemapPriority {
+  }
+  string searchKeywords {
+  }
+  boolean isDonationItem {
+  }
+  boolean showDefaultDonationAmount {
+  }
+  number maxDonationAmount {
+  }
+  boolean dontShowPrice {
+  }
+  string noPriceMessage {
+  }
+  string outOfStockMessage {
+  }
+  unknown outOfStockBehavior {
+  }
+  string relatedItemsDescription {
+  }
+  string specialsDescription {
+  }
+  netsuite.pricingMatrix pricingMatrix {
+  }
+  netsuite.itemAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.siteCategoryList siteCategoryList {
+  }
+  netsuite.presentationItemList presentationItemList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Download Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

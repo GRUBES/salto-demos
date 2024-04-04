@@ -1,0 +1,74 @@
+netsuite.restlet customscript_get_workflows {
+  scriptid = "customscript_get_workflows"
+  name = "get workflows"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = netsuite.file.instance.SuiteScripts_get_workflows_js@duv.path
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploy1 = {
+        scriptid = "customdeploy1"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "get workflows"
+      }
+      customdeploy2 = {
+        scriptid = "customdeploy2"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "get workflows 2"
+      }
+      customdeploy6 = {
+        scriptid = "customdeploy6"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "get workflows 6"
+      }
+      customdeploy4 = {
+        scriptid = "customdeploy4"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "get workflows 4"
+      }
+      customdeploy5 = {
+        scriptid = "customdeploy5"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "get workflows 5"
+      }
+      customdeploy3 = {
+        scriptid = "customdeploy3"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "get workflows 3"
+      }
+    }
+  }
+  isInactive = false
+  _alias = "get workflows"
+}

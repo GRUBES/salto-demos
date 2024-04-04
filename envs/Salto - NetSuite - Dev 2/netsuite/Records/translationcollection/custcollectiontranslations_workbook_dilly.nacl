@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollectiontranslations_workbook_dilly {
+  scriptid = "custcollectiontranslations_workbook_dilly"
+  defaultlanguage = "en-US"
+  name = "dilly workbook"
+  strings = {
+    string = {
+      workbook_name_1711_1 = {
+        scriptid = "workbook_name_1711_1"
+        defaulttranslation = "dilly workbook"
+        description = "Name in workbook"
+        index = 0
+      }
+    }
+  }
+  _alias = "dilly workbook"
+}

@@ -1,0 +1,11 @@
+type netsuite.opportunityPartnersList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.partners>" partners {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,9 @@
+type netsuite.workflow_timeunit is string {
+  _restriction = {
+    values = [
+      "DAY",
+      "HOUR",
+    ]
+    enforce_value = false
+  }
+}

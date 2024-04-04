@@ -1,0 +1,20 @@
+type netsuite.itemNumberCustomFieldFilter {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef fldFilter {
+  }
+  boolean fldFilterChecked {
+  }
+  unknown fldFilterCompareType {
+  }
+  string fldFilterVal {
+  }
+  boolean fldFilterNotNull {
+  }
+  boolean fldfilterNull {
+  }
+  netsuite.recordRef fldCompareField {
+  }
+}

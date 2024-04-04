@@ -1,0 +1,11 @@
+type netsuite.expenseCategoryRatesList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.expenseCategoryRates>" expenseCategoryRates {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

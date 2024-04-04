@@ -1,0 +1,6 @@
+netsuite.nexus _japan {
+  country = "_japan"
+  description = "Japan"
+  identifier = "_japan"
+  _alias = "_japan"
+}

@@ -1,0 +1,10 @@
+type netsuite.itemcustomfield_itemsubtype is string {
+  _restriction = {
+    values = [
+      "BOTH",
+      "PURCHASE",
+      "SALE",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,8 @@
+type netsuite.customFieldList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customFieldRef>" customField {
+  }
+}

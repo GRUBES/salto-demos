@@ -1,0 +1,11 @@
+type netsuite.languageValueList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.languageValue>" languageValue {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

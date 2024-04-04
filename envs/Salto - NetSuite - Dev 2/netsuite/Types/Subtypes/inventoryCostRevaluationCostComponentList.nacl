@@ -1,0 +1,11 @@
+type netsuite.inventoryCostRevaluationCostComponentList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.inventoryCostRevaluationCostComponent>" costComponent {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

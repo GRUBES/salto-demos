@@ -1,0 +1,199 @@
+type netsuite.itemFulfillment {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  netsuite.recordRef entity {
+  }
+  netsuite.recordRef createdFrom {
+  }
+  netsuite.recordRef requestedBy {
+  }
+  number createdFromShipGroup {
+  }
+  netsuite.partner partner {
+    isReference = true
+  }
+  netsuite.address shippingAddress {
+  }
+  string pickedDate {
+  }
+  string packedDate {
+  }
+  string shippedDate {
+  }
+  boolean shipIsResidential {
+  }
+  netsuite.recordRef shipAddressList {
+  }
+  unknown shipStatus {
+  }
+  boolean saturdayDeliveryUps {
+  }
+  boolean sendShipNotifyEmailUps {
+  }
+  boolean sendBackupEmailUps {
+  }
+  string shipNotifyEmailAddressUps {
+  }
+  string shipNotifyEmailAddress2Ups {
+  }
+  string backupEmailAddressUps {
+  }
+  string shipNotifyEmailMessageUps {
+  }
+  string thirdPartyAcctUps {
+  }
+  string thirdPartyZipcodeUps {
+  }
+  unknown thirdPartyCountryUps {
+  }
+  unknown thirdPartyTypeUps {
+  }
+  boolean partiesToTransactionUps {
+  }
+  unknown exportTypeUps {
+  }
+  unknown methodOfTransportUps {
+  }
+  string carrierIdUps {
+  }
+  string entryNumberUps {
+  }
+  string inbondCodeUps {
+  }
+  boolean isRoutedExportTransactionUps {
+  }
+  string licenseNumberUps {
+  }
+  string licenseDateUps {
+  }
+  unknown licenseExceptionUps {
+  }
+  string eccNumberUps {
+  }
+  string recipientTaxIdUps {
+  }
+  string blanketStartDateUps {
+  }
+  string blanketEndDateUps {
+  }
+  number shipmentWeightUps {
+  }
+  boolean saturdayDeliveryFedEx {
+  }
+  boolean saturdayPickupFedex {
+  }
+  boolean sendShipNotifyEmailFedEx {
+  }
+  boolean sendBackupEmailFedEx {
+  }
+  boolean signatureHomeDeliveryFedEx {
+  }
+  string shipNotifyEmailAddressFedEx {
+  }
+  string backupEmailAddressFedEx {
+  }
+  string shipDateFedEx {
+  }
+  unknown homeDeliveryTypeFedEx {
+  }
+  string homeDeliveryDateFedEx {
+  }
+  string bookingConfirmationNumFedEx {
+  }
+  string intlExemptionNumFedEx {
+  }
+  unknown b13aFilingOptionFedEx {
+  }
+  string b13aStatementDataFedEx {
+  }
+  string thirdPartyAcctFedEx {
+  }
+  unknown thirdPartyCountryFedEx {
+  }
+  unknown thirdPartyTypeFedEx {
+  }
+  number shipmentWeightFedEx {
+  }
+  unknown termsOfSaleFedEx {
+  }
+  number termsFreightChargeFedEx {
+  }
+  number termsInsuranceChargeFedEx {
+  }
+  boolean insideDeliveryFedEx {
+  }
+  boolean insidePickupFedEx {
+  }
+  unknown ancillaryEndorsementFedEx {
+  }
+  boolean holdAtLocationFedEx {
+  }
+  string halPhoneFedEx {
+  }
+  string halAddr1FedEx {
+  }
+  string halAddr2FedEx {
+  }
+  string halAddr3FedEx {
+  }
+  string halCityFedEx {
+  }
+  string halZipFedEx {
+  }
+  string halStateFedEx {
+  }
+  string halCountryFedEx {
+  }
+  unknown hazmatTypeFedEx {
+  }
+  unknown accessibilityTypeFedEx {
+  }
+  boolean isCargoAircraftOnlyFedEx {
+  }
+  string tranDate {
+  }
+  string tranId {
+  }
+  netsuite.recordRef shipMethod {
+  }
+  boolean generateIntegratedShipperLabel {
+  }
+  number shippingCost {
+  }
+  number handlingCost {
+  }
+  string memo {
+  }
+  netsuite.location transferLocation {
+    isReference = true
+  }
+  netsuite.itemFulfillmentPackageList packageList {
+  }
+  netsuite.itemFulfillmentPackageUpsList packageUpsList {
+  }
+  netsuite.itemFulfillmentPackageUspsList packageUspsList {
+  }
+  netsuite.itemFulfillmentPackageFedExList packageFedExList {
+  }
+  netsuite.itemFulfillmentItemList itemList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

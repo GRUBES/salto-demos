@@ -1,0 +1,11 @@
+type netsuite.script_portlettype is string {
+  _restriction = {
+    values = [
+      "FORM",
+      "HTML",
+      "LINKS",
+      "LIST",
+    ]
+    enforce_value = false
+  }
+}

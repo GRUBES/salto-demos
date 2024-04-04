@@ -1,0 +1,11 @@
+type netsuite.issueVersionList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.issueVersion>" issueVersion {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

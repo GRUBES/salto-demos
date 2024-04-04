@@ -1,0 +1,39 @@
+type netsuite.transactionform_sublistid is string {
+  _restriction = {
+    values = [
+      "ACTIVEWORKFLOWS",
+      "ACTIVITIES",
+      "APPLIEDRULES",
+      "APPROVALS",
+      "ARRNGRLRCDS",
+      "BILLINGSCHEDULE",
+      "BIZEVTHISTORY",
+      "CALLS",
+      "CASES",
+      "EVENTS",
+      "EXPCOST",
+      "EXPENSE",
+      "EXPENSEPLANMESSAGE",
+      "GIFTCERTREDEMPTION",
+      "GLIMPACTCHANGES",
+      "INSTALLMENTS",
+      "ITEM",
+      "ITEMCOST",
+      "ITPRLRCDS",
+      "LINKS",
+      "MEDIAITEM",
+      "MESSAGES",
+      "PARTNERS",
+      "PLANNEDORDERRLRCDS",
+      "PROMOTIONS",
+      "SALESTEAM",
+      "SYSTEMNOTES",
+      "TASKS",
+      "TIME",
+      "TRANSFORMATIONS",
+      "USERNOTES",
+      "WORKFLOWHISTORY",
+    ]
+    enforce_value = false
+  }
+}

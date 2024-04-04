@@ -1,0 +1,16 @@
+netsuite.centercategory custcentercategory36 {
+  scriptid = "custcentercategory36"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab9.scriptid
+  label = "Other Setup"
+  links = {
+    link = {
+      ADMI_OTHERSTUB = {
+        linkid = "ADMI_OTHERSTUB"
+        shortlist = false
+        index = 0
+      }
+    }
+  }
+  _alias = "Other Setup"
+}

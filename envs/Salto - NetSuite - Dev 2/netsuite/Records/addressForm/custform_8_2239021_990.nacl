@@ -1,0 +1,120 @@
+netsuite.addressForm custform_8_2239021_990 {
+  scriptid = "custform_8_2239021_990"
+  standard = "STANDARDADDRESSFORM"
+  name = "Another Custom Address Form"
+  mainFields = {
+    defaultFieldGroup = {
+      fields = {
+        MIDDLE = {
+          position = "MIDDLE"
+          field = {
+            COUNTRY = {
+              id = "COUNTRY"
+              label = "Country"
+              visible = true
+              mandatory = true
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 0
+            }
+            ATTENTION = {
+              id = "ATTENTION"
+              label = "Attention"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = true
+              index = 1
+            }
+            ADDRESSEE = {
+              id = "ADDRESSEE"
+              label = "Addressee"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 2
+            }
+            ADDRPHONE = {
+              id = "ADDRPHONE"
+              label = "Phone"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 3
+            }
+            ADDR1 = {
+              id = "ADDR1"
+              label = "Address 1"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 4
+            }
+            ADDR2 = {
+              id = "ADDR2"
+              label = "Address 2"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 5
+            }
+            ADDR3 = {
+              id = "ADDR3"
+              label = "Address 3"
+              visible = false
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 6
+            }
+            CITY = {
+              id = "CITY"
+              label = "City"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 7
+            }
+            STATE = {
+              id = "STATE"
+              label = "State"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = false
+              index = 8
+            }
+            ZIP = {
+              id = "ZIP"
+              label = "Zip"
+              visible = true
+              mandatory = false
+              displayType = "NORMAL"
+              columnBreak = false
+              sameRowAsPrevious = true
+              index = 9
+            }
+          }
+          index = 0
+        }
+      }
+    }
+  }
+  addressTemplate = "address template value333"
+  countries = "AF"
+  _alias = "Another Custom Address Form"
+}

@@ -1,0 +1,6 @@
+netsuite.subtab custtab_90_shalom_test {
+  scriptid = "custtab_90_shalom_test"
+  tabtype = "ENTITY"
+  title = "Fun Tab"
+  _alias = "Fun Tab"
+}

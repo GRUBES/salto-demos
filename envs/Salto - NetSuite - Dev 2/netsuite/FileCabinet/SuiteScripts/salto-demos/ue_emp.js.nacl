@@ -1,0 +1,19 @@
+netsuite.file SuiteScripts_salto_demos_ue_emp_js@dbduv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/salto-demos/ue_emp.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/salto-demos/ue_emp.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_salto_demos@db,
+  ]
+  _generated_dependencies = [
+    {
+      reference = netsuite.entitycustomfield.instance.custentity_has_mgr_reviewed.scriptid
+    },
+  ]
+  _alias = "ue_emp.js"
+  isInactive = false
+}

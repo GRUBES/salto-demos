@@ -1,0 +1,12 @@
+netsuite.folder Templates_Web_Store_E_mail_Templates@dssbs {
+  description = "Web Store E-mail Templates Folder"
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/Web Store E-mail Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "Web Store E-mail Templates"
+  isInactive = false
+}

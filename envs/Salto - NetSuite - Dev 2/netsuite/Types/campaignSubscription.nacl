@@ -1,0 +1,29 @@
+type netsuite.campaignSubscription {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  string description {
+  }
+  boolean subscribedByDefault {
+  }
+  boolean unsubscribed {
+  }
+  string externalName {
+  }
+  string externalDescription {
+  }
+  boolean isInactive {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

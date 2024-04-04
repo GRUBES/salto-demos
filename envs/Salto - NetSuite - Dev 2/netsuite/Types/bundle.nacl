@@ -1,0 +1,39 @@
+type netsuite.bundle {
+  serviceid id {
+    _required = true
+  }
+  boolean isPrivate {
+  }
+  string name {
+  }
+  string version {
+  }
+  string description {
+  }
+  string installedFrom {
+  }
+  boolean isManaged {
+  }
+  string dateInstalled {
+  }
+  string dateLastUpdated {
+  }
+  netsuite.bundle_publisher publisher {
+  }
+  netsuite.bundle_installedby installedBy {
+  }
+  string application_id {
+  }
+}
+type netsuite.bundle_installedby {
+  number id {
+  }
+  string name {
+  }
+}
+type netsuite.bundle_publisher {
+  string id {
+  }
+  string name {
+  }
+}

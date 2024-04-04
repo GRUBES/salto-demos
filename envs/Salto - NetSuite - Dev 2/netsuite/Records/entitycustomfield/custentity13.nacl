@@ -1,0 +1,33 @@
+netsuite.entitycustomfield custentity13 {
+  scriptid = "custentity13"
+  accesslevel = "2"
+  appliestocontact = true
+  appliestocustomer = true
+  appliestoemployee = true
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = true
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = false
+  defaultchecked = false
+  description = "This is a demo field 2!"
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "INTEGER"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Demo Field"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "Demo Field"
+}

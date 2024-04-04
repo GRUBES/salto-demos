@@ -1,0 +1,27 @@
+type netsuite.topic {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string title {
+  }
+  netsuite.recordRef parentTopic {
+  }
+  string description {
+  }
+  boolean isInactive {
+  }
+  string longDescription {
+  }
+  netsuite.topicSolutionList solutionList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

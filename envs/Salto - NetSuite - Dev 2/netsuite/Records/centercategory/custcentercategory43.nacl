@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory43 {
+  scriptid = "custcentercategory43"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab11.scriptid
+  label = "Tools"
+  links = {
+    link = {
+      LIST_TRAN_ESTIMATE = {
+        linkid = "LIST_TRAN_ESTIMATE"
+        shortlist = false
+        index = 0
+      }
+      custlink_9_t2480368_321 = {
+        linkobject = netsuite.centerlink.instance.custlink_9_t2480368_321.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+        index = 1
+      }
+    }
+  }
+  _alias = "Tools"
+}

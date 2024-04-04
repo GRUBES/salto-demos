@@ -1,0 +1,36 @@
+netsuite.centercategory custcentercategory9 {
+  scriptid = "custcentercategory9"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Customer Service"
+  links = {
+    link = {
+      REPO_172 = {
+        linkid = "REPO_172"
+        shortlist = false
+        index = 0
+      }
+      REPO_170 = {
+        linkid = "REPO_170"
+        shortlist = false
+        index = 1
+      }
+      REPO_81 = {
+        linkid = "REPO_81"
+        shortlist = false
+        index = 2
+      }
+      REPO_80 = {
+        linkid = "REPO_80"
+        shortlist = false
+        index = 3
+      }
+      REPO_NEG100 = {
+        linkid = "REPO_NEG100"
+        shortlist = false
+        index = 4
+      }
+    }
+  }
+  _alias = "Customer Service"
+}

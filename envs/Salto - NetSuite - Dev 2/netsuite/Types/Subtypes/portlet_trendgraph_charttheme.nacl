@@ -1,0 +1,12 @@
+type netsuite.portlet_trendgraph_charttheme is string {
+  _restriction = {
+    values = [
+      "BASIC",
+      "COLORFUL",
+      "GLOBAL_THEME",
+      "MATCH_COLOR_THEME___BOLD",
+      "MATCH_COLOR_THEME___LIGHT",
+    ]
+    enforce_value = false
+  }
+}

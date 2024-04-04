@@ -1,0 +1,10 @@
+type netsuite.customRecordTypeChildren {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string childDescr {
+  }
+  netsuite.recordRef childTab {
+  }
+}

@@ -1,0 +1,14 @@
+netsuite.file Templates_Contract_Templates_Service_Level_Agreement_doc@dsduuv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/Templates/Contract Templates/Service_Level_Agreement.doc"
+  content = file("netsuite/FileCabinet/Templates/Contract Templates/Service_Level_Agreement.doc")
+  _parent = [
+    netsuite.folder.instance.Templates_Contract_Templates@ds,
+  ]
+  _alias = "Service_Level_Agreement.doc"
+  isInactive = false
+}

@@ -1,0 +1,28 @@
+netsuite.workflowactionscript customscript_shalom_test {
+  scriptid = "customscript_shalom_test"
+  defaultfunction = "a"
+  
+  name = "shalomTest"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  returnrecordtype = netsuite.customrecord19.attr.scriptid
+  returntype = "SELECT"
+  scriptfile = netsuite.file.instance.SuiteScripts_shalomScript_js@dv.path
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploy1 = {
+        scriptid = "customdeploy1"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        loglevel = "DEBUG"
+        recordtype = netsuite.customrecord19.attr.scriptid
+        status = "TESTING"
+      }
+    }
+  }
+  _alias = "shalomTest"
+  isInactive = false
+}

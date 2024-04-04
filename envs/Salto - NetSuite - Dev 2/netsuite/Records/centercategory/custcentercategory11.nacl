@@ -1,0 +1,81 @@
+netsuite.centercategory custcentercategory11 {
+  scriptid = "custcentercategory11"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Financial"
+  links = {
+    link = {
+      REPO_NEG200 = {
+        linkid = "REPO_NEG200"
+        shortlist = false
+        index = 0
+      }
+      REPO_NEG199 = {
+        linkid = "REPO_NEG199"
+        shortlist = false
+        index = 1
+      }
+      REPO_NEG202 = {
+        linkid = "REPO_NEG202"
+        shortlist = false
+        index = 2
+      }
+      REPO_NEG198 = {
+        linkid = "REPO_NEG198"
+        shortlist = false
+        index = 3
+      }
+      REPO_NEG203 = {
+        linkid = "REPO_NEG203"
+        shortlist = false
+        index = 4
+      }
+      REPO_293 = {
+        linkid = "REPO_293"
+        shortlist = false
+        index = 5
+      }
+      REPO_292 = {
+        linkid = "REPO_292"
+        shortlist = false
+        index = 6
+      }
+      LIST_CHART_ACCOUNT = {
+        linkid = "LIST_CHART_ACCOUNT"
+        shortlist = false
+        index = 7
+      }
+      REPO_250 = {
+        linkid = "REPO_250"
+        shortlist = false
+        index = 8
+      }
+      REPO_4 = {
+        linkid = "REPO_4"
+        shortlist = false
+        index = 9
+      }
+      REPO_2 = {
+        linkid = "REPO_2"
+        shortlist = false
+        index = 10
+      }
+      DUMM_SEPARATOR = {
+        linkid = "DUMM_SEPARATOR"
+        shortlist = false
+        index = 11
+      }
+      REPO_FINANCIALLAYOUTS = {
+        linkid = "REPO_FINANCIALLAYOUTS"
+        shortlist = false
+        index = 12
+      }
+      REPO_ASSIGNFINANCIALLAYOUTS = {
+        linkid = "REPO_ASSIGNFINANCIALLAYOUTS"
+        shortlist = false
+        index = 13
+      }
+    }
+  }
+  _alias = "Financial"
+}

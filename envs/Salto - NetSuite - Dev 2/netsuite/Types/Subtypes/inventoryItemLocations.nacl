@@ -1,0 +1,89 @@
+type netsuite.inventoryItemLocations {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string location {
+  }
+  number quantityOnHand {
+  }
+  number onHandValueMli {
+  }
+  number averageCostMli {
+  }
+  number lastPurchasePriceMli {
+  }
+  number reorderPoint {
+  }
+  boolean locationAllowStorePickup {
+  }
+  number locationStorePickupBufferStock {
+  }
+  number locationQtyAvailForStorePickup {
+  }
+  number preferredStockLevel {
+  }
+  number leadTime {
+  }
+  number defaultReturnCost {
+  }
+  number safetyStockLevel {
+  }
+  number cost {
+  }
+  netsuite.recordRef inventoryCostTemplate {
+  }
+  number buildTime {
+  }
+  string lastInvtCountDate {
+  }
+  string nextInvtCountDate {
+  }
+  boolean isWip {
+  }
+  number invtCountInterval {
+  }
+  unknown invtClassification {
+  }
+  number costingLotSize {
+  }
+  number quantityOnOrder {
+  }
+  number quantityCommitted {
+  }
+  number quantityAvailable {
+  }
+  number quantityBackOrdered {
+  }
+  netsuite.location locationId {
+    isReference = true
+  }
+  netsuite.recordRef supplyReplenishmentMethod {
+  }
+  netsuite.recordRef alternateDemandSourceItem {
+  }
+  number fixedLotSize {
+  }
+  unknown periodicLotSizeType {
+  }
+  number periodicLotSizeDays {
+  }
+  netsuite.recordRef supplyType {
+  }
+  netsuite.recordRef supplyLotSizingMethod {
+  }
+  netsuite.recordRef demandSource {
+  }
+  number backwardConsumptionDays {
+  }
+  number forwardConsumptionDays {
+  }
+  number demandTimeFence {
+  }
+  number supplyTimeFence {
+  }
+  number rescheduleInDays {
+  }
+  number rescheduleOutDays {
+  }
+}

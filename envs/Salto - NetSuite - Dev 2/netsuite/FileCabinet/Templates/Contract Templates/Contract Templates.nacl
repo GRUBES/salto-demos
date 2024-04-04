@@ -1,0 +1,12 @@
+netsuite.folder Templates_Contract_Templates@ds {
+  description = "Documents for the Sales Cycle"
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/Contract Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "Contract Templates"
+  isInactive = false
+}

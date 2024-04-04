@@ -1,0 +1,15 @@
+type netsuite.customerDownload {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.fileReference file {
+    isReference = true
+  }
+  string licenseCode {
+  }
+  number remainingDownloads {
+  }
+  string expiration {
+  }
+}

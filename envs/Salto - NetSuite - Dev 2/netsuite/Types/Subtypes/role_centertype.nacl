@@ -1,0 +1,20 @@
+type netsuite.role_centertype is string {
+  _restriction = {
+    values = [
+      "ACCOUNTCENTER",
+      "BASIC",
+      "ENGINEERCENTER",
+      "EXECUTIVE",
+      "HR",
+      "MARKETCENTER",
+      "PARTNERCENTER",
+      "PROJECTCENTER",
+      "SALESCENTER",
+      "SHIPPINGCENTER",
+      "STOREMANAGER",
+      "SUPPORTCENTER",
+      "SYSADMINCENTER",
+    ]
+    enforce_value = false
+  }
+}

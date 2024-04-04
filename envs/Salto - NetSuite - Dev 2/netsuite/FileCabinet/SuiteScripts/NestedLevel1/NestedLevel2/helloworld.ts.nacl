@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_NestedLevel1_NestedLevel2_helloworld_ts@dddv {
+  bundleable = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/NestedLevel1/NestedLevel2/helloworld.ts"
+  content = file("netsuite/FileCabinet/SuiteScripts/NestedLevel1/NestedLevel2/helloworld.ts")
+  isInactive = false
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_NestedLevel1_NestedLevel2@d,
+  ]
+  _alias = "helloworld.ts"
+}

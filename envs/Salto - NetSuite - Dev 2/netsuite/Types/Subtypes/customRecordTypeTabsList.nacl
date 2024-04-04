@@ -1,0 +1,11 @@
+type netsuite.customRecordTypeTabsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordTypeTabs>" tabs {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

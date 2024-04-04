@@ -1,0 +1,11 @@
+type netsuite.depositCashBackList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.depositCashBack>" depositCashBack {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

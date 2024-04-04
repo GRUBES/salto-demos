@@ -1,0 +1,128 @@
+netsuite.workflow customworkflow_shalom_test2 {
+  scriptid = "customworkflow_shalom_test2"
+  initcontexts = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+  initoncreate = false
+  initonvieworupdate = true
+  inittriggertype = "BEFORELOAD"
+  
+  islogenabled = false
+  keephistory = "ONLYWHENTESTING"
+  name = "shalom_test2"
+  recordtypes = netsuite.customrecord19.attr.scriptid
+  releasestatus = "TESTING"
+  runasadmin = false
+  initcondition = {
+    type = "VISUAL_BUILDER"
+  }
+  workflowcustomfields = {
+    workflowcustomfield = {
+      custworkflow13 = {
+        scriptid = "custworkflow13"
+        applyformatting = false
+        defaultchecked = false
+        description = "sTest2"
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "sTest2"
+        storevalue = true
+        index = 0
+      }
+      custworkflow14 = {
+        scriptid = "custworkflow14"
+        applyformatting = false
+        defaultchecked = false
+        description = "sTest3"
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "sTest3"
+        storevalue = true
+        index = 1
+      }
+      custworkflow15 = {
+        scriptid = "custworkflow15"
+        applyformatting = false
+        defaultchecked = false
+        description = "seggev test"
+        displaytype = "NORMAL"
+        fieldtype = "TEXT"
+        label = "sTest4"
+        storevalue = true
+        index = 2
+      }
+    }
+  }
+  workflowstates = {
+    workflowstate = {
+      workflowstate71 = {
+        scriptid = "workflowstate71"
+        donotexitworkflow = false
+        name = "State 1"
+        positionx = 243
+        positiony = 133
+        workflowactions = {
+          BEFORELOAD = {
+            triggertype = "BEFORELOAD"
+            addbuttonaction = {
+              workflowaction75 = {
+                scriptid = "workflowaction75"
+                checkconditionbeforeexecution = true
+                contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+                
+                label = "Create Button"
+                saverecordfirst = false
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                index = 0
+                isInactive = false
+              }
+            }
+          }
+        }
+        workflowtransitions = {
+          workflowtransition = {
+            workflowtransition17 = {
+              scriptid = "workflowtransition17"
+              contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+              tostate = netsuite.workflow.instance.customworkflow_shalom_test2.workflowstates.workflowstate.workflowstate72.scriptid
+              initcondition = {
+                type = "VISUAL_BUILDER"
+              }
+              index = 0
+            }
+          }
+        }
+        index = 0
+      }
+      workflowstate72 = {
+        scriptid = "workflowstate72"
+        donotexitworkflow = false
+        name = "State 2"
+        positionx = 243
+        positiony = 253
+        workflowactions = {
+          ONENTRY = {
+            triggertype = "ONENTRY"
+            customaction = {
+              workflowaction76 = {
+                scriptid = "workflowaction76"
+                contexttypes = "ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW"
+                
+                schedulemode = "DELAY"
+                scripttype = netsuite.workflowactionscript.instance.customscript_shalom_test.scriptid
+                initcondition = {
+                  type = "VISUAL_BUILDER"
+                }
+                index = 0
+                isInactive = false
+              }
+            }
+          }
+        }
+        index = 1
+      }
+    }
+  }
+  _alias = "shalom_test2"
+  isInactive = false
+}

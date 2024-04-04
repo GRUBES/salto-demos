@@ -1,0 +1,19 @@
+name: Salto Validation
+run-name: salto-validate
+on:
+  pull_request:
+    branches: ['salto/before/**/*']
+jobs:
+  salto-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Salto CLI
+        run: |
+          curl https://cli.salto.io/release/1/linux-x64.tar.gz --output linux-x64.tar.gz
+          tar xvzf linux-x64.tar.gz
+      - name: Check Deployment Plan
+        run: |
+          ./salto-cloud deployment preview -b "${GITHUB_HEAD_REF}"
+        env:
+          SALTO_API_TOKEN: ${{ secrets.SALTO_API_TOKEN }}
+      

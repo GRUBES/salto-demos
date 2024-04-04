@@ -1,0 +1,21 @@
+netsuite.centercategory custcentercategory7 {
+  scriptid = "custcentercategory7"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Scheduled Reports"
+  links = {
+    link = {
+      LIST_REPORESULT = {
+        linkid = "LIST_REPORESULT"
+        shortlist = false
+        index = 0
+      }
+      LIST_REPOSCHEDULE = {
+        linkid = "LIST_REPOSCHEDULE"
+        shortlist = false
+        index = 1
+      }
+    }
+  }
+  _alias = "Scheduled Reports"
+}

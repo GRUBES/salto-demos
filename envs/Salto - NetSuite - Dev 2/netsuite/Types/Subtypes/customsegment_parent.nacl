@@ -1,0 +1,11 @@
+type netsuite.customsegment_parent is string {
+  _restriction = {
+    values = [
+      "CLASS",
+      "DEPARTMENT",
+      "LOCATION",
+      "SUBSIDIARY",
+    ]
+    enforce_value = false
+  }
+}

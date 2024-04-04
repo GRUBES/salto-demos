@@ -1,0 +1,65 @@
+type netsuite.depositApplication {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.account arAcct {
+    isReference = true
+  }
+  string status {
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  string tranDate {
+  }
+  netsuite.recordRef postingPeriod {
+  }
+  netsuite.deposit deposit {
+    isReference = true
+  }
+  string depDate {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number exchangeRate {
+  }
+  string memo {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  number total {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  number applied {
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  number unapplied {
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  string tranId {
+  }
+  netsuite.depositApplicationApplyList applyList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

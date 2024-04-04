@@ -1,0 +1,9 @@
+type netsuite.portlet_calendar_agenda is string {
+  _restriction = {
+    values = [
+      "TODAY_ONLY",
+      "UPCOMING",
+    ]
+    enforce_value = false
+  }
+}

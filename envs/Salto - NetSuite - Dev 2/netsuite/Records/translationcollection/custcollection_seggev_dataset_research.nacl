@@ -1,0 +1,46 @@
+netsuite.translationcollection custcollection_seggev_dataset_research {
+  scriptid = "custcollection_seggev_dataset_research"
+  defaultlanguage = "en-US"
+  name = "seggev dataset research"
+  strings = {
+    string = {
+      dataset_formula_518_1 = {
+        scriptid = "dataset_formula_518_1"
+        defaulttranslation = "from5"
+        description = "Formula field in dataset"
+        index = 0
+      }
+      dataset_formula_513_2 = {
+        scriptid = "dataset_formula_513_2"
+        defaulttranslation = "form2"
+        description = "Formula field in dataset"
+        index = 1
+      }
+      dataset_formula_513_3 = {
+        scriptid = "dataset_formula_513_3"
+        defaulttranslation = "form4"
+        description = "Formula field in dataset"
+        index = 2
+      }
+      dataset_formula_513_4 = {
+        scriptid = "dataset_formula_513_4"
+        defaulttranslation = "form3"
+        description = "Formula field in dataset"
+        index = 3
+      }
+      dataset_formula_513_5 = {
+        scriptid = "dataset_formula_513_5"
+        defaulttranslation = "form1"
+        description = "Formula field in dataset"
+        index = 4
+      }
+      dataset_name_211_1 = {
+        scriptid = "dataset_name_211_1"
+        defaulttranslation = "seggev dataset research"
+        description = "Name in dataset"
+        index = 5
+      }
+    }
+  }
+  _alias = "seggev dataset research"
+}

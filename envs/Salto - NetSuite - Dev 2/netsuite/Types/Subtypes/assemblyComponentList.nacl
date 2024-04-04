@@ -1,0 +1,11 @@
+type netsuite.assemblyComponentList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.assemblyComponent>" component {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

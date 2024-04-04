@@ -1,0 +1,16 @@
+type netsuite.generic_item_tab is string {
+  _restriction = {
+    values = [
+      "ITEMBASIC",
+      "ITEMCOMMUNICATION",
+      "ITEMINVENTORY",
+      "ITEMLOCATIONS",
+      "ITEMMAIN",
+      "ITEMMATRIX",
+      "ITEMPURCHASINGINVENTORY",
+      "ITEMSYSTEMINFORMATION",
+      "ITEMVENDORS",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_seggev_pivot_1 {
+  scriptid = "custcollection_seggev_pivot_1"
+  defaultlanguage = "en-US"
+  name = "Pivot 1"
+  strings = {
+    string = {
+      report_name_1511_4 = {
+        scriptid = "report_name_1511_4"
+        defaulttranslation = "Pivot 1"
+        description = "Name of pivot"
+        index = 0
+      }
+    }
+  }
+  _alias = "Pivot 1"
+}

@@ -1,0 +1,15 @@
+type netsuite.customsegment_crm_application_id is string {
+  _restriction = {
+    values = [
+      "CALENDAREVENT",
+      "CAMPAIGN",
+      "ISSUE",
+      "PHONECALL",
+      "PROJECTTASK",
+      "SOLUTION",
+      "SUPPORTCASE",
+      "TASK",
+    ]
+    enforce_value = false
+  }
+}

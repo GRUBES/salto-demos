@@ -1,0 +1,11 @@
+type netsuite.workOrderIssueComponentList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.workOrderIssueComponent>" workOrderIssueComponent {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

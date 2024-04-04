@@ -1,0 +1,131 @@
+type netsuite.customtransactiontype {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^(customtransaction|customsale|custompurchase)[0-9a-z_]+"
+    }
+  }
+  string name {
+    _required = true
+  }
+  netsuite.customtransactiontype_subliststyle subliststyle {
+  }
+  netsuite.customtransactiontype_subliststyle transactionstyle {
+  }
+  boolean iscredit {
+  }
+  boolean isposting {
+  }
+  boolean showstatus {
+  }
+  boolean isvoidable {
+  }
+  boolean cancloseorder {
+  }
+  netsuite.customtransactiontype_accounting accounting {
+  }
+  netsuite.customtransactiontype_links links {
+  }
+  netsuite.customtransactiontype_permissions permissions {
+  }
+  netsuite.customtransactiontype_segments segments {
+  }
+  netsuite.customtransactiontype_statuses statuses {
+  }
+  string application_id {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  _alias = "Custom Transaction Type"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+}
+type netsuite.customtransactiontype_accounting {
+  boolean specifyaccountontransaction {
+  }
+  boolean filterbyaccounttypeall {
+  }
+  netsuite.customtransactiontype_filterbyaccounttype filterbyaccounttype {
+  }
+}
+type netsuite.customtransactiontype_links_link {
+  netsuite.generic_centercategory linkcategory {
+    _required = true
+  }
+  netsuite.customtransactiontype_tasktype linktasktype {
+  }
+  string linklabel {
+  }
+}
+type netsuite.customtransactiontype_links {
+  "Map<netsuite.customtransactiontype_links_link>" link {
+    map_key_field = "linkcategory"
+  }
+}
+type netsuite.customtransactiontype_permissions_permission {
+  string permittedrole {
+    _required = true
+  }
+  netsuite.generic_permission_level permittedlevel {
+    _required = true
+  }
+}
+type netsuite.customtransactiontype_permissions {
+  "Map<netsuite.customtransactiontype_permissions_permission>" permission {
+    map_key_field = "permittedrole"
+  }
+}
+type netsuite.customtransactiontype_segments {
+  netsuite.customtransactiontype_classification_position classposition {
+  }
+  boolean isclassmandatory {
+  }
+  netsuite.customtransactiontype_classification_position departmentposition {
+  }
+  boolean isdepartmentmandatory {
+  }
+  netsuite.customtransactiontype_classification_position locationposition {
+  }
+  boolean islocationmandatory {
+  }
+}
+type netsuite.customtransactiontype_statuses_status {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string description {
+    _required = true
+  }
+  netsuite.customtransactiontype_statuses_id id {
+    _required = true
+  }
+  boolean isposting {
+  }
+  number index {
+  }
+}
+type netsuite.customtransactiontype_statuses {
+  "Map<netsuite.customtransactiontype_statuses_status>" status {
+    map_key_field = "scriptid"
+  }
+}

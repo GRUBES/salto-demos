@@ -1,0 +1,20 @@
+type netsuite.assemblyComponent {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  number quantity {
+  }
+  number quantityOnHand {
+  }
+  netsuite.inventoryDetail componentInventoryDetail {
+  }
+  string componentNumbers {
+  }
+  string binNumbers {
+  }
+  number lineNumber {
+  }
+}

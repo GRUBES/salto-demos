@@ -1,0 +1,8 @@
+type netsuite.promotionCodeItems {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+}

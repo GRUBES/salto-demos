@@ -1,0 +1,34 @@
+netsuite.entitycustomfield custentity_has_mgr_reviewed {
+  scriptid = "custentity_has_mgr_reviewed"
+  accesslevel = "2"
+  appliestocontact = false
+  appliestocustomer = false
+  appliestoemployee = true
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = false
+  defaultchecked = false
+  description = "Has the manager reviewed this Employee record?"
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "CHECKBOX"
+  globalsearch = false
+  help = "Has the manager reviewed this Employee record? The Employee's supervisor must review and approve the Employee's information before the record can be submitted."
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Manager Reviewed"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "Manager Reviewed"
+}

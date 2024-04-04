@@ -1,0 +1,11 @@
+type netsuite.depositPaymentList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.depositPayment>" depositPayment {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

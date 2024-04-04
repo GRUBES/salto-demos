@@ -1,0 +1,11 @@
+netsuite.restlet customscript110 {
+  scriptid = "customscript110"
+  
+  name = "script-11"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = "[/SuiteApps/com.saltoio.salto/build/src/operations/read_file_operation.js]"
+  _alias = "script-11"
+  isInactive = false
+}

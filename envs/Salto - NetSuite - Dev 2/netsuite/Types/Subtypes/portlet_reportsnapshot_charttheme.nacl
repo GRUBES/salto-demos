@@ -1,0 +1,12 @@
+type netsuite.portlet_reportsnapshot_charttheme is string {
+  _restriction = {
+    values = [
+      "BASIC",
+      "COLORFUL",
+      "GLOBAL_THEME",
+      "MATCH_COLOR_THEME_BOLD",
+      "MATCH_COLOR_THEME_LIGHT",
+    ]
+    enforce_value = false
+  }
+}

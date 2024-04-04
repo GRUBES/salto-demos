@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_workbook_demo {
+  scriptid = "custcollection_workbook_demo"
+  defaultlanguage = "en-US"
+  name = "DEMO WORKBOOK"
+  strings = {
+    string = {
+      workbook_name_1380_1 = {
+        scriptid = "workbook_name_1380_1"
+        defaulttranslation = "DEMO WORKBOOK"
+        description = "Name in workbook"
+        index = 0
+      }
+    }
+  }
+  _alias = "DEMO WORKBOOK"
+}

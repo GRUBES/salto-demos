@@ -1,0 +1,6 @@
+netsuite.subtab custtab_9_3368792_208 {
+  scriptid = "custtab_9_3368792_208"
+  tabtype = "CRM"
+  title = "Activities"
+  _alias = "Activities"
+}

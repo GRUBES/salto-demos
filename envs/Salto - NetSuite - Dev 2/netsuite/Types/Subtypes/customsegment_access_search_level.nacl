@@ -1,0 +1,10 @@
+type netsuite.customsegment_access_search_level is string {
+  _restriction = {
+    values = [
+      "EDIT",
+      "NONE",
+      "VIEW",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,17 @@
+netsuite.translationcollection custcollectiontranslations_dataset_31_ed97326973fe4581967a5 {
+  scriptid = "custcollectiontranslations_dataset_31_ed97326973fe4581967a5"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_dataset_31_ed97326973fe4581967a5.strings.string.dataset_name_1345_1.scriptid
+  strings = {
+    string = {
+      dataset_name_1345_1 = {
+        scriptid = "dataset_name_1345_1"
+        defaulttranslation = "seggev referenced by non-valid workbook"
+        description = "Name in dataset"
+        index = 0
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "seggev referenced by non-valid workbook"
+}

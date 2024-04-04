@@ -1,0 +1,16 @@
+type netsuite.paycheckPayDisburse {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string method {
+  }
+  string bankName {
+  }
+  string bankAccountDecrypt {
+  }
+  string statusName {
+  }
+  number amount {
+  }
+}

@@ -1,0 +1,12 @@
+type netsuite.generic_permission_level is string {
+  _restriction = {
+    values = [
+      "CREATE",
+      "EDIT",
+      "FULL",
+      "NONE",
+      "VIEW",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,34 @@
+netsuite.centercategory custcentercategory68 {
+  scriptid = "custcentercategory68"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab22.scriptid
+  label = "Help"
+  links = {
+    link = {
+      SUPT_HELP = {
+        linkid = "SUPT_HELP"
+        linklabel = "Help, Guides, Tips and more"
+        shortlist = false
+        index = 0
+      }
+      SUPT_RELEASENOTES = {
+        linkid = "SUPT_RELEASENOTES"
+        shortlist = false
+        index = 1
+      }
+      SUPT_VERSION_10_5 = {
+        linkid = "SUPT_VERSION_10_5"
+        linklabel = "Sneak Peeks"
+        shortlist = false
+        index = 2
+      }
+      SUPT_GLOSSARY = {
+        linkid = "SUPT_GLOSSARY"
+        linklabel = "Glossary"
+        shortlist = false
+        index = 3
+      }
+    }
+  }
+  _alias = "Help"
+}

@@ -1,0 +1,9 @@
+type netsuite.workflowaction_radioschedulemode is string {
+  _restriction = {
+    values = [
+      "DELAY",
+      "TIMEOFDAY",
+    ]
+    enforce_value = false
+  }
+}

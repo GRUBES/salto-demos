@@ -1,0 +1,18 @@
+netsuite.customsegment cseg1 {
+  scriptid = "cseg1"
+  defaultrecordaccesslevel = "EDIT"
+  defaultsearchaccesslevel = "VIEW"
+  displaytype = "NORMAL"
+  fieldtype = "SELECT"
+  hasglimpact = false
+  ismandatory = false
+  label = "Stam"
+  recordtype = netsuite.customrecord_cseg1.attr.scriptid
+  valuesdisplayorder = "SUBLIST"
+  segmentapplication = {
+    items = {
+      subtype = "BOTH"
+    }
+  }
+  _alias = "Stam"
+}

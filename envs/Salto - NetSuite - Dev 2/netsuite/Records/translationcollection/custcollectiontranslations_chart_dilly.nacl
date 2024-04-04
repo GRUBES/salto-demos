@@ -1,0 +1,22 @@
+netsuite.translationcollection custcollectiontranslations_chart_dilly {
+  scriptid = "custcollectiontranslations_chart_dilly"
+  defaultlanguage = "en-US"
+  name = "Chart 1"
+  strings = {
+    string = {
+      chart_measure_1711_8 = {
+        scriptid = "chart_measure_1711_8"
+        defaulttranslation = "some_func"
+        description = "Measure in chart"
+        index = 0
+      }
+      chart_name_1711_9 = {
+        scriptid = "chart_name_1711_9"
+        defaulttranslation = "Chart 1"
+        description = "Chart name"
+        index = 1
+      }
+    }
+  }
+  _alias = "Chart 1"
+}

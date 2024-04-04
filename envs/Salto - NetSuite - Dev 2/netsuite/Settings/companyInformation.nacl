@@ -1,0 +1,43 @@
+netsuite.companyInformation {
+  isinactive = false
+  country = {
+    value = "US"
+    text = "United States"
+  }
+  customersurl = "https://tstdrv2480368.app.netsuite.com/app/login/secure/privatelogin.nl?c=TSTDRV2480368"
+  suitetalkurl = "https://tstdrv2480368.suitetalk.api.netsuite.com"
+  timezone = {
+    value = "America/Los_Angeles"
+    text = "(GMT-08:00) Pacific Time (US & Canada)"
+  }
+  purgeaccount = false
+  appurl = "https://tstdrv2480368.app.netsuite.com"
+  fiscalmonth = {
+    value = "JAN"
+    text = "January"
+  }
+  fiscalcalendar = {
+    value = "1"
+    text = "Standard Fiscal Calendar"
+  }
+  basecurrency = {
+    value = "1"
+    text = "USA"
+  }
+  showsubsidiaryname = false
+  dropdownstate = {
+    value = "CA"
+    text = "California"
+  }
+  email = "services@salto.io"
+  taxfiscalcalendar = {
+    value = "1"
+    text = "Standard Fiscal Calendar"
+  }
+  lastmodifieddate = "4/17/2023 4:19"
+  formsurl = "https://tstdrv2480368.extforms.netsuite.com"
+  restleturl = "https://tstdrv2480368.restlets.api.netsuite.com"
+  iselimination = false
+  displaylogointernally = false
+  _alias = "Company Information"
+}

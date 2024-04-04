@@ -1,0 +1,228 @@
+type netsuite.serviceSaleItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string salesDescription {
+  }
+  boolean includeChildren {
+  }
+  netsuite.account incomeAccount {
+    isReference = true
+  }
+  boolean isTaxable {
+  }
+  unknown matrixType {
+  }
+  netsuite.recordRef taxSchedule {
+  }
+  unknown costEstimateType {
+  }
+  number costEstimate {
+  }
+  netsuite.unitsType unitsType {
+    isReference = true
+  }
+  netsuite.recordRef saleUnit {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  string costEstimateUnits {
+  }
+  netsuite.recordRef billingSchedule {
+  }
+  netsuite.account deferredRevenueAccount {
+    isReference = true
+  }
+  netsuite.recordRef revRecSchedule {
+  }
+  number minimumQuantity {
+  }
+  boolean enforceMinQtyInternally {
+  }
+  number maximumQuantity {
+  }
+  string softDescriptor {
+  }
+  boolean pricesIncludeTax {
+  }
+  netsuite.recordRef quantityPricingSchedule {
+  }
+  boolean useMarginalRates {
+  }
+  unknown overallQuantityPricingType {
+  }
+  boolean isFulfillable {
+  }
+  netsuite.costCategory costCategory {
+    isReference = true
+  }
+  netsuite.pricingGroup pricingGroup {
+    isReference = true
+  }
+  string minimumQuantityUnits {
+  }
+  number vsoePrice {
+  }
+  unknown vsoeSopGroup {
+  }
+  unknown vsoeDeferral {
+  }
+  unknown vsoePermitDiscount {
+  }
+  boolean vsoeDelivered {
+  }
+  netsuite.recordRef itemRevenueCategory {
+  }
+  boolean deferRevRec {
+  }
+  netsuite.recordRef revenueRecognitionRule {
+  }
+  netsuite.recordRef revRecForecastRule {
+  }
+  netsuite.recordRef revenueAllocationGroup {
+  }
+  netsuite.recordRef createRevenuePlansOn {
+  }
+  boolean directRevenuePosting {
+  }
+  boolean contingentRevenueHandling {
+  }
+  netsuite.account revReclassFXAccount {
+    isReference = true
+  }
+  boolean createJob {
+  }
+  string matrixItemNameTemplate {
+  }
+  string storeDisplayName {
+  }
+  netsuite.fileReference storeDisplayThumbnail {
+    isReference = true
+  }
+  netsuite.fileReference storeDisplayImage {
+    isReference = true
+  }
+  string storeDescription {
+  }
+  string storeDetailedDescription {
+  }
+  netsuite.recordRef storeItemTemplate {
+  }
+  string pageTitle {
+  }
+  string urlComponent {
+  }
+  string metaTagHtml {
+  }
+  boolean excludeFromSitemap {
+  }
+  unknown sitemapPriority {
+  }
+  string searchKeywords {
+  }
+  boolean isDonationItem {
+  }
+  boolean showDefaultDonationAmount {
+  }
+  number maxDonationAmount {
+  }
+  boolean dontShowPrice {
+  }
+  string noPriceMessage {
+  }
+  string outOfStockMessage {
+  }
+  boolean onSpecial {
+  }
+  unknown outOfStockBehavior {
+  }
+  string relatedItemsDescription {
+  }
+  string specialsDescription {
+  }
+  netsuite.serviceItemTaskTemplatesList itemTaskTemplatesList {
+  }
+  string featuredDescription {
+  }
+  netsuite.recordRef customForm {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  netsuite.serviceSaleItem parent {
+    isReference = true
+  }
+  boolean isOnline {
+  }
+  boolean isGcoCompliant {
+  }
+  boolean offerSupport {
+  }
+  boolean isInactive {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.billingRatesMatrix billingRatesMatrix {
+  }
+  netsuite.itemAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.itemOptionsList itemOptionsList {
+  }
+  netsuite.matrixOptionList matrixOptionList {
+  }
+  netsuite.pricingMatrix pricingMatrix {
+  }
+  netsuite.recordRef purchaseTaxCode {
+  }
+  number rate {
+  }
+  netsuite.recordRef salesTaxCode {
+  }
+  netsuite.siteCategoryList siteCategoryList {
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.presentationItemList presentationItemList {
+  }
+  netsuite.serviceSaleItemHierarchyVersionsList hierarchyVersionsList {
+  }
+  netsuite.recordRef consumptionUnit {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Service Sale Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

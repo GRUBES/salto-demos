@@ -1,0 +1,9 @@
+type netsuite.locking_actions is string {
+  _restriction = {
+    values = [
+      "LOCK",
+      "UNLOCK",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,111 @@
+settings netsuite.companyInformation {
+  netsuite.selectOption country {
+    label = "Country"
+    type = "select"
+  }
+  netsuite.selectOption parent {
+    label = "Parent subsidiary"
+    type = "select"
+  }
+  string suitetalkurl {
+    label = "SuiteTalk (SOAP and REST web services)"
+    type = "url"
+  }
+  boolean purgeaccount {
+    label = "Purge Account not allowed for permanent demo accounts"
+    type = "checkbox"
+  }
+  netsuite.selectOption basecurrency {
+    label = "Currency"
+    type = "select"
+  }
+  netsuite.selectOption fiscalcalendar {
+    label = "Fiscal Calendar"
+    type = "select"
+  }
+  string mainaddress_text {
+    label = "Address"
+    type = "address"
+  }
+  netsuite.selectOption dropdownstate {
+    label = "County/State/Province"
+    type = "select"
+  }
+  netsuite.selectOption prevparent {
+    label = "Account ID"
+    type = "select"
+  }
+  netsuite.selectOption formlogo {
+    label = "Company Logo (Forms)"
+    type = "select"
+  }
+  string formsurl {
+    label = "External Forms"
+    type = "url"
+  }
+  boolean isinactive {
+    label = "Subsidiary is Inactive"
+    type = "checkbox"
+  }
+  string customersurl {
+    label = "Customer Center Login"
+    type = "url"
+  }
+  netsuite.selectOption timezone {
+    label = "Time Zone"
+    type = "select"
+  }
+  string appurl {
+    label = "NetSuite UI"
+    type = "url"
+  }
+  netsuite.selectOption fiscalmonth {
+    label = "First Fiscal Month"
+    type = "select"
+  }
+  boolean showsubsidiaryname {
+    label = "Always Display Subsidiary Name"
+    type = "checkbox"
+  }
+  string email {
+    label = "Return Email Address"
+    type = "email"
+  }
+  string shippingaddress_text {
+    label = "Shipping Address"
+    type = "address"
+  }
+  netsuite.selectOption taxfiscalcalendar {
+    label = "Tax Fiscal Calendar"
+    type = "select"
+  }
+  string returnaddress_text {
+    label = "Return Address"
+    type = "address"
+  }
+  string lastmodifieddate {
+    label = "Last Modified Date"
+    type = "datetime"
+  }
+  string restleturl {
+    label = "RESTlets"
+    type = "url"
+  }
+  boolean iselimination {
+    label = "Elimination"
+    type = "checkbox"
+  }
+  boolean displaylogointernally {
+    label = "Display Logo Internally"
+    type = "checkbox"
+  }
+  netsuite.selectOption pagelogo {
+    label = "Company Logo (Pages)"
+    type = "select"
+  }
+  string configType {
+    _required = true
+    _hidden_value = true
+  }
+  _alias = "Company Information"
+}

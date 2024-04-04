@@ -1,0 +1,13 @@
+type netsuite.script_loglevel is string {
+  _restriction = {
+    values = [
+      "AUDIT",
+      "DEBUG",
+      "EMERGENCY",
+      "ERROR",
+      "INTERNAL",
+      "SYSTEM",
+    ]
+    enforce_value = false
+  }
+}

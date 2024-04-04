@@ -1,0 +1,11 @@
+type netsuite.workflowaction_valuetype is string {
+  _restriction = {
+    values = [
+      "DATE",
+      "FIELD",
+      "FORMULA",
+      "STATIC",
+    ]
+    enforce_value = false
+  }
+}
