@@ -1,0 +1,11 @@
+type netsuite.checkExpenseList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.checkExpense>" expense {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

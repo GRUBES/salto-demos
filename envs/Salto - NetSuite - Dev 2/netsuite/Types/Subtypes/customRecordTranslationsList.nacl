@@ -1,0 +1,12 @@
+type netsuite.customRecordTranslationsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "Map<netsuite.customRecordTranslations>" customRecordTranslations {
+    map_key_field = [
+      "locale",
+      "language",
+    ]
+  }
+}

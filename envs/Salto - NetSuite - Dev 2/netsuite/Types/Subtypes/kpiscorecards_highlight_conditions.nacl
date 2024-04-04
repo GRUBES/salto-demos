@@ -1,0 +1,12 @@
+type netsuite.kpiscorecards_highlight_conditions is string {
+  _restriction = {
+    values = [
+      "ALWAYS",
+      "GREATER_THAN",
+      "LESS_THAN",
+      "MAGNITUDE_GREATER_THAN",
+      "MAGNITUDE_LESS_THAN",
+    ]
+    enforce_value = false
+  }
+}

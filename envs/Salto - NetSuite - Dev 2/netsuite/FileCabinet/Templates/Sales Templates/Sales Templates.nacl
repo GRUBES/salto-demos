@@ -1,0 +1,11 @@
+netsuite.folder Templates_Sales_Templates@ds {
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/Sales Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "Sales Templates"
+  isInactive = false
+}

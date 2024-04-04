@@ -1,0 +1,61 @@
+netsuite.centercategory custcentercategory22 {
+  scriptid = "custcentercategory22"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Inventory/Items"
+  links = {
+    link = {
+      REPO_231 = {
+        linkid = "REPO_231"
+        shortlist = false
+        index = 0
+      }
+      REPO_243 = {
+        linkid = "REPO_243"
+        shortlist = false
+        index = 1
+      }
+      REPO_241 = {
+        linkid = "REPO_241"
+        shortlist = false
+        index = 2
+      }
+      REPO_230 = {
+        linkid = "REPO_230"
+        shortlist = false
+        index = 3
+      }
+      REPO_229 = {
+        linkid = "REPO_229"
+        shortlist = false
+        index = 4
+      }
+      REPO_150 = {
+        linkid = "REPO_150"
+        shortlist = false
+        index = 5
+      }
+      REPO_151 = {
+        linkid = "REPO_151"
+        shortlist = false
+        index = 6
+      }
+      REPO_246 = {
+        linkid = "REPO_246"
+        shortlist = false
+        index = 7
+      }
+      REPO_64 = {
+        linkid = "REPO_64"
+        shortlist = false
+        index = 8
+      }
+      REPO_NEG221 = {
+        linkid = "REPO_NEG221"
+        shortlist = false
+        index = 9
+      }
+    }
+  }
+  _alias = "Inventory/Items"
+}

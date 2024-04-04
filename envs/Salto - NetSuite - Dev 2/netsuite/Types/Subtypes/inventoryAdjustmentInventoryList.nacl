@@ -1,0 +1,11 @@
+type netsuite.inventoryAdjustmentInventoryList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.inventoryAdjustmentInventory>" inventory {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

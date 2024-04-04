@@ -1,0 +1,27 @@
+type netsuite.workflowaction_eventtype is string {
+  _restriction = {
+    values = [
+      "APPROVE",
+      "CANCEL",
+      "COPY",
+      "CREATE",
+      "DELETE",
+      "DROPSHIP",
+      "EDIT",
+      "EDITFORECAST",
+      "EMAIL",
+      "MARKCOMPLETE",
+      "ORDERITEMS",
+      "PACK",
+      "PAYBILLS",
+      "PRINT",
+      "REASSIGN",
+      "REJECT",
+      "SHIP",
+      "SPECIALORDER",
+      "VIEW",
+      "XEDIT",
+    ]
+    enforce_value = false
+  }
+}

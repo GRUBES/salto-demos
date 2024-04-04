@@ -1,0 +1,35 @@
+netsuite.role customrole153 {
+  scriptid = "customrole153"
+  accountingbooksoption = "PRIMARY"
+  centertype = "SALESCENTER"
+  coreadminpermission = false
+  employeerestriction = "NONE"
+  employeeselectionunrestricted = true
+  
+  ispartnerrole = false
+  issalesrole = false
+  issinglesignononly = true
+  issupportrole = false
+  iswebserviceonlyrole = false
+  name = "Seggev Role Test 2"
+  restrictbydevice = false
+  restricttimeandexpenses = false
+  subsidiaryoption = "ALL"
+  subsidiaryviewingallowed = true
+  tfaduration = "720"
+  tfarequired = "SMS"
+  permissions = {
+    permission = {
+      LIST_OTHER_ADDRESS = {
+        permkey = "LIST_OTHER_ADDRESS"
+        permlevel = "FULL"
+      }
+      customrecord_seggev = {
+        permkey = netsuite.customrecord_seggev.attr.scriptid
+        permlevel = "VIEW"
+      }
+    }
+  }
+  _alias = "Seggev Role Test 2"
+  isInactive = false
+}

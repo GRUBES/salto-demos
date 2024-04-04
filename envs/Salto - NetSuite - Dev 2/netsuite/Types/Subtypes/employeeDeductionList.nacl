@@ -1,0 +1,11 @@
+type netsuite.employeeDeductionList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.employeeDeduction>" employeeDeduction {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

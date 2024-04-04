@@ -1,0 +1,11 @@
+type netsuite.manufacturingOperationTaskPredecessorList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.manufacturingOperationTaskPredecessor>" manufacturingOperationTaskPredecessor {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

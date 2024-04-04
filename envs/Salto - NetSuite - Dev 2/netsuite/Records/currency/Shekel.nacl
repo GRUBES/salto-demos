@@ -1,0 +1,13 @@
+netsuite.currency Shekel {
+  name = "Shekel"
+  symbol = "ILS"
+  isBaseCurrency = false
+  isInactive = false
+  overrideCurrencyFormat = true
+  displaySymbol = "₪"
+  symbolPlacement = "_beforeNumber"
+  locale = "_israelHebrew"
+  formatSample = "₪‎1,234.56"
+  currencyPrecision = "_two"
+  _alias = "Shekel"
+}

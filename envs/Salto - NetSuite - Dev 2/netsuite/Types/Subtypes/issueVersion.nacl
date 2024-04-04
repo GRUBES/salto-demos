@@ -1,0 +1,12 @@
+type netsuite.issueVersion {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean primary {
+  }
+  netsuite.recordRef version {
+  }
+  netsuite.recordRef build {
+  }
+}

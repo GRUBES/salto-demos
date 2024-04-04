@@ -1,0 +1,6 @@
+netsuite.subtab custtab_8_3368792_208 {
+  scriptid = "custtab_8_3368792_208"
+  tabtype = "CRM"
+  title = "Message"
+  _alias = "Message"
+}

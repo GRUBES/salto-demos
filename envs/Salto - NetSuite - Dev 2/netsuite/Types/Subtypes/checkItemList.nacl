@@ -1,0 +1,11 @@
+type netsuite.checkItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.checkItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

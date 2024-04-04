@@ -1,0 +1,33 @@
+netsuite.entitycustomfield custentity17 {
+  scriptid = "custentity17"
+  accesslevel = "2"
+  appliestocontact = false
+  appliestocustomer = true
+  appliestoemployee = false
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = true
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = false
+  defaultchecked = false
+  description = "By salto user at 15:54 UTC+2"
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "TEXT"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "NewField"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "NewField"
+}

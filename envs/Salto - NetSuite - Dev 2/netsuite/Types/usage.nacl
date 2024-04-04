@@ -1,0 +1,34 @@
+type netsuite.usage {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string memo {
+  }
+  netsuite.recordRef item {
+  }
+  netsuite.recordRef subscriptionPlan {
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  netsuite.recordRef usageSubscription {
+  }
+  netsuite.recordRef usageSubscriptionLine {
+  }
+  number usageQuantity {
+  }
+  string usageDate {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

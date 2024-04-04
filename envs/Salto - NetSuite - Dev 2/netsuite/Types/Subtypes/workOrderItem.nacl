@@ -1,0 +1,70 @@
+type netsuite.workOrderItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number line {
+  }
+  netsuite.recordRef item {
+  }
+  number operationSequenceNumber {
+  }
+  number componentYield {
+  }
+  number bomQuantity {
+  }
+  number quantityCommitted {
+  }
+  number quantityBackOrdered {
+  }
+  number quantityAvailable {
+  }
+  number averageCost {
+  }
+  number lastPurchasePrice {
+  }
+  number quantityOnHand {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  string serialNumbers {
+  }
+  number orderPriority {
+  }
+  netsuite.customFieldList options {
+  }
+  unknown itemSource {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.vendor poVendor {
+    isReference = true
+  }
+  number poRate {
+  }
+  number percentComplete {
+  }
+  number contribution {
+  }
+  string description {
+  }
+  unknown commitInventory {
+  }
+  string plannedIssueDate {
+  }
+  netsuite.recordRef orderAllocationStrategy {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

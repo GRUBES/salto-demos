@@ -1,0 +1,12 @@
+type netsuite.workflow_order_of_week is string {
+  _restriction = {
+    values = [
+      "FIRST",
+      "FOURTH",
+      "LAST",
+      "SECOND",
+      "THIRD",
+    ]
+    enforce_value = false
+  }
+}

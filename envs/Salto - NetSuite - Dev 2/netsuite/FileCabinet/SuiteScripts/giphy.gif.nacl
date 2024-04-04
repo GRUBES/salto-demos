@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_giphy_gif@dv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/giphy.gif"
+  content = file("netsuite/FileCabinet/SuiteScripts/giphy.gif")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "giphy.gif"
+  isInactive = false
+}

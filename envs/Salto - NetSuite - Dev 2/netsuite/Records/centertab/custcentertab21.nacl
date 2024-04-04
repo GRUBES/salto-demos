@@ -1,0 +1,92 @@
+netsuite.centertab custcentertab21 {
+  scriptid = "custcentertab21"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = true
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Leads & Prospects"
+  portlets = {
+    portlet = {
+      portlet_289_3368792_785 = {
+        scriptid = "portlet_289_3368792_785"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+        index = 0
+      }
+      portlet_286_3368792_785 = {
+        scriptid = "portlet_286_3368792_785"
+        isportletshown = false
+        portlet = "SEARCHFORM"
+        portletcolumn = "1"
+        index = 1
+      }
+      portlet_291_3368792_785 = {
+        scriptid = "portlet_291_3368792_785"
+        isportletshown = false
+        portlet = "QUICKADD"
+        portletcolumn = "1"
+        index = 2
+      }
+      portlet_296_3368792_785 = {
+        scriptid = "portlet_296_3368792_785"
+        isportletshown = true
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+        index = 3
+      }
+      portlet_298_3368792_785 = {
+        scriptid = "portlet_298_3368792_785"
+        isportletshown = false
+        portlet = "SHORTCUTS"
+        portletcolumn = "1"
+        index = 4
+      }
+      portlet_297_3368792_785 = {
+        scriptid = "portlet_297_3368792_785"
+        isportletshown = false
+        portlet = "REMINDERS"
+        portletcolumn = "1"
+        index = 5
+      }
+      portlet_299_3368792_785 = {
+        scriptid = "portlet_299_3368792_785"
+        isportletshown = false
+        portlet = "RECENTRECORDS"
+        portletcolumn = "1"
+        index = 6
+      }
+      portlet_292_3368792_785 = {
+        scriptid = "portlet_292_3368792_785"
+        isportletshown = true
+        portlet = "LIST"
+        portletcolumn = "2"
+        index = 7
+      }
+      portlet_300_3368792_785 = {
+        scriptid = "portlet_300_3368792_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+        index = 8
+      }
+      portlet_309_3368792_785 = {
+        scriptid = "portlet_309_3368792_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+        index = 9
+      }
+      portlet_306_3368792_785 = {
+        scriptid = "portlet_306_3368792_785"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+        index = 10
+      }
+    }
+  }
+  _alias = "Leads & Prospects"
+}

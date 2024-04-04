@@ -1,0 +1,6 @@
+netsuite.subtab custtab_5_3368792_208 {
+  scriptid = "custtab_5_3368792_208"
+  tabtype = "ENTITY"
+  title = "Notes & Attachments"
+  _alias = "Notes & Attachments"
+}

@@ -1,0 +1,11 @@
+type netsuite.itemSupplyPlanOrderList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.itemSupplyPlanOrder>" itemSupplyPlanOrder {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

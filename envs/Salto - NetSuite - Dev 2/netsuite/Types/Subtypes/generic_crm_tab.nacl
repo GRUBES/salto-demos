@@ -1,0 +1,15 @@
+type netsuite.generic_crm_tab is string {
+  _restriction = {
+    values = [
+      "CRMBUDGET",
+      "CRMCONTACTS",
+      "CRMKEYWORD",
+      "CRMMAIN",
+      "CRMMESSAGE",
+      "CRMRELATEDINFO",
+      "CRMRELATEDRECORDS",
+      "CRMSYSTEMINFORMATION",
+    ]
+    enforce_value = false
+  }
+}

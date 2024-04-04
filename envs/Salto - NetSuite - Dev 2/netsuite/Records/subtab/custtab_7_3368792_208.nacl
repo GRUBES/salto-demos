@@ -1,0 +1,6 @@
+netsuite.subtab custtab_7_3368792_208 {
+  scriptid = "custtab_7_3368792_208"
+  tabtype = "ENTITY"
+  title = "Transactions"
+  _alias = "Transactions"
+}

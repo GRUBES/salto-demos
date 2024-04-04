@@ -1,0 +1,12 @@
+netsuite.folder Templates_Letter_Templates@ds {
+  description = "Letter Templates Folder"
+  bundleable = false
+  
+  isprivate = false
+  path = "/Templates/Letter Templates"
+  _parent = [
+    netsuite.folder.instance.Templates,
+  ]
+  _alias = "Letter Templates"
+  isInactive = false
+}

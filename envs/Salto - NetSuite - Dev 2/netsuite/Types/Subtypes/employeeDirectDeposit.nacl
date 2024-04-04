@@ -1,0 +1,32 @@
+type netsuite.employeeDirectDeposit {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number id {
+  }
+  boolean netAccount {
+  }
+  boolean savingsAccount {
+  }
+  boolean accountPrenoted {
+  }
+  unknown accountStatus {
+  }
+  string bankName {
+  }
+  string bankId {
+  }
+  string bankNumber {
+  }
+  string bankRoutingNumber {
+  }
+  string bankAccountNumber {
+  }
+  number amount {
+  }
+  
+  boolean isInactive {
+    originalName = "inactive"
+  }
+}

@@ -1,0 +1,11 @@
+type netsuite.customRecordTypeOnlineFormsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customRecordTypeOnlineForms>" onlineForms {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

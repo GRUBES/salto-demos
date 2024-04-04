@@ -1,0 +1,14 @@
+netsuite.file Templates_Sales_Templates_Product_Description_pdf@dsduv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/Templates/Sales Templates/Product_Description.pdf"
+  content = file("netsuite/FileCabinet/Templates/Sales Templates/Product_Description.pdf")
+  _parent = [
+    netsuite.folder.instance.Templates_Sales_Templates@ds,
+  ]
+  _alias = "Product_Description.pdf"
+  isInactive = false
+}

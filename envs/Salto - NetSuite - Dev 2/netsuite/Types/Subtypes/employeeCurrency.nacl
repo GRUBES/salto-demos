@@ -1,0 +1,9 @@
+type netsuite.employeeCurrency {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+}

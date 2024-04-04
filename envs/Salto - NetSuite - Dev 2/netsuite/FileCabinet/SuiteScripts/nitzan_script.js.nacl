@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_nitzan_script_js@duv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/nitzan_script.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/nitzan_script.js")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "nitzan_script.js"
+  isInactive = false
+}

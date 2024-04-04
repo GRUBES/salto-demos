@@ -1,0 +1,59 @@
+type netsuite.timeItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number id {
+  }
+  netsuite.employee employee {
+    isReference = true
+  }
+  unknown timeType {
+  }
+  string tranDate {
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  boolean isBillable {
+  }
+  netsuite.payrollItem payrollItem {
+    isReference = true
+  }
+  netsuite.recordRef item {
+  }
+  netsuite.recordRef temporaryLocalJurisdiction {
+  }
+  netsuite.recordRef temporaryStateJurisdiction {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.duration hours {
+  }
+  netsuite.price price {
+    isReference = true
+  }
+  number rate {
+  }
+  boolean overrideRate {
+  }
+  netsuite.duration hoursTotal {
+  }
+  netsuite.recordRef caseTaskEvent {
+  }
+  string memo {
+  }
+  boolean isUtilized {
+  }
+  boolean isProductive {
+  }
+  boolean isExempt {
+  }
+}

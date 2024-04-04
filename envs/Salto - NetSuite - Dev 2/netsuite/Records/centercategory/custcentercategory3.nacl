@@ -1,0 +1,51 @@
+netsuite.centercategory custcentercategory3 {
+  scriptid = "custcentercategory3"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Order Management"
+  links = {
+    link = {
+      REPO_179 = {
+        linkid = "REPO_179"
+        shortlist = false
+        index = 0
+      }
+      REPO_180 = {
+        linkid = "REPO_180"
+        shortlist = false
+        index = 1
+      }
+      REPO_148 = {
+        linkid = "REPO_148"
+        shortlist = false
+        index = 2
+      }
+      REPO_240 = {
+        linkid = "REPO_240"
+        shortlist = false
+        index = 3
+      }
+      REPO_145 = {
+        linkid = "REPO_145"
+        shortlist = false
+        index = 4
+      }
+      REPO_NEG211 = {
+        linkid = "REPO_NEG211"
+        shortlist = false
+        index = 5
+      }
+      REPO_NEG209 = {
+        linkid = "REPO_NEG209"
+        shortlist = false
+        index = 6
+      }
+      REPO_NEG210 = {
+        linkid = "REPO_NEG210"
+        shortlist = false
+        index = 7
+      }
+    }
+  }
+  _alias = "Order Management"
+}

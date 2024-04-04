@@ -1,0 +1,14 @@
+netsuite.file SuiteScripts_InnerFolder_booo_ftl@ddv {
+  bundleable = false
+  
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/InnerFolder/booo.ftl"
+  content = file("netsuite/FileCabinet/SuiteScripts/InnerFolder/booo.ftl")
+  _parent = [
+    netsuite.folder.instance.SuiteScripts_InnerFolder@d,
+  ]
+  _alias = "booo.ftl"
+  isInactive = false
+}

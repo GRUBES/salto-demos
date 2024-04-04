@@ -1,0 +1,11 @@
+type netsuite.binWorksheetItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.binWorksheetItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,36 @@
+netsuite.centercategory custcentercategory15 {
+  scriptid = "custcentercategory15"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Purchases"
+  links = {
+    link = {
+      REPO_282 = {
+        linkid = "REPO_282"
+        shortlist = false
+        index = 0
+      }
+      REPO_281 = {
+        linkid = "REPO_281"
+        shortlist = false
+        index = 1
+      }
+      REPO_278 = {
+        linkid = "REPO_278"
+        shortlist = false
+        index = 2
+      }
+      REPO_277 = {
+        linkid = "REPO_277"
+        shortlist = false
+        index = 3
+      }
+      REPO_NEG222 = {
+        linkid = "REPO_NEG222"
+        shortlist = false
+        index = 4
+      }
+    }
+  }
+  _alias = "Purchases"
+}

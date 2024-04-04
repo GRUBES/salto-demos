@@ -1,0 +1,13 @@
+netsuite.file SuiteScripts_get_workflows_js@duv {
+  bundleable = false
+  availablewithoutlogin = false
+  generateurltimestamp = false
+  hideinbundle = false
+  path = "/SuiteScripts/get_workflows.js"
+  content = file("netsuite/FileCabinet/SuiteScripts/get_workflows.js")
+  isInactive = false
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "get_workflows.js"
+}

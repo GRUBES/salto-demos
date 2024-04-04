@@ -1,0 +1,11 @@
+type netsuite.opportunityItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.opportunityItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

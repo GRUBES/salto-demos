@@ -1,0 +1,37 @@
+type netsuite.portlet_reportsnapshot_reportperiodrange is string {
+  _restriction = {
+    values = [
+      "1ST_FQTR_LAST_FYEAR",
+      "1ST_FQTR_THIS_FYEAR",
+      "2ND_FQTR_LAST_FYEAR",
+      "2ND_FQTR_THIS_FYEAR",
+      "3RD_FQTR_LAST_FYEAR",
+      "3RD_FQTR_THIS_FYEAR",
+      "4TH_FQTR_LAST_FYEAR",
+      "4TH_FQTR_THIS_FYEAR",
+      "FQTR_BEFORE_LAST",
+      "FYEAR_BEFORE_LAST",
+      "LAST_FISCAL_QUARTER",
+      "LAST_FISCAL_YEAR",
+      "LAST_FQTR_ONE_FYEAR_AGO",
+      "LAST_FQTR_TO_PERIOD",
+      "LAST_FYEAR_TO_PERIOD",
+      "LAST_PERIOD",
+      "LAST_PERIOD_ONE_FQTR_AGO",
+      "LAST_PERIOD_ONE_FYEAR_AGO",
+      "LAST_ROLLING_18_PERIODS",
+      "LAST_ROLLING_6_FQTRS",
+      "PERIOD_BEFORE_LAST",
+      "SAME_FQTR_LAST_FYEAR",
+      "SAME_FQTR_LAST_FYEAR_TO_PERIOD",
+      "SAME_PERIOD_LAST_FQTR",
+      "SAME_PERIOD_LAST_FYEAR",
+      "THIS_FISCAL_QUARTER",
+      "THIS_FISCAL_YEAR",
+      "THIS_FQTR_TO_PERIOD",
+      "THIS_FYEAR_TO_PERIOD",
+      "THIS_PERIOD",
+    ]
+    enforce_value = false
+  }
+}

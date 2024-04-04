@@ -1,0 +1,11 @@
+netsuite.folder SuiteScripts_inner_folder_spaces@dss {
+  bundleable = false
+  
+  isprivate = false
+  path = "/SuiteScripts/inner folder spaces"
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "inner folder spaces"
+  isInactive = false
+}

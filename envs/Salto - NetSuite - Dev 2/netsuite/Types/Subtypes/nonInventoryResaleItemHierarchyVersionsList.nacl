@@ -1,0 +1,11 @@
+type netsuite.nonInventoryResaleItemHierarchyVersionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.nonInventoryResaleItemHierarchyVersions>" nonInventoryResaleItemHierarchyVersions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

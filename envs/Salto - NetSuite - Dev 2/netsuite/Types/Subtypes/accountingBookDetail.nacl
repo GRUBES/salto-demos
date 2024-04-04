@@ -1,0 +1,13 @@
+type netsuite.accountingBookDetail {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef accountingBook {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number exchangeRate {
+  }
+}

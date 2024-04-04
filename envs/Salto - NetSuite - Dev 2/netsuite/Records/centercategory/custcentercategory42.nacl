@@ -1,0 +1,22 @@
+netsuite.centercategory custcentercategory42 {
+  scriptid = "custcentercategory42"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab10.scriptid
+  label = "Customer Service"
+  links = {
+    link = {
+      LIST_SOLUTION = {
+        linkid = "LIST_SOLUTION"
+        shortlist = false
+        index = 0
+      }
+      custcentertab25 = {
+        linkobject = netsuite.centertab.instance.custcentertab25.scriptid
+        linktasktype = "CARD"
+        shortlist = false
+        index = 1
+      }
+    }
+  }
+  _alias = "Customer Service"
+}

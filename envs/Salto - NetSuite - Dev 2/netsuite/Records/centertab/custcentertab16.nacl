@@ -1,0 +1,43 @@
+netsuite.centertab custcentertab16 {
+  scriptid = "custcentertab16"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = false
+  allvendors = false
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Prospects"
+  portlets = {
+    portlet = {
+      portlet_188_3368792_785 = {
+        scriptid = "portlet_188_3368792_785"
+        isportletshown = true
+        portlet = "QUICKSEARCH"
+        portletcolumn = "1"
+        index = 0
+      }
+      portlet_196_3368792_785 = {
+        scriptid = "portlet_196_3368792_785"
+        isportletshown = true
+        portlet = "QUICKADD"
+        portletcolumn = "1"
+        index = 1
+      }
+      portlet_189_3368792_785 = {
+        scriptid = "portlet_189_3368792_785"
+        isportletshown = true
+        portlet = "SEARCHRESULTS"
+        portletcolumn = "2"
+        index = 2
+      }
+      portlet_190_3368792_785 = {
+        scriptid = "portlet_190_3368792_785"
+        isportletshown = false
+        portlet = "LIST"
+        portletcolumn = "2"
+        index = 3
+      }
+    }
+  }
+  _alias = "Prospects"
+}

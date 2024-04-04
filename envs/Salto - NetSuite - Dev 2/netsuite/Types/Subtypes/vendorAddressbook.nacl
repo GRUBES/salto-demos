@@ -1,0 +1,17 @@
+type netsuite.vendorAddressbook {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean defaultShipping {
+  }
+  boolean defaultBilling {
+  }
+  string label {
+  }
+  string internalId {
+    _hidden_value = true
+  }
+  netsuite.address addressbookAddress {
+  }
+}

@@ -1,0 +1,12 @@
+type netsuite.emailtemplate_recordtype is string {
+  _restriction = {
+    values = [
+      "CUSTOM",
+      "ENTITY",
+      "EVENT",
+      "PROJECT",
+      "TRANSACTION",
+    ]
+    enforce_value = false
+  }
+}

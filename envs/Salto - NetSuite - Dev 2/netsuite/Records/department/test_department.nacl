@@ -1,0 +1,17 @@
+netsuite.department test_department@s {
+  name = "test department"
+  includeChildren = false
+  isInactive = false
+  classTranslationList = {
+    classTranslation = {
+      French__France_@sjk = {
+        language = "French (France)"
+      }
+    }
+  }
+  subsidiaryList = [
+    netsuite.subsidiary.instance.Parent_Company_created_by_oss_e2e___0072793@sussssbs,
+  ]
+  identifier = "test department"
+  _alias = "test department"
+}

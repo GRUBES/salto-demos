@@ -1,0 +1,35 @@
+netsuite.suitelet customscript238 {
+  scriptid = "customscript238"
+  defaultfunction = "main"
+  description = "baseline script for customer example 001"
+  
+  name = "sjp-script-001.js"
+  notifyadmins = false
+  notifyowner = true
+  notifyuser = false
+  scriptfile = "[/SuiteApps/com.saltoio.salto/build/src/salto_auth.js]"
+  scriptdeployments = {
+    scriptdeployment = {
+      customdeploy1 = {
+        scriptid = "customdeploy1"
+        allemployees = false
+        allpartners = false
+        allroles = false
+        isdeployed = true
+        isonline = false
+        loglevel = "DEBUG"
+        status = "TESTING"
+        title = "sjp-script-001.js"
+      }
+    }
+  }
+  libraries = {
+    library = [
+      {
+        scriptfile = "[/SuiteBundles/Bundle 58416/src/bundle_script.js]"
+      },
+    ]
+  }
+  _alias = "sjp-script-001.js"
+  isInactive = false
+}

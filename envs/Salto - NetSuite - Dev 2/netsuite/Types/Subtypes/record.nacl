@@ -1,0 +1,8 @@
+type netsuite.record {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+}

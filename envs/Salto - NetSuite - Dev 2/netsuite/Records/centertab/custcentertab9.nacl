@@ -1,0 +1,30 @@
+netsuite.centertab custcentertab9 {
+  scriptid = "custcentertab9"
+  allcustomers = false
+  allemployees = false
+  allpartners = false
+  allroles = false
+  allvendors = false
+  audslctrole = "[scriptid=customrole_esc_sales_publisher]|[scriptid=customrole_esc_sales_admin]"
+  center = netsuite.center.instance.custcenter1.scriptid
+  label = "Setup"
+  portlets = {
+    portlet = {
+      portlet_53_3368792_785 = {
+        scriptid = "portlet_53_3368792_785"
+        isportletshown = true
+        portlet = "TASKLINKS"
+        portletcolumn = "2"
+        index = 0
+      }
+      portlet_50_3368792_785 = {
+        scriptid = "portlet_50_3368792_785"
+        isportletshown = false
+        portlet = "SHORTCUTS"
+        portletcolumn = "2"
+        index = 1
+      }
+    }
+  }
+  _alias = "Setup"
+}

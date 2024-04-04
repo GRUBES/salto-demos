@@ -1,0 +1,34 @@
+type netsuite.vendorPaymentApply {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string job {
+  }
+  string applyDate {
+  }
+  string type {
+  }
+  string refNum {
+  }
+  number total {
+  }
+  number due {
+  }
+  string currency {
+  }
+  string discDate {
+  }
+  number discAmt {
+  }
+  number disc {
+  }
+  number amount {
+  }
+}

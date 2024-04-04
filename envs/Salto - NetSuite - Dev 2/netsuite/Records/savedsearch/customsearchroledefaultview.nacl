@@ -1,0 +1,76 @@
+netsuite.savedsearch customsearchroledefaultview {
+  scriptid = "customsearchroledefaultview"
+  definition = "4fba262046d6b37f47e4a1903586113760ce0daf1b53923b826c207c9fe28edd@GZC@2023.2.14@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"
+  return_fields = [
+    {
+      FIELD_ALIAS = "Role_NAME"
+      FIELD_INDEX = 1
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Role_FROMBUNDLE"
+      FIELD_INDEX = 2
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Role_CUSTOMSTANDARD"
+      FIELD_INDEX = 3
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Role_CENTERTYPE"
+      FIELD_INDEX = 4
+      FIELD_FORMULA_ERROR = false
+    },
+    {
+      FIELD_ALIAS = "Role_INTERNALID"
+      FIELD_INDEX = 5
+      FIELD_FORMULA_ERROR = false
+    },
+  ]
+  sort_columns = [
+    {
+      KEY_FIELD = "Role_NAME"
+      FILELD_ORDER = 1
+      FLAG_DESCENDING = false
+    },
+  ]
+  KEY_SCRIPT_ID = "customsearchroledefaultview"
+  FIELD_DEFAULT_NAME = "Custom Role Default View"
+  FIELD_SEARCH_TYPE = "Role"
+  FLAG_PUBLIC = false
+  FLAG_LIST = false
+  FLAG_PORTLET = false
+  FLAG_MACHINE = false
+  FLAG_REMINDER = false
+  FLAG_SHOW_LINK = false
+  FLAG_PREFERRED_LIST = false
+  FLAG_PREFERRED_PORTLET = false
+  FLAG_PREFERRED_MACHINE = false
+  FLAG_PREFERRED_FORM = false
+  FLAG_PREFERRED_RESULTS = false
+  FLAG_VIEW_AS_REPORT = false
+  FLAG_VIEW_AS_GRAPH = false
+  FLAG_VIEW_AS_GRID = false
+  FLAG_UNRESTRICTED = false
+  FLAG_DISABLE_DRILL_DOWN = false
+  FLAG_HIDE_FILTER_DROPDOWNS = false
+  KEY_DEFAULT_TEXT_FIELD_FILTER = "STARTSWITH"
+  FLAG_AVAILABLE_AS_FEED = false
+  FLAG_GLOBAL_EDIT = false
+  FLAG_CSV = false
+  FLAG_EXCEL = false
+  FLAG_PDF = false
+  FLAG_TRIGGERED_ALERT = false
+  FLAG_SCHEDULED_ALERT = false
+  FLAG_SCHEDULED_ALERT_SUMMARIES = false
+  FLAG_SEND_EMPTY_RESULTS = false
+  FLAG_ALERT_ALLOW_SUBSCRIBE = false
+  FLAG_ALERT_INCLUDE_VIEW_LINK = true
+  FLAG_HAS_TOTALS = false
+  FLAG_INCLUDE_PERIOD_END_TRANSACTIONS = false
+  FLAG_BUILT_IN = false
+  FLAG_SEND_ON_UPDATE = false
+  FLAG_SHOW_AUDIT_TRAIL = false
+  _alias = "Custom Role Default View"
+}

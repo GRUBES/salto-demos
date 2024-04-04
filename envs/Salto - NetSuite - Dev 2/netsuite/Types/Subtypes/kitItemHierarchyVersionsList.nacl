@@ -1,0 +1,11 @@
+type netsuite.kitItemHierarchyVersionsList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.kitItemHierarchyVersions>" kitItemHierarchyVersions {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

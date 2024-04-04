@@ -1,0 +1,6 @@
+netsuite.subtab custtab_6_3368792_208 {
+  scriptid = "custtab_6_3368792_208"
+  tabtype = "ENTITY"
+  title = "Messages"
+  _alias = "Messages"
+}

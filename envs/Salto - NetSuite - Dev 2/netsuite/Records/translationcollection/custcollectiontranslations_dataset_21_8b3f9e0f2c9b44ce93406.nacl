@@ -1,0 +1,17 @@
+netsuite.translationcollection custcollectiontranslations_dataset_21_8b3f9e0f2c9b44ce93406 {
+  scriptid = "custcollectiontranslations_dataset_21_8b3f9e0f2c9b44ce93406"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_dataset_21_8b3f9e0f2c9b44ce93406.strings.string.dataset_name_893_1.scriptid
+  strings = {
+    string = {
+      dataset_name_893_1 = {
+        scriptid = "dataset_name_893_1"
+        defaulttranslation = "vkadsc"
+        description = "Name in dataset"
+        index = 0
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "vkadsc"
+}

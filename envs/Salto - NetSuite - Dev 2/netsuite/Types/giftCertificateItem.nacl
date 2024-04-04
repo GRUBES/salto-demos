@@ -1,0 +1,152 @@
+type netsuite.giftCertificateItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  boolean includeChildren {
+  }
+  netsuite.giftCertificateItem parent {
+    isReference = true
+  }
+  boolean isOnline {
+  }
+  boolean isGcoCompliant {
+  }
+  boolean offerSupport {
+  }
+  boolean isInactive {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  string salesDescription {
+  }
+  netsuite.account incomeAccount {
+    isReference = true
+  }
+  netsuite.account liabilityAccount {
+    isReference = true
+  }
+  number daysBeforeExpiration {
+  }
+  boolean isTaxable {
+  }
+  number rate {
+  }
+  string urlComponent {
+  }
+  netsuite.recordRef salesTaxCode {
+  }
+  boolean pricesIncludeTax {
+  }
+  netsuite.recordRef taxSchedule {
+  }
+  number costEstimate {
+  }
+  unknown costEstimateType {
+  }
+  netsuite.recordRef billingSchedule {
+  }
+  netsuite.recordRef issueProduct {
+  }
+  boolean isFulfillable {
+  }
+  string storeDisplayName {
+  }
+  netsuite.fileReference storeDisplayThumbnail {
+    isReference = true
+  }
+  netsuite.fileReference storeDisplayImage {
+    isReference = true
+  }
+  string storeDescription {
+  }
+  string storeDetailedDescription {
+  }
+  netsuite.recordRef storeItemTemplate {
+  }
+  string pageTitle {
+  }
+  string metaTagHtml {
+  }
+  boolean excludeFromSitemap {
+  }
+  unknown sitemapPriority {
+  }
+  string searchKeywords {
+  }
+  boolean isDonationItem {
+  }
+  boolean showDefaultDonationAmount {
+  }
+  number maxDonationAmount {
+  }
+  boolean dontShowPrice {
+  }
+  string noPriceMessage {
+  }
+  string outOfStockMessage {
+  }
+  boolean onSpecial {
+  }
+  unknown outOfStockBehavior {
+  }
+  string specialsDescription {
+  }
+  string featuredDescription {
+  }
+  string relatedItemsDescription {
+  }
+  netsuite.pricingMatrix pricingMatrix {
+  }
+  netsuite.giftCertificateItemAuthCodesList authCodesList {
+  }
+  netsuite.siteCategoryList siteCategoryList {
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.itemOptionsList itemOptionsList {
+  }
+  netsuite.presentationItemList presentationItemList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Gift Certificate Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

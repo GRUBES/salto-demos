@@ -1,0 +1,11 @@
+type netsuite.portlet_trendgraph_charttype is string {
+  _restriction = {
+    values = [
+      "AREA",
+      "BAR",
+      "COLUMN",
+      "LINE",
+    ]
+    enforce_value = false
+  }
+}

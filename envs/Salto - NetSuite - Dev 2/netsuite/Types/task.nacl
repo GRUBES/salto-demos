@@ -1,0 +1,82 @@
+type netsuite.task {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef company {
+  }
+  netsuite.contact contact {
+    isReference = true
+  }
+  netsuite.supportCase supportCase {
+    isReference = true
+  }
+  netsuite.recordRef transaction {
+  }
+  netsuite.recordRef milestone {
+  }
+  netsuite.recordRef customForm {
+  }
+  string title {
+  }
+  netsuite.recordRef assigned {
+  }
+  boolean sendEmail {
+  }
+  boolean timedEvent {
+  }
+  netsuite.duration estimatedTime {
+  }
+  netsuite.duration estimatedTimeOverride {
+  }
+  netsuite.duration actualTime {
+  }
+  netsuite.duration timeRemaining {
+  }
+  number percentTimeComplete {
+  }
+  number percentComplete {
+  }
+  netsuite.task parent {
+    isReference = true
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  string dueDate {
+  }
+  string completedDate {
+  }
+  unknown priority {
+  }
+  unknown status {
+  }
+  string message {
+  }
+  boolean accessLevel {
+  }
+  unknown reminderType {
+  }
+  unknown reminderMinutes {
+  }
+  netsuite.recordRef owner {
+  }
+  netsuite.taskContactList contactList {
+  }
+  netsuite.taskTimeItemList timeItemList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

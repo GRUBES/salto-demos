@@ -1,0 +1,11 @@
+type netsuite.transactionform_subtabid is string {
+  _restriction = {
+    values = [
+      "COVERAGE",
+      "TRANSACTIONOUTPUTOPTIONS",
+      "TRANSACTIONPAYMENT",
+      "WORKFLOW",
+    ]
+    enforce_value = false
+  }
+}

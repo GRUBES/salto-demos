@@ -1,0 +1,16 @@
+netsuite.centercategory custcentercategory66 {
+  scriptid = "custcentercategory66"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab22.scriptid
+  label = "Directories"
+  links = {
+    link = {
+      EXTL_2 = {
+        linkid = "EXTL_2"
+        shortlist = false
+        index = 0
+      }
+    }
+  }
+  _alias = "Directories"
+}

@@ -1,0 +1,9 @@
+type netsuite.plugintype_deployment_model is string {
+  _restriction = {
+    values = [
+      "ALLOW_MULTIPLE",
+      "ALLOW_SINGLE",
+    ]
+    enforce_value = false
+  }
+}

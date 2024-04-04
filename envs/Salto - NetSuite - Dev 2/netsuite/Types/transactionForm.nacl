@@ -1,0 +1,682 @@
+type netsuite.transactionForm {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+    _restriction = {
+      regex = "^custform[0-9a-z_]+"
+    }
+  }
+  netsuite.transactionform_standard standard {
+    isAttribute = true
+  }
+  string name {
+    _required = true
+  }
+  string recordType {
+  }
+  
+  boolean preferred {
+  }
+  boolean storedWithRecord {
+  }
+  netsuite.transactionForm_mainFields mainFields {
+  }
+  netsuite.transactionForm_tabs tabs {
+  }
+  netsuite.transactionForm_customCode customCode {
+  }
+  netsuite.transactionForm_quickViewFields quickViewFields {
+  }
+  netsuite.transactionForm_actionbar actionbar {
+  }
+  string disclaimer {
+  }
+  string address {
+  }
+  boolean allowAddMultiple {
+  }
+  string emailMessageTemplate {
+  }
+  netsuite.transactionForm_printingType printingType {
+  }
+  netsuite.transactionForm_totalBox totalBox {
+  }
+  netsuite.transactionForm_linkedForms linkedForms {
+  }
+  netsuite.transactionForm_roles roles {
+  }
+  netsuite.transactionForm_preferences preferences {
+  }
+  netsuite.transactionForm_buttons buttons {
+  }
+  string application_id {
+  }
+  _alias = "Transaction Form"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "scriptid"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+    {
+      value = "bundle"
+      highlighted = true
+      indexed = true
+    },
+  ]
+  netsuite.bundle bundle {
+  }
+  boolean isInactive {
+    originalName = "inactive"
+  }
+}
+type netsuite.transactionForm_actionbar_buttons_button {
+  netsuite.transactionform_buttonid id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+}
+type netsuite.transactionForm_actionbar_buttons {
+  "Map<netsuite.transactionForm_actionbar_buttons_button>" button {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_actionbar_customButtons_customButton {
+  string label {
+    _required = true
+  }
+  string function {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_actionbar_customButtons {
+  "Map<netsuite.transactionForm_actionbar_customButtons_customButton>" customButton {
+    map_key_field = "label"
+  }
+}
+type netsuite.transactionForm_actionbar_customMenu_customMenuItem {
+  string label {
+    _required = true
+  }
+  string function {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_actionbar_customMenu {
+  "Map<netsuite.transactionForm_actionbar_customMenu_customMenuItem>" customMenuItem {
+    map_key_field = "label"
+  }
+}
+type netsuite.transactionForm_actionbar_menu_menuitem {
+  netsuite.transactionform_buttonid id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+}
+type netsuite.transactionForm_actionbar_menu {
+  "Map<netsuite.transactionForm_actionbar_menu_menuitem>" menuitem {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_actionbar {
+  netsuite.transactionForm_actionbar_buttons buttons {
+  }
+  netsuite.transactionForm_actionbar_customButtons customButtons {
+  }
+  netsuite.transactionForm_actionbar_customMenu customMenu {
+  }
+  netsuite.transactionForm_actionbar_menu menu {
+  }
+}
+type netsuite.transactionForm_buttons_standardButtons_button {
+  netsuite.transactionform_buttonid id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  netsuite.form_buttonstyle style {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_buttons_standardButtons {
+  "Map<netsuite.transactionForm_buttons_standardButtons_button>" button {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_buttons {
+  netsuite.transactionForm_buttons_standardButtons standardButtons {
+  }
+}
+type netsuite.transactionForm_customCode {
+  string scriptFile {
+  }
+}
+type netsuite.transactionForm_linkedForms_linkedForm {
+  string type {
+  }
+  string form {
+  }
+}
+type netsuite.transactionForm_linkedForms {
+  "Map<netsuite.transactionForm_linkedForms_linkedForm>" linkedForm {
+    map_key_field = "type"
+  }
+}
+type netsuite.transactionForm_mainFields_defaultFieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  netsuite.transactionform_checkboxdefault checkBoxDefault {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_mainFields_defaultFieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.transactionForm_mainFields_defaultFieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_mainFields_defaultFieldGroup {
+  "Map<netsuite.transactionForm_mainFields_defaultFieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+}
+type netsuite.transactionForm_mainFields_fieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  netsuite.transactionform_checkboxdefault checkBoxDefault {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_mainFields_fieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.transactionForm_mainFields_fieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_mainFields_fieldGroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean showTitle {
+  }
+  boolean singleColumn {
+  }
+  "Map<netsuite.transactionForm_mainFields_fieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_mainFields {
+  "Map<netsuite.transactionForm_mainFields_fieldGroup>" fieldGroup {
+    map_key_field = "scriptid"
+  }
+  netsuite.transactionForm_mainFields_defaultFieldGroup defaultFieldGroup {
+  }
+}
+type netsuite.transactionForm_preferences_preference {
+  string id {
+  }
+  boolean value {
+  }
+}
+type netsuite.transactionForm_preferences {
+  "Map<netsuite.transactionForm_preferences_preference>" preference {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_printingType_advanced {
+  string printTemplate {
+  }
+  string emailTemplate {
+  }
+}
+type netsuite.transactionForm_printingType_basic {
+  netsuite.transactionform_pdflayout pdfLayout {
+  }
+  netsuite.transactionform_htmllayout htmlLayout {
+  }
+}
+type netsuite.transactionForm_printingType {
+  netsuite.transactionForm_printingType_advanced advanced {
+  }
+  netsuite.transactionForm_printingType_basic basic {
+  }
+}
+type netsuite.transactionForm_quickViewFields_field {
+  string id {
+    _required = true
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_quickViewFields {
+  "Map<netsuite.transactionForm_quickViewFields_field>" field {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_roles_role {
+  string id {
+  }
+  boolean preferred {
+  }
+}
+type netsuite.transactionForm_roles {
+  "Map<netsuite.transactionForm_roles_role>" role {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_tabs_tab_fieldGroups_defaultFieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  netsuite.transactionform_checkboxdefault checkBoxDefault {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_fieldGroups_defaultFieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.transactionForm_tabs_tab_fieldGroups_defaultFieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_fieldGroups_defaultFieldGroup {
+  "Map<netsuite.transactionForm_tabs_tab_fieldGroups_defaultFieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+}
+type netsuite.transactionForm_tabs_tab_fieldGroups_fieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  netsuite.transactionform_checkboxdefault checkBoxDefault {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_fieldGroups_fieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.transactionForm_tabs_tab_fieldGroups_fieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_fieldGroups_fieldGroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean showTitle {
+  }
+  boolean singleColumn {
+  }
+  "Map<netsuite.transactionForm_tabs_tab_fieldGroups_fieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_fieldGroups {
+  "Map<netsuite.transactionForm_tabs_tab_fieldGroups_fieldGroup>" fieldGroup {
+    map_key_field = "scriptid"
+  }
+  netsuite.transactionForm_tabs_tab_fieldGroups_defaultFieldGroup defaultFieldGroup {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subList_columns_column {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subList_columns {
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subList_columns_column>" column {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subList {
+  netsuite.transactionform_sublistid id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  netsuite.transactionForm_tabs_tab_subItems_subList_columns columns {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subLists_subList {
+  netsuite.transactionform_sublistid id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subLists {
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subLists_subList>" subList {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  netsuite.transactionform_checkboxdefault checkBoxDefault {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup {
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields_field {
+  string id {
+    _required = true
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  boolean mandatory {
+  }
+  netsuite.form_displaytype displayType {
+  }
+  boolean columnBreak {
+  }
+  string spaceBefore {
+  }
+  boolean sameRowAsPrevious {
+  }
+  boolean quickAdd {
+  }
+  netsuite.transactionform_checkboxdefault checkBoxDefault {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields {
+  netsuite.form_fieldposition position {
+    _required = true
+    isAttribute = true
+  }
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields_field>" field {
+    map_key_field = "id"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup {
+  serviceid scriptid {
+    _required = true
+    isAttribute = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean showTitle {
+  }
+  boolean singleColumn {
+  }
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup_fields>" fields {
+    map_key_field = "position"
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups {
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_fieldGroup>" fieldGroup {
+    map_key_field = "scriptid"
+  }
+  netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups_defaultFieldGroup defaultFieldGroup {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_subLists_subList {
+  netsuite.transactionform_sublistid id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab_subLists {
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subTab_subLists_subList>" subList {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems_subTab {
+  string id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  boolean neverEmpty {
+  }
+  netsuite.transactionForm_tabs_tab_subItems_subTab_fieldGroups fieldGroups {
+  }
+  netsuite.transactionForm_tabs_tab_subItems_subTab_subLists subLists {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs_tab_subItems {
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subList>" subList {
+    map_key_field = "id"
+  }
+  netsuite.transactionForm_tabs_tab_subItems_subLists subLists {
+  }
+  "Map<netsuite.transactionForm_tabs_tab_subItems_subTab>" subTab {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_tabs_tab {
+  string id {
+    _required = true
+  }
+  string label {
+    _required = true
+  }
+  boolean visible {
+  }
+  netsuite.transactionForm_tabs_tab_fieldGroups fieldGroups {
+  }
+  netsuite.transactionForm_tabs_tab_subItems subItems {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_tabs {
+  "Map<netsuite.transactionForm_tabs_tab>" tab {
+    map_key_field = "id"
+  }
+}
+type netsuite.transactionForm_totalBox_totalBoxField {
+  netsuite.transactionform_totalboxid id {
+  }
+  string label {
+  }
+  boolean visible {
+  }
+  number index {
+  }
+}
+type netsuite.transactionForm_totalBox {
+  "Map<netsuite.transactionForm_totalBox_totalBoxField>" totalBoxField {
+    map_key_field = "id"
+  }
+}

@@ -1,0 +1,9 @@
+type netsuite.portlet_customsearch_drilldown is string {
+  _restriction = {
+    values = [
+      "IN_PORTLET",
+      "NEW_PAGE",
+    ]
+    enforce_value = false
+  }
+}

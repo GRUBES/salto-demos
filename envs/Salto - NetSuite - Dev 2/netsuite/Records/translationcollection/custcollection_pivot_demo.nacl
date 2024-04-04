@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_pivot_demo {
+  scriptid = "custcollection_pivot_demo"
+  defaultlanguage = "en-US"
+  name = "DEMO PIVOT"
+  strings = {
+    string = {
+      report_name_1380_2 = {
+        scriptid = "report_name_1380_2"
+        defaulttranslation = "Pivot 1"
+        description = "Name of pivot"
+        index = 0
+      }
+    }
+  }
+  _alias = "DEMO PIVOT"
+}

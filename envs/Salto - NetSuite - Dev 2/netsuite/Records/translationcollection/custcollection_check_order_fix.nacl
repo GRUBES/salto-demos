@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_check_order_fix {
+  scriptid = "custcollection_check_order_fix"
+  defaultlanguage = "en-US"
+  name = "check order fix"
+  strings = {
+    string = {
+      workbook_name_1783_1 = {
+        scriptid = "workbook_name_1783_1"
+        defaulttranslation = "check order fix"
+        description = "Name in workbook"
+        index = 0
+      }
+    }
+  }
+  _alias = "check order fix"
+}

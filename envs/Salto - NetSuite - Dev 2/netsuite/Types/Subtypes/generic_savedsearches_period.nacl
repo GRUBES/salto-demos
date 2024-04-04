@@ -1,0 +1,8 @@
+type netsuite.generic_savedsearches_period is string {
+  _restriction = {
+    values = [
+      "GL_AUDIT_NUMBERING_REVIEW",
+    ]
+    enforce_value = false
+  }
+}

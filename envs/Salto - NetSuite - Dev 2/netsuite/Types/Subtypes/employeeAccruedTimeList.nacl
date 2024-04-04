@@ -1,0 +1,11 @@
+type netsuite.employeeAccruedTimeList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.employeeAccruedTime>" employeeAccruedTime {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

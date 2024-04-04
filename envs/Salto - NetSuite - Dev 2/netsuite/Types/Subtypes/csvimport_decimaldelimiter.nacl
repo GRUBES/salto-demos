@@ -1,0 +1,9 @@
+type netsuite.csvimport_decimaldelimiter is string {
+  _restriction = {
+    values = [
+      "COMMA",
+      "PERIOD",
+    ]
+    enforce_value = false
+  }
+}

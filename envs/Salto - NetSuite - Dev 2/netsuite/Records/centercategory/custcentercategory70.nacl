@@ -1,0 +1,16 @@
+netsuite.centercategory custcentercategory70 {
+  scriptid = "custcentercategory70"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab22.scriptid
+  label = "Communities"
+  links = {
+    link = {
+      EXTL_12 = {
+        linkid = "EXTL_12"
+        shortlist = false
+        index = 0
+      }
+    }
+  }
+  _alias = "Communities"
+}

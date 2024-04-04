@@ -1,0 +1,58 @@
+netsuite.centercategory custcentercategory45 {
+  scriptid = "custcentercategory45"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab12.scriptid
+  label = "Tools"
+  links = {
+    link = {
+      LIST_CONTACT = {
+        linkid = "LIST_CONTACT"
+        shortlist = false
+        index = 0
+      }
+      custlink_3_t2480368_965 = {
+        linkobject = netsuite.centerlink.instance.custlink_3_t2480368_965.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+        index = 1
+      }
+      customsearch_esc_contact_grp_search = {
+        linklabel = "View Contact Groups"
+        linkobject = "[scriptid=customsearch_esc_contact_grp_search]"
+        linktasktype = "SRCH_RSLT"
+        shortlist = false
+        index = 2
+      }
+      ADMI_IMPORTCSV = {
+        linkid = "ADMI_IMPORTCSV"
+        linklabel = "Import Assistant"
+        shortlist = false
+        index = 3
+      }
+      ADMI_SAVEDIMPORTS = {
+        linkid = "ADMI_SAVEDIMPORTS"
+        linklabel = "View Saved Imports"
+        shortlist = false
+        index = 4
+      }
+      custlink_8_t2480368_866 = {
+        linkobject = netsuite.centerlink.instance.custlink_8_t2480368_866.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+        index = 5
+      }
+      custlink_4_t2480368_118 = {
+        linkobject = netsuite.centerlink.instance.custlink_4_t2480368_118.scriptid
+        linktasktype = "LINK"
+        shortlist = false
+        index = 6
+      }
+      LIST_SALESCAMPAIGN = {
+        linkid = "LIST_SALESCAMPAIGN"
+        shortlist = false
+        index = 7
+      }
+    }
+  }
+  _alias = "Tools"
+}

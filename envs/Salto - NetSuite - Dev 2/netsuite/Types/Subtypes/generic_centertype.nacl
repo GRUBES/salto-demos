@@ -1,0 +1,28 @@
+type netsuite.generic_centertype is string {
+  _restriction = {
+    values = [
+      "ACCOUNTCENTER",
+      "ALL",
+      "BASIC",
+      "CUSTOMER",
+      "EMPLOYEE",
+      "ENGINEERCENTER",
+      "EXECUTIVE",
+      "HR",
+      "MARKETCENTER",
+      "OFFLINESALESCENTER",
+      "PARTNER",
+      "PARTNERCENTER",
+      "PROJECTCENTER",
+      "SALESCENTER",
+      "SHIPPINGCENTER",
+      "STOREMANAGER",
+      "SUITEAPPCONTROLCENTER",
+      "SUPPORTCENTER",
+      "SYSADMINCENTER",
+      "VENDOR",
+      "WEBSITE",
+    ]
+    enforce_value = false
+  }
+}

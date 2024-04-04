@@ -1,0 +1,12 @@
+type netsuite.workflow_releasestatus is string {
+  _restriction = {
+    values = [
+      "NOTINITIATING",
+      "NOTRUNNING",
+      "RELEASED",
+      "SUSPENDED",
+      "TESTING",
+    ]
+    enforce_value = false
+  }
+}

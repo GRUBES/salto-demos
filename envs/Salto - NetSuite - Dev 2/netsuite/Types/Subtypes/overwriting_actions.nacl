@@ -1,0 +1,9 @@
+type netsuite.overwriting_actions is string {
+  _restriction = {
+    values = [
+      "OVERWRITE",
+      "PRESERVE",
+    ]
+    enforce_value = false
+  }
+}

@@ -1,0 +1,9 @@
+type netsuite.kpiscorecards_useperiods is string {
+  _restriction = {
+    values = [
+      "F",
+      "T",
+    ]
+    enforce_value = false
+  }
+}

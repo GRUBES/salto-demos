@@ -1,0 +1,11 @@
+type netsuite.generic_tab_type is string {
+  _restriction = {
+    values = [
+      "CRM",
+      "ENTITY",
+      "ITEM",
+      "TRANSACTION",
+    ]
+    enforce_value = false
+  }
+}

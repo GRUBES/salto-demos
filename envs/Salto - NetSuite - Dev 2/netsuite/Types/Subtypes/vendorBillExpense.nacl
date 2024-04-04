@@ -1,0 +1,62 @@
+type netsuite.vendorBillExpense {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number orderDoc {
+  }
+  number orderLine {
+  }
+  number line {
+  }
+  netsuite.recordRef category {
+  }
+  netsuite.account account {
+    isReference = true
+  }
+  number amount {
+  }
+  number taxAmount {
+  }
+  number tax1Amt {
+  }
+  string memo {
+  }
+  number grossAmt {
+  }
+  string taxDetailsReference {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  boolean isBillable {
+  }
+  netsuite.projectTask projectTask {
+    isReference = true
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  netsuite.recordRef amortizationSched {
+  }
+  string amortizStartDate {
+  }
+  string amortizationEndDate {
+  }
+  string amortizationResidual {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

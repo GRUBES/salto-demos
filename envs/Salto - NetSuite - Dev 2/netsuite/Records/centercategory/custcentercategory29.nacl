@@ -1,0 +1,61 @@
+netsuite.centercategory custcentercategory29 {
+  scriptid = "custcentercategory29"
+  center = netsuite.center.instance.custcenter1.scriptid
+  centertab = netsuite.centertab.instance.custcentertab8.scriptid
+  label = "Revenue"
+  links = {
+    link = {
+      REPO_NEG179 = {
+        linkid = "REPO_NEG179"
+        shortlist = false
+        index = 0
+      }
+      REPO_NEG180 = {
+        linkid = "REPO_NEG180"
+        shortlist = false
+        index = 1
+      }
+      REPO_NEG181 = {
+        linkid = "REPO_NEG181"
+        shortlist = false
+        index = 2
+      }
+      REPO_NEG182 = {
+        linkid = "REPO_NEG182"
+        shortlist = false
+        index = 3
+      }
+      REPO_NEG183 = {
+        linkid = "REPO_NEG183"
+        shortlist = false
+        index = 4
+      }
+      REPO_NEG184 = {
+        linkid = "REPO_NEG184"
+        shortlist = false
+        index = 5
+      }
+      REPO_67 = {
+        linkid = "REPO_67"
+        shortlist = false
+        index = 6
+      }
+      REPO_65 = {
+        linkid = "REPO_65"
+        shortlist = false
+        index = 7
+      }
+      REPO_NEG148 = {
+        linkid = "REPO_NEG148"
+        shortlist = false
+        index = 8
+      }
+      REPO_NEG188 = {
+        linkid = "REPO_NEG188"
+        shortlist = false
+        index = 9
+      }
+    }
+  }
+  _alias = "Revenue"
+}

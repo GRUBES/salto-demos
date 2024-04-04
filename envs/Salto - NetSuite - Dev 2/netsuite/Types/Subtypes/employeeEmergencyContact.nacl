@@ -1,0 +1,16 @@
+type netsuite.employeeEmergencyContact {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number id {
+  }
+  string contact {
+  }
+  string relationship {
+  }
+  string address {
+  }
+  string phone {
+  }
+}

@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollectiontranslations_tableview_dilly_2 {
+  scriptid = "custcollectiontranslations_tableview_dilly_2"
+  defaultlanguage = "en-US"
+  name = "Table 2"
+  strings = {
+    string = {
+      tableview_name_1711_4 = {
+        scriptid = "tableview_name_1711_4"
+        defaulttranslation = "Table 2"
+        description = "Name in tableView"
+        index = 0
+      }
+    }
+  }
+  _alias = "Table 2"
+}

@@ -1,0 +1,17 @@
+netsuite.translationcollection custcollectiontranslations_pivot_110_f7afdff6b0234f1e8eda15 {
+  scriptid = "custcollectiontranslations_pivot_110_f7afdff6b0234f1e8eda15"
+  defaultlanguage = "en-US"
+  name = netsuite.translationcollection.instance.custcollectiontranslations_pivot_110_f7afdff6b0234f1e8eda15.strings.string.report_name_1677_2.scriptid
+  strings = {
+    string = {
+      report_name_1677_2 = {
+        scriptid = "report_name_1677_2"
+        defaulttranslation = "Pivot 1"
+        description = "Name of pivot"
+        index = 0
+      }
+    }
+  }
+  nameTranslate = true
+  _alias = "Pivot 1"
+}

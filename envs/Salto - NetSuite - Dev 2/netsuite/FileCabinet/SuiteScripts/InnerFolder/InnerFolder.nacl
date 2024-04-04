@@ -1,0 +1,12 @@
+netsuite.folder SuiteScripts_InnerFolder@d {
+  description = "created by oss e2e - 8116069"
+  bundleable = true
+  
+  isprivate = false
+  path = "/SuiteScripts/InnerFolder"
+  _parent = [
+    netsuite.folder.instance.SuiteScripts,
+  ]
+  _alias = "InnerFolder"
+  isInactive = false
+}

@@ -1,0 +1,132 @@
+type netsuite.nonInventoryPurchaseItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string purchaseDescription {
+  }
+  number cost {
+  }
+  string costUnits {
+  }
+  netsuite.account expenseAccount {
+    isReference = true
+  }
+  netsuite.recordRef issueProduct {
+  }
+  boolean isTaxable {
+  }
+  unknown matrixType {
+  }
+  netsuite.unitsType unitsType {
+    isReference = true
+  }
+  netsuite.recordRef purchaseUnit {
+  }
+  netsuite.recordRef customForm {
+  }
+  string itemId {
+  }
+  string upcCode {
+  }
+  string displayName {
+  }
+  boolean includeChildren {
+  }
+  string vendorName {
+  }
+  netsuite.nonInventoryPurchaseItem parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  string matrixItemNameTemplate {
+  }
+  boolean availableToPartners {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  "List<netsuite.subsidiary>" subsidiaryList {
+    isReference = true
+  }
+  netsuite.recordRef taxSchedule {
+  }
+  netsuite.recordRef deferralAccount {
+  }
+  netsuite.recordRef amortizationTemplate {
+  }
+  string residual {
+  }
+  number amortizationPeriod {
+  }
+  boolean isFulfillable {
+  }
+  boolean generateAccruals {
+  }
+  netsuite.itemAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.costCategory costCategory {
+    isReference = true
+  }
+  number purchaseOrderQuantity {
+  }
+  number purchaseOrderAmount {
+  }
+  number purchaseOrderQuantityDiff {
+  }
+  number receiptQuantity {
+  }
+  number receiptAmount {
+  }
+  number receiptQuantityDiff {
+  }
+  string currency {
+  }
+  netsuite.itemOptionsList itemOptionsList {
+  }
+  netsuite.matrixOptionList matrixOptionList {
+  }
+  netsuite.itemVendorList itemVendorList {
+  }
+  netsuite.recordRef purchaseTaxCode {
+  }
+  netsuite.recordRef salesTaxCode {
+  }
+  netsuite.translationList translationsList {
+  }
+  netsuite.vendor vendor {
+    isReference = true
+  }
+  netsuite.nonInventoryPurchaseItemHierarchyVersionsList hierarchyVersionsList {
+  }
+  netsuite.recordRef consumptionUnit {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Non-inventory Purchase Item"
+  _important_values = [
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

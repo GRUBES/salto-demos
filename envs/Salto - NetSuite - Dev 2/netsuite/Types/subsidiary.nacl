@@ -1,0 +1,112 @@
+type netsuite.subsidiary {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  string name {
+  }
+  netsuite.subsidiary parent {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  boolean showSubsidiaryName {
+  }
+  string url {
+  }
+  netsuite.fileReference logo {
+    isReference = true
+  }
+  string tranPrefix {
+  }
+  netsuite.fileReference pageLogo {
+    isReference = true
+  }
+  string state {
+  }
+  unknown country {
+  }
+  netsuite.address mainAddress {
+  }
+  netsuite.address shippingAddress {
+  }
+  netsuite.address returnAddress {
+  }
+  string legalName {
+  }
+  boolean isElimination {
+  }
+  netsuite.recordRef fiscalCalendar {
+  }
+  netsuite.recordRef taxFiscalCalendar {
+  }
+  boolean allowPayroll {
+  }
+  string email {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  number purchaseOrderQuantity {
+  }
+  number purchaseOrderAmount {
+  }
+  number purchaseOrderQuantityDiff {
+  }
+  number receiptQuantity {
+  }
+  number receiptAmount {
+  }
+  number receiptQuantityDiff {
+  }
+  string fax {
+  }
+  string edition {
+  }
+  string federalIdNumber {
+  }
+  string addrLanguage {
+  }
+  string state1TaxNumber {
+  }
+  netsuite.subsidiaryTaxRegistrationList taxRegistrationList {
+  }
+  string ssnOrTin {
+  }
+  netsuite.recordRef interCoAccount {
+  }
+  netsuite.subsidiaryNexusList nexusList {
+  }
+  netsuite.subsidiaryAccountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.recordRef checkLayout {
+  }
+  netsuite.classTranslationList classTranslationList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+  _alias = "Subsidiary"
+  _important_values = [
+    {
+      value = "name"
+      highlighted = true
+      indexed = false
+    },
+    {
+      value = "isInactive"
+      highlighted = true
+      indexed = true
+    },
+  ]
+}

@@ -1,0 +1,33 @@
+netsuite.entitycustomfield custentity_14 {
+  scriptid = "custentity_14"
+  accesslevel = "1"
+  appliestocontact = true
+  appliestocustomer = false
+  appliestoemployee = false
+  appliestogroup = false
+  appliestoothername = false
+  appliestopartner = false
+  appliestopricelist = false
+  appliestoprojecttemplate = false
+  appliestostatement = false
+  appliestovendor = false
+  appliestowebsite = false
+  applyformatting = false
+  availableexternally = false
+  checkspelling = false
+  defaultchecked = false
+  description = "descriptio12345"
+  displaytype = "NORMAL"
+  encryptatrest = false
+  fieldtype = "CHECKBOX"
+  globalsearch = false
+  isformula = false
+  ismandatory = false
+  isparent = false
+  label = "Checkbox Field 14"
+  searchlevel = "2"
+  showhierarchy = false
+  showinlist = false
+  storevalue = true
+  _alias = "Checkbox Field 14"
+}

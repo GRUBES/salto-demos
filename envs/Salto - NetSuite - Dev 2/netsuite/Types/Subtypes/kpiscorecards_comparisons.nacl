@@ -1,0 +1,12 @@
+type netsuite.kpiscorecards_comparisons is string {
+  _restriction = {
+    values = [
+      "RATIO_ABSOLUTE",
+      "RATIO_PERCENT",
+      "SUM",
+      "VARIANCE_ABSOLUTE",
+      "VARIANCE_PERCENT",
+    ]
+    enforce_value = false
+  }
+}

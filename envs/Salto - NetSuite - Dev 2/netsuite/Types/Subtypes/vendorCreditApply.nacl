@@ -1,0 +1,26 @@
+type netsuite.vendorCreditApply {
+  annotations {
+    hidden_string source {
+    }
+  }
+  boolean apply {
+  }
+  string applyDate {
+  }
+  number doc {
+  }
+  number line {
+  }
+  string type {
+  }
+  string refNum {
+  }
+  number total {
+  }
+  number due {
+  }
+  string currency {
+  }
+  number amount {
+  }
+}

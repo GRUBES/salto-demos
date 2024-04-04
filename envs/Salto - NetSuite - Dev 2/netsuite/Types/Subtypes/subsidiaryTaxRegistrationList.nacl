@@ -1,0 +1,11 @@
+type netsuite.subsidiaryTaxRegistrationList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.subsidiaryTaxRegistration>" subsidiaryTaxRegistration {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

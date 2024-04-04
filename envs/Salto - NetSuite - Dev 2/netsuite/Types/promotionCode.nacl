@@ -1,0 +1,66 @@
+type netsuite.promotionCode {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef implementation {
+  }
+  netsuite.recordRef customForm {
+  }
+  unknown useType {
+  }
+  boolean displayLineDiscounts {
+  }
+  string code {
+  }
+  string codePattern {
+  }
+  number numberToGenerate {
+  }
+  string description {
+  }
+  "List<netsuite.location>" locationList {
+    isReference = true
+  }
+  boolean isInactive {
+  }
+  netsuite.recordRef discount {
+  }
+  string rate {
+  }
+  boolean discountType {
+  }
+  unknown applyDiscountTo {
+  }
+  netsuite.recordRef freeShipMethod {
+  }
+  number minimumOrderAmount {
+  }
+  string startDate {
+  }
+  string endDate {
+  }
+  boolean isPublic {
+  }
+  netsuite.promotionCodeCurrencyList currencyList {
+  }
+  boolean excludeItems {
+  }
+  string name {
+  }
+  netsuite.promotionCodeItemsList itemsList {
+  }
+  netsuite.promotionCodePartnersList partnersList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

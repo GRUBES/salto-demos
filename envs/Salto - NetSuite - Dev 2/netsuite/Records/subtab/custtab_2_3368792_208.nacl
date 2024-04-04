@@ -1,0 +1,6 @@
+netsuite.subtab custtab_2_3368792_208 {
+  scriptid = "custtab_2_3368792_208"
+  tabtype = "ENTITY"
+  title = "Partners"
+  _alias = "Partners"
+}

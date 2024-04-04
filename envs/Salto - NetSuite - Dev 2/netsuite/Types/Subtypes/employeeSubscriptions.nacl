@@ -1,0 +1,10 @@
+type netsuite.employeeSubscriptions {
+  annotations {
+    hidden_string source {
+    }
+  }
+  string subscribed {
+  }
+  string subscription {
+  }
+}

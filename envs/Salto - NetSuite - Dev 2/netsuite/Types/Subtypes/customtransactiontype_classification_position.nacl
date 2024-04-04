@@ -1,0 +1,10 @@
+type netsuite.customtransactiontype_classification_position is string {
+  _restriction = {
+    values = [
+      "HEADER",
+      "LINES",
+      "NONE",
+    ]
+    enforce_value = false
+  }
+}

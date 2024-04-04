@@ -1,0 +1,13 @@
+type netsuite.subsidiaryAccountingBookDetail {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef accountingBook {
+  }
+  netsuite.currency currency {
+    isReference = true
+  }
+  unknown bookStatus {
+  }
+}

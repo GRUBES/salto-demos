@@ -1,0 +1,11 @@
+type netsuite.portlet_trendgraph_backgroundtype is string {
+  _restriction = {
+    values = [
+      "BANDS",
+      "GLOBAL_BACKGROUND",
+      "GRID",
+      "LINES",
+    ]
+    enforce_value = false
+  }
+}

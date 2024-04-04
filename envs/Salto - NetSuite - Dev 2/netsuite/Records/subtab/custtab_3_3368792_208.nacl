@@ -1,0 +1,6 @@
+netsuite.subtab custtab_3_3368792_208 {
+  scriptid = "custtab_3_3368792_208"
+  tabtype = "ENTITY"
+  title = "Items Purchased"
+  _alias = "Items Purchased"
+}

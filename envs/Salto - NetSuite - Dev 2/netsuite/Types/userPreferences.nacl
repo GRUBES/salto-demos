@@ -1,0 +1,470 @@
+settings netsuite.userPreferences {
+  boolean DO_NOT_CALCULATE_CUSTOMER_BALANCES {
+    label = "Do not calculate balances on customer record"
+    type = "checkbox"
+  }
+  netsuite.selectOption PDFLANGUAGE {
+    label = "PDF Language"
+    type = "select"
+  }
+  netsuite.selectOption EVENT_DEFAULTPUBLIC {
+    label = "Default Event Access Setting for New Events"
+    type = "select"
+  }
+  boolean ONLYSHOWLASTSUBITEM {
+    label = "Only Show Last Subitem"
+    type = "checkbox"
+  }
+  netsuite.selectOption LANDINGPAGE {
+    label = "Landing Page after login"
+    type = "select"
+  }
+  string MESSAGE_EMAIL {
+    label = "From Email Address"
+    type = "email"
+  }
+  boolean DOWNLOADPDFS {
+    label = "Download PDF Files"
+    type = "checkbox"
+  }
+  netsuite.selectOption CSV_COLUMN_DELIMITER {
+    label = "CSV column delimiter"
+    type = "select"
+  }
+  netsuite.selectOption EDITORFONT {
+    label = "Default Rich Text Editor Font"
+    type = "select"
+  }
+  boolean SYSTEMLARGEFONTS {
+    label = "Compensate for Large Fonts"
+    type = "checkbox"
+  }
+  boolean EXPOSEIDS {
+    label = "Show Internal IDs"
+    type = "checkbox"
+  }
+  boolean ONLYSHOWLASTSUBACCT {
+    label = "Only Show Last Subaccount"
+    type = "checkbox"
+  }
+  boolean CLASSSUBS {
+    label = "Include Sub-Classes"
+    type = "checkbox"
+  }
+  boolean ALERTONDEMAND {
+    label = "Send an On-Demand Alert from this Role"
+    type = "checkbox"
+  }
+  netsuite.selectOption TIMEZONE {
+    label = "Time Zone"
+    type = "select"
+  }
+  boolean KEYWORDSEARCH {
+    label = "Quick Search Uses Keywords"
+    type = "checkbox"
+  }
+  netsuite.selectOption PHONEFORMAT {
+    label = "Phone Number Format"
+    type = "select"
+  }
+  netsuite.selectOption LANGUAGE {
+    label = "Language"
+    type = "select"
+  }
+  boolean ITEMEXACTMATCH {
+    label = "Require Exact Match on Item Type-Ahead"
+    type = "checkbox"
+  }
+  
+  netsuite.selectOption CALENDARSYSTEM {
+    label = "Calendar System"
+    type = "select"
+  }
+  netsuite.selectOption EMAILALERT_NOON {
+    label = "Second Selection"
+    type = "select"
+  }
+  netsuite.selectOption LONGDATEFORMAT {
+    label = "Long Date Format"
+    type = "select"
+  }
+  boolean DISABLE_CUSTOMER_SATISFACTION {
+    label = "Do not display customer satisfaction surveys"
+    type = "checkbox"
+  }
+  netsuite.selectOption SUBSIDIARY {
+    label = "Subsidiary"
+    type = "select"
+  }
+  netsuite.selectOption LOCATION {
+    label = "Location"
+    type = "select"
+  }
+  netsuite.selectOption MSIE_ZOOM_FACTOR {
+    label = "Density Setting for Internet Explorer"
+    type = "select"
+  }
+  boolean ACCESSIBILITY_HIGH_CONTRAST {
+    label = "Display default theme with optimal color contrast"
+    type = "checkbox"
+  }
+  boolean DISPLAYRPTDESC {
+    label = "Display Report Description"
+    type = "checkbox"
+  }
+  boolean HTMLPRINTING {
+    label = "Print Using HTML"
+    type = "checkbox"
+  }
+  number MAXDROPDOWNSIZE {
+    label = "Maximum Entries in Dropdowns"
+    type = "integer"
+  }
+  boolean DASHBOARD_DEFAULT_VIEW_FOR_CUSTOMER {
+    label = "Set Customer Dashboard As Default View On Customer Record"
+    type = "checkbox"
+  }
+  boolean MESSAGE_AUTOSIGNATURE {
+    label = "Add Signature to Messages"
+    type = "checkbox"
+  }
+  boolean LINKS_EMAILALERT {
+    label = "Include links in HTML alerts"
+    type = "checkbox"
+  }
+  netsuite.selectOption NEGATIVE_NUMBER_FORMAT {
+    label = "Negative Number Format"
+    type = "select"
+  }
+  boolean USE_QUICKDATE_IN_ALERTS {
+    label = "Respect Quick Date Portlet Settings"
+    type = "checkbox"
+  }
+  
+  netsuite.selectOption TIMEFORMAT {
+    label = "Time Format"
+    type = "select"
+  }
+  netsuite.selectOption EMAILALERT_PM {
+    label = "Third Selection"
+    type = "select"
+  }
+  boolean SHOWPORTLETHINT {
+    label = "Show Portlet Hint"
+    type = "checkbox"
+  }
+  netsuite.selectOption REPORTPDFORIENTATION {
+    label = "PDF Page Orientation"
+    type = "select"
+  }
+  netsuite.selectOption EDITORFONTSIZE {
+    label = "Default Rich Text Editor Font Size"
+    type = "select"
+  }
+  boolean PRINTGLIMPACTPERSUBSIDIARY {
+    label = "Print GL Impact Per Subsidiary"
+    type = "checkbox"
+  }
+  netsuite.selectOption FIRSTDAYOFWEEK {
+    label = "First Day of Week"
+    type = "select"
+  }
+  boolean GLOBALSEARCHSORTBYNAME {
+    label = "Global Search Sort by Name/ID"
+    type = "checkbox"
+  }
+  boolean REPORTGRID {
+    label = "Show Reports in Grid"
+    type = "checkbox"
+  }
+  boolean SHOW_ID_FIELD {
+    label = "Show ID field on sublists"
+    type = "checkbox"
+  }
+  netsuite.selectOption FONT {
+    label = "Screen Font"
+    type = "select"
+  }
+  boolean SUBLIST_COLUMN_TOOLTIP {
+    label = "Sublist Column Name Tooltip"
+    type = "checkbox"
+  }
+  boolean POPUPAUTOSUGGEST {
+    label = "Popup Auto Suggest"
+    type = "checkbox"
+  }
+  boolean SHOWQUICKADD {
+    label = "Show Quick Add Row on Lists"
+    type = "checkbox"
+  }
+  netsuite.selectOption EMAILALERT_EMAIL {
+    label = "E-Mail"
+    type = "select"
+  }
+  boolean SUBSIDIARYSUBS {
+    label = "Include Sub-Subsidiaries"
+    type = "checkbox"
+  }
+  netsuite.selectOption CHART_THEME {
+    label = "Chart Theme"
+    type = "select"
+  }
+  netsuite.selectOption DUPLICATEWARNINGS {
+    label = "Duplicate Number Warnings"
+    type = "select"
+  }
+  boolean GLOBALSEARCHCUPREFIX {
+    label = "Global Search Customer Prefix Includes Leads and Prospects"
+    type = "checkbox"
+  }
+  boolean SORTBYPHONETIC {
+    label = "Use Furigana Field"
+    type = "checkbox"
+  }
+  netsuite.selectOption EMAILALERT_AM {
+    label = "First Selection"
+    type = "select"
+  }
+  number LISTSEGMENTSIZE {
+    label = "Number of Rows in List Segments"
+    type = "integer"
+  }
+  netsuite.selectOption CLASS {
+    label = "Class"
+    type = "select"
+  }
+  boolean SHOWLISTONERESULT {
+    label = "Show List When Only One Result"
+    type = "checkbox"
+  }
+  netsuite.selectOption CSV_DECIMAL_DELIMITER {
+    label = "CSV decimal delimiter"
+    type = "select"
+  }
+  netsuite.selectOption CSVEXPORTENCODING {
+    label = "CSV Export Character Encoding"
+    type = "select"
+  }
+  boolean AUTOPLACE {
+    label = "Auto Place Decimal"
+    type = "checkbox"
+  }
+  netsuite.selectOption CHART_BACKGROUND {
+    label = "Chart Background"
+    type = "select"
+  }
+  boolean PAGE_SEARCH {
+    label = "Page Search"
+    type = "checkbox"
+  }
+  boolean CLASSUNASSIGNED {
+    label = "Include Unassigned"
+    type = "checkbox"
+  }
+  boolean DELAYLOADINGSUBLISTS {
+    label = "Delay Loading of Sublists"
+    type = "checkbox"
+  }
+  boolean NATIVE_DROPDOWNS {
+    label = "Prefer native select fields over NS dropdowns in Internet Explorer"
+    type = "checkbox"
+  }
+  boolean REMINDERPLAYWAVE {
+    label = "Play Audio with Popup Event Reminders"
+    type = "checkbox"
+  }
+  boolean SEARCHAUTOSUGGEST {
+    label = "Global Search Auto Suggest"
+    type = "checkbox"
+  }
+  netsuite.selectOption COLORTHEME {
+    label = "Color Theme"
+    type = "select"
+  }
+  netsuite.selectOption NUMBERFORMAT {
+    label = "Number Format"
+    type = "select"
+  }
+  boolean TYPEAHEADSELECTS {
+    label = "Type-Ahead On List Fields"
+    type = "checkbox"
+  }
+  netsuite.selectOption CUSTCREDLIMHANDLING {
+    label = "Customer Credit Limit Handling"
+    type = "select"
+  }
+  boolean SHOW_APPID_FIELD {
+    label = "Show App ID field"
+    type = "checkbox"
+  }
+  boolean ENABLE_REPORT_FONT_CUSTOMIZATION {
+    label = "Customize font on financial reports"
+    type = "checkbox"
+  }
+  boolean LIMITTOTWOCOLUMNS {
+    label = "Limit Entry Forms to Two Columns"
+    type = "checkbox"
+  }
+  boolean TASK_DEFAULTPUBLIC {
+    label = "Default New Tasks Public"
+    type = "checkbox"
+  }
+  boolean VENDCREDLIMWARNINGS {
+    label = "Vendor Credit Limit Warnings"
+    type = "checkbox"
+  }
+  boolean STOCKWARNINGS {
+    label = "Inventory Level Warnings"
+    type = "checkbox"
+  }
+  boolean DISPLAYLOGO {
+    label = "Print Company Logo"
+    type = "checkbox"
+  }
+  netsuite.selectOption REPORTPDFFONTSIZE {
+    label = "PDF Font Size"
+    type = "select"
+  }
+  boolean DISPLAYRPTTITLE {
+    label = "Display Report Title on Screen"
+    type = "checkbox"
+  }
+  netsuite.selectOption REMINDERPERIOD {
+    label = "Default Reminder Time"
+    type = "select"
+  }
+  boolean EMAILLIMITCC {
+    label = "Limit CC Field to Contacts & Employees"
+    type = "checkbox"
+  }
+  boolean USE_MC_ON_EXPREPT {
+    label = "Use Multicurrency Expense Reports"
+    type = "checkbox"
+  }
+  boolean LOCATIONUNASSIGNED {
+    label = "Include Unassigned"
+    type = "checkbox"
+  }
+  netsuite.selectOption MAPTYPE {
+    label = "Address Mapping Type"
+    type = "select"
+  }
+  boolean GLOBALSEARCHBYTRANANDDOCNUMS {
+    label = "Global Search Includes Transaction Numbers"
+    type = "checkbox"
+  }
+  boolean SUBMITWARNINGS {
+    label = "\"Save Changes\" warnings"
+    type = "checkbox"
+  }
+  boolean EVENT_EDITFROMCALENDAR {
+    label = "Edit Activities from Calendar"
+    type = "checkbox"
+  }
+  boolean LOCATIONSUBS {
+    label = "Include Sub-Locations"
+    type = "checkbox"
+  }
+  boolean AUTOFILL {
+    label = "Auto Fill Transactions"
+    type = "checkbox"
+  }
+  boolean UNLAYEREDTABS {
+    label = "Expand Tabs on Entry Forms "
+    type = "checkbox"
+  }
+  netsuite.selectOption DATEFORMAT {
+    label = "Date Format"
+    type = "select"
+  }
+  boolean KPI_PERIOD_SPECIFIC_RATES {
+    label = "KPI scorecard with period specific consolidation rates"
+    type = "checkbox"
+  }
+  boolean RICHTEXTEDITOR {
+    label = "Enable Rich Text Editing"
+    type = "checkbox"
+  }
+  boolean EVENT_INTERNALINVITEESONLY {
+    label = "Restrict Invitees to Employees"
+    type = "checkbox"
+  }
+  boolean SEARCHINACTIVES {
+    label = "Include Inactives in Global & Quick Search"
+    type = "checkbox"
+  }
+  netsuite.selectOption HELP_LANGUAGE {
+    label = "Language of the Help Center"
+    type = "select"
+  }
+  boolean ORACLE_GUIDED_LEARNING {
+    label = "Enable NetSuite Guided Learning"
+    type = "checkbox"
+  }
+  boolean FORECASTWEIGHTED {
+    label = "Calculate Forecasts as Weighted"
+    type = "checkbox"
+  }
+  netsuite.selectOption DEFAULTTASKPRIORITY {
+    label = "Default Priority for Tasks"
+    type = "select"
+  }
+  netsuite.selectOption SEARCHSORTING {
+    label = "Search Sorting"
+    type = "select"
+  }
+  netsuite.selectOption SPELL_LOCALE {
+    label = "Spelling Locale"
+    type = "select"
+  }
+  netsuite.selectOption DEFAULT_BANKREG {
+    label = "Default Bank Account"
+    type = "select"
+  }
+  boolean ALPHABETIZE_ITEMS {
+    label = "Alphabetize Items Regardless of Type"
+    type = "checkbox"
+  }
+  boolean CALL_DEFAULTPUBLIC {
+    label = "Default New Phone Calls Public"
+    type = "checkbox"
+  }
+  
+  netsuite.selectOption REPORTBYPERIOD {
+    label = "Report by Period"
+    type = "select"
+  }
+  boolean KEYWORDSEARCHPOPUP {
+    label = "Popup Search Uses Keywords"
+    type = "checkbox"
+  }
+  boolean ONLYSHOWLASTSUBENT {
+    label = "Only Show Last Subentity"
+    type = "checkbox"
+  }
+  netsuite.selectOption KPIACCOUNTINGBOOK {
+    label = "Accounting Book"
+    type = "select"
+  }
+  netsuite.selectOption REMINDERTYPE {
+    label = "Default Reminder Type"
+    type = "select"
+  }
+  string configType {
+    _required = true
+    _hidden_value = true
+  }
+  _alias = "User Preferences"
+  netsuite.selectOption DEPARTMENT {
+    label = "Department"
+    type = "select"
+  }
+  boolean DEPARTMENTUNASSIGNED {
+    label = "Include Unassigned"
+    type = "checkbox"
+  }
+  boolean DEPARTMENTSUBS {
+    label = "Include Sub-Departments"
+    type = "checkbox"
+  }
+}

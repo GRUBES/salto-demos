@@ -1,0 +1,87 @@
+type netsuite.projectTask {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  netsuite.recordRef eventId {
+  }
+  number percentTimeComplete {
+  }
+  string title {
+  }
+  netsuite.recordRef company {
+  }
+  netsuite.contact contact {
+    isReference = true
+  }
+  netsuite.recordRef order {
+  }
+  netsuite.recordRef owner {
+  }
+  netsuite.projectTask parent {
+    isReference = true
+  }
+  netsuite.recordRef priority {
+  }
+  number estimatedWork {
+  }
+  number estimatedWorkBaseline {
+  }
+  unknown constraintType {
+  }
+  string startDate {
+  }
+  string startDateBaseline {
+  }
+  string endDate {
+  }
+  string finishByDate {
+  }
+  string endDateBaseline {
+  }
+  netsuite.duration actualWork {
+  }
+  netsuite.duration remainingWork {
+  }
+  string message {
+  }
+  boolean isMilestone {
+  }
+  string isOnCriticalPath {
+  }
+  number slackMinutes {
+  }
+  string lateEnd {
+  }
+  string lateStart {
+  }
+  unknown status {
+  }
+  boolean nonBillableTask {
+  }
+  netsuite.projectTaskAssigneeList assigneeList {
+  }
+  netsuite.projectTaskPredecessorList predecessorList {
+  }
+  netsuite.projectTaskTimeItemList timeItemList {
+  }
+  number plannedWork {
+  }
+  number plannedWorkBaseline {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+  serviceid identifier {
+  }
+}

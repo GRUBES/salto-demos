@@ -1,0 +1,6 @@
+netsuite.subtab custtab_304_t1234693_274 {
+  scriptid = "custtab_304_t1234693_274"
+  tabtype = "ENTITY"
+  title = "IL Global Bank Details"
+  _alias = "IL Global Bank Details"
+}

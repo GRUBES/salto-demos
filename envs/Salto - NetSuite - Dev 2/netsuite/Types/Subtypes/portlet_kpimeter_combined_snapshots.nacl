@@ -1,0 +1,11 @@
+type netsuite.portlet_kpimeter_combined_snapshots is string {
+  _restriction = {
+    values = [
+      "ACTUAL_VS_FORECAST",
+      "ACTUAL_VS_QUOTA",
+      "FORECAST_VS_QUOTA",
+      "FORECAST_VS_QUOTA_ASA",
+    ]
+    enforce_value = false
+  }
+}

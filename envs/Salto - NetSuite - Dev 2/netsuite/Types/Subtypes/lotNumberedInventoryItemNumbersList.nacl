@@ -1,0 +1,11 @@
+type netsuite.lotNumberedInventoryItemNumbersList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.lotNumberedInventoryItemNumbers>" numbers {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

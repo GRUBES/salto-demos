@@ -1,0 +1,11 @@
+type netsuite.transferOrderItemList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.transferOrderItem>" item {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

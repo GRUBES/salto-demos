@@ -1,0 +1,11 @@
+type netsuite.invoiceTimeList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.invoiceTime>" time {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

@@ -1,0 +1,16 @@
+type netsuite.script_frequency is string {
+  _restriction = {
+    values = [
+      "DAY",
+      "MONTH",
+      "MWF",
+      "NONE",
+      "TTH",
+      "WEEK",
+      "WEEKDAY",
+      "WEEKEND",
+      "YEAR",
+    ]
+    enforce_value = false
+  }
+}

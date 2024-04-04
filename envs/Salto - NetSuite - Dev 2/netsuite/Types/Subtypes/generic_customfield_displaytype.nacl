@@ -1,0 +1,12 @@
+type netsuite.generic_customfield_displaytype is string {
+  _restriction = {
+    values = [
+      "HIDDEN",
+      "LOCKED",
+      "NORMAL",
+      "SHOWASLIST",
+      "STATICTEXT",
+    ]
+    enforce_value = false
+  }
+}

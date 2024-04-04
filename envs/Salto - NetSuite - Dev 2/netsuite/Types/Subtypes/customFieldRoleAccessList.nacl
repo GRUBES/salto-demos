@@ -1,0 +1,11 @@
+type netsuite.customFieldRoleAccessList {
+  annotations {
+    hidden_string source {
+    }
+  }
+  "List<netsuite.customFieldRoleAccess>" roleAccess {
+  }
+  boolean replaceAll {
+    isAttribute = true
+  }
+}

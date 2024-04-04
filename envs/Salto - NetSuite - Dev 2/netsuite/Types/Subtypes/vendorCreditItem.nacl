@@ -1,0 +1,70 @@
+type netsuite.vendorCreditItem {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.recordRef item {
+  }
+  string vendorName {
+  }
+  number line {
+  }
+  number orderLine {
+  }
+  number quantity {
+  }
+  netsuite.recordRef units {
+  }
+  netsuite.inventoryDetail inventoryDetail {
+  }
+  netsuite.recordRefList serialNumbersList {
+  }
+  string description {
+  }
+  string rate {
+  }
+  number amount {
+  }
+  string binNumbers {
+  }
+  netsuite.recordRef taxCode {
+  }
+  number taxRate1 {
+  }
+  number taxRate2 {
+  }
+  number grossAmt {
+  }
+  number tax1Amt {
+  }
+  netsuite.customFieldList options {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.customer customer {
+    isReference = true
+  }
+  boolean isBillable {
+  }
+  netsuite.recordRef amortizationSched {
+  }
+  string amortizStartDate {
+  }
+  string amortizationEndDate {
+  }
+  string amortizationResidual {
+  }
+  number taxAmount {
+  }
+  string taxDetailsReference {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+}

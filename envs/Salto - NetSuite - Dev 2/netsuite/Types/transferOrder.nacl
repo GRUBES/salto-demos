@@ -1,0 +1,97 @@
+type netsuite.transferOrder {
+  annotations {
+    hidden_string source {
+    }
+  }
+  netsuite.nullField nullFieldList {
+  }
+  netsuite.recordRef customForm {
+  }
+  number shippingCost {
+  }
+  number subTotal {
+  }
+  string status {
+  }
+  netsuite.address shippingAddress {
+  }
+  boolean shipIsResidential {
+  }
+  netsuite.recordRef shipAddressList {
+  }
+  string fob {
+  }
+  string tranDate {
+  }
+  string tranId {
+  }
+  string source {
+  }
+  unknown orderStatus {
+  }
+  netsuite.subsidiary subsidiary {
+    isReference = true
+  }
+  netsuite.employee employee {
+    isReference = true
+  }
+  boolean useItemCostAsTransferCost {
+  }
+  netsuite.recordRef incoterm {
+  }
+  boolean firmed {
+  }
+  netsuite.department department {
+    isReference = true
+  }
+  netsuite.classification class {
+    isReference = true
+  }
+  netsuite.location location {
+    isReference = true
+  }
+  netsuite.location transferLocation {
+    isReference = true
+  }
+  string memo {
+  }
+  string shipDate {
+  }
+  netsuite.recordRef shipMethod {
+  }
+  string trackingNumbers {
+  }
+  string linkedTrackingNumbers {
+  }
+  boolean shipComplete {
+  }
+  number altShippingCost {
+  }
+  number shippingTax1Rate {
+  }
+  number shippingTax2Rate {
+  }
+  number handlingTax1Rate {
+  }
+  number handlingTax2Rate {
+  }
+  netsuite.recordRef shippingTaxCode {
+  }
+  netsuite.recordRef handlingTaxCode {
+  }
+  number total {
+  }
+  netsuite.transferOrderItemList itemList {
+  }
+  netsuite.accountingBookDetailList accountingBookDetailList {
+  }
+  netsuite.customFieldList customFieldList {
+  }
+  string internalId {
+    isAttribute = true
+    _hidden_value = true
+  }
+  string externalId {
+    isAttribute = true
+  }
+}

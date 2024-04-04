@@ -1,0 +1,56 @@
+type netsuite.itemFulfillmentPackageFedEx {
+  annotations {
+    hidden_string source {
+    }
+  }
+  number packageWeightFedEx {
+  }
+  number dryIceWeightFedEx {
+  }
+  string packageTrackingNumberFedEx {
+  }
+  unknown packagingFedEx {
+  }
+  unknown admPackageTypeFedEx {
+  }
+  boolean isNonStandardContainerFedEx {
+  }
+  boolean isAlcoholFedEx {
+  }
+  unknown alcoholRecipientTypeFedEx {
+  }
+  boolean isNonHazLithiumFedEx {
+  }
+  number insuredValueFedEx {
+  }
+  boolean useInsuredValueFedEx {
+  }
+  string reference1FedEx {
+  }
+  unknown priorityAlertTypeFedEx {
+  }
+  string priorityAlertContentFedEx {
+  }
+  number packageLengthFedEx {
+  }
+  number packageWidthFedEx {
+  }
+  number packageHeightFedEx {
+  }
+  boolean useCodFedEx {
+  }
+  number codAmountFedEx {
+  }
+  unknown codMethodFedEx {
+  }
+  unknown codFreightTypeFedEx {
+  }
+  unknown deliveryConfFedEx {
+  }
+  unknown signatureOptionsFedEx {
+  }
+  string signatureReleaseFedEx {
+  }
+  string authorizationNumberFedEx {
+  }
+}

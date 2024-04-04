@@ -1,0 +1,16 @@
+netsuite.translationcollection custcollection_seggev_chart_1 {
+  scriptid = "custcollection_seggev_chart_1"
+  defaultlanguage = "en-US"
+  name = "Chart 1"
+  strings = {
+    string = {
+      chart_name_1511_6 = {
+        scriptid = "chart_name_1511_6"
+        defaulttranslation = "Chart 1"
+        description = "Chart name"
+        index = 0
+      }
+    }
+  }
+  _alias = "Chart 1"
+}
